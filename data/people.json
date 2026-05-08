@@ -1,0 +1,493 @@
+{
+  "site": {
+    "title": "The Quesenberry & Harvey Family",
+    "subtitle": "An American Story",
+    "tagline": "Four centuries from the Virginia Tidewater to the Carolina Piedmont",
+    "intro": "From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself."
+  },
+  "people": {
+    "lonnie-quesenberry": {
+      "id": "lonnie-quesenberry",
+      "name": "Lonnie Olin Quesenberry",
+      "birth": "18 March 1920",
+      "birthPlace": "North Carolina, USA",
+      "death": "22 December 2002",
+      "deathPlace": "High Point, Guilford County, North Carolina",
+      "burial": "Holly Hill Memorial Park, Thomasville, Davidson County, NC",
+      "lifespan": "1920–2002",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "spouse": "ruth-harvey",
+      "marriedDate": "17 July 1948",
+      "marriedPlace": "Greensboro, Guilford County, North Carolina",
+      "children": ["phil-quesenberry", "cathey-quesenberry", "carol-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Husband, father, and a quiet bridge between the Virginia mountains his family had farmed for two centuries and the new world of the Carolina Piedmont.",
+      "facts": {
+        "Generation": "Maternal grandfather",
+        "Era": "WWII generation",
+        "Memorial": "<a href='https://www.findagrave.com/memorial/157298614/lonnie-olin-quesenberry'>Find a Grave 157298614</a>"
+      },
+      "narrative": [
+        "Lonnie Olin Quesenberry was born on the 18th of March, 1920, into a country still shaking off the influenza pandemic and the weariness of a great war. He carried in his name an old American story: the Quesenberry surname, mountain-Virginian for nearly two centuries before his birth, and the middle name *Olin* — a soft, Scandinavian-sounding name that had drifted south with his people from the Blue Ridge into the rolling Piedmont of North Carolina.",
+        "His father, Floyd H. Quesenberry, almost certainly took his given name from the Virginia county where the Quesenberrys had been numerous since the eighteenth century. His mother Eva — a name that recurs through the Quesenberry family for at least four generations — raised Lonnie in the kind of close, intermarried Appalachian community where cousins and second cousins married each other and the same surnames repeated on every fence post and gravestone.",
+        "Lonnie came of age in the Great Depression. He turned twenty-one in March 1941, nine months before Pearl Harbor. Like most American men born in 1920, he would have registered for the WWII draft, though the specific record of his service is not yet located in the public files. What we know for certain is that on the 17th of July, 1948 — when the country was rebuilding itself from war and the postwar baby boom was beginning — Lonnie married Ruth Garland Harvey in Greensboro, North Carolina. He was 28; she was 23, and just back from her valedictory speech at Colfax High School a few years before.",
+        "Together they raised three children — Phillip Olyn, Cathey Arlene, and Carol Jeanette — in High Point, the furniture-making capital of the South. He died on the 22nd of December, 2002, at the age of 82, and was buried at Holly Hill Memorial Park in Thomasville. His wife of fifty-four years would lie beside him fourteen years later."
+      ]
+    },
+    "ruth-harvey": {
+      "id": "ruth-harvey",
+      "name": "Ruth Garland Harvey Quesenberry",
+      "birth": "27 June 1925",
+      "birthPlace": "Guilford County, North Carolina",
+      "death": "21 January 2016",
+      "deathPlace": "Shannon Gray Health Care, High Point, NC (age 90)",
+      "burial": "Holly Hill Memorial Park, Thomasville, Davidson County, NC",
+      "lifespan": "1925–2016",
+      "branch": "harvey",
+      "generation": 1,
+      "father": "carl-harvey",
+      "mother": "geneva-carmichael",
+      "spouse": "lonnie-quesenberry",
+      "children": ["phil-quesenberry", "cathey-quesenberry", "carol-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Valedictorian, lifelong cook, devoted mother — born when Calvin Coolidge was president, she lived through the second American century almost entire.",
+      "facts": {
+        "Generation": "Maternal grandmother",
+        "Education": "Valedictorian, Colfax High School",
+        "Faith": "Greenwood Hills Wesleyan Church, High Point",
+        "Memorial": "<a href='https://www.findagrave.com/memorial/157298694/ruth-quesenberry'>Find a Grave 157298694</a>"
+      },
+      "narrative": [
+        "Ruth Garland Harvey was born on the 27th of June, 1925, in Guilford County, North Carolina — daughter of Carl Harvey and Geneva Carmichael Harvey. The Carmichael name on her mother's side carried the unmistakable echo of the Scottish Highlands: Lanarkshire, the Isle of Lismore, the migration ships of the 1770s that carried the Argyll Scots to Wilmington when North Carolina was still a royal colony.",
+        "She grew up in Colfax, a small farming community west of Greensboro that had been called \"Dover\" before the 1800s and was first settled by families coming south from Pennsylvania and Virginia. There, at Colfax High School, she earned the highest distinction her school could grant: she was named *valedictorian* of her graduating class — the top student in her year. In a small, rural Piedmont school in the 1940s, this was no small thing.",
+        "She was, the obituary remembered, *\"an excellent self-taught cook\"* — the highest compliment in a Southern family. She married Lonnie Olin Quesenberry on the 17th of July, 1948, in Greensboro, and together they made a home in High Point. She joined the Greenwood Hills Wesleyan Church on North Main Street, a congregation in the Wesleyan-Methodist tradition that had broken from the larger Methodist body in 1843 over the question of slavery — a denomination that prided itself, even into the twentieth century, on plain living and quiet conviction.",
+        "Ruth outlived her husband by fourteen years and her son Phil by one. When she died on the 21st of January, 2016, at Shannon Gray Health Care, she left behind two daughters, six grandchildren, eleven great-grandchildren, and one great-great-grandchild — a small republic of descendants stretching across the Carolinas and beyond."
+      ]
+    },
+    "esther-harvey": {
+      "id": "esther-harvey",
+      "name": "Esther Harvey Scott",
+      "birth": "2 August 1929",
+      "birthPlace": "Colfax, Guilford County, North Carolina",
+      "death": "30 January 2021",
+      "deathPlace": "Kernersville Medical Center, Kernersville, NC (age 91)",
+      "burial": "Shady Grove Wesleyan Church Cemetery, Colfax, Guilford County, NC",
+      "lifespan": "1929–2021",
+      "branch": "harvey",
+      "generation": 1,
+      "father": "carl-harvey",
+      "mother": "geneva-carmichael",
+      "spouse": "anderson-scott",
+      "marriedDate": "9 August 1947",
+      "verified": "documented",
+      "epitaph": "Ruth's younger sister — born in Colfax, married just before Ruth, served as a private-duty and office nurse in Kernersville for most of her life.",
+      "facts": {
+        "Generation": "1 (Ruth's sister; great-aunt)",
+        "Born": "2 August 1929, Colfax, NC",
+        "Died": "30 January 2021, Kernersville Medical Center (age 91)",
+        "Buried": "Shady Grove Wesleyan Church Cemetery, Colfax",
+        "Father": "Carol Harvey",
+        "Mother": "Geneva Harvey",
+        "Husband": "Anderson L. Scott (m. 9 August 1947)",
+        "Career": "Homemaker; LPN — private duty nurse, Forsyth Memorial Hospital; office nurse for Dr. Leo Record, Kernersville",
+        "Source": "<a href='https://piercejeffersonfh.com/tribute/details/205865/Esther-Scott/obituary.html'>Pierce-Jefferson Funeral Home obituary</a>"
+      },
+      "narrative": [
+        "Esther Harvey Scott was born on the 2nd of August, 1929, in Colfax, the small farming community of western Guilford County, NC, to Carol and Geneva Harvey — Ruth Garland Harvey's parents. She was Ruth's younger sister by four years and one month.",
+        "On the 9th of August 1947 — about eleven months before Ruth's own wedding — Esther married **Anderson L. Scott**. They settled in Kernersville, in adjacent Forsyth County. Esther trained as a Licensed Practical Nurse and spent her working life caring for patients: as a private-duty nurse in homes around Kernersville, then on the wards of Forsyth Memorial Hospital, and finally as office nurse for Dr. Leo Record in Kernersville. She remained a homemaker through it all.",
+        "Like her sister, she carried her parents' Wesleyan faith into her adult life. Where Ruth attended Greenwood Hills Wesleyan Church in High Point, Esther worshiped at **Shady Grove Wesleyan Church** back in her birthplace of Colfax — and there, in the Shady Grove churchyard, she was buried after several months of decline, on the 3rd of February 2021. She had outlived her older sister by five years.",
+        "Esther's published obituary is, on the present record, the single most important documentary source for the Harvey side of this family — it is what gave us her parents' first names, her birthplace, her birth date, her wedding date and husband, and her burial place. Without it, the Harvey-Carmichael line would still be no more than the four words \"Carl Harvey and Geneva Carmichael Harvey\" from Ruth's own obituary."
+      ]
+    },
+    "anderson-scott": {
+      "id": "anderson-scott",
+      "name": "Anderson L. Scott",
+      "lifespan": "fl. 1947",
+      "branch": "harvey",
+      "generation": 1,
+      "spouse": "esther-harvey",
+      "marriedDate": "9 August 1947",
+      "verified": "partial",
+      "epitaph": "Esther's husband — named in her 2021 obituary; further details await further research.",
+      "facts": {
+        "Relationship": "Esther Harvey's husband; great-uncle by marriage",
+        "Documentation": "Named only in Esther's 2021 Pierce-Jefferson obituary",
+        "Married": "9 August 1947"
+      },
+      "narrative": [
+        "Anderson L. Scott married Esther Harvey on the 9th of August, 1947, in (most likely) Guilford County, North Carolina. He is named in his wife's 2021 obituary; on the publicly accessible record, that is presently the entirety of what we have. His birth and death dates, parents, and place of origin remain to be researched. The Forsyth County (Kernersville) and Guilford County records would be the place to begin."
+      ]
+    },
+    "floyd-quesenberry": {
+      "id": "floyd-quesenberry",
+      "name": "Floyd H. Quesenberry",
+      "birth": "Date undocumented",
+      "birthPlace": "Possibly Virginia; possibly North Carolina",
+      "death": "Date undocumented",
+      "lifespan": "fl. 1920s",
+      "branch": "quesenberry",
+      "generation": 2,
+      "spouse": "eva-quesenberry",
+      "children": ["lonnie-quesenberry"],
+      "verified": "partial",
+      "epitaph": "Lonnie's father — named in the 2002 Find a Grave biography of his son. His own dates, parents, and place of birth wait, on the present record, in the courthouse archives of Virginia and North Carolina.",
+      "facts": {
+        "Relationship": "Lonnie's father; great-grandfather",
+        "Documentation": "Named only in Lonnie's Find a Grave biography",
+        "Verification status": "<strong>Unverified</strong> beyond name",
+        "Likely origin": "Floyd, Carroll, or Patrick County, VA — surname concentration"
+      },
+      "narrative": [
+        "Of Floyd H. Quesenberry, the publicly accessible record presently says only this: he was the father of Lonnie Olin Quesenberry, born in 1920. We have his name and his middle initial, and nothing more. No Find a Grave entry, no death certificate, no census household has yet been located in the public sources searched. **The work of placing him precisely in the documented Quesenberry tree remains unfinished.**",
+        "Two clues nevertheless point in a direction. First, his given name. *Floyd* almost certainly traces to Floyd County, Virginia — formed from Montgomery County in 1831 and named for Governor John Floyd. To name a son \"Floyd\" in the Quesenberry country of the late nineteenth century was to plant a flag of identity in a particular patch of the Blue Ridge. Second, his surname: the 1840 federal census found more than seventy percent of all Quesenberrys in the United States living in Virginia, and the great majority of those were within twenty miles of Indian Valley.",
+        "It is *plausible* that Floyd descends from one of the nine Confederate sons of John Quesenberry Sr. and Nancy Hylton — most likely from William Henry Clay Quesenberry (1842–1898) or one of his brothers — but no documentary evidence yet establishes the link. A definitive answer almost certainly waits in the deed books, marriage records, and probate files at the Floyd County, Carroll County, or Davidson County (NC) courthouses, or in the Quesenberry Family Papers at the Virginia Museum of History & Culture in Richmond.",
+        "What can be said with confidence is that Floyd H. Quesenberry stood at the hinge of his family's migration — between the Virginia mountainside his Quesenberry kin had farmed for five or six generations, and the Carolina Piedmont where his son Lonnie was born, lived, and died."
+      ]
+    },
+    "eva-quesenberry": {
+      "id": "eva-quesenberry",
+      "name": "Eva Quesenberry",
+      "birth": "Date undocumented",
+      "lifespan": "fl. 1920s",
+      "branch": "quesenberry",
+      "generation": 2,
+      "spouse": "floyd-quesenberry",
+      "children": ["lonnie-quesenberry"],
+      "epitaph": "A mother whose first name echoes through five generations of Quesenberry women — Eva, Eve, Eva Jane.",
+      "facts": {
+        "Relationship": "Lonnie's mother; Mike's great-grandmother",
+        "Status": "Identified by first name and married surname only",
+        "Note": "Maiden name not yet documented in public records"
+      },
+      "narrative": [
+        "Of Eva Quesenberry, even less is presently known than of her husband. She was Lonnie's mother. Her maiden name has not yet surfaced in the public record — Find a Grave lists her under her married surname, which raises the possibility (common in these heavily intermarried Appalachian families) that she was herself born a Quesenberry, a cousin or second cousin of Floyd's. It is equally possible the indexer simply did not record her birth name.",
+        "What is striking is the persistence of the name *Eva* in this family. Floyd's mother (or grandmother) was very probably **Eva Jane Slusher Quesenberry** (1838–1926), wife of William Henry Quesenberry. Before her, in colonial Virginia, was an *Eve Hancock* (1761–1838), wife of Christopher Schlosser/Slusher. The name carried down the generations — from a colonial Eve in the Tidewater, to an Eva Jane in the Floyd County hollows, to an Eva at the dawn of the twentieth century, who in turn named no daughter Eva but gave her son Lonnie an *O* name (Olin) that would echo through the Quesenberrys to come."
+      ]
+    },
+    "carl-harvey": {
+      "id": "carl-harvey",
+      "name": "Carl (Carol) Harvey",
+      "birth": "Date undocumented",
+      "birthPlace": "Likely Guilford County, North Carolina",
+      "lifespan": "fl. 1925–1947",
+      "branch": "harvey",
+      "generation": 2,
+      "spouse": "geneva-carmichael",
+      "children": ["ruth-harvey", "esther-harvey"],
+      "verified": "partial",
+      "epitaph": "Father of Ruth (1925) and Esther (1929) — a Colfax, North Carolina farmer whose first name is preserved in two slightly different spellings in his daughters' obituaries. His own grave has not yet been located.",
+      "facts": {
+        "Relationship": "Ruth & Esther's father; great-grandfather",
+        "Documentation": "Named in two daughters' obituaries (Ruth 2016, Esther 2021)",
+        "Spelling variant": "<strong>'Carl'</strong> in Ruth's obituary; <strong>'Carol'</strong> in Esther's obituary",
+        "Most likely actual name": "<strong>Carol</strong> (male) — preserved through granddaughter Carol Jeanette Quesenberry",
+        "Residence": "Colfax, Guilford County, NC",
+        "Verification": "<strong>Vital dates still unverified</strong>"
+      },
+      "narrative": [
+        "The first thing to settle about Lonnie's father-in-law is the simplest question: what was his name? The 2016 Find a Grave biography of his daughter Ruth records him as **Carl Harvey**. But the 2021 obituary of Ruth's younger sister Esther — preserved on the Pierce-Jefferson Funeral Home website in Kernersville — names him as **Carol Harvey**. Two daughters, two slightly different spellings. Either is plausible: \"Carol\" was, in the early twentieth century, an occasional male given name (as it remained in some communities into the 1920s), and the fact that Ruth herself named her own youngest daughter **Carol Jeanette** is suggestive — it was customary in the Piedmont South to honor a grandfather by giving his name to a granddaughter. On balance, the Esther-obituary spelling \"Carol\" is the more likely original.",
+        "Beyond his name, the publicly accessible record presently says: he was a man of Colfax, in the rolling farm country of western Guilford County, North Carolina. He married **Geneva Carmichael**. They had at least two daughters, Ruth (born 1925) and Esther (born 1929). Both daughters were raised in the Wesleyan Church — Ruth at Greenwood Hills Wesleyan in High Point, Esther at Shady Grove Wesleyan in Colfax — which suggests the family itself was Wesleyan, an unusual and distinctive denominational identity in the otherwise Methodist and Baptist Piedmont.",
+        "He died sometime before January 2016 (when Ruth's obituary refers to him as \"the late\"). No Find a Grave entry, no North Carolina death record, no 1910/1920/1930/1940 census household for the Carl/Carol Harvey of Colfax has yet been pulled in this research pass. **The next reasonable steps:** (1) the Shady Grove Wesleyan Church Cemetery in Colfax, where Esther is buried — Carol may be there too. (2) The North Carolina Death Index 1908–2004 at FamilySearch. (3) The Guilford County Register of Deeds. (4) The Heritage Research Center at the Greensboro Public Library, which holds the *High Point Enterprise* and *Greensboro News & Record* on microfilm.",
+        "What is certain is that he raised two daughters who both lived to old age, both married, both were buried back among the Wesleyan congregations of the Carolina Piedmont — and that one of them named her own daughter for him."
+      ]
+    },
+    "geneva-carmichael": {
+      "id": "geneva-carmichael",
+      "name": "Geneva Carmichael Harvey",
+      "birth": "Date undocumented (likely 1895–1905)",
+      "birthPlace": "Likely Guilford County, North Carolina",
+      "lifespan": "fl. 1925–1947",
+      "branch": "harvey",
+      "generation": 2,
+      "spouse": "carl-harvey",
+      "children": ["ruth-harvey", "esther-harvey"],
+      "verified": "partial",
+      "epitaph": "Mother of Ruth and Esther — named in her daughter's 2016 obituary as Geneva Carmichael Harvey. Her parentage and her exact line back to the Highland Carmichael migration remain to be traced.",
+      "facts": {
+        "Relationship": "Ruth's mother; great-grandmother",
+        "Maiden name": "Carmichael",
+        "Documentation": "Named only in Ruth's 2016 Find a Grave biography",
+        "Verification status": "<strong>Maiden name verified, parentage unverified</strong>"
+      },
+      "narrative": [
+        "Geneva Carmichael Harvey is, on the present record, a woman known only by her name, her maiden surname, and her two daughters. No Find a Grave entry has surfaced; no death certificate has been pulled; no census household has been confirmed for her. **Closing those gaps is the next step in tracing the Carmichael side of the family.**",
+        "What we do know is that her surname is one of the great Scottish names. *Carmichael* — from a parish in Lanarkshire, *Caer* (a fort) plus *Michael* — is a sept of Clan Douglas, of Clan MacDougall, and of the Stewarts of Appin and of Galloway. The major Carmichael migration to North Carolina came in two great waves in the 1770s: a 1773 sailing from Fort William on the Firth of Lorne carrying 425 Highland emigrants to North Carolina, and the 1775 voyage of the *Jupiter of Larne* — on which the twenty-one-year-old **Archibald Carmichael** of Lanarkshire crossed with his wife Mary and infant daughter Katherine, bound for Wilmington.",
+        "The Carmichaels of the Carolinas — and there are many of them — are very largely descended from these eighteenth-century Highland Scots. Archibald's documented descendants spread through Cumberland, Richmond (now Scotland), Stokes, and Forsyth Counties. **Whether Geneva descends from Archibald specifically, or from one of the other Highland Carmichael families who came in the same migration, has not yet been verified.** The geography fits — Geneva's daughter Ruth was born in Guilford County, adjacent to Forsyth and Stokes — but a direct documentary line is the work of the next pass.",
+        "What can be said: Geneva passed to her daughter Ruth a Highland Scottish name that had crossed an ocean in a wooden ship before the United States existed. Ruth in turn carried that name into her own life, and forward through her descendants."
+      ]
+    },
+    "william-henry-quesenberry": {
+      "id": "william-henry-quesenberry",
+      "name": "William Henry Clay Quesenberry",
+      "birth": "10 January 1842",
+      "birthPlace": "Indian Valley, Floyd County, Virginia",
+      "death": "6 February 1898",
+      "deathPlace": "Glendale, Maricopa County, Arizona Territory",
+      "lifespan": "1842–1898",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "john-quesenberry-sr",
+      "mother": "nancy-hylton",
+      "spouse": "eva-jane-slusher",
+      "marriedDate": "15 January 1867",
+      "verified": "documented",
+      "military": "American Civil War — Confederate Army (one of the famous nine sons)",
+      "epitaph": "Born in a Blue Ridge hollow, named for a Whig statesman, fought for the Confederacy, died in the Arizona desert. One of nine brothers in the same gray uniform.",
+      "facts": {
+        "Generation": "3",
+        "Father": "John Quesenberry Sr. (1790–1853)",
+        "Mother": "Nancy Hylton Quesenberry (1803 – aft. 1860)",
+        "Wife": "Eva Jane Slusher (1838–1926)",
+        "Married": "15 January 1867",
+        "Civil War": "Confederate — one of the nine Quesenberry brothers"
+      },
+      "narrative": [
+        "**William Henry Clay Quesenberry** — named for the great Kentucky Whig statesman who had been the most famous American politician of the previous quarter-century — was born on the 10th of January, 1842, in Indian Valley, in Floyd County, Virginia. He was a son of John Quesenberry Sr. and Nancy Hylton, the eighth or ninth of their fourteen children. He grew up in a great clamoring household of brothers — George Washington, Elijah, Thomas Frederick, Archelaus, Nathaniel Floyd, John Jr., his older brother William Henry Clay (yes, the family was named for politicians), Amos Ballard, James Montgomery, and the daughters who married into the Hylton, Slusher, and Cox families of the same Floyd County valleys.",
+        "He turned nineteen on the eve of the Civil War. Like the rest of his brothers — *all nine of them* — he enlisted in the Confederate Army. The Quesenberry family of John and Nancy is remembered in regional Civil War history as the only American family known to have sent **nine sons** into Confederate service. The 54th Virginia Infantry and Company G of the 49th Virginia Infantry both included Quesenberrys; the 1862 muster roll preserved in the Quesenberry Family Papers at the Virginia Museum of History & Culture in Richmond names them. (The Quesenberry sons fought variously at Murfreesboro, Chickamauga, and through the Atlanta Campaign.)",
+        "On the 15th of January, 1867 — barely two years after Appomattox — William Henry Clay married Eva Jane Slusher, of the German-American Slusher (originally Schlosser) family that had settled the same Floyd County valleys. Together they had at least six children — Sylvester Plane, Paulina, Nancy Ellender, Elkanah Abner, Alice Jane, and John William.",
+        "And then, late in life, he did the most American thing a mountain Virginian of his generation could do: he went west. He died in Glendale, Maricopa County, in the Arizona Territory, on the 6th of February, 1898 — the year *Maine* was sunk in Havana Harbor. He had crossed a continent. His widow Eva Jane lived another twenty-eight years."
+      ]
+    },
+    "eva-jane-slusher": {
+      "id": "eva-jane-slusher",
+      "name": "Eva Jane Slusher Quesenberry",
+      "birth": "20 January 1838",
+      "death": "17 December 1926",
+      "lifespan": "1838–1926",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "stephen-slusher",
+      "mother": "charlotte-hylton",
+      "spouse": "william-henry-quesenberry",
+      "verified": "documented",
+      "epitaph": "Granddaughter of a Pennsylvania-German DAR Patriot, daughter of the Slushers and the Hyltons of Indian Valley, wife of one of the nine Confederate Quesenberrys. She lived from Andrew Jackson to Calvin Coolidge.",
+      "facts": {
+        "Generation": "3",
+        "Father": "Stephen Slusher (1800–1838) — died the year Eva was born",
+        "Mother": "Charlotte Hylton Slusher (1804–1894)",
+        "Paternal grandfather": "Christopher Slusher / Schlosser (1757–1845) — DAR Patriot Ancestor",
+        "Paternal grandmother": "Eve (Eve Jane) Hancock (1761–1838)",
+        "German origin": "Slusher = anglicized German Schlosser (locksmith)"
+      },
+      "narrative": [
+        "Eva Jane Slusher was born on the 20th of January, 1838 — the same year her father, Stephen Slusher, died, and the same year her grandmother Eve Hancock died. She came into the world at the precise moment that two generations of her family departed it.",
+        "Her surname, *Slusher*, is the anglicized form of the German *Schlosser* — meaning *locksmith* — and it traces to the great wave of Pennsylvania-Dutch and Palatine German settlers who poured down the Great Wagon Road into the Virginia and Carolina backcountry in the eighteenth century.",
+        "Her paternal grandfather was **Christopher Slusher** (1757–1845), a verified Revolutionary War soldier and **DAR Patriot Ancestor #A105465**, who served from Pennsylvania during the American Revolution before settling in Floyd County. Her paternal grandmother was Eve (Eve Jane) Hancock (1761–1838) — the original *Eva Jane* whose name Eva would carry. Her mother **Charlotte Hylton** (1804–1894) was a daughter of Archelaus Hylton and Catharine Weddle, of the great Hylton clan that had been among the very first white families to settle Indian Valley.",
+        "Eva Jane married William Henry Clay Quesenberry on the 15th of January, 1867 — the year of his twenty-fifth birthday and the second January after Appomattox. Together they raised six children. She survived him by twenty-eight years, dying on the 17th of December, 1926. She had lived through the presidencies of Andrew Jackson, Abraham Lincoln, and Calvin Coolidge."
+      ]
+    },
+    "john-quesenberry-sr": {
+      "id": "john-quesenberry-sr",
+      "name": "John Quesenberry Sr.",
+      "birth": "1790",
+      "birthPlace": "Greasy Creek, Floyd County, Virginia",
+      "death": "1853",
+      "deathPlace": "Wythe County, Virginia",
+      "lifespan": "1790–1853",
+      "branch": "quesenberry",
+      "generation": 4,
+      "father": "george-quesenberry",
+      "mother": "martha-slinker",
+      "spouse": "nancy-hylton",
+      "verified": "documented",
+      "epitaph": "Patriarch of Greasy Creek — and, by Civil War's end, the only American father documented to have sent nine sons into Confederate service.",
+      "facts": {
+        "Generation": "4",
+        "Born": "1790, Greasy Creek, Floyd County, VA",
+        "Died": "1853, Wythe County, VA",
+        "Father": "George Quesenberry (1748–1812), Revolutionary War militia",
+        "Mother": "Martha 'Patsy' Slinker",
+        "Wife": "Nancy Hylton (1803 – aft. 1860)",
+        "Children": "14 children — including <strong>nine sons in the Confederate Army</strong>",
+        "Census": "1840 household: 14 persons. 1850 household: 12 persons."
+      },
+      "narrative": [
+        "John Quesenberry Sr. was born in 1790 at Greasy Creek, in what would in 1831 become Floyd County, Virginia — one of those Blue Ridge valleys whose names (Greasy Creek, Indian Valley, Burks Fork) still feel like the frontier they were. He was the son of **George Quesenberry**, who had served in the Montgomery County, Virginia Militia during the American Revolution, and Martha 'Patsy' Slinker.",
+        "He married **Nancy Hylton** (1803 – after 1860), of the great Hylton family that had been among the very first white settlers of Indian Valley. Together they had fourteen children. The federal census of 1840 records their household at fourteen souls; by 1850 it numbered twelve, with ten children at home.",
+        "And then, in the year that John died — 1853 — the country slid toward the war that would define his sons' lives. When the Civil War came eight years later, **all nine of John's surviving sons enlisted in the Confederate Army**: George Washington Quesenberry, Elijah Quesenberry, Thomas Frederick Quesenberry, Archelaus Quesenberry, Nathaniel Floyd Quesenberry, John Quesenberry Jr., William Henry Clay Quesenberry, Amos Ballard Quesenberry, and James Montgomery Quesenberry. They served variously in the 54th Virginia Infantry, the 49th Virginia Infantry (Company G), and other regiments raised in the southwestern counties. The Quesenberry Family Papers at the Virginia Museum of History & Culture preserve the 1862 muster roll. **No other American family on documentary record sent nine sons into Confederate service.**",
+        "John Quesenberry Sr. did not live to see it. He died in Wythe County in 1853, and lies — by family tradition — somewhere in the high country between Greasy Creek and the New River."
+      ]
+    },
+    "george-quesenberry": {
+      "id": "george-quesenberry",
+      "name": "George Quesenberry",
+      "birth": "1748",
+      "birthPlace": "Orange County, Virginia",
+      "death": "1812",
+      "deathPlace": "Floyd County (then part of Montgomery County), Virginia",
+      "lifespan": "1748–1812",
+      "branch": "quesenberry",
+      "generation": 5,
+      "father": "aaron-quisenberry",
+      "spouse": "martha-slinker",
+      "epitaph": "American Revolutionary soldier, frontier settler — he carried the Quesenberry name from the colonial Tidewater into the Blue Ridge.",
+      "facts": {
+        "Generation": "5",
+        "Born": "1748, Orange County, Virginia",
+        "Died": "1812, Floyd County, Virginia",
+        "Father": "Aaron Quisenberry Sr. (1725–1795)",
+        "Mother": "Joyce Gayle Dudley",
+        "Military": "Montgomery County, Virginia Militia (American Revolution)"
+      },
+      "military": "American Revolutionary War — Montgomery County, Virginia Militia",
+      "narrative": [
+        "George Quesenberry was born in 1748 in Orange County, Virginia, in the rich Piedmont west of the Tidewater settlements. He was a son of Aaron Quisenberry Sr. and Joyce Gayle Dudley — a third-generation American whose great-grandfather had crossed the Atlantic during the reign of King James I.",
+        "When the Revolution came, George served with the **Montgomery County, Virginia Militia** — one of the western militia units that defended the Virginia frontier during the war and that, on occasion, marched east to join the Continental Army or skirmish with Loyalists. The Montgomery County militia was active throughout the war, and Quesenberrys appear on its muster rolls.",
+        "After the Revolution, George followed the southwestern Virginia migration into the high country that would become Floyd County in 1831. He died there in 1812 — when the United States was at war with Britain a second time. His sons would clear and farm the same Greasy Creek and Indian Valley hollows that his great-great-grandsons would still be working a century later."
+      ]
+    },
+    "aaron-quisenberry": {
+      "id": "aaron-quisenberry",
+      "name": "Aaron Quisenberry Sr.",
+      "birth": "1725",
+      "birthPlace": "Caroline County, Virginia",
+      "death": "11 March 1795",
+      "deathPlace": "St. Thomas Parish, Orange County, Virginia",
+      "lifespan": "1725–1795",
+      "branch": "quesenberry",
+      "generation": 6,
+      "spouse": "joyce-dudley",
+      "marriedDate": "1741",
+      "marriedPlace": "King George County, Virginia",
+      "verified": "documented",
+      "epitaph": "DAR Patriot Ancestor #A093307 — furnished beef to Washington's Continental Army from his Orange County, Virginia farm.",
+      "facts": {
+        "Generation": "6",
+        "Born": "1725, Caroline County, Virginia",
+        "Died": "11 March 1795, St. Thomas Parish, Orange County, Virginia",
+        "Wife": "Joyce Gayle Dudley (1722–1795), m. 1741, King George Co., VA",
+        "Children": "Ten children in 29 years",
+        "DAR Patriot Ancestor": "<strong>#A093307</strong> — verified",
+        "Service": "Furnished beef to the Continental Army"
+      },
+      "military": "American Revolution — DAR Patriot Ancestor #A093307; furnished beef to the Continental Army",
+      "narrative": [
+        "Aaron Quisenberry Sr. was born in 1725 in Caroline County, Virginia — when George I sat on the British throne and the colonies were still half a century away from independence. He married **Joyce Gayle Dudley** in King George County in 1741, when he was sixteen. Together they would have ten children over the next twenty-nine years.",
+        "When the American Revolution came, Aaron — by then a man in his fifties with grown sons of fighting age — supported the cause materially: he furnished beef from his Orange County farm to the Continental Army. This service is recognized by both the **Daughters of the American Revolution** and the **National Society Sons of the American Revolution**, which list him as a verified Patriot Ancestor. Any descendant of Aaron Quisenberry — and the Quesenberry family has many thousands of descendants — is therefore eligible for membership in the DAR or SAR through his line.",
+        "He died on the 11th of March, 1795, in St. Thomas Parish, Orange County, Virginia. His son George had already taken the family name into the Blue Ridge frontier."
+      ]
+    },
+    "thomas-questenbury": {
+      "id": "thomas-questenbury",
+      "name": "Thomas Questenbury",
+      "birth": "1608",
+      "birthPlace": "Bromley, Kent, England",
+      "death": "1672",
+      "deathPlace": "Canterbury, Kent, England",
+      "lifespan": "1608–1672",
+      "branch": "quesenberry",
+      "generation": 9,
+      "epitaph": "The Atlantic crossing of 1624 — Thomas Questenbury, sixteen years old, a passenger to colonial Virginia. From him every American Quesenberry, Quisenberry, and Christenberry descends.",
+      "facts": {
+        "Generation": "Colonial immigrant ancestor (~9 generations back from Lonnie)",
+        "Born": "1608, Bromley, Kent, England",
+        "Crossed to Virginia": "1624, age 16",
+        "Returned to England": "ca. 1650",
+        "Died": "1672, Canterbury, Kent, England",
+        "American descendants": "All Quesenberry / Quisenberry families in the United States"
+      },
+      "narrative": [
+        "On a wooden ship sometime in the year 1624, a sixteen-year-old boy named **Thomas Questenbury** sailed from the south of England — most likely from Gravesend or one of the Kentish ports — to the seventeen-year-old colony of Virginia. He had been born in 1608 in Bromley, in the county of Kent, the son of James Questenbury and Joan Lydes. The Jamestown settlement was barely a generation old when he stepped ashore.",
+        "He survived. He married in Virginia and fathered at least two sons — John and Francis — who remained in the colony and became the patriarchs of the American Quesenberry families. By 1650, Thomas appears to have returned to England, settling in Canterbury and contracting a second marriage there. He died at Canterbury in 1672, at the age of about sixty-four.",
+        "But his sons stayed. From his son **John Quisenberry** (1627–1717), born in colonial Virginia, the entire American Quesenberry/Quisenberry/Christenberry line descends — every Quesenberry in Virginia, Kentucky, Tennessee, North Carolina, Texas, and points west. The 1840 federal census found 71% of all Quesenberrys in America still living in Virginia. They all came from this one boy on a Kentish ship in 1624.",
+        "There is a poetic detail. Thomas Questenbury's American daughter-in-law, **Anne Pope** of Westmoreland County (whom his son John married after 1658), was a cousin of *another* Anne Pope — the Anne Pope who married Colonel John Washington, the great-grandfather of George Washington. The Quesenberrys and the Washingtons share a kinship through the Popes of Westmoreland County."
+      ]
+    },
+    "john-quisenberry-1627": {
+      "id": "john-quisenberry-1627",
+      "name": "John Quisenberry Sr.",
+      "birth": "1627",
+      "birthPlace": "Virginia Colony",
+      "death": "27 November 1717",
+      "deathPlace": "Westmoreland County, Virginia",
+      "lifespan": "1627–1717",
+      "branch": "quesenberry",
+      "generation": 8,
+      "father": "thomas-questenbury",
+      "spouse": "anne-pope",
+      "verified": "documented",
+      "epitaph": "First American-born Quisenberry — planter of Westmoreland County, husband of Anne Pope, by marriage a distant cousin of George Washington.",
+      "facts": {
+        "Generation": "8 (American-born son of the colonial immigrant)",
+        "Born": "1627, Virginia Colony",
+        "Died": "27 November 1717, Westmoreland County, Virginia (age ~90)",
+        "Father": "Thomas Questenbury (1608–1672), immigrant 1624",
+        "Wife": "Anne Pope (1629–1735), <strong>cousin of Anne Pope Washington</strong>",
+        "Will probated": "27 November 1717",
+        "Washington kinship": "Verified — see Sources page"
+      },
+      "narrative": [
+        "John Quisenberry was born in 1627 in colonial Virginia — three years after his father Thomas had stepped off the ship from Kent. He was, on the present record, the **first American-born Quesenberry**.",
+        "Sometime after 1658 he married **Anne Pope** of Westmoreland County, of the Pope family that had been planters in the Virginia Tidewater since the 1640s. The Anne Pope whom John Quisenberry married was a *cousin of another Anne Pope* — the Anne Pope who had married Colonel John Washington in 1658. Colonel Washington was the great-grandfather of President George Washington. The two Pope cousins worshiped at the same church and lived as neighbors in Westmoreland County. **Through this marriage the Quesenberrys and the Washingtons are distant kin** — a connection now verified through the National Park Service's biographical material on Anne Pope Washington and through corroborating Pope-family genealogies on WikiTree.",
+        "John was a wealthy planter. He owned large tracts in old Northumberland County (now Westmoreland), Virginia. His will, dated the 23rd of November 1714, was probated three years later, on the 27th of November 1717. He had three sons — John (who died childless), William (1672–1762), and Humphrey (d. before 1727) — and through William and Humphrey the American Quesenberry, Quisenberry, and Christenberry families fan out across the colonies and, eventually, the continent.",
+        "He lived to be about ninety. When he was born, Charles I sat on the English throne and Massachusetts was barely a colony. When he died, George I was on the British throne and the American population had crossed half a million."
+      ]
+    },
+    "christopher-slusher": {
+      "id": "christopher-slusher",
+      "name": "Christopher Slusher (Schlosser)",
+      "birth": "15 October 1757",
+      "birthPlace": "Lancaster County, Pennsylvania",
+      "death": "11 December 1845",
+      "deathPlace": "Floyd County, Virginia",
+      "lifespan": "1757–1845",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "eve-hancock",
+      "verified": "documented",
+      "military": "American Revolution — DAR Patriot Ancestor #A105465 (Pennsylvania service)",
+      "epitaph": "Revolutionary War soldier from Lancaster County, Pennsylvania — DAR Patriot Ancestor #A105465 — and the German-American great-grandfather of Eva Jane Slusher.",
+      "facts": {
+        "Generation": "5 (paternal great-grandfather of Eva Jane Slusher)",
+        "Born": "15 October 1757, Lancaster County, Pennsylvania",
+        "Died": "11 December 1845, Floyd County, Virginia (age 88)",
+        "Wife": "Eve (Eve Jane) Hancock (1761–1838)",
+        "DAR Patriot Ancestor": "<strong>#A105465</strong> — verified",
+        "Service": "Revolutionary War, Pennsylvania",
+        "German origin": "Schlosser → Slusher (locksmith); Pennsylvania-Dutch / Palatine"
+      },
+      "narrative": [
+        "Christopher Slusher — born **Schlosser**, the family name still spelled in the original German — came into the world on the 15th of October, 1757, in Lancaster County, Pennsylvania. He was the son of Pennsylvania-Dutch parents whose ancestors had crossed the Atlantic from the Palatinate and settled among the great Pennsylvania-German farming community of the early eighteenth century.",
+        "He was eighteen when the American Revolution began, and he served — he is recorded today as a verified **DAR Patriot Ancestor, #A105465**, with documented Revolutionary War service from Pennsylvania. The exact unit and dates are recorded in the DAR archives in Washington; a SAR application or DAR membership application through his line would surface the specific service record.",
+        "After the war, like many Pennsylvania-German families of his generation, he migrated south down the Great Wagon Road into the Virginia and Carolina backcountry. He married **Eve Hancock** (1761–1838), and together they raised a family in Floyd County, Virginia — the same Blue Ridge country where Christopher's grandsons and great-grandsons would marry into the Quesenberry, Hylton, and Cox families.",
+        "He lived to be eighty-eight, dying on the 11th of December, 1845, in Floyd County. His granddaughter Eva Jane Slusher would marry William Henry Clay Quesenberry twenty-two years after his death, joining the Slusher and Quesenberry lines that this site traces forward to Lonnie Olin Quesenberry."
+      ]
+    },
+    "archibald-carmichael": {
+      "id": "archibald-carmichael",
+      "name": "Archibald Carmichael Sr.",
+      "birth": "4 September 1754",
+      "birthPlace": "Lanark, Lanarkshire, Scotland",
+      "death": "1827",
+      "deathPlace": "Stokes County (now Forsyth County), North Carolina",
+      "burial": "Carmichael Cemetery, Stanleyville, Forsyth County, NC (location of grave unmarked)",
+      "lifespan": "1754–1827",
+      "branch": "carmichael",
+      "generation": "?",
+      "father": "duncan-carmichael",
+      "spouse": "elizabeth-nix",
+      "epitaph": "Lanarkshire-born, sailed from Larne on the *Jupiter* in 1775, planted the Carmichael name in the North Carolina red clay.",
+      "facts": {
+        "Born": "4 September 1754, Lanark, Lanarkshire, Scotland",
+        "Father": "Duncan C. Carmichael (~1733–1783)",
+        "Mother": "Margaret Sarah Ensley (~1736–1783)",
+        "Emigrated": "4 September 1775 (his 21st birthday)",
+        "Ship": "Jupiter of Larne",
+        "Port of departure": "Larne, County Antrim, Ulster",
+        "Port of arrival": "Wilmington, North Carolina",
+        "Wife": "Elizabeth Nix (c.1755–1814)",
+        "Eight children, line continues": "Yes — descendants spread to Indiana, the Piedmont, and beyond"
+      },
+      "narrative": [
+        "On the 4th of September, 1775 — his twenty-first birthday — **Archibald Carmichael** of Lanarkshire, Scotland, stepped aboard the ship *Jupiter of Larne* in the harbor of Larne, County Antrim, Ulster, with his young wife Mary and his infant daughter Katherine. The ship was bound for Wilmington, North Carolina. The American Revolution was already underway: Lexington and Concord had been fought four months before; the Continental Congress was meeting in Philadelphia.",
+        "Archibald was part of the great Highland Scots emigration to the Cape Fear region of North Carolina — a migration that had begun in the 1730s under the leadership of Argyll men like Neil MacNeill, swelled in the 1770s when economic conditions in the Highlands collapsed, and would shape the dialect, the religion, and the surnames of the inland Carolina Piedmont for generations.",
+        "Archibald settled first in Caswell County, then in what became Stokes County (today Forsyth County), where he is recorded in the 1800 federal census. He married, after his first wife's passing, **Elizabeth Nix** of North Carolina, and together they had at least eight children — Elizabeth, Sterling, Jane, Richard, Sarah, Alexander, Joseph, and Archibald Jr.",
+        "He died in 1827 and was buried at the Carmichael Cemetery near Stanleyville, in Forsyth County. The exact spot of his grave has been lost to time. His descendants spread through North Carolina and, beginning in 1829, on into Indiana — settling Monroe and Greene Counties.",
+        "It is from this Carmichael migration, almost certainly, that Geneva Carmichael — Ruth Garland Harvey's mother — descends. Her exact path back to Archibald (or to one of his cousins or nephews from the same Highland migration) is one of the most rewarding research projects awaiting a future generation of this family."
+      ]
+    }
+  }
+}

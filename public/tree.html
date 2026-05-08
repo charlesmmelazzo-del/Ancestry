@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Tree — The Quesenberry & Harvey Family</title>
+<meta name="description" content="From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell">
+    <h1 class="site-title"><a href="/">The Quesenberry & Harvey Family</a></h1>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/branches/quesenberry.html">Quesenberry</a>
+      <a href="/branches/harvey.html">Harvey</a>
+      <a href="/branches/carmichael.html">Carmichael</a>
+      <a href="/tree.html" class="active">Family Tree</a>
+      <a href="/military.html">Military</a>
+      <a href="/timeline.html">Timeline</a>
+      <a href="/sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">A Visual Map</p>
+    <h1>The Family Tree</h1>
+    <p class="lede">From Lonnie and Ruth's parents back to the immigrants who crossed the Atlantic — Kent in 1624, Lanarkshire in 1775, the German Palatinate in the early 1700s.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    <div class="tree-wrapper">
+      <svg class="tree-svg" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .node-box { fill: #efe2c4; stroke: #7a4a1f; stroke-width: 1.2; }
+    .node-name { font-family: 'Playfair Display', Georgia, serif; font-size: 14px; font-style: italic; fill: #2b1d10; }
+    .node-dates { font-family: 'Cormorant SC', Georgia, serif; font-size: 11px; letter-spacing: 0.06em; fill: #7a4a1f; }
+    .branch-line { stroke: #b89b6f; stroke-width: 1.2; fill: none; }
+    .gen-label { font-family: 'Cormorant SC', Georgia, serif; font-size: 11px; letter-spacing: 0.18em; fill: #7a4a1f; text-transform: uppercase; }
+  </style>
+
+  <!-- generation labels -->
+  <text x="20" y="60" class="gen-label">Gen 1 (Grandparents)</text>
+  <text x="20" y="200" class="gen-label">Gen 2 (Great-Grandparents)</text>
+  <text x="20" y="340" class="gen-label">Gen 3</text>
+  <text x="20" y="480" class="gen-label">Gens 4–6</text>
+  <text x="20" y="620" class="gen-label">Gen 9 (Immigrants)</text>
+
+  <!-- Generation 1: Lonnie + Ruth -->
+  <a href="/people/lonnie-quesenberry.html"><rect x="320" y="80" width="240" height="60" class="node-box"/><text x="440" y="105" text-anchor="middle" class="node-name">Lonnie Olin Quesenberry</text><text x="440" y="125" text-anchor="middle" class="node-dates">1920 – 2002</text></a>
+  <a href="/people/ruth-harvey.html"><rect x="640" y="80" width="240" height="60" class="node-box"/><text x="760" y="105" text-anchor="middle" class="node-name">Ruth Garland Harvey</text><text x="760" y="125" text-anchor="middle" class="node-dates">1925 – 2016</text></a>
+
+  <!-- marriage line -->
+  <line x1="560" y1="110" x2="640" y2="110" class="branch-line"/>
+
+  <!-- Gen 2 -->
+  <a href="/people/floyd-quesenberry.html"><rect x="160" y="220" width="200" height="60" class="node-box"/><text x="260" y="245" text-anchor="middle" class="node-name">Floyd H. Quesenberry</text><text x="260" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
+  <a href="/people/eva-quesenberry.html"><rect x="380" y="220" width="200" height="60" class="node-box"/><text x="480" y="245" text-anchor="middle" class="node-name">Eva Quesenberry</text><text x="480" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
+  <a href="/people/carl-harvey.html"><rect x="600" y="220" width="200" height="60" class="node-box"/><text x="700" y="245" text-anchor="middle" class="node-name">Carl Harvey</text><text x="700" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
+  <a href="/people/geneva-carmichael.html"><rect x="820" y="220" width="220" height="60" class="node-box"/><text x="930" y="245" text-anchor="middle" class="node-name">Geneva Carmichael Harvey</text><text x="930" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
+
+  <!-- lines from gen 1 to gen 2 -->
+  <path d="M 440 140 V 180 H 260 V 220" class="branch-line"/>
+  <path d="M 440 140 V 180 H 480 V 220" class="branch-line"/>
+  <path d="M 760 140 V 180 H 700 V 220" class="branch-line"/>
+  <path d="M 760 140 V 180 H 930 V 220" class="branch-line"/>
+
+  <!-- Gen 3 (illustrative — Quesenberry and Carmichael lines documented further back) -->
+  <a href="/people/william-henry-quesenberry.html"><rect x="80" y="360" width="240" height="60" class="node-box"/><text x="200" y="385" text-anchor="middle" class="node-name">William Henry Quesenberry</text><text x="200" y="405" text-anchor="middle" class="node-dates">1841 – 1898</text></a>
+  <a href="/people/eva-jane-slusher.html"><rect x="340" y="360" width="240" height="60" class="node-box"/><text x="460" y="385" text-anchor="middle" class="node-name">Eva Jane Slusher Quesenberry</text><text x="460" y="405" text-anchor="middle" class="node-dates">1838 – 1926</text></a>
+
+  <!-- line from Floyd up to William Henry / Eva Jane -->
+  <path d="M 260 280 V 330 H 200 V 360" class="branch-line"/>
+  <path d="M 260 280 V 330 H 460 V 360" class="branch-line"/>
+
+  <!-- Gen 4–5–6 stack (Quesenberry line) -->
+  <a href="/people/john-quesenberry-sr.html"><rect x="80" y="500" width="240" height="50" class="node-box"/><text x="200" y="525" text-anchor="middle" class="node-name">John Quesenberry Sr.</text><text x="200" y="545" text-anchor="middle" class="node-dates">c.1790s – 1853</text></a>
+  <a href="/people/george-quesenberry.html"><rect x="80" y="555" width="240" height="50" class="node-box"/><text x="200" y="580" text-anchor="middle" class="node-name">George Quesenberry (Rev. War)</text><text x="200" y="600" text-anchor="middle" class="node-dates">1748 – 1812</text></a>
+  <a href="/people/aaron-quisenberry.html"><rect x="80" y="610" width="240" height="50" class="node-box"/><text x="200" y="635" text-anchor="middle" class="node-name">Aaron Quisenberry Sr. (DAR)</text><text x="200" y="655" text-anchor="middle" class="node-dates">1725 – 1795</text></a>
+
+  <path d="M 200 420 V 460 H 200 V 500" class="branch-line"/>
+
+  <!-- Gen 8/9 immigrants -->
+  <a href="/people/john-quisenberry-1627.html"><rect x="80" y="675" width="240" height="50" class="node-box"/><text x="200" y="700" text-anchor="middle" class="node-name">John Quisenberry (b. 1627 VA)</text><text x="200" y="720" text-anchor="middle" class="node-dates">first American-born</text></a>
+  <a href="/people/thomas-questenbury.html"><rect x="340" y="675" width="240" height="50" class="node-box"/><text x="460" y="700" text-anchor="middle" class="node-name">Thomas Questenbury (immigrant)</text><text x="460" y="720" text-anchor="middle" class="node-dates">Kent → VA, 1624</text></a>
+
+  <!-- Carmichael immigrant -->
+  <a href="/people/archibald-carmichael.html"><rect x="780" y="675" width="280" height="50" class="node-box"/><text x="920" y="700" text-anchor="middle" class="node-name">Archibald Carmichael (immigrant)</text><text x="920" y="720" text-anchor="middle" class="node-dates">Scotland → NC, 1775</text></a>
+
+  <path d="M 930 280 V 660 H 920 V 675" class="branch-line"/>
+</svg>
+    </div>
+    <p class="muted center">Click any name to read the full profile. Some intermediate generations are not yet pictured here — see each branch page for the complete known list.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+    <h2>How to read this tree</h2>
+    <p>The tree is read top-to-bottom, oldest at the bottom. The grandparents' generation sits at the top. As you move down the page you move backward in time — to great-grandparents, then their parents, and so on, until you reach the Atlantic-crossing ancestors at the foot of the page.</p>
+    <p>The Quesenberry line is the most fully documented, reaching back nine generations to the colonial Virginia immigrant Thomas Questenbury, who arrived in the colony in 1624. The Carmichael line is documented to Archibald Carmichael of Lanarkshire, Scotland, who landed at Wilmington in 1775. The Harvey line, on the present record, is documented only to Ruth's father Carl Harvey — but its colonial roots are almost certainly in the same Tidewater Virginia / Carolina Piedmont migration.</p>
+    <p>The dotted gaps in the tree mark the places where the Floyd County, Virginia and Guilford County, North Carolina courthouse records — many of which still wait in the basement filing cabinets of those counties — could fill in the next generation of the story.</p>
+  </div>
+</section><footer class="site-footer">
+  <div class="shell">
+    <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
+    <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>
+  </div>
+</footer>
+</body>
+</html>
