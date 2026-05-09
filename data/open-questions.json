@@ -1,0 +1,135 @@
+{
+  "_schema": {
+    "_comment": "The honest research gaps. Each question describes what we don't know, what we suspect, and where to look.",
+    "id":            "snake_case slug",
+    "question":      "the question itself, phrased plainly",
+    "context":       "what we know and what we suspect (light markdown)",
+    "leads":         "[array of strings] — most likely places to look",
+    "relatedPeople": "[array of person ids]",
+    "branch":        "quesenberry | harvey | carmichael (optional)",
+    "priority":      "high | medium | low",
+    "status":        "open | in_progress | closed"
+  },
+  "questions": [
+    {
+      "id": "floyd-quesenberry-parents",
+      "question": "Who were Floyd H. Quesenberry's parents?",
+      "context": "Floyd H. Quesenberry is named in Lonnie's 2002 Find a Grave biography, but no birth date, death date, parents, or census household has yet been located in publicly accessible records. The given name *Floyd* almost certainly traces to **Floyd County, Virginia** — formed 1831, named for Governor John Floyd. Surname concentration in the 1840 census placed >70% of all U.S. Quesenberrys in Virginia, the great majority within twenty miles of Indian Valley. It is plausible that Floyd descends from one of the nine Confederate sons of John Quesenberry Sr. and Nancy Hylton — most likely from William Henry Clay Quesenberry's surviving children — but no documentary evidence yet establishes the link.",
+      "leads": [
+        "Floyd County, VA Courthouse — deed books, marriage records, probate files",
+        "Carroll County, VA Courthouse — same",
+        "Davidson County, NC Courthouse — Lonnie was buried there; Floyd may have died there",
+        "North Carolina marriage records 1900–1930 (FamilySearch)",
+        "1900, 1910, 1920, 1930, 1940 federal censuses for any Floyd Quesenberry in VA or NC",
+        "Quesenberry Family Papers (1827–1913), Virginia Museum of History & Culture, Richmond"
+      ],
+      "relatedPeople": ["floyd-quesenberry", "lonnie-quesenberry", "william-henry-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "eva-quesenberry-maiden-name",
+      "question": "What was Eva Quesenberry's maiden name?",
+      "context": "Eva is named only as 'Eva Quesenberry' in Lonnie's 2002 Find a Grave biography — under her *married* surname. In heavily intermarried Appalachian communities it was common for first cousins to marry, so it is possible Eva was born a Quesenberry herself. Equally possible the indexer simply did not record her birth name. The persistence of *Eva* as a Quesenberry family name (Eva Jane Slusher, Eve Hancock) makes either reading plausible.",
+      "leads": [
+        "Marriage record of Floyd H. Quesenberry (likely Floyd Co. VA or Davidson Co. NC, 1910s–early 1920s)",
+        "Lonnie's birth certificate (NC Vital Records, 1920) would name his mother",
+        "1920, 1930 census — Eva should appear in the household with her birthplace and parents' birthplaces"
+      ],
+      "relatedPeople": ["eva-quesenberry", "floyd-quesenberry", "lonnie-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "carl-harvey-vital-dates",
+      "question": "When and where did Carl/Carol Harvey live and die?",
+      "context": "Ruth's father is named **Carl** in her 2016 obituary and **Carol** in her sister Esther's 2021 obituary. *Carol* was an occasional male given name in the early 20th century, and Ruth's daughter is named *Carol Jeanette* — strongly suggesting the original spelling is Carol. He died sometime before January 2016 (when Ruth's obituary refers to him as 'the late'). No Find a Grave entry, no NC death record, no census household has yet been pulled.",
+      "leads": [
+        "Shady Grove Wesleyan Church Cemetery, Colfax NC — Esther is buried there; Carol may be too",
+        "North Carolina Death Index 1908–2004 (FamilySearch)",
+        "Guilford County Register of Deeds",
+        "Heritage Research Center, Greensboro Public Library — High Point Enterprise & Greensboro News-Record on microfilm",
+        "1920, 1930, 1940 federal census for Colfax, NC"
+      ],
+      "relatedPeople": ["carl-harvey", "ruth-harvey", "esther-harvey"],
+      "branch": "harvey",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "geneva-carmichael-parents",
+      "question": "Who were Geneva Carmichael Harvey's parents — and does she descend from Archibald Carmichael of the Jupiter of Larne?",
+      "context": "Geneva is named only in Ruth's 2016 obituary. Her surname *Carmichael* is one of the great Scottish names, with multiple major migrations to North Carolina in the 1770s — including the documented voyage of Archibald Carmichael on the *Jupiter of Larne* in 1775. Geneva's daughter Ruth was born in Guilford County, adjacent to Forsyth and Stokes — exactly the counties where Archibald's documented descendants spread. **Whether Geneva descends from Archibald specifically, or from one of the other Highland Carmichael families of the same migration, has not yet been verified.**",
+      "leads": [
+        "Find Geneva's vital records (NC Death Index 1908–2004)",
+        "Trace her parents back through 1900–1940 censuses for Guilford County",
+        "Once parents identified, walk back through the Carmichael genealogies (WikiTree has ~1,500 Carmichael profiles)",
+        "Cross-reference with Archibald Carmichael's documented children and grandchildren in Forsyth Co"
+      ],
+      "relatedPeople": ["geneva-carmichael", "ruth-harvey", "archibald-carmichael"],
+      "branch": "carmichael",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "lonnie-wwii-record",
+      "question": "Where is Lonnie Olin Quesenberry's WWII draft card and (any) service record?",
+      "context": "Lonnie was 21 in 1941 and like virtually every American man born in 1920 was required to register for the WWII draft. A draft card almost certainly exists in the **National Archives WWII Draft Registration Cards** collection (FamilySearch Collection 1968530, also indexed on Ancestry.com and Fold3). The card itself records date of registration, residence, employer, height, weight, complexion, and nearest relative. Whether he served in the war (vs. only registered) is a separate question.",
+      "leads": [
+        "FamilySearch Collection 1968530 — search 'Lonnie Olin Quesenberry' in NC",
+        "Ancestry.com WWII Draft Cards (same collection, indexed)",
+        "Fold3.com — sometimes has clearer scans",
+        "National Personnel Records Center, St. Louis — for any service record (separate from draft card)"
+      ],
+      "relatedPeople": ["lonnie-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": "anderson-scott",
+      "question": "Who was Anderson L. Scott, Esther Harvey's husband?",
+      "context": "Anderson L. Scott married Esther Harvey on 9 August 1947 in (likely) Guilford County, NC. He is named only in his wife's 2021 obituary; we have no birth date, death date, parents, or place of origin. They lived in Kernersville, in Forsyth County.",
+      "leads": [
+        "Forsyth County (Kernersville) records — vital records, deeds",
+        "Guilford County marriage record from 1947",
+        "NC Death Index 1908–2004"
+      ],
+      "relatedPeople": ["anderson-scott", "esther-harvey"],
+      "branch": "harvey",
+      "priority": "low",
+      "status": "open"
+    },
+    {
+      "id": "nine-confederate-sons-roster",
+      "question": "What was the complete service record of each of John Quesenberry Sr.'s nine Confederate sons?",
+      "context": "We have the names of all nine — George Washington, Elijah, Thomas Frederick, Archelaus, Nathaniel Floyd, John Jr., William Henry Clay, Amos Ballard, James Montgomery — and partial regimental information (54th VA Infantry, 49th VA Infantry Co. G). What's missing: the complete muster roll, ranks, dates of enlistment and discharge or death, units, battles, and post-war fates. The **Quesenberry Family Papers (1827–1913)** at the Virginia Museum of History & Culture in Richmond preserve the 1862 muster roll of Co. G, 49th VA Infantry, and family correspondence.",
+      "leads": [
+        "Virginia Museum of History & Culture, Richmond — Quesenberry Family Papers (research visit required)",
+        "Compiled Service Records, National Archives (digitized on Fold3)",
+        "Floyd County and Carroll County local Civil War rosters (Carroll County Chronicles, etc.)",
+        "WikiTree and Find a Grave for each named son"
+      ],
+      "relatedPeople": ["john-quesenberry-sr", "william-henry-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "medium",
+      "status": "open"
+    },
+    {
+      "id": "phil-quesenberry-obit",
+      "question": "Where is Phillip Olyn Quesenberry's full obituary?",
+      "context": "Phil — Lonnie & Ruth's only son — predeceased his mother by one year, dying in 2015. His obituary should be in the *High Point Enterprise* archive for that year and may also be at Cumby Family Funeral Service.",
+      "leads": [
+        "High Point Enterprise obituary archive 2015",
+        "Cumby Family Funeral Service records",
+        "Find a Grave search 'Phillip Quesenberry' Davidson Co NC"
+      ],
+      "relatedPeople": ["lonnie-quesenberry", "ruth-harvey"],
+      "branch": "quesenberry",
+      "priority": "low",
+      "status": "open"
+    }
+  ]
+}

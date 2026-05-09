@@ -1,0 +1,25 @@
+{
+  "_schema": {
+    "_comment": "One entry per image. Place the actual file in /public/img/archive/. The 'people' array IDs must match keys in people.json.",
+    "id":          "snake_case unique slug",
+    "file":        "filename inside /public/img/archive/, e.g. lonnie-ruth-wedding-1948.jpg",
+    "caption":     "one or two sentences",
+    "year":        "YYYY (or YYYY-MM-DD if known)",
+    "place":       "free-text place",
+    "people":      ["array of person ids from people.json"],
+    "type":        "portrait | document | place | heirloom | group",
+    "source":      "where it came from — family album, courthouse, Find a Grave, etc."
+  },
+  "photos": [
+    {
+      "id": "example-lonnie-ruth-wedding",
+      "file": "lonnie-ruth-wedding-1948.jpg",
+      "caption": "EXAMPLE ENTRY (no real image yet) — Lonnie & Ruth on their wedding day in Greensboro, 17 July 1948. Replace this entry once a real photograph is scanned.",
+      "year": "1948-07-17",
+      "place": "Greensboro, NC",
+      "people": ["lonnie-quesenberry", "ruth-harvey"],
+      "type": "portrait",
+      "source": "Example placeholder — submit a real one!"
+    }
+  ]
+}

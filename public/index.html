@@ -7,32 +7,89 @@
 <meta name="description" content="From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="shell">
-    <h1 class="site-title"><a href="/">The Quesenberry & Harvey Family</a></h1>
+    <p class="site-title"><a href="/">The Quesenberry & Harvey Family</a></p>
     <nav class="site-nav" aria-label="Main">
-      <a href="/" class="active">Home</a>
-      <a href="/branches/quesenberry.html">Quesenberry</a>
-      <a href="/branches/harvey.html">Harvey</a>
-      <a href="/branches/carmichael.html">Carmichael</a>
-      <a href="/tree.html">Family Tree</a>
-      <a href="/military.html">Military</a>
+      <a href="/tree.html">Tree</a>
+      <details>
+        <summary class="">Branches</summary>
+        <div class="more-menu">
+          <a href="/branches/quesenberry.html">Quesenberry</a>
+          <a href="/branches/harvey.html">Harvey</a>
+          <a href="/branches/carmichael.html">Carmichael</a>
+        </div>
+      </details>
       <a href="/timeline.html">Timeline</a>
-      <a href="/sources.html">Sources</a>
+      <details>
+        <summary class="">Archive</summary>
+        <div class="more-menu">
+          <a href="/photographs.html">Photographs</a>
+          <a href="/stories.html">Stories &amp; Oral Histories</a>
+          <a href="/places.html">Places &amp; Migration</a>
+          <a href="/heirlooms.html">Heirlooms &amp; Recipes</a>
+        </div>
+      </details>
+      <a href="/submit.html">Contribute</a>
+      <details>
+        <summary class="">More</summary>
+        <div class="more-menu">
+          <a href="/military.html">Military Service</a>
+          <a href="/open-questions.html">Open Questions</a>
+          <a href="/sources.html">Sources &amp; Methodology</a>
+          <a href="/">Home</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="shell">
-    <p class="kicker">An American Story</p>
-    <h1>The Quesenberry & Harvey Family</h1>
-    <div class="hero-divider"></div>
-    <p class="lede">Four centuries from the Virginia Tidewater to the Carolina Piedmont</p>
+<div class="hero-photo placeholder">
+  <div class="photo-bg"></div>
+  <div class="photo-vignette"></div>
+  <div class="photo-caption">
+    <p class="dates">An American Story · Four Centuries</p>
+    <h1 class="name">The Quesenberry & Harvey Family</h1>
+    <p class="epitaph">Four centuries from the Virginia Tidewater to the Carolina Piedmont</p>
+  </div>
+</div>
+
+<section style="padding-top: 2rem;">
+  <div class="shell narrow">
+    <aside id="on-this-day" class="on-this-day" hidden>
+      <p class="section-eyebrow">On This Day</p>
+      <h3 class="otd-date"></h3>
+      <ul class="otd-list"></ul>
+    </aside>
+    <script>
+      (function() {
+        fetch("/events.json")
+          .then(function(r) { return r.json(); })
+          .then(function(data) {
+            var today = new Date();
+            var key = String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+            var events = data[key];
+            if (!events || !events.length) return;
+            var box = document.getElementById('on-this-day');
+            var monthName = today.toLocaleString('en-US', { month: 'long' });
+            box.querySelector('.otd-date').textContent = monthName + ' ' + today.getDate();
+            var list = box.querySelector('.otd-list');
+            events.sort(function(a,b){return a.year-b.year;});
+            events.forEach(function(e) {
+              var li = document.createElement('li');
+              var icon = e.type === 'birth' ? '✦' : e.type === 'death' ? '✝' : '⚭';
+              li.innerHTML = '<span class="otd-icon">'+icon+'</span><span class="otd-yr">'+e.year+'</span> <a href="'+e.link+'">'+e.summary+'</a>';
+              list.appendChild(li);
+            });
+            box.hidden = false;
+          })
+          .catch(function(){ /* fail silently */ });
+      })();
+    </script>
   </div>
 </section>
 
@@ -41,28 +98,54 @@
     <p class="dropcap">From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself.</p>
     <p>This site collects what is presently known of the ancestors of <a href="/people/lonnie-quesenberry.html">Lonnie Olin Quesenberry</a> (1920–2002) and <a href="/people/ruth-harvey.html">Ruth Garland Harvey Quesenberry</a> (1925–2016) — the maternal grandparents of the family for whom this record was made. From them the trail runs back through the Quesenberry, Slusher (Schlosser), Hylton, Harvey, and Carmichael families to colonial Virginia, the Palatinate Germany of the 1700s, the Highlands of Scotland, and Kent, England in the reign of King James I.</p>
     <p>Browse by family line, by generation, or by the names that recur — Eva, Archibald, Aaron, Thomas, John — across the centuries.</p>
+
+    <hr class="flourish">
   </div>
 </section>
 
 <section>
   <div class="shell">
-    <h2>Where to Begin</h2>
+    <p class="section-eyebrow center" style="text-align:center;">A Visual Index</p>
+    <h2 style="text-align:center; border:none;">The Family Tree at a Glance</h2>
+    <p class="lede" style="margin: 0 auto 2rem; text-align:center;">Lonnie and Ruth at the top — and beneath them, four centuries of ancestors stretching back to colonial Virginia, Highland Scotland, and Palatinate Germany.</p>
+    <div style="text-align:center;">
+      <a href="/tree.html" class="cta-btn" style="display:inline-block; font-family: var(--voice-caps); letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.85rem; padding: 0.8em 1.6em; background: var(--rust); color: var(--paper); text-decoration: none; border: 1px solid var(--rust);">Open the family tree →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    <p class="section-eyebrow center" style="text-align:center;">Where to Begin</p>
+    <h2 style="text-align:center; border:none;">Five Doorways into the Story</h2>
     <div class="card-grid">
       <article class="card">
-        <h3>The three family lines</h3>
-        <p>Each branch tells its own story. <a href="/branches/quesenberry.html">Quesenberry</a> from Kent in 1624. <a href="/branches/harvey.html">Harvey</a> from the colonial English diaspora. <a href="/branches/carmichael.html">Carmichael</a> from the Scottish Highlands of 1775.</p>
+        <p class="dates">The People</p>
+        <h3>Lonnie &amp; Ruth</h3>
+        <p>Begin with the maternal grandparents — the two lives from which the whole tree grows backward.</p>
+        <a class="read-more" href="/people/lonnie-quesenberry.html">Lonnie →</a>
+        &nbsp;
+        <a class="read-more" href="/people/ruth-harvey.html">Ruth →</a>
       </article>
       <article class="card">
-        <h3>The full family tree</h3>
-        <p>An at-a-glance view of how the lines connect, generation by generation. <a href="/tree.html">View the tree →</a></p>
+        <p class="dates">The Three Lines</p>
+        <h3>The branches</h3>
+        <p><a href="/branches/quesenberry.html">Quesenberry</a> from Kent in 1624 · <a href="/branches/harvey.html">Harvey</a> from the colonial Piedmont · <a href="/branches/carmichael.html">Carmichael</a> from Highland Scotland in 1775.</p>
       </article>
       <article class="card">
-        <h3>Military service</h3>
-        <p>From the American Revolution to the Civil War to (likely) the Second World War. <a href="/military.html">See the soldiers →</a></p>
+        <p class="dates">Service to Country</p>
+        <h3>Military &amp; the Patriots</h3>
+        <p>Two verified DAR Patriots, one family that sent nine sons to the Confederate Army, and the WWII generation. <a href="/military.html">Read →</a></p>
       </article>
       <article class="card">
+        <p class="dates">Four Centuries</p>
         <h3>Timeline</h3>
-        <p>Four centuries of family events set against the larger story of America. <a href="/timeline.html">View the timeline →</a></p>
+        <p>Family events set against the spine of American history — from Jamestown to High Point. <a href="/timeline.html">View →</a></p>
+      </article>
+      <article class="card">
+        <p class="dates">Methodology</p>
+        <h3>Sources &amp; the Honest Gaps</h3>
+        <p>What's verified, what's tradition, and what still waits in a courthouse basement. <a href="/sources.html">See sources →</a></p>
       </article>
     </div>
   </div>
@@ -70,7 +153,8 @@
 
 <section>
   <div class="shell">
-    <h2>Featured Ancestors</h2>
+    <p class="section-eyebrow center" style="text-align:center;">Featured Ancestors</p>
+    <h2 style="text-align:center; border:none;">A Few of the Voices</h2>
     <div class="card-grid">
       <article class="card">
   <p class="dates">1920–2002</p>

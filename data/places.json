@@ -1,0 +1,47 @@
+{
+  "_schema": {
+    "_comment": "Enriched metadata for places that matter to this family. The lat/lng come from build.py PLACE_GEO. This file adds richer description and links.",
+    "id":          "matches the lowercase substring used in build.py PLACE_GEO",
+    "name":        "display name",
+    "shortDescription": "one sentence",
+    "longDescription":  "a paragraph or two of context",
+    "people":      "person ids associated with the place"
+  },
+  "places": [
+    {
+      "id": "bromley",
+      "name": "Bromley, Kent, England",
+      "shortDescription": "Birthplace of Thomas Questenbury, 1608. The first link in the American Quesenberry chain.",
+      "longDescription": "A market town in northwest Kent, on the southeastern fringe of London. In 1608 it was a parish of farms and orchards, home to the Questenbury family — yeomen of the kind who, when colonial labor was needed in the new Virginia plantations, sent their younger sons across the Atlantic. From Bromley to Jamestown was the first leg of the journey that would, four hundred years later, end in High Point, North Carolina.",
+      "people": ["thomas-questenbury"]
+    },
+    {
+      "id": "larne",
+      "name": "Larne, County Antrim, Ulster",
+      "shortDescription": "On 4 September 1775, the ship *Jupiter of Larne* sailed from this harbor for Wilmington, North Carolina.",
+      "longDescription": "Larne — a port on the eastern coast of Ulster, looking across the North Channel to Scotland — was one of the great emigrant ports of the eighteenth century. The Highland Scots who had crossed to Ulster in the 1600s were now crossing again, this time to North Carolina. Among the passengers on the *Jupiter of Larne* on the day she sailed was twenty-one-year-old Archibald Carmichael, with his wife Mary and infant daughter Katherine. It was his birthday.",
+      "people": ["archibald-carmichael"]
+    },
+    {
+      "id": "floyd-county",
+      "name": "Floyd County, Virginia",
+      "shortDescription": "The Quesenberry mountain country. Indian Valley, Greasy Creek, and the long ridges of the Blue Ridge.",
+      "longDescription": "Created in 1831 from Montgomery County, Floyd County is the high country of southwestern Virginia — a country of sheep pastures, hardwood ridges, and creek hollows where the Quesenberry, Slusher, Hylton, and Cox families intermarried for five generations. From Floyd, in the 1860s, John Quesenberry Sr. and Nancy Hylton sent nine sons into the Confederate Army. From Floyd, in the early twentieth century, the Quesenberrys began the migration south into the Carolina Piedmont — a migration that ended with Lonnie Olin Quesenberry's birth in North Carolina in 1920.",
+      "people": ["william-henry-quesenberry", "eva-jane-slusher", "john-quesenberry-sr", "george-quesenberry", "christopher-slusher"]
+    },
+    {
+      "id": "colfax",
+      "name": "Colfax, Guilford County, North Carolina",
+      "shortDescription": "The Harvey-Carmichael farming community west of Greensboro. Birthplace of Ruth and Esther Harvey.",
+      "longDescription": "A rural hamlet in western Guilford County, named for Schuyler Colfax (Vice President under Grant) when the railroad came through after the Civil War. Before that it was called Dover. The Harvey and Carmichael families farmed here for generations, worshiped at Shady Grove Wesleyan Church, and sent their daughters to Colfax High School — where Ruth Garland Harvey was named valedictorian in the 1940s.",
+      "people": ["ruth-harvey", "esther-harvey", "carl-harvey", "geneva-carmichael"]
+    },
+    {
+      "id": "high-point",
+      "name": "High Point, Guilford County, North Carolina",
+      "shortDescription": "The furniture-making capital of the South — and the home Lonnie & Ruth made together for fifty-four years.",
+      "longDescription": "By the time Lonnie and Ruth married in 1948, High Point was the established center of American furniture manufacturing — the great showrooms drawing buyers from across the country twice a year. They settled here, raised three children, joined Greenwood Hills Wesleyan Church on North Main Street, and lived here the rest of their lives. Both are buried at Holly Hill Memorial Park in adjacent Thomasville.",
+      "people": ["lonnie-quesenberry", "ruth-harvey"]
+    }
+  ]
+}

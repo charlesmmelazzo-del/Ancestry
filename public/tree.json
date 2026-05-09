@@ -1,0 +1,552 @@
+{
+  "site": {
+    "title": "The Quesenberry & Harvey Family",
+    "subtitle": "An American Story",
+    "tagline": "Four centuries from the Virginia Tidewater to the Carolina Piedmont",
+    "intro": "From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point \u2014 this is the chronicle of two families whose stories braid into the larger story of America itself."
+  },
+  "people": [
+    {
+      "id": "lonnie-quesenberry",
+      "name": "Lonnie Olin Quesenberry",
+      "lifespan": "1920\u20132002",
+      "birth": "18 March 1920",
+      "birthPlace": "North Carolina, USA",
+      "death": "22 December 2002",
+      "deathPlace": "High Point, Guilford County, North Carolina",
+      "burial": "Holly Hill Memorial Park, Thomasville, Davidson County, NC",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "spouse": "ruth-harvey",
+      "children": [
+        "phil-quesenberry",
+        "cathey-quesenberry",
+        "carol-quesenberry"
+      ],
+      "verified": "documented",
+      "epitaph": "Husband, father, and a quiet bridge between the Virginia mountains his family had farmed for two centuries and the new world of the Carolina Piedmont.",
+      "military": null,
+      "birthYear": 1920,
+      "deathYear": 2002,
+      "birthGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
+      "deathGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      },
+      "burialGeo": {
+        "lat": 35.8826,
+        "lng": -80.082,
+        "label": "Thomasville, Davidson County, North Carolina"
+      }
+    },
+    {
+      "id": "ruth-harvey",
+      "name": "Ruth Garland Harvey Quesenberry",
+      "lifespan": "1925\u20132016",
+      "birth": "27 June 1925",
+      "birthPlace": "Guilford County, North Carolina",
+      "death": "21 January 2016",
+      "deathPlace": "Shannon Gray Health Care, High Point, NC (age 90)",
+      "burial": "Holly Hill Memorial Park, Thomasville, Davidson County, NC",
+      "branch": "harvey",
+      "generation": 1,
+      "father": "carl-harvey",
+      "mother": "geneva-carmichael",
+      "spouse": "lonnie-quesenberry",
+      "children": [
+        "phil-quesenberry",
+        "cathey-quesenberry",
+        "carol-quesenberry"
+      ],
+      "verified": "documented",
+      "epitaph": "Valedictorian, lifelong cook, devoted mother \u2014 born when Calvin Coolidge was president, she lived through the second American century almost entire.",
+      "military": null,
+      "birthYear": 1925,
+      "deathYear": 2016,
+      "birthGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      },
+      "deathGeo": {
+        "lat": 35.9557,
+        "lng": -80.0053,
+        "label": "High Point, Guilford County, North Carolina"
+      },
+      "burialGeo": {
+        "lat": 35.8826,
+        "lng": -80.082,
+        "label": "Thomasville, Davidson County, North Carolina"
+      }
+    },
+    {
+      "id": "esther-harvey",
+      "name": "Esther Harvey Scott",
+      "lifespan": "1929\u20132021",
+      "birth": "2 August 1929",
+      "birthPlace": "Colfax, Guilford County, North Carolina",
+      "death": "30 January 2021",
+      "deathPlace": "Kernersville Medical Center, Kernersville, NC (age 91)",
+      "burial": "Shady Grove Wesleyan Church Cemetery, Colfax, Guilford County, NC",
+      "branch": "harvey",
+      "generation": 1,
+      "father": "carl-harvey",
+      "mother": "geneva-carmichael",
+      "spouse": "anderson-scott",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "Ruth's younger sister \u2014 born in Colfax, married just before Ruth, served as a private-duty and office nurse in Kernersville for most of her life.",
+      "military": null,
+      "birthYear": 1929,
+      "deathYear": 2021,
+      "birthGeo": {
+        "lat": 36.1051,
+        "lng": -79.9859,
+        "label": "Colfax, Guilford County, North Carolina"
+      },
+      "deathGeo": {
+        "lat": 36.1198,
+        "lng": -80.0739,
+        "label": "Kernersville, Forsyth County, North Carolina"
+      },
+      "burialGeo": {
+        "lat": 36.1051,
+        "lng": -79.9859,
+        "label": "Colfax, Guilford County, North Carolina"
+      }
+    },
+    {
+      "id": "anderson-scott",
+      "name": "Anderson L. Scott",
+      "lifespan": "fl. 1947",
+      "birth": "",
+      "birthPlace": "",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 1,
+      "father": null,
+      "mother": null,
+      "spouse": "esther-harvey",
+      "children": [],
+      "verified": "partial",
+      "epitaph": "Esther's husband \u2014 named in her 2021 obituary; further details await further research.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": null,
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "floyd-quesenberry",
+      "name": "Floyd H. Quesenberry",
+      "lifespan": "fl. 1920s",
+      "birth": "Date undocumented",
+      "birthPlace": "Possibly Virginia; possibly North Carolina",
+      "death": "Date undocumented",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 2,
+      "father": null,
+      "mother": null,
+      "spouse": "eva-quesenberry",
+      "children": [
+        "lonnie-quesenberry"
+      ],
+      "verified": "partial",
+      "epitaph": "Lonnie's father \u2014 named in the 2002 Find a Grave biography of his son. His own dates, parents, and place of birth wait, on the present record, in the courthouse archives of Virginia and North Carolina.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "eva-quesenberry",
+      "name": "Eva Quesenberry",
+      "lifespan": "fl. 1920s",
+      "birth": "Date undocumented",
+      "birthPlace": "",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 2,
+      "father": null,
+      "mother": null,
+      "spouse": "floyd-quesenberry",
+      "children": [
+        "lonnie-quesenberry"
+      ],
+      "verified": "",
+      "epitaph": "A mother whose first name echoes through five generations of Quesenberry women \u2014 Eva, Eve, Eva Jane.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": null,
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "carl-harvey",
+      "name": "Carl (Carol) Harvey",
+      "lifespan": "fl. 1925\u20131947",
+      "birth": "Date undocumented",
+      "birthPlace": "Likely Guilford County, North Carolina",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 2,
+      "father": null,
+      "mother": null,
+      "spouse": "geneva-carmichael",
+      "children": [
+        "ruth-harvey",
+        "esther-harvey"
+      ],
+      "verified": "partial",
+      "epitaph": "Father of Ruth (1925) and Esther (1929) \u2014 a Colfax, North Carolina farmer whose first name is preserved in two slightly different spellings in his daughters' obituaries. His own grave has not yet been located.",
+      "military": null,
+      "birthYear": 1925,
+      "deathYear": 1947,
+      "birthGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "geneva-carmichael",
+      "name": "Geneva Carmichael Harvey",
+      "lifespan": "fl. 1925\u20131947",
+      "birth": "Date undocumented (likely 1895\u20131905)",
+      "birthPlace": "Likely Guilford County, North Carolina",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 2,
+      "father": null,
+      "mother": null,
+      "spouse": "carl-harvey",
+      "children": [
+        "ruth-harvey",
+        "esther-harvey"
+      ],
+      "verified": "partial",
+      "epitaph": "Mother of Ruth and Esther \u2014 named in her daughter's 2016 obituary as Geneva Carmichael Harvey. Her parentage and her exact line back to the Highland Carmichael migration remain to be traced.",
+      "military": null,
+      "birthYear": 1895,
+      "deathYear": 1947,
+      "birthGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "william-henry-quesenberry",
+      "name": "William Henry Clay Quesenberry",
+      "lifespan": "1842\u20131898",
+      "birth": "10 January 1842",
+      "birthPlace": "Indian Valley, Floyd County, Virginia",
+      "death": "6 February 1898",
+      "deathPlace": "Glendale, Maricopa County, Arizona Territory",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "john-quesenberry-sr",
+      "mother": "nancy-hylton",
+      "spouse": "eva-jane-slusher",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "Born in a Blue Ridge hollow, named for a Whig statesman, fought for the Confederacy, died in the Arizona desert. One of nine brothers in the same gray uniform.",
+      "military": "American Civil War \u2014 Confederate Army (one of the famous nine sons)",
+      "birthYear": 1842,
+      "deathYear": 1898,
+      "birthGeo": {
+        "lat": 36.9314,
+        "lng": -80.3781,
+        "label": "Floyd County, Virginia"
+      },
+      "deathGeo": {
+        "lat": 33.5387,
+        "lng": -112.186,
+        "label": "Glendale, Arizona Territory"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "eva-jane-slusher",
+      "name": "Eva Jane Slusher Quesenberry",
+      "lifespan": "1838\u20131926",
+      "birth": "20 January 1838",
+      "birthPlace": "",
+      "death": "17 December 1926",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "stephen-slusher",
+      "mother": "charlotte-hylton",
+      "spouse": "william-henry-quesenberry",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "Granddaughter of a Pennsylvania-German DAR Patriot, daughter of the Slushers and the Hyltons of Indian Valley, wife of one of the nine Confederate Quesenberrys. She lived from Andrew Jackson to Calvin Coolidge.",
+      "military": null,
+      "birthYear": 1838,
+      "deathYear": 1926,
+      "birthGeo": null,
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "john-quesenberry-sr",
+      "name": "John Quesenberry Sr.",
+      "lifespan": "1790\u20131853",
+      "birth": "1790",
+      "birthPlace": "Greasy Creek, Floyd County, Virginia",
+      "death": "1853",
+      "deathPlace": "Wythe County, Virginia",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 4,
+      "father": "george-quesenberry",
+      "mother": "martha-slinker",
+      "spouse": "nancy-hylton",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "Patriarch of Greasy Creek \u2014 and, by Civil War's end, the only American father documented to have sent nine sons into Confederate service.",
+      "military": null,
+      "birthYear": 1790,
+      "deathYear": 1853,
+      "birthGeo": {
+        "lat": 36.9314,
+        "lng": -80.3781,
+        "label": "Floyd County, Virginia"
+      },
+      "deathGeo": {
+        "lat": 36.918,
+        "lng": -81.084,
+        "label": "Wythe County, Virginia"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "george-quesenberry",
+      "name": "George Quesenberry",
+      "lifespan": "1748\u20131812",
+      "birth": "1748",
+      "birthPlace": "Orange County, Virginia",
+      "death": "1812",
+      "deathPlace": "Floyd County (then part of Montgomery County), Virginia",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 5,
+      "father": "aaron-quisenberry",
+      "mother": null,
+      "spouse": "martha-slinker",
+      "children": [],
+      "verified": "",
+      "epitaph": "American Revolutionary soldier, frontier settler \u2014 he carried the Quesenberry name from the colonial Tidewater into the Blue Ridge.",
+      "military": "American Revolutionary War \u2014 Montgomery County, Virginia Militia",
+      "birthYear": 1748,
+      "deathYear": 1812,
+      "birthGeo": {
+        "lat": 38.247,
+        "lng": -78.1116,
+        "label": "Orange County, Virginia"
+      },
+      "deathGeo": {
+        "lat": 37.1737,
+        "lng": -80.4084,
+        "label": "Montgomery County, Virginia"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "aaron-quisenberry",
+      "name": "Aaron Quisenberry Sr.",
+      "lifespan": "1725\u20131795",
+      "birth": "1725",
+      "birthPlace": "Caroline County, Virginia",
+      "death": "11 March 1795",
+      "deathPlace": "St. Thomas Parish, Orange County, Virginia",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 6,
+      "father": null,
+      "mother": null,
+      "spouse": "joyce-dudley",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "DAR Patriot Ancestor #A093307 \u2014 furnished beef to Washington's Continental Army from his Orange County, Virginia farm.",
+      "military": "American Revolution \u2014 DAR Patriot Ancestor #A093307; furnished beef to the Continental Army",
+      "birthYear": 1725,
+      "deathYear": 1795,
+      "birthGeo": {
+        "lat": 38.0265,
+        "lng": -77.3464,
+        "label": "Caroline County, Virginia"
+      },
+      "deathGeo": {
+        "lat": 38.247,
+        "lng": -78.1116,
+        "label": "Orange County, Virginia"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "thomas-questenbury",
+      "name": "Thomas Questenbury",
+      "lifespan": "1608\u20131672",
+      "birth": "1608",
+      "birthPlace": "Bromley, Kent, England",
+      "death": "1672",
+      "deathPlace": "Canterbury, Kent, England",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 9,
+      "father": null,
+      "mother": null,
+      "spouse": null,
+      "children": [],
+      "verified": "",
+      "epitaph": "The Atlantic crossing of 1624 \u2014 Thomas Questenbury, sixteen years old, a passenger to colonial Virginia. From him every American Quesenberry, Quisenberry, and Christenberry descends.",
+      "military": null,
+      "birthYear": 1608,
+      "deathYear": 1672,
+      "birthGeo": {
+        "lat": 51.4045,
+        "lng": 0.0142,
+        "label": "Bromley, Kent, England"
+      },
+      "deathGeo": {
+        "lat": 51.2802,
+        "lng": 1.0789,
+        "label": "Canterbury, Kent, England"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "john-quisenberry-1627",
+      "name": "John Quisenberry Sr.",
+      "lifespan": "1627\u20131717",
+      "birth": "1627",
+      "birthPlace": "Virginia Colony",
+      "death": "27 November 1717",
+      "deathPlace": "Westmoreland County, Virginia",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 8,
+      "father": "thomas-questenbury",
+      "mother": null,
+      "spouse": "anne-pope",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "First American-born Quisenberry \u2014 planter of Westmoreland County, husband of Anne Pope, by marriage a distant cousin of George Washington.",
+      "military": null,
+      "birthYear": 1627,
+      "deathYear": 1717,
+      "birthGeo": {
+        "lat": 37.4316,
+        "lng": -78.6569,
+        "label": "Virginia"
+      },
+      "deathGeo": {
+        "lat": 38.1098,
+        "lng": -76.7969,
+        "label": "Westmoreland County, Virginia"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "christopher-slusher",
+      "name": "Christopher Slusher (Schlosser)",
+      "lifespan": "1757\u20131845",
+      "birth": "15 October 1757",
+      "birthPlace": "Lancaster County, Pennsylvania",
+      "death": "11 December 1845",
+      "deathPlace": "Floyd County, Virginia",
+      "burial": "",
+      "branch": "quesenberry",
+      "generation": 5,
+      "father": null,
+      "mother": null,
+      "spouse": "eve-hancock",
+      "children": [],
+      "verified": "documented",
+      "epitaph": "Revolutionary War soldier from Lancaster County, Pennsylvania \u2014 DAR Patriot Ancestor #A105465 \u2014 and the German-American great-grandfather of Eva Jane Slusher.",
+      "military": "American Revolution \u2014 DAR Patriot Ancestor #A105465 (Pennsylvania service)",
+      "birthYear": 1757,
+      "deathYear": 1845,
+      "birthGeo": {
+        "lat": 40.0379,
+        "lng": -76.3055,
+        "label": "Lancaster County, Pennsylvania"
+      },
+      "deathGeo": {
+        "lat": 36.9314,
+        "lng": -80.3781,
+        "label": "Floyd County, Virginia"
+      },
+      "burialGeo": null
+    },
+    {
+      "id": "archibald-carmichael",
+      "name": "Archibald Carmichael Sr.",
+      "lifespan": "1754\u20131827",
+      "birth": "4 September 1754",
+      "birthPlace": "Lanark, Lanarkshire, Scotland",
+      "death": "1827",
+      "deathPlace": "Stokes County (now Forsyth County), North Carolina",
+      "burial": "Carmichael Cemetery, Stanleyville, Forsyth County, NC (location of grave unmarked)",
+      "branch": "carmichael",
+      "generation": "?",
+      "father": "duncan-carmichael",
+      "mother": null,
+      "spouse": "elizabeth-nix",
+      "children": [],
+      "verified": "",
+      "epitaph": "Lanarkshire-born, sailed from Larne on the *Jupiter* in 1775, planted the Carmichael name in the North Carolina red clay.",
+      "military": null,
+      "birthYear": 1754,
+      "deathYear": 1827,
+      "birthGeo": {
+        "lat": 55.6736,
+        "lng": -3.779,
+        "label": "Lanark, Lanarkshire, Scotland"
+      },
+      "deathGeo": {
+        "lat": 36.132,
+        "lng": -80.2632,
+        "label": "Forsyth County, North Carolina"
+      },
+      "burialGeo": {
+        "lat": 36.132,
+        "lng": -80.2632,
+        "label": "Forsyth County, North Carolina"
+      }
+    }
+  ]
+}

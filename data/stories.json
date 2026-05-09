@@ -1,0 +1,27 @@
+{
+  "_schema": {
+    "_comment": "Family stories and oral histories. Body uses light markdown (**bold**, *italic*, paragraph breaks).",
+    "id":      "snake_case unique slug",
+    "title":   "story title",
+    "teller":  "who told this story (name)",
+    "tellerId": "(optional) person id from people.json",
+    "recorded": "YYYY-MM-DD or just YYYY",
+    "place":   "free-text place where story is set",
+    "year":    "YYYY of the events in the story (for chronological sort)",
+    "people":  ["person ids the story is about"],
+    "audio":   "(optional) /audio/file.mp3 — audio recording if available",
+    "body":    "the story text (paragraphs separated by \\n\\n)"
+  },
+  "stories": [
+    {
+      "id": "example-ruth-cooking",
+      "title": "Ruth's Sunday Pound Cake",
+      "teller": "Family example",
+      "recorded": "EXAMPLE",
+      "place": "High Point, NC",
+      "year": "1955",
+      "people": ["ruth-harvey"],
+      "body": "EXAMPLE ENTRY — replace with a real story. \n\nRuth was, the obituary said, *an excellent self-taught cook*. Her Sunday pound cake was famous for using a full pound of butter and a full pound of sugar, beaten by hand for at least thirty minutes — she insisted electric mixers ruined the texture. \n\nShe served it warm with no glaze, only a dusting of powdered sugar, and she expected the children to eat the slice she gave them and not ask for seconds — though they always did. \n\n*[This is a placeholder. If you have a real Ruth story — about her cooking, her teaching, her churchgoing, her sayings — submit it through the contribution link and we'll add it properly.]*"
+    }
+  ]
+}

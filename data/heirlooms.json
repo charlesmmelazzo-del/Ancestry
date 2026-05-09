@@ -1,0 +1,27 @@
+{
+  "_schema": {
+    "_comment": "Family objects, recipes, songs, sayings, family Bibles, military medals, etc.",
+    "id":           "snake_case unique slug",
+    "name":         "what it is",
+    "type":         "recipe | object | document | song | saying | medal | bible | photograph",
+    "origin":       "free-text who made or owned it first",
+    "originId":     "(optional) person id from people.json",
+    "currentOwner": "(optional) who has it now",
+    "year":         "YYYY of origin (approximate is fine)",
+    "photo":        "(optional) filename in /public/img/heirlooms/",
+    "description":  "what makes this heirloom — story, materials, condition",
+    "recipe":       "(only if type=recipe) the recipe body in light markdown"
+  },
+  "heirlooms": [
+    {
+      "id": "example-pound-cake-recipe",
+      "name": "Ruth's Sunday Pound Cake",
+      "type": "recipe",
+      "origin": "Ruth Garland Harvey Quesenberry",
+      "originId": "ruth-harvey",
+      "year": "1948",
+      "description": "EXAMPLE ENTRY — replace with the real handwritten recipe card if it survives. The classic Southern 1-1-1 pound cake (pound of butter, pound of sugar, pound of flour, plus eggs and flavoring), beaten by hand. No glaze, only powdered sugar.",
+      "recipe": "**Ingredients**\n\n1 pound (4 sticks) salted butter, room temperature\n\n1 pound (about 2¼ cups) granulated sugar\n\n9 large eggs\n\n1 pound (about 4 cups) plain all-purpose flour, sifted\n\n1 teaspoon vanilla extract\n\n**Method**\n\nButter and flour a tube pan. Cream butter and sugar by hand for at least 20 minutes until very light and fluffy. Add eggs one at a time, beating well after each. Fold in flour by thirds. Add vanilla. Pour into pan, place in a *cold* oven, then turn oven to 325°F. Bake 1 hour 15 minutes until a toothpick comes out clean. Cool in pan 30 minutes before turning out. Dust with powdered sugar — never glaze."
+    }
+  ]
+}

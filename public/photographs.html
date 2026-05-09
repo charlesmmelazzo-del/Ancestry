@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Carmichael Line — The Quesenberry & Harvey Family</title>
+<title>Photograph Archive — The Quesenberry & Harvey Family</title>
 <meta name="description" content="From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,18 +17,18 @@
     <nav class="site-nav" aria-label="Main">
       <a href="/tree.html">Tree</a>
       <details>
-        <summary class="active">Branches</summary>
+        <summary class="">Branches</summary>
         <div class="more-menu">
           <a href="/branches/quesenberry.html">Quesenberry</a>
           <a href="/branches/harvey.html">Harvey</a>
-          <a href="/branches/carmichael.html" class="active">Carmichael</a>
+          <a href="/branches/carmichael.html">Carmichael</a>
         </div>
       </details>
       <a href="/timeline.html">Timeline</a>
       <details>
-        <summary class="">Archive</summary>
+        <summary class="active">Archive</summary>
         <div class="more-menu">
-          <a href="/photographs.html">Photographs</a>
+          <a href="/photographs.html" class="active">Photographs</a>
           <a href="/stories.html">Stories &amp; Oral Histories</a>
           <a href="/places.html">Places &amp; Migration</a>
           <a href="/heirlooms.html">Heirlooms &amp; Recipes</a>
@@ -47,36 +47,39 @@
     </nav>
   </div>
 </header>
-
 <section class="branch-hero">
   <div class="shell">
-    <p class="section-eyebrow">A Family Line</p>
-    <h1>The Carmichael Line</h1>
-    <p class="lede">Highland Scotland → Ulster → the Cape Fear of North Carolina</p>
-  </div>
-</section>
-
-<section>
-  <div class="shell narrow">
-    <p class="dropcap">Carmichael is one of the great Scottish names — from a Lanarkshire parish, a sept of Clan Douglas, of Clan MacDougall, and of the Stewarts of Appin. The Carmichael migration to North Carolina came in two great waves in the 1770s. Geneva Carmichael, Ruth Garland Harvey's mother, almost certainly descends from this Highland migration — most likely from Archibald Carmichael, who left Larne Harbor on the ship Jupiter of Larne on his twenty-first birthday in September 1775, bound for Wilmington.</p>
+    <p class="section-eyebrow">The Archive</p>
+    <h1>Photograph Archive</h1>
+    <p class="lede">A growing visual record — portraits, documents, places, heirlooms — arranged in time.</p>
   </div>
 </section>
 
 <section>
   <div class="shell">
-    <h2>Generations</h2>
-    <div class="card-grid">
-      <article class="card">
-  <p class="dates">Generation ?</p>
-  <h3>Archibald Carmichael Sr.</h3>
-  <p class="role">1754–1827</p>
-  <p>Lanarkshire-born, sailed from Larne on the <em>Jupiter</em> in 1775, planted the Carmichael name in the North Carolina red clay.</p>
-  <a class="read-more" href="/people/archibald-carmichael.html">Read profile →</a>
-</article>
-    </div>
+    <div class="empty-state">
+  <p class="section-eyebrow">Awaiting Your Contribution</p>
+  <h3>Photographs and documents</h3>
+  <p>This page exists to hold photographs and documents as they surface — from family albums, Bible flyleaves, recorded stories, deed boxes, and the memories of everyone who knew the people in this record.</p>
+  <p>If you have something to share, send it along. We'll add it to the archive properly attributed.</p>
+  <a class="cta-btn" href="mailto:mike@cgcocktails.com?subject=Photo for the family archive">Contribute</a>
+</div>
+    <p class="muted center">Currently 0 real entries and 1 placeholder example. Replace examples by editing <code>data/photos.json</code> and dropping image files into <code>public/img/archive/</code>.</p>
+    <div class="photo-wall"><article class="photo-card">
+          <div class="photo-frame">
+            <img src="/img/archive/lonnie-ruth-wedding-1948.jpg" alt="EXAMPLE ENTRY (no real image yet) — Lonnie & Ruth on their wedding day in Greens" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');">
+            <div class="photo-missing-msg">Image file not yet uploaded:<br><code>/img/archive/lonnie-ruth-wedding-1948.jpg</code></div>
+          </div>
+          <div class="photo-meta">
+            <span class="badge-tradition" style="margin-bottom:0.6em;">Example placeholder</span>
+            <p class="dates">1948-07-17 · Greensboro, NC</p>
+            <p class="caption">EXAMPLE ENTRY (no real image yet) — Lonnie & Ruth on their wedding day in Greensboro, 17 July 1948. Replace this entry once a real photograph is scanned.</p>
+            <p class="muted">In this image: <a href="/people/lonnie-quesenberry.html">Lonnie Olin Quesenberry</a> · <a href="/people/ruth-harvey.html">Ruth Garland Harvey Quesenberry</a></p>
+            <p class="muted source">Source: Example placeholder — submit a real one!</p>
+          </div>
+        </article></div>
   </div>
-</section>
-<footer class="site-footer">
+</section><footer class="site-footer">
   <div class="shell">
     <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
     <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>

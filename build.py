@@ -24,14 +24,39 @@ with open(DATA) as f:
 PEOPLE = DATABASE["people"]
 SITE = DATABASE["site"]
 
+# ---- optional module data files (Phase 3) ----------------------------------
+def _load_optional(name, key, default):
+    path = ROOT / "data" / name
+    if not path.exists():
+        return default
+    try:
+        d = json.load(open(path))
+        return d.get(key, default)
+    except Exception as e:
+        print(f"  ! could not load {name}: {e}")
+        return default
+
+PHOTOS    = _load_optional("photos.json",    "photos",    [])
+STORIES   = _load_optional("stories.json",   "stories",   [])
+HEIRLOOMS = _load_optional("heirlooms.json", "heirlooms", [])
+PLACES    = _load_optional("places.json",    "places",    [])
+
 
 # ---- helpers ----------------------------------------------------------------
 
 def md_to_html(text: str) -> str:
-    """Tiny markdown-ish: *italic* and **bold**, plus paragraph wrapping."""
+    """Tiny markdown-ish: *italic* and **bold** inline only."""
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
     return text
+
+
+def md_to_paragraphs(text: str) -> str:
+    """Split on \\n\\n, run inline md, wrap each in <p>."""
+    if not text:
+        return ""
+    paras = [p.strip() for p in text.split("\n\n") if p.strip()]
+    return "\n".join(f"<p>{md_to_html(p)}</p>" for p in paras)
 
 
 def person_link(person_id):
@@ -65,7 +90,7 @@ def head(title, page_path=""):
 <meta name="description" content="{SITE['intro']}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -75,18 +100,42 @@ def head(title, page_path=""):
 def header(active=""):
     def cls(name):
         return ' class="active"' if name == active else ""
+    branch_active = "active" if active in ("quesenberry", "harvey", "carmichael") else ""
+    archive_active = "active" if active in ("archive", "stories", "places", "heirlooms") else ""
+    more_active = "active" if active in ("military", "sources", "open-questions", "submit") else ""
     return f"""<header class="site-header">
   <div class="shell">
-    <h1 class="site-title"><a href="/">{SITE['title']}</a></h1>
+    <p class="site-title"><a href="/">{SITE['title']}</a></p>
     <nav class="site-nav" aria-label="Main">
-      <a href="/"{cls('home')}>Home</a>
-      <a href="/branches/quesenberry.html"{cls('quesenberry')}>Quesenberry</a>
-      <a href="/branches/harvey.html"{cls('harvey')}>Harvey</a>
-      <a href="/branches/carmichael.html"{cls('carmichael')}>Carmichael</a>
-      <a href="/tree.html"{cls('tree')}>Family Tree</a>
-      <a href="/military.html"{cls('military')}>Military</a>
+      <a href="/tree.html"{cls('tree')}>Tree</a>
+      <details>
+        <summary class="{branch_active}">Branches</summary>
+        <div class="more-menu">
+          <a href="/branches/quesenberry.html"{cls('quesenberry')}>Quesenberry</a>
+          <a href="/branches/harvey.html"{cls('harvey')}>Harvey</a>
+          <a href="/branches/carmichael.html"{cls('carmichael')}>Carmichael</a>
+        </div>
+      </details>
       <a href="/timeline.html"{cls('timeline')}>Timeline</a>
-      <a href="/sources.html"{cls('sources')}>Sources</a>
+      <details>
+        <summary class="{archive_active}">Archive</summary>
+        <div class="more-menu">
+          <a href="/photographs.html"{cls('archive')}>Photographs</a>
+          <a href="/stories.html"{cls('stories')}>Stories &amp; Oral Histories</a>
+          <a href="/places.html"{cls('places')}>Places &amp; Migration</a>
+          <a href="/heirlooms.html"{cls('heirlooms')}>Heirlooms &amp; Recipes</a>
+        </div>
+      </details>
+      <a href="/submit.html"{cls('submit')}>Contribute</a>
+      <details>
+        <summary class="{more_active}">More</summary>
+        <div class="more-menu">
+          <a href="/military.html"{cls('military')}>Military Service</a>
+          <a href="/open-questions.html"{cls('open-questions')}>Open Questions</a>
+          <a href="/sources.html"{cls('sources')}>Sources &amp; Methodology</a>
+          <a href="/">Home</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
@@ -104,7 +153,187 @@ def footer():
 </html>"""
 
 
-# ---- person page ------------------------------------------------------------
+# ---- person page (refined per redesign brief §VI) ---------------------------
+
+# Major American-history events for the "In their lifetime..." strip
+HISTORY_EVENTS = [
+    (1607, "Jamestown founded"),
+    (1620, "Mayflower lands"),
+    (1675, "King Philip's War"),
+    (1718, "New Orleans founded"),
+    (1733, "Georgia colony established"),
+    (1754, "French & Indian War begins"),
+    (1763, "End of Seven Years' War"),
+    (1775, "American Revolution begins"),
+    (1776, "Declaration of Independence"),
+    (1783, "Treaty of Paris ends Revolution"),
+    (1789, "Washington becomes first President"),
+    (1803, "Louisiana Purchase"),
+    (1812, "War of 1812 begins"),
+    (1831, "Floyd County, VA formed"),
+    (1846, "U.S.–Mexican War begins"),
+    (1860, "Lincoln elected"),
+    (1861, "Civil War begins"),
+    (1865, "Civil War ends; Lincoln assassinated"),
+    (1869, "Transcontinental Railroad completed"),
+    (1898, "Spanish-American War"),
+    (1903, "Wright Brothers fly at Kitty Hawk"),
+    (1914, "World War I begins"),
+    (1918, "WWI ends; Spanish flu pandemic"),
+    (1920, "Women win the vote"),
+    (1929, "Stock market crash; Great Depression"),
+    (1941, "Pearl Harbor; U.S. enters WWII"),
+    (1945, "WWII ends"),
+    (1954, "Brown v. Board of Education"),
+    (1963, "Kennedy assassinated"),
+    (1969, "Apollo 11 lands on the Moon"),
+    (1989, "Berlin Wall falls"),
+    (2001, "September 11 attacks"),
+]
+
+
+def parse_year(date_str):
+    """Pull out a 4-digit year from a date string like '15 January 1867' or '1748'."""
+    if not date_str:
+        return None
+    m = re.search(r"\b(1[5-9]\d{2}|20\d{2})\b", str(date_str))
+    return int(m.group(1)) if m else None
+
+
+def lifespan_years(p):
+    """Return (birth_year, death_year) ints if available."""
+    by = parse_year(p.get("birth"))
+    dy = parse_year(p.get("death"))
+    # also try lifespan field "1842–1898"
+    if not by or not dy:
+        ls = p.get("lifespan", "")
+        m = re.search(r"(\d{4})\s*[–-]\s*(\d{4})", ls)
+        if m:
+            by = by or int(m.group(1))
+            dy = dy or int(m.group(2))
+    return by, dy
+
+
+def archival_stamp(verified):
+    """The wax-stamp/postmark style verification badge."""
+    labels = {
+        "documented":   ("Documented",   "stamp-documented"),
+        "partial":      ("Partially documented",     "stamp-partial"),
+        "tradition":    ("Family tradition",         "stamp-tradition"),
+    }
+    if verified in labels:
+        text, cls = labels[verified]
+        return f'<span class="archival-stamp {cls}">{text}</span>'
+    return '<span class="archival-stamp stamp-undocumented">Not yet documented</span>'
+
+
+def mini_tree(p):
+    """Render the 'where they sit' ASCII-style mini family tree.
+    Format:
+        Parents  →  Person (this page)  →  Children
+    Walks one generation up and one down.
+    """
+    name_short = p["name"].split(",")[0]
+    parents = []
+    if "father" in p and p["father"] in PEOPLE:
+        parents.append(PEOPLE[p["father"]])
+    if "mother" in p and p["mother"] in PEOPLE:
+        parents.append(PEOPLE[p["mother"]])
+    spouse = PEOPLE.get(p.get("spouse")) if p.get("spouse") in PEOPLE else None
+    children = [PEOPLE[c] for c in p.get("children", []) if c in PEOPLE]
+
+    lines = []
+    if parents:
+        for par in parents:
+            lines.append(f'  <a href="/people/{par["id"]}.html">{par["name"]}</a>  ({par.get("lifespan","")})')
+        lines.append("           │")
+        lines.append("           ▼")
+    person_line = f'  <span class="you">{name_short}</span>  ({p.get("lifespan","")})'
+    if spouse:
+        person_line += f'  ⚭  <a href="/people/{spouse["id"]}.html">{spouse["name"]}</a>'
+    lines.append(person_line)
+    if children:
+        lines.append("           │")
+        lines.append("           ▼")
+        for ch in children:
+            lines.append(f'  <a href="/people/{ch["id"]}.html">{ch["name"]}</a>  ({ch.get("lifespan","")})')
+    if not (parents or children):
+        return ""
+    return f'<div class="mini-tree">{chr(10).join(lines)}</div>'
+
+
+def lifetime_strip(p):
+    """The 'In their lifetime...' horizontal historical-context strip.
+    Picks 3-4 major American events that occurred during their life."""
+    by, dy = lifespan_years(p)
+    if not by:
+        return ""
+    if not dy:
+        dy = by + 70  # estimate
+    events_in_life = [(yr, ev) for yr, ev in HISTORY_EVENTS if by <= yr <= dy]
+    if len(events_in_life) > 4:
+        # pick 4 spread across life
+        step = len(events_in_life) / 4
+        events_in_life = [events_in_life[int(i*step)] for i in range(4)]
+    events_html = ""
+    for yr, ev in events_in_life:
+        events_html += f'<div class="lifetime-event"><span class="yr">{yr}</span><span class="ev">{ev}</span></div>'
+    if not events_html:
+        events_html = f'<div class="lifetime-event"><span class="ev" style="grid-column:1/-1;text-align:center;">A quieter age, between the great American events.</span></div>'
+    start_lbl = f'<span class="lbl">{by}</span>'
+    end_lbl = f'<span class="lbl">{dy if parse_year(p.get("death")) else "—"}</span>'
+    return f"""<aside class="lifetime-strip">
+  <h3>In their lifetime…</h3>
+  <div class="lifetime-axis">
+    <div class="line"></div>
+    <div class="endpoint start">{start_lbl}</div>
+    <div class="endpoint end">{end_lbl}</div>
+  </div>
+  <div class="lifetime-events">{events_html}</div>
+</aside>"""
+
+
+def prev_next(p):
+    """Find previous & next ancestor in the same branch by generation order."""
+    branch = p.get("branch")
+    if not branch:
+        return ""
+    siblings = [
+        x for x in PEOPLE.values()
+        if x.get("branch") == branch
+    ]
+    # sort by generation (1 = closest, higher = older)
+    def gen_key(x):
+        g = x.get("generation", 99)
+        if isinstance(g, int):
+            return g
+        return 99
+    siblings.sort(key=gen_key)
+    ids = [x["id"] for x in siblings]
+    try:
+        idx = ids.index(p["id"])
+    except ValueError:
+        return ""
+    prev_p = siblings[idx-1] if idx > 0 else None
+    next_p = siblings[idx+1] if idx < len(siblings)-1 else None
+    prev_html = ""
+    next_html = ""
+    if prev_p:
+        prev_html = f'''<a class="prev" href="/people/{prev_p["id"]}.html">
+          <span class="lbl">← Previous (closer to us)</span>
+          <span class="nm">{prev_p["name"]}</span>
+        </a>'''
+    else:
+        prev_html = '<span></span>'
+    if next_p:
+        next_html = f'''<a class="next" href="/people/{next_p["id"]}.html">
+          <span class="lbl">Further back →</span>
+          <span class="nm">{next_p["name"]}</span>
+        </a>'''
+    else:
+        next_html = '<span></span>'
+    return f'<nav class="prev-next">{prev_html}{next_html}</nav>'
+
 
 def render_person_page(p):
     name = p["name"]
@@ -148,46 +377,102 @@ def render_person_page(p):
         mp = safe(p, "marriedPlace")
         location_block += f"<dt>Married</dt><dd>{md}{', ' if md and mp else ''}{mp}</dd>"
 
-    # narrative
+    # narrative — first paragraph gets dropcap
     paragraphs = p.get("narrative", [])
     body_html = ""
     for i, para in enumerate(paragraphs):
         cls = ' class="dropcap"' if i == 0 else ""
         body_html += f"<p{cls}>{md_to_html(para)}</p>\n"
 
-    military_badge = ""
+    # Military as flag-red index card (if present)
+    military_card = ""
     if "military" in p:
-        military_badge = f'<p><span class="badge-military">⚔ {p["military"]}</span></p>'
+        military_card = f'''<aside class="index-card" style="border-left-color: var(--flag-red);">
+  <span class="label" style="color: var(--flag-red);">Military Service</span>
+  {p["military"]}
+</aside>'''
 
-    # Verification badge
-    verification_badge = ""
-    v = p.get("verified", "")
-    if v == "documented":
-        verification_badge = '<p><span class="badge-verified">✓ Documented from public records</span></p>'
-    elif v == "partial":
-        verification_badge = '<p><span class="badge-partial">◐ Partial — name documented, other facts await further research</span></p>'
-    elif v == "tradition":
-        verification_badge = '<p><span class="badge-tradition">○ Family tradition — not yet confirmed in primary records</span></p>'
+    # Sources from facts dict — pull any URL-bearing entries into catalogue cards
+    catalogue_html = ""
+    cat_items = []
+    for k, v in facts.items():
+        if "<a href" in str(v):
+            cat_items.append((k, v))
+    if cat_items:
+        cards = ""
+        for label, content in cat_items:
+            cards += f'<div class="catalogue-card"><span class="cat-label">{label}</span>{content}</div>'
+        catalogue_html = f'''<h2>Sources for this profile</h2>
+<div class="catalogue-cards">{cards}</div>'''
+
+    # Photos for this person — real entries from photos.json + placeholders
+    pid = p["id"]
+    person_photos = [ph for ph in PHOTOS if pid in ph.get("people", []) and not is_example_entry(ph)]
+    if person_photos:
+        photo_items = ""
+        for ph in person_photos:
+            photo_items += f'''<a class="photo-frame-thumb" href="/photographs.html#photo-{ph["id"]}">
+              <img src="/img/archive/{ph["file"]}" alt="{ph.get("caption","")[:60]}" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');">
+              <div class="photo-missing-msg">/img/archive/{ph["file"]}</div>
+              <p class="photo-thumb-caption">{ph.get("year","")} — {ph.get("caption","")[:80]}</p>
+            </a>'''
+        photos_html = f'''<h2>Photographs</h2>
+<div class="photo-gallery">{photo_items}</div>'''
+    else:
+        photos_html = f'''<h2>Photographs</h2>
+<div class="photo-gallery">
+  <div class="photo-empty">No photographs of {name.split(",")[0]} on file yet</div>
+  <div class="photo-empty">If you have one, <a href="mailto:mike@cgcocktails.com?subject=Photo of {name}">share it →</a></div>
+</div>'''
+
+    # Stories & heirlooms tied to this person
+    person_stories = [s for s in STORIES if pid in s.get("people", []) and not is_example_entry(s)]
+    person_heirlooms = [h for h in HEIRLOOMS if h.get("originId") == pid and not is_example_entry(h)]
+    extras_html = ""
+    if person_stories or person_heirlooms:
+        extras_html = '<h2>From the Archive</h2><ul class="archive-links">'
+        for s in person_stories:
+            extras_html += f'<li>📖 <a href="/stories.html#story-{s["id"]}">{s["title"]}</a> <span class="muted">— story</span></li>'
+        for h in person_heirlooms:
+            extras_html += f'<li>🪶 <a href="/heirlooms.html#heirloom-{h["id"]}">{h["name"]}</a> <span class="muted">— {h.get("type","heirloom")}</span></li>'
+        extras_html += "</ul>"
+
+    # Submission CTA
+    submission_html = f'''<aside class="submission-cta">
+  <h3>Add to {name.split(",")[0].split("(")[0].strip()}'s page</h3>
+  <p>Have a photograph, a letter, a recording of a story, a Bible flyleaf, a maiden name we don't yet have? Anything you can share helps fill in the next layer of this record.</p>
+  <a class="cta-btn" href="mailto:mike@cgcocktails.com?subject=Contribution for {name.split(',')[0]}">Send a contribution</a>
+</aside>'''
+
+    branch_label = p.get('branch', '').title()
+    gen_label = p.get('generation', '?')
 
     html = head(name)
     html += header(active=p.get("branch", ""))
     html += f"""
 <section class="person-header">
   <div class="shell">
-    <p class="section-eyebrow">{p.get('branch', '').title()} Line — Generation {p.get('generation', '?')}</p>
+    <p class="section-eyebrow">{branch_label} Line — Generation {gen_label}</p>
     <h1>{name}</h1>
     <p class="lifespan">{lifespan}</p>
     {f'<p class="epitaph">{md_to_html(epitaph)}</p>' if epitaph else ''}
+    <p style="margin-top: 1.4rem;">{archival_stamp(p.get("verified"))}</p>
   </div>
 </section>
 
 <section class="person-body">
   <div class="shell">
     <div class="person-grid">
-      <article class="narrow">
-        {verification_badge}
-        {military_badge}
+      <article>
+        {mini_tree(p)}
+        {military_card}
         {body_html}
+        {lifetime_strip(p)}
+        {photos_html}
+        {extras_html}
+        {catalogue_html}
+        {submission_html}
+        {prev_next(p)}
       </article>
       <aside class="facts-card">
         <h4>Vital Record</h4>
@@ -308,12 +593,48 @@ def render_home():
     html = head("Home")
     html += header(active="home")
     html += f"""
-<section class="hero">
-  <div class="shell">
-    <p class="kicker">{SITE['subtitle']}</p>
-    <h1>{SITE['title']}</h1>
-    <div class="hero-divider"></div>
-    <p class="lede">{SITE['tagline']}</p>
+<div class="hero-photo placeholder">
+  <div class="photo-bg"></div>
+  <div class="photo-vignette"></div>
+  <div class="photo-caption">
+    <p class="dates">An American Story · Four Centuries</p>
+    <h1 class="name">{SITE['title']}</h1>
+    <p class="epitaph">{SITE['tagline']}</p>
+  </div>
+</div>
+
+<section style="padding-top: 2rem;">
+  <div class="shell narrow">
+    <aside id="on-this-day" class="on-this-day" hidden>
+      <p class="section-eyebrow">On This Day</p>
+      <h3 class="otd-date"></h3>
+      <ul class="otd-list"></ul>
+    </aside>
+    <script>
+      (function() {{
+        fetch("/events.json")
+          .then(function(r) {{ return r.json(); }})
+          .then(function(data) {{
+            var today = new Date();
+            var key = String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
+            var events = data[key];
+            if (!events || !events.length) return;
+            var box = document.getElementById('on-this-day');
+            var monthName = today.toLocaleString('en-US', {{ month: 'long' }});
+            box.querySelector('.otd-date').textContent = monthName + ' ' + today.getDate();
+            var list = box.querySelector('.otd-list');
+            events.sort(function(a,b){{return a.year-b.year;}});
+            events.forEach(function(e) {{
+              var li = document.createElement('li');
+              var icon = e.type === 'birth' ? '✦' : e.type === 'death' ? '✝' : '⚭';
+              li.innerHTML = '<span class="otd-icon">'+icon+'</span><span class="otd-yr">'+e.year+'</span> <a href="'+e.link+'">'+e.summary+'</a>';
+              list.appendChild(li);
+            }});
+            box.hidden = false;
+          }})
+          .catch(function(){{ /* fail silently */ }});
+      }})();
+    </script>
   </div>
 </section>
 
@@ -322,28 +643,54 @@ def render_home():
     <p class="dropcap">{md_to_html(SITE['intro'])}</p>
     <p>This site collects what is presently known of the ancestors of <a href="/people/lonnie-quesenberry.html">Lonnie Olin Quesenberry</a> (1920–2002) and <a href="/people/ruth-harvey.html">Ruth Garland Harvey Quesenberry</a> (1925–2016) — the maternal grandparents of the family for whom this record was made. From them the trail runs back through the Quesenberry, Slusher (Schlosser), Hylton, Harvey, and Carmichael families to colonial Virginia, the Palatinate Germany of the 1700s, the Highlands of Scotland, and Kent, England in the reign of King James I.</p>
     <p>Browse by family line, by generation, or by the names that recur — Eva, Archibald, Aaron, Thomas, John — across the centuries.</p>
+
+    <hr class="flourish">
   </div>
 </section>
 
 <section>
   <div class="shell">
-    <h2>Where to Begin</h2>
+    <p class="section-eyebrow center" style="text-align:center;">A Visual Index</p>
+    <h2 style="text-align:center; border:none;">The Family Tree at a Glance</h2>
+    <p class="lede" style="margin: 0 auto 2rem; text-align:center;">Lonnie and Ruth at the top — and beneath them, four centuries of ancestors stretching back to colonial Virginia, Highland Scotland, and Palatinate Germany.</p>
+    <div style="text-align:center;">
+      <a href="/tree.html" class="cta-btn" style="display:inline-block; font-family: var(--voice-caps); letter-spacing: 0.22em; text-transform: uppercase; font-size: 0.85rem; padding: 0.8em 1.6em; background: var(--rust); color: var(--paper); text-decoration: none; border: 1px solid var(--rust);">Open the family tree →</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    <p class="section-eyebrow center" style="text-align:center;">Where to Begin</p>
+    <h2 style="text-align:center; border:none;">Five Doorways into the Story</h2>
     <div class="card-grid">
       <article class="card">
-        <h3>The three family lines</h3>
-        <p>Each branch tells its own story. <a href="/branches/quesenberry.html">Quesenberry</a> from Kent in 1624. <a href="/branches/harvey.html">Harvey</a> from the colonial English diaspora. <a href="/branches/carmichael.html">Carmichael</a> from the Scottish Highlands of 1775.</p>
+        <p class="dates">The People</p>
+        <h3>Lonnie &amp; Ruth</h3>
+        <p>Begin with the maternal grandparents — the two lives from which the whole tree grows backward.</p>
+        <a class="read-more" href="/people/lonnie-quesenberry.html">Lonnie →</a>
+        &nbsp;
+        <a class="read-more" href="/people/ruth-harvey.html">Ruth →</a>
       </article>
       <article class="card">
-        <h3>The full family tree</h3>
-        <p>An at-a-glance view of how the lines connect, generation by generation. <a href="/tree.html">View the tree →</a></p>
+        <p class="dates">The Three Lines</p>
+        <h3>The branches</h3>
+        <p><a href="/branches/quesenberry.html">Quesenberry</a> from Kent in 1624 · <a href="/branches/harvey.html">Harvey</a> from the colonial Piedmont · <a href="/branches/carmichael.html">Carmichael</a> from Highland Scotland in 1775.</p>
       </article>
       <article class="card">
-        <h3>Military service</h3>
-        <p>From the American Revolution to the Civil War to (likely) the Second World War. <a href="/military.html">See the soldiers →</a></p>
+        <p class="dates">Service to Country</p>
+        <h3>Military &amp; the Patriots</h3>
+        <p>Two verified DAR Patriots, one family that sent nine sons to the Confederate Army, and the WWII generation. <a href="/military.html">Read →</a></p>
       </article>
       <article class="card">
+        <p class="dates">Four Centuries</p>
         <h3>Timeline</h3>
-        <p>Four centuries of family events set against the larger story of America. <a href="/timeline.html">View the timeline →</a></p>
+        <p>Family events set against the spine of American history — from Jamestown to High Point. <a href="/timeline.html">View →</a></p>
+      </article>
+      <article class="card">
+        <p class="dates">Methodology</p>
+        <h3>Sources &amp; the Honest Gaps</h3>
+        <p>What's verified, what's tradition, and what still waits in a courthouse basement. <a href="/sources.html">See sources →</a></p>
       </article>
     </div>
   </div>
@@ -351,7 +698,8 @@ def render_home():
 
 <section>
   <div class="shell">
-    <h2>Featured Ancestors</h2>
+    <p class="section-eyebrow center" style="text-align:center;">Featured Ancestors</p>
+    <h2 style="text-align:center; border:none;">A Few of the Voices</h2>
     <div class="card-grid">
       {feat_cards}
     </div>
@@ -371,97 +719,152 @@ def render_home():
     write(PUBLIC / "index.html", html)
 
 
-# ---- tree page --------------------------------------------------------------
+# ---- tree.json (data feed for the interactive tree page) -------------------
+
+# Hard-coded geocodes for places that recur in this family record.
+# Keys are case-insensitive substrings — matched in order, first hit wins.
+PLACE_GEO = [
+    ("bromley", (51.4045, 0.0142, "Bromley, Kent, England")),
+    ("canterbury", (51.2802, 1.0789, "Canterbury, Kent, England")),
+    ("kent, england", (51.2787, 0.5217, "Kent, England")),
+    ("larne", (54.8479, -5.8068, "Larne, County Antrim, Ulster")),
+    ("lanark", (55.6736, -3.7790, "Lanark, Lanarkshire, Scotland")),
+    ("lancaster county, pennsylvania", (40.0379, -76.3055, "Lancaster County, Pennsylvania")),
+    ("king george county", (38.2715, -77.1869, "King George County, Virginia")),
+    ("caroline county, virginia", (38.0265, -77.3464, "Caroline County, Virginia")),
+    ("orange county, virginia", (38.2470, -78.1116, "Orange County, Virginia")),
+    ("st. thomas parish, orange county", (38.2470, -78.1116, "St. Thomas Parish, Orange County, Virginia")),
+    ("westmoreland county", (38.1098, -76.7969, "Westmoreland County, Virginia")),
+    ("montgomery county", (37.1737, -80.4084, "Montgomery County, Virginia")),
+    ("floyd county", (36.9314, -80.3781, "Floyd County, Virginia")),
+    ("greasy creek", (36.9314, -80.3781, "Greasy Creek, Floyd County, Virginia")),
+    ("indian valley", (36.9764, -80.4798, "Indian Valley, Floyd County, Virginia")),
+    ("wythe county", (36.9180, -81.0840, "Wythe County, Virginia")),
+    ("glendale", (33.5387, -112.1860, "Glendale, Arizona Territory")),
+    ("wilmington, north carolina", (34.2257, -77.9447, "Wilmington, North Carolina")),
+    ("wilmington, nc", (34.2257, -77.9447, "Wilmington, North Carolina")),
+    ("forsyth county", (36.1320, -80.2632, "Forsyth County, North Carolina")),
+    ("stokes county", (36.4017, -80.2403, "Stokes County, North Carolina")),
+    ("stanleyville", (36.2024, -80.2467, "Stanleyville, Forsyth County, North Carolina")),
+    ("colfax", (36.1051, -79.9859, "Colfax, Guilford County, North Carolina")),
+    ("guilford county", (36.0807, -79.7889, "Guilford County, North Carolina")),
+    ("greensboro", (36.0726, -79.7920, "Greensboro, North Carolina")),
+    ("kernersville", (36.1198, -80.0739, "Kernersville, Forsyth County, North Carolina")),
+    ("high point", (35.9557, -80.0053, "High Point, Guilford County, North Carolina")),
+    ("thomasville", (35.8826, -80.0820, "Thomasville, Davidson County, North Carolina")),
+    ("davidson county", (35.7920, -80.2120, "Davidson County, North Carolina")),
+    ("north carolina", (35.7596, -79.0193, "North Carolina")),
+    ("virginia", (37.4316, -78.6569, "Virginia")),
+    ("pennsylvania", (41.2033, -77.1945, "Pennsylvania")),
+    ("scotland", (56.4907, -4.2026, "Scotland")),
+    ("england", (52.3555, -1.1743, "England")),
+]
+
+
+def geocode(place):
+    """Match a free-text place name to a (lat, lng, label) — or None."""
+    if not place:
+        return None
+    pl = place.lower()
+    for needle, geo in PLACE_GEO:
+        if needle in pl:
+            return geo
+    return None
+
+
+def render_tree_json():
+    """Emit a denormalized JSON for the interactive tree page (D3 + Leaflet)."""
+    out = {
+        "site": SITE,
+        "people": [],
+    }
+    for p in PEOPLE.values():
+        by, dy = lifespan_years(p)
+        birth_geo = geocode(p.get("birthPlace", ""))
+        death_geo = geocode(p.get("deathPlace", ""))
+        burial_geo = geocode(p.get("burial", ""))
+        out["people"].append({
+            "id": p["id"],
+            "name": p["name"],
+            "lifespan": p.get("lifespan", ""),
+            "birth": p.get("birth", ""),
+            "birthPlace": p.get("birthPlace", ""),
+            "death": p.get("death", ""),
+            "deathPlace": p.get("deathPlace", ""),
+            "burial": p.get("burial", ""),
+            "branch": p.get("branch", ""),
+            "generation": p.get("generation"),
+            "father": p.get("father"),
+            "mother": p.get("mother"),
+            "spouse": p.get("spouse"),
+            "children": p.get("children", []),
+            "verified": p.get("verified", ""),
+            "epitaph": p.get("epitaph", ""),
+            "military": p.get("military"),
+            "birthYear": by,
+            "deathYear": dy,
+            "birthGeo": {"lat": birth_geo[0], "lng": birth_geo[1], "label": birth_geo[2]} if birth_geo else None,
+            "deathGeo": {"lat": death_geo[0], "lng": death_geo[1], "label": death_geo[2]} if death_geo else None,
+            "burialGeo": {"lat": burial_geo[0], "lng": burial_geo[1], "label": burial_geo[2]} if burial_geo else None,
+        })
+    write(PUBLIC / "tree.json", json.dumps(out, indent=2))
+
+
+# ---- tree page (interactive: pedigree / timeline / map) --------------------
 
 def render_tree():
-    """Render an SVG ancestor tree centered on Lonnie + Ruth's children's generation
-    (i.e. their parents) going back."""
+    """Build an interactive 3-view tree page that consumes /tree.json."""
 
-    svg = """<svg class="tree-svg" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .node-box { fill: #efe2c4; stroke: #7a4a1f; stroke-width: 1.2; }
-    .node-name { font-family: 'Playfair Display', Georgia, serif; font-size: 14px; font-style: italic; fill: #2b1d10; }
-    .node-dates { font-family: 'Cormorant SC', Georgia, serif; font-size: 11px; letter-spacing: 0.06em; fill: #7a4a1f; }
-    .branch-line { stroke: #b89b6f; stroke-width: 1.2; fill: none; }
-    .gen-label { font-family: 'Cormorant SC', Georgia, serif; font-size: 11px; letter-spacing: 0.18em; fill: #7a4a1f; text-transform: uppercase; }
-  </style>
-
-  <!-- generation labels -->
-  <text x="20" y="60" class="gen-label">Gen 1 (Grandparents)</text>
-  <text x="20" y="200" class="gen-label">Gen 2 (Great-Grandparents)</text>
-  <text x="20" y="340" class="gen-label">Gen 3</text>
-  <text x="20" y="480" class="gen-label">Gens 4–6</text>
-  <text x="20" y="620" class="gen-label">Gen 9 (Immigrants)</text>
-
-  <!-- Generation 1: Lonnie + Ruth -->
-  <a href="/people/lonnie-quesenberry.html"><rect x="320" y="80" width="240" height="60" class="node-box"/><text x="440" y="105" text-anchor="middle" class="node-name">Lonnie Olin Quesenberry</text><text x="440" y="125" text-anchor="middle" class="node-dates">1920 – 2002</text></a>
-  <a href="/people/ruth-harvey.html"><rect x="640" y="80" width="240" height="60" class="node-box"/><text x="760" y="105" text-anchor="middle" class="node-name">Ruth Garland Harvey</text><text x="760" y="125" text-anchor="middle" class="node-dates">1925 – 2016</text></a>
-
-  <!-- marriage line -->
-  <line x1="560" y1="110" x2="640" y2="110" class="branch-line"/>
-
-  <!-- Gen 2 -->
-  <a href="/people/floyd-quesenberry.html"><rect x="160" y="220" width="200" height="60" class="node-box"/><text x="260" y="245" text-anchor="middle" class="node-name">Floyd H. Quesenberry</text><text x="260" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
-  <a href="/people/eva-quesenberry.html"><rect x="380" y="220" width="200" height="60" class="node-box"/><text x="480" y="245" text-anchor="middle" class="node-name">Eva Quesenberry</text><text x="480" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
-  <a href="/people/carl-harvey.html"><rect x="600" y="220" width="200" height="60" class="node-box"/><text x="700" y="245" text-anchor="middle" class="node-name">Carl Harvey</text><text x="700" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
-  <a href="/people/geneva-carmichael.html"><rect x="820" y="220" width="220" height="60" class="node-box"/><text x="930" y="245" text-anchor="middle" class="node-name">Geneva Carmichael Harvey</text><text x="930" y="265" text-anchor="middle" class="node-dates">fl. 1920s</text></a>
-
-  <!-- lines from gen 1 to gen 2 -->
-  <path d="M 440 140 V 180 H 260 V 220" class="branch-line"/>
-  <path d="M 440 140 V 180 H 480 V 220" class="branch-line"/>
-  <path d="M 760 140 V 180 H 700 V 220" class="branch-line"/>
-  <path d="M 760 140 V 180 H 930 V 220" class="branch-line"/>
-
-  <!-- Gen 3 (illustrative — Quesenberry and Carmichael lines documented further back) -->
-  <a href="/people/william-henry-quesenberry.html"><rect x="80" y="360" width="240" height="60" class="node-box"/><text x="200" y="385" text-anchor="middle" class="node-name">William Henry Quesenberry</text><text x="200" y="405" text-anchor="middle" class="node-dates">1841 – 1898</text></a>
-  <a href="/people/eva-jane-slusher.html"><rect x="340" y="360" width="240" height="60" class="node-box"/><text x="460" y="385" text-anchor="middle" class="node-name">Eva Jane Slusher Quesenberry</text><text x="460" y="405" text-anchor="middle" class="node-dates">1838 – 1926</text></a>
-
-  <!-- line from Floyd up to William Henry / Eva Jane -->
-  <path d="M 260 280 V 330 H 200 V 360" class="branch-line"/>
-  <path d="M 260 280 V 330 H 460 V 360" class="branch-line"/>
-
-  <!-- Gen 4–5–6 stack (Quesenberry line) -->
-  <a href="/people/john-quesenberry-sr.html"><rect x="80" y="500" width="240" height="50" class="node-box"/><text x="200" y="525" text-anchor="middle" class="node-name">John Quesenberry Sr.</text><text x="200" y="545" text-anchor="middle" class="node-dates">c.1790s – 1853</text></a>
-  <a href="/people/george-quesenberry.html"><rect x="80" y="555" width="240" height="50" class="node-box"/><text x="200" y="580" text-anchor="middle" class="node-name">George Quesenberry (Rev. War)</text><text x="200" y="600" text-anchor="middle" class="node-dates">1748 – 1812</text></a>
-  <a href="/people/aaron-quisenberry.html"><rect x="80" y="610" width="240" height="50" class="node-box"/><text x="200" y="635" text-anchor="middle" class="node-name">Aaron Quisenberry Sr. (DAR)</text><text x="200" y="655" text-anchor="middle" class="node-dates">1725 – 1795</text></a>
-
-  <path d="M 200 420 V 460 H 200 V 500" class="branch-line"/>
-
-  <!-- Gen 8/9 immigrants -->
-  <a href="/people/john-quisenberry-1627.html"><rect x="80" y="675" width="240" height="50" class="node-box"/><text x="200" y="700" text-anchor="middle" class="node-name">John Quisenberry (b. 1627 VA)</text><text x="200" y="720" text-anchor="middle" class="node-dates">first American-born</text></a>
-  <a href="/people/thomas-questenbury.html"><rect x="340" y="675" width="240" height="50" class="node-box"/><text x="460" y="700" text-anchor="middle" class="node-name">Thomas Questenbury (immigrant)</text><text x="460" y="720" text-anchor="middle" class="node-dates">Kent → VA, 1624</text></a>
-
-  <!-- Carmichael immigrant -->
-  <a href="/people/archibald-carmichael.html"><rect x="780" y="675" width="280" height="50" class="node-box"/><text x="920" y="700" text-anchor="middle" class="node-name">Archibald Carmichael (immigrant)</text><text x="920" y="720" text-anchor="middle" class="node-dates">Scotland → NC, 1775</text></a>
-
-  <path d="M 930 280 V 660 H 920 V 675" class="branch-line"/>
-</svg>"""
-
-    body = f"""<section class="branch-hero">
+    body = """<section class="branch-hero">
   <div class="shell">
-    <p class="section-eyebrow">A Visual Map</p>
+    <p class="section-eyebrow">A Visual Index</p>
     <h1>The Family Tree</h1>
-    <p class="lede">From Lonnie and Ruth's parents back to the immigrants who crossed the Atlantic — Kent in 1624, Lanarkshire in 1775, the German Palatinate in the early 1700s.</p>
+    <p class="lede">Three views of the same family — pedigree, timeline, and migration map. Switch among them; clicking a name in any view focuses that person across all three.</p>
   </div>
 </section>
 
-<section>
+<section style="padding-top: 1rem;">
   <div class="shell">
-    <div class="tree-wrapper">
-      {svg}
+    <div class="tree-controls">
+      <div class="view-tabs" role="tablist">
+        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true">Pedigree</button>
+        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false">Timeline</button>
+        <button data-view="map"      class="view-tab" role="tab" aria-selected="false">Migration Map</button>
+      </div>
+      <div class="search-wrap">
+        <input id="search" type="text" placeholder="Search a name…" autocomplete="off" />
+        <ul id="search-results" class="search-results" hidden></ul>
+      </div>
     </div>
-    <p class="muted center">Click any name to read the full profile. Some intermediate generations are not yet pictured here — see each branch page for the complete known list.</p>
+
+    <div class="tree-layout">
+      <div class="tree-stage">
+        <div id="view-pedigree" class="view active"></div>
+        <div id="view-timeline" class="view"></div>
+        <div id="view-map"      class="view"></div>
+      </div>
+      <aside id="side-panel" class="side-panel">
+        <p class="muted">Click any name to focus on a person.</p>
+      </aside>
+    </div>
+
+    <p class="muted center" style="margin-top: 1.5rem;">All three views share one focused person. Use the search box to jump to anyone in the family by name.</p>
   </div>
 </section>
 
 <section>
   <div class="shell narrow">
-    <h2>How to read this tree</h2>
-    <p>The tree is read top-to-bottom, oldest at the bottom. The grandparents' generation sits at the top. As you move down the page you move backward in time — to great-grandparents, then their parents, and so on, until you reach the Atlantic-crossing ancestors at the foot of the page.</p>
-    <p>The Quesenberry line is the most fully documented, reaching back nine generations to the colonial Virginia immigrant Thomas Questenbury, who arrived in the colony in 1624. The Carmichael line is documented to Archibald Carmichael of Lanarkshire, Scotland, who landed at Wilmington in 1775. The Harvey line, on the present record, is documented only to Ruth's father Carl Harvey — but its colonial roots are almost certainly in the same Tidewater Virginia / Carolina Piedmont migration.</p>
-    <p>The dotted gaps in the tree mark the places where the Floyd County, Virginia and Guilford County, North Carolina courthouse records — many of which still wait in the basement filing cabinets of those counties — could fill in the next generation of the story.</p>
+    <h2>How to read these views</h2>
+    <p><strong>Pedigree.</strong> The classic upside-down tree: Lonnie and Ruth at the top, their parents below, and so on backward in time. Branches are color-coded — Quesenberry russet, Harvey forest, Carmichael gold. Lines connect children to parents.</p>
+    <p><strong>Timeline.</strong> Each ancestor's life as a horizontal bar across four centuries — from Thomas Questenbury's birth in 1608 to Ruth's death in 2016. The shape of the family line becomes obvious at a glance: long lives, the gap of the Civil War, the consolidation in the Carolinas in the twentieth century.</p>
+    <p><strong>Migration Map.</strong> The places that mattered, mapped and connected: Kent to Virginia in 1624, Larne to Wilmington in 1775, Lancaster County PA south down the Wagon Road, the Blue Ridge into the Carolina Piedmont. The story of this family is, fundamentally, a story of crossings.</p>
   </div>
-</section>"""
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="/js/tree.js" defer></script>"""
 
     html = head("Family Tree") + header(active="tree") + body + footer()
     write(PUBLIC / "tree.html", html)
@@ -727,6 +1130,538 @@ def render_sources():
 
 # ---- main -------------------------------------------------------------------
 
+# ============================================================
+#   PHASE 3 — module renderers (Photographs, Stories, Places, Heirlooms)
+# ============================================================
+
+def empty_state_msg(thing, contribute_subject):
+    """Render an inviting empty-state block when a module has no real entries yet."""
+    return f"""<div class="empty-state">
+  <p class="section-eyebrow">Awaiting Your Contribution</p>
+  <h3>{thing}</h3>
+  <p>This page exists to hold {thing.lower()} as they surface — from family albums, Bible flyleaves, recorded stories, deed boxes, and the memories of everyone who knew the people in this record.</p>
+  <p>If you have something to share, send it along. We'll add it to the archive properly attributed.</p>
+  <a class="cta-btn" href="mailto:mike@cgcocktails.com?subject={contribute_subject}">Contribute</a>
+</div>"""
+
+
+def is_example_entry(entry):
+    """Return True if an entry's id starts with 'example-' so we can flag/dim it."""
+    return str(entry.get("id", "")).startswith("example-")
+
+
+def render_photographs():
+    """Per brief: chronological wall, tagged with the people who appear."""
+    real = [p for p in PHOTOS if not is_example_entry(p)]
+    examples = [p for p in PHOTOS if is_example_entry(p)]
+
+    cards = ""
+    for ph in sorted(PHOTOS, key=lambda x: str(x.get("year", "9999"))):
+        people_links = " · ".join(person_link(pid) for pid in ph.get("people", []))
+        is_ex = is_example_entry(ph)
+        ex_note = '<span class="badge-tradition" style="margin-bottom:0.6em;">Example placeholder</span>' if is_ex else ""
+        img_block = f'''<div class="photo-frame">
+            <img src="/img/archive/{ph["file"]}" alt="{ph["caption"][:80]}" onerror="this.style.display='none'; this.parentElement.classList.add('photo-missing');">
+            <div class="photo-missing-msg">Image file not yet uploaded:<br><code>/img/archive/{ph["file"]}</code></div>
+          </div>''' if ph.get("file") else ""
+        cards += f"""<article class="photo-card">
+          {img_block}
+          <div class="photo-meta">
+            {ex_note}
+            <p class="dates">{ph.get("year", "")} · {ph.get("place", "")}</p>
+            <p class="caption">{md_to_html(ph.get("caption", ""))}</p>
+            {f'<p class="muted">In this image: {people_links}</p>' if people_links else ""}
+            <p class="muted source">Source: {ph.get("source", "Unknown")}</p>
+          </div>
+        </article>"""
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">The Archive</p>
+    <h1>Photograph Archive</h1>
+    <p class="lede">A growing visual record — portraits, documents, places, heirlooms — arranged in time.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    {empty_state_msg("Photographs and documents", "Photo for the family archive") if not real else ""}
+    {f'<p class="muted center">Currently {len(real)} real entries and {len(examples)} placeholder example. Replace examples by editing <code>data/photos.json</code> and dropping image files into <code>public/img/archive/</code>.</p>' if cards else ""}
+    <div class="photo-wall">{cards}</div>
+  </div>
+</section>"""
+
+    html = head("Photograph Archive") + header(active="archive") + body + footer()
+    write(PUBLIC / "photographs.html", html)
+
+
+def render_stories():
+    """Stories & oral histories — chronological, by year of events."""
+    real = [s for s in STORIES if not is_example_entry(s)]
+    examples = [s for s in STORIES if is_example_entry(s)]
+
+    cards = ""
+    for s in sorted(STORIES, key=lambda x: str(x.get("year", "9999"))):
+        people_links = " · ".join(person_link(pid) for pid in s.get("people", []))
+        is_ex = is_example_entry(s)
+        ex_note = '<span class="badge-tradition">Example placeholder</span>' if is_ex else ""
+        teller = s.get("teller", "Unknown teller")
+        if s.get("tellerId"):
+            teller = person_link(s["tellerId"])
+        audio_block = ""
+        if s.get("audio"):
+            audio_block = f'<audio controls preload="none" src="{s["audio"]}" style="width:100%; margin-bottom:1rem;"></audio>'
+
+        cards += f"""<article class="story-card">
+          <header>
+            {ex_note}
+            <p class="dates">{s.get("year", "")} · {s.get("place", "")}</p>
+            <h2>{s.get("title", "Untitled")}</h2>
+            <p class="muted">As told by {teller}{f' · recorded {s["recorded"]}' if s.get("recorded") else ""}</p>
+            {f'<p class="muted">About: {people_links}</p>' if people_links else ""}
+          </header>
+          {audio_block}
+          <div class="story-body">{md_to_paragraphs(s.get("body", ""))}</div>
+        </article>"""
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">Voices</p>
+    <h1>Stories &amp; Oral Histories</h1>
+    <p class="lede">The things that didn't make it into a courthouse record — the stories told around kitchen tables, the recipes called out from memory, the sayings repeated until they became inheritance.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+    {empty_state_msg("Stories and oral histories", "Story for the family archive") if not real else ""}
+    {f'<p class="muted center">Currently {len(real)} real stories and {len(examples)} placeholder example. To add one, edit <code>data/stories.json</code>.</p>' if cards else ""}
+    <div class="story-stack">{cards}</div>
+  </div>
+</section>"""
+
+    html = head("Stories & Oral Histories") + header(active="stories") + body + footer()
+    write(PUBLIC / "stories.html", html)
+
+
+def render_places():
+    """Places & migration — the geographic spine of the family record."""
+    cards = ""
+    for pl in PLACES:
+        people_links = " · ".join(person_link(pid) for pid in pl.get("people", []))
+        geo = geocode(pl.get("id", "")) or geocode(pl.get("name", ""))
+        coord_lbl = f'{geo[0]:.3f}, {geo[1]:.3f}' if geo else 'Coordinates not yet recorded'
+        cards += f"""<article class="place-card" id="place-{pl["id"]}">
+          <h2>{pl.get("name", "")}</h2>
+          <p class="dates">📍 {coord_lbl}</p>
+          <p class="lede">{md_to_html(pl.get("shortDescription", ""))}</p>
+          <p>{md_to_html(pl.get("longDescription", ""))}</p>
+          {f'<p class="muted">Family connections: {people_links}</p>' if people_links else ""}
+        </article>
+        <hr class="flourish">"""
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">Geography of a Family</p>
+    <h1>Places &amp; Migration</h1>
+    <p class="lede">Each place that mattered — the parishes, county seats, ports, and farmsteads where the lives in this record were lived.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    <p class="muted center">For the interactive map showing every birthplace and death-place plus migration arcs, see <a href="/tree.html">the tree page</a>'s Map view.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+    {cards if cards else empty_state_msg("Place histories", "Place note for the family archive")}
+  </div>
+</section>"""
+
+    html = head("Places &amp; Migration") + header(active="places") + body + footer()
+    write(PUBLIC / "places.html", html)
+
+
+def render_heirlooms():
+    """Heirlooms & recipes — the objects, recipes, songs, and sayings."""
+    real = [h for h in HEIRLOOMS if not is_example_entry(h)]
+    examples = [h for h in HEIRLOOMS if is_example_entry(h)]
+
+    type_icons = {
+        "recipe": "🥧", "object": "🪑", "document": "📜", "song": "♫",
+        "saying": "❝", "medal": "🎖", "bible": "✝", "photograph": "📷",
+    }
+
+    cards = ""
+    for h in sorted(HEIRLOOMS, key=lambda x: str(x.get("year", "9999"))):
+        is_ex = is_example_entry(h)
+        ex_note = '<span class="badge-tradition">Example placeholder</span>' if is_ex else ""
+        origin = h.get("origin", "")
+        if h.get("originId"):
+            origin = person_link(h["originId"])
+        photo_block = ""
+        if h.get("photo"):
+            photo_block = f'<div class="heirloom-photo"><img src="/img/heirlooms/{h["photo"]}" alt="{h["name"]}" onerror="this.parentElement.classList.add(\'photo-missing\');"></div>'
+
+        recipe_block = ""
+        if h.get("type") == "recipe" and h.get("recipe"):
+            recipe_block = f'<div class="recipe-body">{md_to_paragraphs(h["recipe"])}</div>'
+
+        icon = type_icons.get(h.get("type", ""), "❦")
+        cards += f"""<article class="heirloom-card heirloom-{h.get("type", "object")}">
+          <div class="heirloom-icon">{icon}</div>
+          <div class="heirloom-body">
+            {ex_note}
+            <p class="dates">{h.get("year", "")} · {h.get("type", "object").upper()}</p>
+            <h2>{h.get("name", "Untitled")}</h2>
+            <p class="muted">From: {origin}{f' · Now with: {h["currentOwner"]}' if h.get("currentOwner") else ''}</p>
+            {photo_block}
+            <p>{md_to_html(h.get("description", ""))}</p>
+            {recipe_block}
+          </div>
+        </article>"""
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">Things You Can Touch</p>
+    <h1>Heirlooms &amp; Recipes</h1>
+    <p class="lede">The pound cake recipe, the family Bible with names in the flyleaf, the medal in the bottom drawer, the saying everyone repeats. The objects and patterns that travel through generations.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell">
+    {empty_state_msg("Heirlooms and recipes", "Heirloom for the family archive") if not real else ""}
+    {f'<p class="muted center">Currently {len(real)} real heirlooms and {len(examples)} placeholder example. To add one, edit <code>data/heirlooms.json</code>.</p>' if cards else ""}
+    <div class="heirloom-stack">{cards}</div>
+  </div>
+</section>"""
+
+    html = head("Heirlooms &amp; Recipes") + header(active="heirlooms") + body + footer()
+    write(PUBLIC / "heirlooms.html", html)
+
+
+def render_submit():
+    """The contributor-facing submission page (3-mode form posting to Flask /submit)."""
+    # Build a person-id select to make tagging easy
+    person_options = "".join(
+        f'<option value="{pid}">{p["name"]} ({p.get("lifespan","")})</option>'
+        for pid, p in sorted(PEOPLE.items(), key=lambda kv: kv[1]["name"])
+    )
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">Help Fill the Record</p>
+    <h1>Contribute to the Family Archive</h1>
+    <p class="lede">A photograph from the shoebox, a story you remember being told, a recipe in your mother's handwriting, a correction to something we got wrong — every contribution makes the record fuller and truer.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+
+    <div class="submit-tabs" role="tablist">
+      <button class="submit-tab active" data-form="form-photo"  role="tab">Add a photo or document</button>
+      <button class="submit-tab"        data-form="form-story"  role="tab">Add a story or correction</button>
+      <button class="submit-tab"        data-form="form-person" role="tab">Add a person</button>
+    </div>
+
+    <p class="muted" style="margin-bottom:1.4rem;">All submissions go to a moderation queue and will be incorporated into the site after review.</p>
+
+    <!-- ============= PHOTO ============= -->
+    <form id="form-photo" class="submit-form active" action="/submit" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="kind" value="photo">
+      <h3>Add a photo or document</h3>
+
+      <label>Image file <span class="req">*</span>
+        <input type="file" name="photo_file" accept="image/*" required>
+        <small>JPEG, PNG, HEIC, TIFF, etc. — up to {12} MB.</small>
+      </label>
+
+      <label>Caption <span class="req">*</span>
+        <textarea name="caption" rows="3" required placeholder="Lonnie & Ruth on their wedding day, July 1948"></textarea>
+      </label>
+
+      <div class="form-row">
+        <label>Year (or full date)
+          <input type="text" name="year" placeholder="1948 or 1948-07-17">
+        </label>
+        <label>Place
+          <input type="text" name="place" placeholder="Greensboro, NC">
+        </label>
+      </div>
+
+      <label>Who appears in this image? (hold ⌘ / Ctrl to multi-select)
+        <select name="people" multiple size="6">
+          {person_options}
+        </select>
+      </label>
+
+      <label>Source / where this came from
+        <input type="text" name="source" placeholder="Family album, courthouse archive, Find a Grave, etc.">
+      </label>
+
+      {{submitter_block}}
+
+      <button type="submit" class="cta-btn">Submit photo</button>
+    </form>
+
+    <!-- ============= STORY / CORRECTION ============= -->
+    <form id="form-story" class="submit-form" action="/submit" method="post">
+      <input type="hidden" name="kind" value="story">
+      <h3>Add a story or correction</h3>
+
+      <label>Type
+        <select name="story_type">
+          <option value="story">Story / oral history</option>
+          <option value="correction">Correction to existing content</option>
+          <option value="addition">New fact, source, or detail</option>
+        </select>
+      </label>
+
+      <label>Title or short description <span class="req">*</span>
+        <input type="text" name="title" required placeholder="Ruth's pound cake / Correction to Lonnie's birthplace / etc.">
+      </label>
+
+      <div class="form-row">
+        <label>Year of the events
+          <input type="text" name="year" placeholder="1955">
+        </label>
+        <label>Place
+          <input type="text" name="place" placeholder="High Point, NC">
+        </label>
+      </div>
+
+      <label>Who is this about? (multi-select)
+        <select name="people" multiple size="6">
+          {person_options}
+        </select>
+      </label>
+
+      <label>Who told you this? Or, who is the source?
+        <input type="text" name="teller" placeholder="My mother / Phil's daughter / family album / etc.">
+      </label>
+
+      <label>The story or correction itself <span class="req">*</span>
+        <textarea name="body" rows="10" required placeholder="Tell it as you remember it. Markdown supported (**bold**, *italic*, paragraph breaks)."></textarea>
+      </label>
+
+      {{submitter_block}}
+
+      <button type="submit" class="cta-btn">Submit story</button>
+    </form>
+
+    <!-- ============= PERSON ============= -->
+    <form id="form-person" class="submit-form" action="/submit" method="post">
+      <input type="hidden" name="kind" value="person">
+      <h3>Add a person to the tree</h3>
+
+      <p class="muted">Use this when you've identified a new ancestor or relative who should appear in the record. Required fields are marked.</p>
+
+      <label>Full name <span class="req">*</span>
+        <input type="text" name="name" required placeholder="William Henry Clay Quesenberry">
+      </label>
+
+      <div class="form-row">
+        <label>Branch
+          <select name="branch">
+            <option value="">— select —</option>
+            <option value="quesenberry">Quesenberry</option>
+            <option value="harvey">Harvey</option>
+            <option value="carmichael">Carmichael</option>
+          </select>
+        </label>
+        <label>Generation back from Lonnie/Ruth
+          <input type="number" name="generation" min="1" max="15" placeholder="3">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Birth date
+          <input type="text" name="birth" placeholder="10 January 1842">
+        </label>
+        <label>Birthplace
+          <input type="text" name="birthPlace" placeholder="Indian Valley, Floyd County, Virginia">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Death date
+          <input type="text" name="death" placeholder="6 February 1898">
+        </label>
+        <label>Death place
+          <input type="text" name="deathPlace" placeholder="Glendale, Arizona Territory">
+        </label>
+      </div>
+
+      <label>Burial place
+        <input type="text" name="burial" placeholder="Cemetery, town, county, state">
+      </label>
+
+      <label>Father (if known and in our tree)
+        <select name="father">
+          <option value="">— unknown / not yet in tree —</option>
+          {person_options}
+        </select>
+      </label>
+
+      <label>Mother (if known and in our tree)
+        <select name="mother">
+          <option value="">— unknown / not yet in tree —</option>
+          {person_options}
+        </select>
+      </label>
+
+      <label>Spouse (if known and in our tree)
+        <select name="spouse">
+          <option value="">— unknown / not yet in tree —</option>
+          {person_options}
+        </select>
+      </label>
+
+      <label>Brief epitaph (1–2 sentences capturing who they were)
+        <textarea name="epitaph" rows="2"></textarea>
+      </label>
+
+      <label>Sources / how you know
+        <textarea name="sources" rows="3" placeholder="Find a Grave URL, census record, family Bible, obituary text, etc."></textarea>
+      </label>
+
+      {{submitter_block}}
+
+      <button type="submit" class="cta-btn">Submit person</button>
+    </form>
+
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".submit-tab").forEach(function(btn) {{
+    btn.addEventListener("click", function() {{
+      document.querySelectorAll(".submit-tab").forEach(function(b) {{ b.classList.toggle("active", b === btn); }});
+      document.querySelectorAll(".submit-form").forEach(function(f) {{ f.classList.toggle("active", f.id === btn.dataset.form); }});
+    }});
+  }});
+</script>"""
+
+    submitter_block = """<fieldset class="submitter">
+        <legend>About you (optional, but helps us credit you)</legend>
+        <div class="form-row">
+          <label>Your name
+            <input type="text" name="submitter_name" placeholder="e.g. Mike Melazzo">
+          </label>
+          <label>Your email
+            <input type="email" name="submitter_email" placeholder="so we can ask follow-ups">
+          </label>
+        </div>
+      </fieldset>"""
+    body = body.replace("{submitter_block}", submitter_block)
+
+    html = head("Contribute") + header(active="submit") + body + footer()
+    write(PUBLIC / "submit.html", html)
+
+
+def render_open_questions():
+    """The Open Questions page — the honest list of gaps inviting research."""
+    questions = _load_optional("open-questions.json", "questions", [])
+
+    # Group by status
+    open_q   = [q for q in questions if q.get("status", "open") == "open"]
+    in_prog  = [q for q in questions if q.get("status") == "in_progress"]
+    closed   = [q for q in questions if q.get("status") == "closed"]
+
+    def render_q(q, ix):
+        people_links = " · ".join(person_link(pid) for pid in q.get("relatedPeople", []))
+        leads = ""
+        if q.get("leads"):
+            leads = "<p><strong>Most likely leads:</strong></p><ul>" + "".join(f"<li>{md_to_html(l)}</li>" for l in q["leads"]) + "</ul>"
+        priority = q.get("priority", "medium")
+        return f"""<article class="question-card priority-{priority}" id="q-{q.get('id', ix)}">
+          <header>
+            <p class="dates">Question · Priority {priority.upper()}{f' · related to {q.get("branch","").title()} line' if q.get("branch") else ""}</p>
+            <h2>{q.get("question", "")}</h2>
+          </header>
+          <p>{md_to_html(q.get("context", ""))}</p>
+          {leads}
+          {f'<p class="muted">Related: {people_links}</p>' if people_links else ""}
+          <p class="muted submission-cta-inline">Have an answer or a lead? <a href="mailto:mike@cgcocktails.com?subject=Re: {q.get('question','')[:60]}">Send it →</a></p>
+        </article>"""
+
+    open_html   = "".join(render_q(q, i) for i, q in enumerate(open_q))
+    inprog_html = "".join(render_q(q, i) for i, q in enumerate(in_prog))
+    closed_html = "".join(render_q(q, i) for i, q in enumerate(closed))
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">The Honest Gaps</p>
+    <h1>Open Questions</h1>
+    <p class="lede">Every family record has gaps. These are ours — the questions that, when answered, will make this archive truer and fuller.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+
+    {f'<h2>Open ({len(open_q)})</h2>{open_html}' if open_q else ''}
+    {f'<h2>In progress ({len(in_prog)})</h2>{inprog_html}' if in_prog else ''}
+    {f'<h2>Recently closed ({len(closed)})</h2>{closed_html}' if closed else ''}
+
+    {empty_state_msg("Open research questions", "Lead for an open question") if not questions else ''}
+
+  </div>
+</section>"""
+    html = head("Open Questions") + header(active="open-questions") + body + footer()
+    write(PUBLIC / "open-questions.html", html)
+
+
+def render_events_json():
+    """Emit /events.json for the 'On This Day' homepage widget.
+    Walks people for births/deaths/marriages and photos/stories for date-keyed events.
+    Output shape: { "MM-DD": [ {year, type, summary, link} ] }
+    """
+    out = {}
+    def add(month, day, year, kind, summary, link):
+        key = f"{int(month):02d}-{int(day):02d}"
+        out.setdefault(key, []).append({
+            "year": int(year), "type": kind, "summary": summary, "link": link,
+        })
+
+    def parse_md_y(date_str):
+        """Try to pull (month_int, day_int, year_int) from a free-form date."""
+        if not date_str:
+            return None
+        months = {m.lower(): i for i, m in enumerate(
+            ["", "January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"])}
+        # pattern: "17 July 1948" or "July 17 1948" or "17 July, 1948"
+        m1 = re.match(r"\s*(\d{1,2})\s+(\w+)\s+(\d{4})", date_str)
+        m2 = re.match(r"\s*(\w+)\s+(\d{1,2}),?\s+(\d{4})", date_str)
+        if m1:
+            d, mn, yr = int(m1.group(1)), m1.group(2).lower(), int(m1.group(3))
+            if mn in months: return (months[mn], d, yr)
+        if m2:
+            mn, d, yr = m2.group(1).lower(), int(m2.group(2)), int(m2.group(3))
+            if mn in months: return (months[mn], d, yr)
+        return None
+
+    for p in PEOPLE.values():
+        link = f"/people/{p['id']}.html"
+        for date_field, kind, label in [
+            ("birth", "birth", "Born"),
+            ("death", "death", "Died"),
+            ("marriedDate", "marriage", "Married"),
+        ]:
+            d = parse_md_y(p.get(date_field, ""))
+            if d:
+                mn, dy, yr = d
+                summary = f"{label}: {p['name']}"
+                add(mn, dy, yr, kind, summary, link)
+
+    write(PUBLIC / "events.json", json.dumps(out, indent=2))
+
+
 def main():
     print("Building Quesenberry & Harvey site...")
     PEOPLE_DIR.mkdir(parents=True, exist_ok=True)
@@ -738,10 +1673,18 @@ def main():
         render_branch_page(branch_key)
 
     render_home()
+    render_tree_json()
     render_tree()
     render_timeline()
     render_military()
     render_sources()
+    render_photographs()
+    render_stories()
+    render_places()
+    render_heirlooms()
+    render_open_questions()
+    render_submit()
+    render_events_json()
 
     print("Done.")
 

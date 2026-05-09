@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contribute — The Quesenberry & Harvey Family</title>
+<meta name="description" content="From the wooden ships that crossed the Atlantic in 1624, to the Highland Scots who landed at Wilmington in 1775, to the Confederate soldiers of Floyd County and the Wesleyan congregations of High Point — this is the chronicle of two families whose stories braid into the larger story of America itself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell">
+    <p class="site-title"><a href="/">The Quesenberry & Harvey Family</a></p>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/tree.html">Tree</a>
+      <details>
+        <summary class="">Branches</summary>
+        <div class="more-menu">
+          <a href="/branches/quesenberry.html">Quesenberry</a>
+          <a href="/branches/harvey.html">Harvey</a>
+          <a href="/branches/carmichael.html">Carmichael</a>
+        </div>
+      </details>
+      <a href="/timeline.html">Timeline</a>
+      <details>
+        <summary class="">Archive</summary>
+        <div class="more-menu">
+          <a href="/photographs.html">Photographs</a>
+          <a href="/stories.html">Stories &amp; Oral Histories</a>
+          <a href="/places.html">Places &amp; Migration</a>
+          <a href="/heirlooms.html">Heirlooms &amp; Recipes</a>
+        </div>
+      </details>
+      <a href="/submit.html" class="active">Contribute</a>
+      <details>
+        <summary class="active">More</summary>
+        <div class="more-menu">
+          <a href="/military.html">Military Service</a>
+          <a href="/open-questions.html">Open Questions</a>
+          <a href="/sources.html">Sources &amp; Methodology</a>
+          <a href="/">Home</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">Help Fill the Record</p>
+    <h1>Contribute to the Family Archive</h1>
+    <p class="lede">A photograph from the shoebox, a story you remember being told, a recipe in your mother's handwriting, a correction to something we got wrong — every contribution makes the record fuller and truer.</p>
+  </div>
+</section>
+
+<section>
+  <div class="shell narrow">
+
+    <div class="submit-tabs" role="tablist">
+      <button class="submit-tab active" data-form="form-photo"  role="tab">Add a photo or document</button>
+      <button class="submit-tab"        data-form="form-story"  role="tab">Add a story or correction</button>
+      <button class="submit-tab"        data-form="form-person" role="tab">Add a person</button>
+    </div>
+
+    <p class="muted" style="margin-bottom:1.4rem;">All submissions go to a moderation queue and will be incorporated into the site after review.</p>
+
+    <!-- ============= PHOTO ============= -->
+    <form id="form-photo" class="submit-form active" action="/submit" method="post" enctype="multipart/form-data">
+      <input type="hidden" name="kind" value="photo">
+      <h3>Add a photo or document</h3>
+
+      <label>Image file <span class="req">*</span>
+        <input type="file" name="photo_file" accept="image/*" required>
+        <small>JPEG, PNG, HEIC, TIFF, etc. — up to 12 MB.</small>
+      </label>
+
+      <label>Caption <span class="req">*</span>
+        <textarea name="caption" rows="3" required placeholder="Lonnie & Ruth on their wedding day, July 1948"></textarea>
+      </label>
+
+      <div class="form-row">
+        <label>Year (or full date)
+          <input type="text" name="year" placeholder="1948 or 1948-07-17">
+        </label>
+        <label>Place
+          <input type="text" name="place" placeholder="Greensboro, NC">
+        </label>
+      </div>
+
+      <label>Who appears in this image? (hold ⌘ / Ctrl to multi-select)
+        <select name="people" multiple size="6">
+          <option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option>
+        </select>
+      </label>
+
+      <label>Source / where this came from
+        <input type="text" name="source" placeholder="Family album, courthouse archive, Find a Grave, etc.">
+      </label>
+
+      <fieldset class="submitter">
+        <legend>About you (optional, but helps us credit you)</legend>
+        <div class="form-row">
+          <label>Your name
+            <input type="text" name="submitter_name" placeholder="e.g. Mike Melazzo">
+          </label>
+          <label>Your email
+            <input type="email" name="submitter_email" placeholder="so we can ask follow-ups">
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="cta-btn">Submit photo</button>
+    </form>
+
+    <!-- ============= STORY / CORRECTION ============= -->
+    <form id="form-story" class="submit-form" action="/submit" method="post">
+      <input type="hidden" name="kind" value="story">
+      <h3>Add a story or correction</h3>
+
+      <label>Type
+        <select name="story_type">
+          <option value="story">Story / oral history</option>
+          <option value="correction">Correction to existing content</option>
+          <option value="addition">New fact, source, or detail</option>
+        </select>
+      </label>
+
+      <label>Title or short description <span class="req">*</span>
+        <input type="text" name="title" required placeholder="Ruth's pound cake / Correction to Lonnie's birthplace / etc.">
+      </label>
+
+      <div class="form-row">
+        <label>Year of the events
+          <input type="text" name="year" placeholder="1955">
+        </label>
+        <label>Place
+          <input type="text" name="place" placeholder="High Point, NC">
+        </label>
+      </div>
+
+      <label>Who is this about? (multi-select)
+        <select name="people" multiple size="6">
+          <option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option>
+        </select>
+      </label>
+
+      <label>Who told you this? Or, who is the source?
+        <input type="text" name="teller" placeholder="My mother / Phil's daughter / family album / etc.">
+      </label>
+
+      <label>The story or correction itself <span class="req">*</span>
+        <textarea name="body" rows="10" required placeholder="Tell it as you remember it. Markdown supported (**bold**, *italic*, paragraph breaks)."></textarea>
+      </label>
+
+      <fieldset class="submitter">
+        <legend>About you (optional, but helps us credit you)</legend>
+        <div class="form-row">
+          <label>Your name
+            <input type="text" name="submitter_name" placeholder="e.g. Mike Melazzo">
+          </label>
+          <label>Your email
+            <input type="email" name="submitter_email" placeholder="so we can ask follow-ups">
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="cta-btn">Submit story</button>
+    </form>
+
+    <!-- ============= PERSON ============= -->
+    <form id="form-person" class="submit-form" action="/submit" method="post">
+      <input type="hidden" name="kind" value="person">
+      <h3>Add a person to the tree</h3>
+
+      <p class="muted">Use this when you've identified a new ancestor or relative who should appear in the record. Required fields are marked.</p>
+
+      <label>Full name <span class="req">*</span>
+        <input type="text" name="name" required placeholder="William Henry Clay Quesenberry">
+      </label>
+
+      <div class="form-row">
+        <label>Branch
+          <select name="branch">
+            <option value="">— select —</option>
+            <option value="quesenberry">Quesenberry</option>
+            <option value="harvey">Harvey</option>
+            <option value="carmichael">Carmichael</option>
+          </select>
+        </label>
+        <label>Generation back from Lonnie/Ruth
+          <input type="number" name="generation" min="1" max="15" placeholder="3">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Birth date
+          <input type="text" name="birth" placeholder="10 January 1842">
+        </label>
+        <label>Birthplace
+          <input type="text" name="birthPlace" placeholder="Indian Valley, Floyd County, Virginia">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>Death date
+          <input type="text" name="death" placeholder="6 February 1898">
+        </label>
+        <label>Death place
+          <input type="text" name="deathPlace" placeholder="Glendale, Arizona Territory">
+        </label>
+      </div>
+
+      <label>Burial place
+        <input type="text" name="burial" placeholder="Cemetery, town, county, state">
+      </label>
+
+      <label>Father (if known and in our tree)
+        <select name="father">
+          <option value="">— unknown / not yet in tree —</option>
+          <option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option>
+        </select>
+      </label>
+
+      <label>Mother (if known and in our tree)
+        <select name="mother">
+          <option value="">— unknown / not yet in tree —</option>
+          <option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option>
+        </select>
+      </label>
+
+      <label>Spouse (if known and in our tree)
+        <select name="spouse">
+          <option value="">— unknown / not yet in tree —</option>
+          <option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option>
+        </select>
+      </label>
+
+      <label>Brief epitaph (1–2 sentences capturing who they were)
+        <textarea name="epitaph" rows="2"></textarea>
+      </label>
+
+      <label>Sources / how you know
+        <textarea name="sources" rows="3" placeholder="Find a Grave URL, census record, family Bible, obituary text, etc."></textarea>
+      </label>
+
+      <fieldset class="submitter">
+        <legend>About you (optional, but helps us credit you)</legend>
+        <div class="form-row">
+          <label>Your name
+            <input type="text" name="submitter_name" placeholder="e.g. Mike Melazzo">
+          </label>
+          <label>Your email
+            <input type="email" name="submitter_email" placeholder="so we can ask follow-ups">
+          </label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="cta-btn">Submit person</button>
+    </form>
+
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".submit-tab").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+      document.querySelectorAll(".submit-tab").forEach(function(b) { b.classList.toggle("active", b === btn); });
+      document.querySelectorAll(".submit-form").forEach(function(f) { f.classList.toggle("active", f.id === btn.dataset.form); });
+    });
+  });
+</script><footer class="site-footer">
+  <div class="shell">
+    <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
+    <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>
+  </div>
+</footer>
+</body>
+</html>
