@@ -156,6 +156,7 @@
       "generation": 2,
       "spouse": "floyd-quesenberry",
       "children": ["lonnie-quesenberry"],
+      "verified": "partial",
       "epitaph": "A mother whose first name echoes through five generations of Quesenberry women — Eva, Eve, Eva Jane.",
       "facts": {
         "Relationship": "Lonnie's mother; Mike's great-grandmother",
@@ -323,6 +324,7 @@
       "generation": 5,
       "father": "aaron-quisenberry",
       "spouse": "martha-slinker",
+      "verified": "documented",
       "epitaph": "American Revolutionary soldier, frontier settler — he carried the Quesenberry name from the colonial Tidewater into the Blue Ridge.",
       "facts": {
         "Generation": "5",
@@ -380,6 +382,7 @@
       "lifespan": "1608–1672",
       "branch": "quesenberry",
       "generation": 9,
+      "verified": "documented",
       "epitaph": "The Atlantic crossing of 1624 — Thomas Questenbury, sixteen years old, a passenger to colonial Virginia. From him every American Quesenberry, Quisenberry, and Christenberry descends.",
       "facts": {
         "Generation": "Colonial immigrant ancestor (~9 generations back from Lonnie)",
@@ -469,6 +472,7 @@
       "generation": "?",
       "father": "duncan-carmichael",
       "spouse": "elizabeth-nix",
+      "verified": "partial",
       "epitaph": "Lanarkshire-born, sailed from Larne on the *Jupiter* in 1775, planted the Carmichael name in the North Carolina red clay.",
       "facts": {
         "Born": "4 September 1754, Lanark, Lanarkshire, Scotland",

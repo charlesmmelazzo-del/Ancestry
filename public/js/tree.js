@@ -137,7 +137,10 @@
 
   function linkName(id) {
     const p = state.byId.get(id);
-    if (!p) return id;
+    if (!p) {
+      const humanized = id.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+      return `<span class="person-stub" title="No record yet">${humanized}</span>`;
+    }
     return `<a href="#" data-focus="${id}">${p.name}</a>`;
   }
 
@@ -298,6 +301,17 @@
       .attr("viewBox", `0 0 ${w} ${h}`)
       .style("width", "100%")
       .style("height", h + "px");
+
+    const defs = svg.append("defs");
+    const pat = defs.append("pattern")
+      .attr("id", "diag")
+      .attr("patternUnits", "userSpaceOnUse")
+      .attr("width", 6).attr("height", 6)
+      .attr("patternTransform", "rotate(45)");
+    pat.append("rect").attr("width", 6).attr("height", 6).attr("fill", "#efe2c4");
+    pat.append("line")
+      .attr("x1", 0).attr("y1", 0).attr("x2", 0).attr("y2", 6)
+      .attr("stroke", "#7a4a1f").attr("stroke-width", 2);
 
     const x = d3.scaleLinear()
       .domain([minYear - 10, maxYear + 10])

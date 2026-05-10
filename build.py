@@ -6,6 +6,7 @@ Reads data/people.json and renders HTML pages into public/.
 Run:  python3 build.py
 """
 
+import html
 import json
 import os
 import re
@@ -18,11 +19,23 @@ PUBLIC = ROOT / "public"
 PEOPLE_DIR = PUBLIC / "people"
 BRANCH_DIR = PUBLIC / "branches"
 
-with open(DATA) as f:
-    DATABASE = json.load(f)
+try:
+    with open(DATA) as f:
+        DATABASE = json.load(f)
+except FileNotFoundError:
+    raise SystemExit(f"build.py: cannot find {DATA}. Run from the project root.")
+except json.JSONDecodeError as e:
+    raise SystemExit(f"build.py: {DATA} is not valid JSON ({e}).")
+
+for required in ("people", "site"):
+    if required not in DATABASE:
+        raise SystemExit(f"build.py: {DATA} is missing required top-level key '{required}'.")
 
 PEOPLE = DATABASE["people"]
 SITE = DATABASE["site"]
+for required in ("title", "intro", "tagline"):
+    if required not in SITE:
+        raise SystemExit(f"build.py: {DATA} 'site' object is missing '{required}'.")
 
 # ---- optional module data files (Phase 3) ----------------------------------
 def _load_optional(name, key, default):
@@ -30,7 +43,8 @@ def _load_optional(name, key, default):
     if not path.exists():
         return default
     try:
-        d = json.load(open(path))
+        with open(path) as fh:
+            d = json.load(fh)
         return d.get(key, default)
     except Exception as e:
         print(f"  ! could not load {name}: {e}")
@@ -46,6 +60,7 @@ PLACES    = _load_optional("places.json",    "places",    [])
 
 def md_to_html(text: str) -> str:
     """Tiny markdown-ish: *italic* and **bold** inline only."""
+    text = html.escape(text or "")
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\*(.+?)\*", r"<em>\1</em>", text)
     return text
@@ -63,7 +78,8 @@ def person_link(person_id):
     if person_id in PEOPLE:
         p = PEOPLE[person_id]
         return f'<a href="/people/{person_id}.html">{p["name"]}</a>'
-    return person_id
+    name = " ".join(w.capitalize() for w in person_id.replace("_", "-").split("-"))
+    return f'<span class="person-stub" title="No record yet">{name}</span>'
 
 
 def safe(d, key, default=""):
@@ -239,7 +255,7 @@ def mini_tree(p):
         parents.append(PEOPLE[p["father"]])
     if "mother" in p and p["mother"] in PEOPLE:
         parents.append(PEOPLE[p["mother"]])
-    spouse = PEOPLE.get(p.get("spouse")) if p.get("spouse") in PEOPLE else None
+    spouse = PEOPLE.get(p.get("spouse"))
     children = [PEOPLE[c] for c in p.get("children", []) if c in PEOPLE]
 
     lines = []

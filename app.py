@@ -18,6 +18,7 @@ Configure via environment variables:
    PORT                (Railway injects this)
 """
 
+import html
 import json
 import os
 import re
@@ -30,8 +31,9 @@ from pathlib import Path
 
 from flask import (
     Flask, request, send_from_directory, redirect, url_for,
-    Response, render_template_string, abort,
+    Response, abort,
 )
+from jinja2 import Environment, select_autoescape
 from werkzeug.utils import secure_filename
 
 # ---- config -----------------------------------------------------------------
@@ -195,7 +197,13 @@ def submit():
         data["upload"] = fname
 
     save_submission(data)
-    return _thanks_html(f"Thank you{', ' + submitter_name if submitter_name else ''}. Your contribution has been received and is in the moderation queue. Tracking ID: <code>{sub_id}</code>"), 200
+    safe_name = html.escape(submitter_name)
+    safe_id = html.escape(sub_id)
+    return _thanks_html(
+        f"Thank you{', ' + safe_name if safe_name else ''}. "
+        f"Your contribution has been received and is in the moderation queue. "
+        f"Tracking ID: <code>{safe_id}</code>"
+    ), 200
 
 
 def _thanks_html(message, ok=True):
@@ -298,6 +306,10 @@ ADMIN_TPL = """<!DOCTYPE html>
 </body></html>"""
 
 
+_ADMIN_ENV = Environment(autoescape=select_autoescape(default=True, default_for_string=True))
+_ADMIN_TEMPLATE = _ADMIN_ENV.from_string(ADMIN_TPL)
+
+
 @app.route("/admin")
 @basic_auth_required
 def admin():
@@ -308,7 +320,7 @@ def admin():
     title = {"pending": "Pending Submissions",
              "approved": "Approved Submissions",
              "rejected": "Rejected Submissions"}[status]
-    return render_template_string(ADMIN_TPL, items=items, status=status, title=title, count=len(items))
+    return _ADMIN_TEMPLATE.render(items=items, status=status, title=title, count=len(items))
 
 
 @app.route("/admin/<sub_id>/<action>", methods=["POST"])

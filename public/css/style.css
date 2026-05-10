@@ -437,6 +437,7 @@ hr.flourish::before {
 .facts-card dd { margin: 0.2em 0 0; }
 .facts-card dd.relations { font-style: italic; }
 .facts-card dd a { color: var(--ink-soft); }
+.person-stub { color: var(--ink-soft); opacity: 0.75; border-bottom: 1px dotted var(--ink-soft); cursor: help; }
 
 /* ===== Archival stamp (verification) ===== */
 .archival-stamp {
