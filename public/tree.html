@@ -58,45 +58,79 @@
 <section style="padding-top: 1rem;">
   <div class="shell">
     <div class="tree-controls">
-      <div class="view-tabs" role="tablist">
-        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true">Pedigree</button>
-        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false">Timeline</button>
-        <button data-view="map"      class="view-tab" role="tab" aria-selected="false">Migration Map</button>
+      <div class="view-tabs" role="tablist" aria-label="Tree view">
+        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true" aria-controls="view-pedigree" id="tab-pedigree">Pedigree</button>
+        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false" aria-controls="view-timeline" id="tab-timeline">Timeline</button>
+        <button data-view="map"      class="view-tab" role="tab" aria-selected="false" aria-controls="view-map" id="tab-map">Migration Map</button>
       </div>
-      <div class="search-wrap">
-        <input id="search" type="text" placeholder="Search a name…" autocomplete="off" />
-        <ul id="search-results" class="search-results" hidden></ul>
+      <div class="search-and-find">
+        <div class="search-wrap">
+          <input id="search" type="text" placeholder="Search a name…" autocomplete="off"
+                 role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false" />
+          <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+        </div>
+        <button id="find-me" class="find-me-btn" type="button">Find me on the tree</button>
       </div>
     </div>
 
     <div class="tree-layout">
       <div class="tree-stage">
-        <div id="view-pedigree" class="view active"></div>
-        <div id="view-timeline" class="view"></div>
-        <div id="view-map"      class="view"></div>
+        <button class="zoom-ctl zoom-in" type="button" aria-label="Zoom in">+</button>
+        <button class="zoom-ctl zoom-out" type="button" aria-label="Zoom out">−</button>
+        <button class="zoom-ctl zoom-fit" type="button" aria-label="Fit to viewport" title="Fit">⤢</button>
+        <div id="start-here-callout" class="start-here" hidden>
+          <span class="start-here-text">Start here — your great-grandparents.</span>
+          <svg class="start-here-arrow" viewBox="0 0 80 60" aria-hidden="true">
+            <path d="M70 10 Q 40 30, 14 48" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M14 48 L22 42 M14 48 L20 54" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div id="view-pedigree" class="view active" role="tabpanel" aria-labelledby="tab-pedigree" tabindex="0"></div>
+        <div id="view-timeline" class="view" role="tabpanel" aria-labelledby="tab-timeline" tabindex="0" hidden></div>
+        <div id="view-map"      class="view" role="tabpanel" aria-labelledby="tab-map" tabindex="0" hidden></div>
       </div>
-      <aside id="side-panel" class="side-panel">
+      <aside id="side-panel" class="side-panel" role="region" aria-labelledby="side-panel-name">
         <p class="muted">Click any name to focus on a person.</p>
       </aside>
     </div>
 
-    <p class="muted center" style="margin-top: 1.5rem;">All three views share one focused person. Use the search box to jump to anyone in the family by name.</p>
+    <div class="tree-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#7a4a1f"></span>Quesenberry</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#3a5a3e"></span>Harvey</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#8a6d28"></span>Carmichael</span>
+      <span class="legend-sep">·</span>
+      <span class="legend-item legend-help">Click a name to focus · Drag to pan · Scroll to zoom</span>
+    </div>
   </div>
 </section>
+
+<dialog id="find-me-dialog" class="find-me-dialog" aria-labelledby="find-me-title">
+  <form method="dialog" class="find-me-form">
+    <h3 id="find-me-title">Find me on the tree</h3>
+    <p class="find-me-help">Pick the ancestor closest to you on the family line.</p>
+    <label for="find-me-select" class="find-me-label">Ancestor</label>
+    <select id="find-me-select">
+      <option value="">— select a person —</option>
+      <optgroup label="Quesenberry"><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="floyd-quesenberry">Floyd H. Quesenberry (fl. 1920s)</option><option value="eva-quesenberry">Eva Quesenberry (fl. 1920s)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option></optgroup><optgroup label="Harvey"><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="carl-harvey">Carl (Carol) Harvey (fl. 1925–1947)</option><option value="geneva-carmichael">Geneva Carmichael Harvey (fl. 1925–1947)</option></optgroup><optgroup label="Carmichael"><option value="archibald-carmichael">Archibald Carmichael Sr. (1754–1827)</option></optgroup>
+    </select>
+    <div class="find-me-actions">
+      <button type="button" class="find-me-cancel" value="cancel">Cancel</button>
+      <button type="submit" class="find-me-confirm" value="confirm">Show me</button>
+    </div>
+  </form>
+</dialog>
 
 <section>
   <div class="shell narrow">
     <h2>How to read these views</h2>
     <p><strong>Pedigree.</strong> The classic upside-down tree: Lonnie and Ruth at the top, their parents below, and so on backward in time. Branches are color-coded — Quesenberry russet, Harvey forest, Carmichael gold. Lines connect children to parents.</p>
-    <p><strong>Timeline.</strong> Each ancestor's life as a horizontal bar across four centuries — from Thomas Questenbury's birth in 1608 to Ruth's death in 2016. The shape of the family line becomes obvious at a glance: long lives, the gap of the Civil War, the consolidation in the Carolinas in the twentieth century.</p>
+    <p><strong>Timeline.</strong> Each ancestor's life as a horizontal bar across four centuries — from the early 1600s to the present. Shaded bands mark the wars and depressions that shaped the generations.</p>
     <p><strong>Migration Map.</strong> The places that mattered, mapped and connected: Kent to Virginia in 1624, Larne to Wilmington in 1775, Lancaster County PA south down the Wagon Road, the Blue Ridge into the Carolina Piedmont. The story of this family is, fundamentally, a story of crossings.</p>
   </div>
 </section>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="/js/tree.js" defer></script><footer class="site-footer">
+<script type="module" src="/js/tree.js"></script><footer class="site-footer">
   <div class="shell">
     <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
     <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>

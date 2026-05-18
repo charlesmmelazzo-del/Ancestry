@@ -816,7 +816,7 @@ hr.flourish::before {
   gap: 1.4rem;
   align-items: start;
 }
-@media (max-width: 960px) {
+@media (max-width: 768px) {
   .tree-layout { grid-template-columns: 1fr; }
 }
 
@@ -1490,4 +1490,620 @@ hr.flourish::before {
   .person-grid { grid-template-columns: 1fr; }
   .facts-card { position: static; }
   .hero-photo { height: 60vh; min-height: 380px; }
+}
+
+/* ============================================================
+   Tree page (redesign additions)
+   ============================================================ */
+
+/* search + find-me grouping */
+.search-and-find {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.find-me-btn {
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-family: var(--voice-caps);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.55em 0.9em;
+  cursor: pointer;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.find-me-btn:hover { background: var(--paper-2); }
+.find-me-btn:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+
+/* tree stage — make it a positioned host for callout + zoom controls */
+.tree-stage {
+  position: relative;
+}
+.tree-stage .view {
+  opacity: 1;
+  transition: opacity 240ms ease;
+}
+.tree-stage .view.fading {
+  opacity: 0;
+}
+
+/* zoom controls */
+.zoom-ctl {
+  position: absolute;
+  right: 14px;
+  width: 32px; height: 32px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-ctl:hover { background: var(--paper-2); }
+.zoom-ctl:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.zoom-ctl.zoom-in  { top: 14px; }
+.zoom-ctl.zoom-out { top: 50px; }
+.zoom-ctl.zoom-fit { top: 86px; font-size: 0.95rem; }
+
+/* legend strip below tree */
+.tree-legend {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--voice-caps);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.tree-legend .legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.tree-legend .legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.tree-legend .legend-sep { opacity: 0.4; }
+.tree-legend .legend-help {
+  letter-spacing: 0.12em;
+  text-transform: none;
+  font-family: var(--voice-body);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* "Start here" callout */
+.start-here {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4em;
+  pointer-events: none;
+  color: var(--rust);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 320ms ease, transform 320ms ease;
+}
+.start-here.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.start-here-text {
+  font-family: var(--voice-script);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  max-width: 180px;
+  display: inline-block;
+  padding-top: 4px;
+}
+.start-here-arrow {
+  width: 70px;
+  height: 50px;
+  color: var(--rust);
+  flex-shrink: 0;
+}
+
+/* Pedigree SVG */
+.ped-svg {
+  display: block;
+  cursor: grab;
+  background: transparent;
+}
+.ped-svg:active { cursor: grabbing; }
+
+.ped-link {
+  stroke: var(--ink);
+  stroke-width: 1px;
+  stroke-opacity: 0.35;
+  transition: stroke-opacity 200ms, stroke 200ms, stroke-width 200ms;
+}
+.ped-link.path-highlight {
+  stroke: var(--rust);
+  stroke-opacity: 1;
+  stroke-width: 2;
+}
+.spouse-line {
+  stroke: var(--rust);
+  stroke-width: 1.6;
+  stroke-dasharray: 4 3;
+  opacity: 0.7;
+}
+
+/* Pedigree node */
+.ped-node {
+  cursor: pointer;
+  outline: none;
+}
+.ped-node .ped-focus-ring {
+  stroke: var(--rust);
+  stroke-width: 0;
+  transition: stroke-width 200ms;
+}
+.ped-node .ped-disk {
+  transition: filter 200ms, stroke-width 200ms;
+}
+.ped-node .ped-monogram {
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 16px;
+  fill: var(--ink);
+  pointer-events: none;
+}
+.ped-node .ped-name {
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 13px;
+  fill: var(--ink);
+  pointer-events: none;
+}
+.ped-node .ped-dates {
+  font-family: var(--voice-caps);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  fill: var(--rust);
+  pointer-events: none;
+}
+.ped-node:hover .ped-disk { filter: drop-shadow(0 1px 2px rgba(0,0,0,0.18)); }
+.ped-node.focused .ped-focus-ring { stroke-width: 2.2; }
+.ped-node.focused .ped-disk      { stroke-width: 3; }
+.ped-node.focused .ped-name      { font-weight: 700; }
+.ped-node.path-highlight .ped-focus-ring { stroke: var(--rust); stroke-width: 1.4; }
+.ped-node:focus-visible .ped-focus-ring  { stroke: var(--rust); stroke-width: 2.4; stroke-dasharray: 3 2; }
+
+/* Pedigree mobile (indented list) */
+.ped-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.ped-list .ped-list { padding-left: 0; }
+.ped-list-item {
+  --depth: 0;
+  padding: 0.55rem 0.7rem;
+  margin: 0.3rem 0;
+  margin-left: calc(var(--depth) * 1.1rem);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--rust);
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+.ped-list-item.branch-harvey      { border-left-color: var(--forest); }
+.ped-list-item.branch-carmichael  { border-left-color: var(--gold-leaf); }
+.ped-list-item.focused {
+  background: var(--paper-2);
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.ped-list-item:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.ped-list-item .pl-disk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--paper-2);
+  border: 2px solid currentColor;
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.ped-list-item .pl-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.ped-list-item .pl-name {
+  font-family: var(--voice-display);
+  font-style: italic;
+}
+.ped-list-item .pl-dates {
+  font-family: var(--voice-caps);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--rust);
+}
+
+/* Hover card */
+.hover-card {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 2px 4px 14px var(--shadow-deep);
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  max-width: 240px;
+  font-size: 0.85rem;
+}
+.hover-card .hc-disk {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+.hover-card .hc-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hover-card .hc-name {
+  font-family: var(--voice-display);
+  font-style: italic;
+  color: var(--ink);
+}
+.hover-card .hc-dates {
+  font-family: var(--voice-caps);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  color: var(--rust);
+}
+.hover-card .hc-place {
+  font-family: var(--voice-body);
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* Find Me dialog */
+.find-me-dialog {
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  padding: 0;
+  box-shadow: 4px 8px 28px var(--shadow-deep);
+  max-width: 420px;
+  width: calc(100% - 2rem);
+}
+.find-me-dialog::backdrop {
+  background: rgba(43, 29, 16, 0.45);
+}
+.find-me-form {
+  padding: 1.6rem 1.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.find-me-form h3 {
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 0;
+  color: var(--ink);
+}
+.find-me-help {
+  font-family: var(--voice-body);
+  color: var(--ink-soft);
+  margin: 0;
+  font-size: 0.95rem;
+}
+.find-me-label {
+  font-family: var(--voice-caps);
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+  color: var(--rust);
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+.find-me-form select {
+  font-family: var(--voice-body);
+  font-size: 1rem;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.6em 0.8em;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+.find-me-form select:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 1px;
+}
+.find-me-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+.find-me-cancel,
+.find-me-confirm {
+  font-family: var(--voice-caps);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.55em 1.1em;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.find-me-cancel {
+  background: transparent;
+  border: 1px solid var(--rule);
+  color: var(--ink);
+}
+.find-me-confirm {
+  background: var(--rust);
+  border: 1px solid var(--rust);
+  color: var(--paper);
+}
+
+/* Side panel additions */
+.panel-section-label {
+  font-family: var(--voice-caps);
+  letter-spacing: 0.2em;
+  font-size: 0.68rem;
+  color: var(--rust);
+  text-transform: uppercase;
+  margin: 1.2rem 0 0.5rem;
+}
+.panel-where-they-sit {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.6rem;
+  margin-top: 1rem;
+}
+.wts-row {
+  margin: 0.25rem 0;
+  font-size: 0.92rem;
+}
+.wts-tag {
+  font-family: var(--voice-caps);
+  letter-spacing: 0.16em;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: inline-block;
+  width: 4.5em;
+  margin-right: 0.4em;
+}
+.wts-row.wts-self em {
+  font-style: italic;
+  color: var(--rust);
+}
+.wts-row a {
+  color: var(--ink);
+  border-bottom: 1px dotted var(--rule);
+  text-decoration: none;
+}
+.wts-row a:hover { color: var(--rust); }
+
+.panel-path-wrap { margin-top: 0.6rem; }
+.panel-path {
+  font-family: var(--voice-script);
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.02em;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.panel-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.panel-close-mobile {
+  background: transparent;
+  border: 1px solid var(--rule);
+  font-family: var(--voice-caps);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding: 0.4em 0.9em;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+/* Postmark stamp */
+.postmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.7rem;
+}
+.postmark svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+.postmark-label {
+  font-family: var(--voice-caps);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Person stub (referenced ancestor with no record yet) */
+.person-stub {
+  font-style: italic;
+  color: var(--ink-soft);
+  border-bottom: 1px dotted var(--rule);
+  cursor: help;
+}
+
+/* Timeline view */
+.tl-svg { display: block; }
+.tl-band {
+  fill: rgba(122, 74, 31, 0.10);
+}
+.tl-band-label {
+  font-family: var(--voice-caps);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  fill: var(--rust);
+  opacity: 0.6;
+}
+.tl-axis line { stroke: var(--rule); stroke-width: 1; }
+.tl-axis text {
+  font-family: var(--voice-caps);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  fill: var(--rust);
+}
+.tl-row { cursor: pointer; outline: none; }
+.tl-row:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+}
+.tl-name {
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 11px;
+  fill: var(--ink);
+  transition: fill 160ms;
+}
+.tl-row.focused .tl-name { fill: var(--rust); font-weight: 700; }
+.tl-bar { opacity: 0.65; transition: opacity 160ms, stroke 160ms; }
+.tl-row.focused .tl-bar { opacity: 1; stroke: var(--rust); stroke-width: 2; }
+.tl-row:hover .tl-bar    { opacity: 0.95; }
+.tl-year {
+  font-family: var(--voice-caps);
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  fill: var(--rust);
+  pointer-events: none;
+}
+
+/* Map */
+.leaflet-host {
+  width: 100%;
+  height: 640px;
+}
+.leaflet-container .leaflet-control-attribution,
+.leaflet-container .leaflet-control-attribution a {
+  font-family: var(--voice-caps) !important;
+  font-size: 11px !important;
+  letter-spacing: 0.04em !important;
+  color: rgba(43, 29, 16, 0.55) !important;
+  background: rgba(244, 234, 213, 0.9) !important;
+}
+
+/* Mobile (<= 768px): bottom-sheet side panel */
+@media (max-width: 768px) {
+  .tree-stage { min-height: auto; }
+  .zoom-ctl { display: none; }
+  .start-here { left: 16px; top: 14px; }
+  .start-here-text { max-width: 150px; font-size: 13px; }
+
+  .side-panel {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    top: auto;
+    z-index: 80;
+    max-height: 75vh;
+    border: 1px solid var(--rule);
+    border-bottom: none;
+    box-shadow: 0 -4px 16px var(--shadow-deep);
+    transform: translateY(105%);
+    transition: transform 280ms ease;
+    margin: 0;
+  }
+  .side-panel.open { transform: translateY(0); }
+  .side-panel::before {
+    content: "";
+    display: block;
+    width: 38px; height: 4px;
+    background: var(--rule);
+    border-radius: 2px;
+    margin: -0.6rem auto 0.8rem;
+  }
+  .panel-close-mobile { display: inline-flex; }
+
+  .tree-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .search-and-find {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .find-me-btn { text-align: center; }
+
+  .tree-legend { font-size: 0.65rem; gap: 0.6rem; }
+
+  /* on mobile we render a list, not the SVG */
+  #view-pedigree { overflow-x: visible; }
+}
+
+/* Reduced motion: no animations anywhere on tree */
+@media (prefers-reduced-motion: reduce) {
+  .tree-stage .view,
+  .start-here,
+  .side-panel,
+  .ped-link,
+  .ped-disk,
+  .ped-focus-ring,
+  .tl-bar,
+  .tl-name {
+    transition: none !important;
+    animation: none !important;
+  }
 }

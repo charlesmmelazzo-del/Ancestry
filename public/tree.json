@@ -30,6 +30,8 @@
       "military": null,
       "birthYear": 1920,
       "deathYear": 2002,
+      "initials": "LQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -70,6 +72,8 @@
       "military": null,
       "birthYear": 1925,
       "deathYear": 2016,
+      "initials": "RQ",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -106,6 +110,8 @@
       "military": null,
       "birthYear": 1929,
       "deathYear": 2021,
+      "initials": "ES",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.1051,
         "lng": -79.9859,
@@ -142,6 +148,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "AS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -168,6 +176,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "FQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -198,6 +208,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "EQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -225,6 +237,8 @@
       "military": null,
       "birthYear": 1925,
       "deathYear": 1947,
+      "initials": "CH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -256,6 +270,8 @@
       "military": null,
       "birthYear": 1895,
       "deathYear": 1947,
+      "initials": "GH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -284,6 +300,8 @@
       "military": "American Civil War \u2014 Confederate Army (one of the famous nine sons)",
       "birthYear": 1842,
       "deathYear": 1898,
+      "initials": "WQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.9314,
         "lng": -80.3781,
@@ -316,6 +334,8 @@
       "military": null,
       "birthYear": 1838,
       "deathYear": 1926,
+      "initials": "EQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -334,12 +354,16 @@
       "father": "george-quesenberry",
       "mother": "martha-slinker",
       "spouse": "nancy-hylton",
-      "children": [],
+      "children": [
+        "william-henry-quesenberry"
+      ],
       "verified": "documented",
       "epitaph": "Patriarch of Greasy Creek \u2014 and, by Civil War's end, the only American father documented to have sent nine sons into Confederate service.",
       "military": null,
       "birthYear": 1790,
       "deathYear": 1853,
+      "initials": "JS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.9314,
         "lng": -80.3781,
@@ -366,12 +390,16 @@
       "father": "aaron-quisenberry",
       "mother": null,
       "spouse": "martha-slinker",
-      "children": [],
+      "children": [
+        "john-quesenberry-sr"
+      ],
       "verified": "documented",
       "epitaph": "American Revolutionary soldier, frontier settler \u2014 he carried the Quesenberry name from the colonial Tidewater into the Blue Ridge.",
       "military": "American Revolutionary War \u2014 Montgomery County, Virginia Militia",
       "birthYear": 1748,
       "deathYear": 1812,
+      "initials": "GQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 38.247,
         "lng": -78.1116,
@@ -398,12 +426,16 @@
       "father": null,
       "mother": null,
       "spouse": "joyce-dudley",
-      "children": [],
+      "children": [
+        "george-quesenberry"
+      ],
       "verified": "documented",
       "epitaph": "DAR Patriot Ancestor #A093307 \u2014 furnished beef to Washington's Continental Army from his Orange County, Virginia farm.",
       "military": "American Revolution \u2014 DAR Patriot Ancestor #A093307; furnished beef to the Continental Army",
       "birthYear": 1725,
       "deathYear": 1795,
+      "initials": "AS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 38.0265,
         "lng": -77.3464,
@@ -430,12 +462,16 @@
       "father": null,
       "mother": null,
       "spouse": null,
-      "children": [],
+      "children": [
+        "john-quisenberry-1627"
+      ],
       "verified": "documented",
       "epitaph": "The Atlantic crossing of 1624 \u2014 Thomas Questenbury, sixteen years old, a passenger to colonial Virginia. From him every American Quesenberry, Quisenberry, and Christenberry descends.",
       "military": null,
       "birthYear": 1608,
       "deathYear": 1672,
+      "initials": "TQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 51.4045,
         "lng": 0.0142,
@@ -468,6 +504,8 @@
       "military": null,
       "birthYear": 1627,
       "deathYear": 1717,
+      "initials": "JS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -500,6 +538,8 @@
       "military": "American Revolution \u2014 DAR Patriot Ancestor #A105465 (Pennsylvania service)",
       "birthYear": 1757,
       "deathYear": 1845,
+      "initials": "CS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 40.0379,
         "lng": -76.3055,
@@ -532,6 +572,8 @@
       "military": null,
       "birthYear": 1754,
       "deathYear": 1827,
+      "initials": "AS",
+      "monogramColor": "#8a6d28",
       "birthGeo": {
         "lat": 55.6736,
         "lng": -3.779,
