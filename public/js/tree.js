@@ -1,10 +1,18 @@
 // ============================================================
-//   Quesenberry & Harvey — interactive tree
-//   Three views (Pedigree / Timeline / Map) sharing one focus.
-//   ESM module: imports d3 sub-bundles only.
+//   Family tree — interactive (Pedigree / Timeline / Map)
+//   Shared by all family sites. Reads window.TREE_CONFIG for
+//   per-family overrides; falls back to Quesenberry defaults.
 // ============================================================
 
 import { select, hierarchy, tree as d3tree, zoom, zoomIdentity } from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
+
+// ---------- family config (injected per page) ----------
+const _cfg    = window.TREE_CONFIG || {};
+const DATA_URL   = _cfg.dataUrl  || "/tree.json";
+const ROOT_IDS   = (_cfg.rootIds && _cfg.rootIds.length)
+                     ? _cfg.rootIds
+                     : ["lonnie-quesenberry", "ruth-harvey"];
+const DESC_ROOTS = new Set(ROOT_IDS);
 
 // ---------- shared state ----------
 const state = {
@@ -24,9 +32,7 @@ const state = {
 
 const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const MS_FOCUS = REDUCED ? 0 : 750;
-const MS_FADE = REDUCED ? 0 : 700;
-
-const DESC_ROOTS = new Set(["lonnie-quesenberry", "ruth-harvey"]);
+const MS_FADE  = REDUCED ? 0 : 700;
 
 // ---------- helpers ----------
 const $ = (sel, ctx) => (ctx || document).querySelector(sel);
@@ -59,7 +65,7 @@ function setUrlState({ view, focus }) {
 }
 
 // ---------- bootstrap ----------
-fetch("/tree.json")
+fetch(DATA_URL)
   .then((r) => r.json())
   .then((data) => {
     state.people = data.people;
@@ -67,11 +73,9 @@ fetch("/tree.json")
 
     const u = paramsFromUrl();
     state.view = ["pedigree", "timeline", "map"].includes(u.view) ? u.view : "pedigree";
-    state.focusedId = u.focus && state.byId.has(u.focus)
-      ? u.focus
-      : (state.byId.has("lonnie-quesenberry")
-          ? "lonnie-quesenberry"
-          : state.people[0]?.id || null);
+    // Default focus: first ROOT_ID that exists in data, then first person overall.
+    const defaultFocus = ROOT_IDS.find(id => state.byId.has(id)) || state.people[0]?.id || null;
+    state.focusedId = u.focus && state.byId.has(u.focus) ? u.focus : defaultFocus;
 
     initToolbar();
     initSearch();
@@ -523,9 +527,14 @@ function drawPedigree() {
 }
 
 function drawPedigreeDesktop(container) {
-  if (!state.byId.has("lonnie-quesenberry")) return;
+  const firstRootId = ROOT_IDS.find(id => state.byId.has(id));
+  if (!firstRootId && state.people.length === 0) {
+    container.innerHTML = `<p class="tree-empty">No ancestors have been added to this tree yet. <a href="/submit.html">Contribute records</a> to get started.</p>`;
+    return;
+  }
+  if (!firstRootId) return;
 
-  // Build hierarchy by walking parents from Lonnie+Ruth.
+  // Build hierarchy by walking parents upward from root IDs.
   function build(personId, depth, seen = new Set()) {
     if (seen.has(personId)) return null;
     const p = state.byId.get(personId);
@@ -543,12 +552,15 @@ function drawPedigreeDesktop(container) {
     return node;
   }
 
-  const lonnieTree = build("lonnie-quesenberry", 0);
-  const ruthTree   = build("ruth-harvey", 0);
+  const rootTrees = ROOT_IDS.map(id => build(id, 0)).filter(Boolean);
+  // Couple label from first two roots' names, or a generic label.
+  const coupleLabel = rootTrees.length >= 2
+    ? `${rootTrees[0].person.name.split(" ")[0]} & ${rootTrees[1].person.name.split(" ")[0]}`
+    : (rootTrees[0]?.person.name || "Family");
   const data = {
     id: "__couple__",
-    person: { name: "Lonnie & Ruth", branch: "" },
-    children: [lonnieTree, ruthTree].filter(Boolean),
+    person: { name: coupleLabel, branch: "" },
+    children: rootTrees,
   };
 
   const w = container.clientWidth || 900;
@@ -771,7 +783,12 @@ function cssEscape(s) {
 
 // ----- pedigree mobile (indented list) -----
 function drawPedigreeMobile(container) {
-  if (!state.byId.has("lonnie-quesenberry")) return;
+  const firstRootId = ROOT_IDS.find(id => state.byId.has(id));
+  if (!firstRootId && state.people.length === 0) {
+    container.innerHTML = `<p class="tree-empty" style="padding:1.5rem">No ancestors added yet.</p>`;
+    return;
+  }
+  if (!firstRootId) return;
   const seen = new Set();
   const ol = document.createElement("ol");
   ol.className = "ped-list";
@@ -807,9 +824,8 @@ function drawPedigreeMobile(container) {
     if (sublist.children.length) into.appendChild(sublist);
   }
 
-  // Root: Lonnie & Ruth
-  appendNode("lonnie-quesenberry", 0, ol);
-  if (state.byId.has("ruth-harvey")) appendNode("ruth-harvey", 0, ol);
+  // Root: all configured root IDs that exist in data
+  ROOT_IDS.forEach(id => { if (state.byId.has(id)) appendNode(id, 0, ol); });
   container.appendChild(ol);
   // Reflect focus
   $$(".ped-list-item").forEach((li) => {

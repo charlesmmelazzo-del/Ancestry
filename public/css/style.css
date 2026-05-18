@@ -138,15 +138,9 @@ hr.flourish::before {
   flex-wrap: wrap;
 }
 .site-title {
+  /* Used as class on <summary> inside .family-switcher */
   margin: 0;
-  font-family: var(--voice-display);
-  font-style: italic;
-  font-size: 1.35rem;
-  font-weight: 400;
-  letter-spacing: 0.02em;
 }
-.site-title a { color: var(--paper); text-decoration: none; }
-.site-title a:hover { background: none; color: var(--paper-2); }
 .site-nav {
   display: flex;
   gap: 1.4rem;
@@ -190,6 +184,67 @@ hr.flourish::before {
   z-index: 10;
 }
 .site-nav .more-menu { display: none; }
+
+/* ===== Family switcher (site title → dropdown) ===== */
+.family-switcher {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.family-switcher > summary {
+  /* Inherit site-title typography */
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 1.35rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  /* Subtle affordance: small caret */
+  padding-right: 1.1em;
+  position: relative;
+}
+.family-switcher > summary::-webkit-details-marker { display: none; }
+.family-switcher > summary::after {
+  content: "▾";
+  font-style: normal;
+  font-size: 0.6em;
+  opacity: 0.55;
+  position: absolute;
+  right: 0;
+  top: 0.35em;
+}
+.family-switcher > summary:hover,
+.family-switcher[open] > summary { color: var(--paper-2); }
+/* Dropdown panel */
+.family-switcher[open] > .more-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5em);
+  background: var(--ink);
+  border: 1px solid var(--rule);
+  padding: 0.8em 1.2em;
+  gap: 0.55em;
+  min-width: 220px;
+  z-index: 20;
+  white-space: nowrap;
+}
+.family-switcher-menu { display: none; }
+.family-switcher-menu a {
+  font-family: var(--voice-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--paper);
+  text-decoration: none;
+  padding: 0.15em 0;
+  border-bottom: 1px solid transparent;
+}
+.family-switcher-menu a:hover,
+.family-switcher-menu a.active { border-bottom-color: var(--rule); }
 
 /* ===== Hero (homepage) ===== */
 .hero {

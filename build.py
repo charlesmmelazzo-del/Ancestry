@@ -55,6 +55,23 @@ STORIES   = _load_optional("stories.json",   "stories",   [])
 HEIRLOOMS = _load_optional("heirlooms.json", "heirlooms", [])
 PLACES    = _load_optional("places.json",    "places",    [])
 
+# ---- Melazzo family data ----------------------------------------------------
+def _load_family_db(filename):
+    """Load a full family JSON file ({site, people}), returning safe defaults."""
+    path = ROOT / "data" / filename
+    if not path.exists():
+        return {"site": {"title": "Family", "intro": "", "tagline": ""}, "people": {}}
+    try:
+        with open(path) as fh:
+            return json.load(fh)
+    except Exception as e:
+        print(f"  ! could not load {filename}: {e}")
+        return {"site": {"title": "Family", "intro": "", "tagline": ""}, "people": {}}
+
+_melazzo_db   = _load_family_db("melazzo.json")
+MELAZZO_SITE  = _melazzo_db["site"]
+MELAZZO_PEOPLE = _melazzo_db.get("people", {})
+
 
 # ---- helpers ----------------------------------------------------------------
 
@@ -113,16 +130,29 @@ def head(title, page_path=""):
 """
 
 
-def header(active=""):
+def header(active="", family="quesenberry"):
+    """Render the site-wide header.
+
+    family: "quesenberry" (default) or "melazzo" — controls which family name
+    appears in the title and which entry is active in the family switcher.
+    """
     def cls(name):
         return ' class="active"' if name == active else ""
     branch_active = "active" if active in ("quesenberry", "harvey", "carmichael") else ""
     archive_active = "active" if active in ("archive", "stories", "places", "heirlooms") else ""
     more_active = "active" if active in ("military", "sources", "open-questions", "submit") else ""
-    return f"""<header class="site-header">
-  <div class="shell">
-    <p class="site-title"><a href="/">{SITE['title']}</a></p>
-    <nav class="site-nav" aria-label="Main">
+
+    # Family switcher — title becomes a <details> dropdown
+    qh_active   = ' class="active"' if family == "quesenberry" else ""
+    mel_active  = ' class="active"' if family == "melazzo" else ""
+    site_title  = MELAZZO_SITE["title"] if family == "melazzo" else SITE["title"]
+
+    # The Melazzo tree has its own stripped-down nav (no branches/timeline/archive).
+    if family == "melazzo":
+        nav_inner = f"""
+      <a href="/melazzo/tree.html"{cls('melazzo-tree')}>Tree</a>"""
+    else:
+        nav_inner = f"""
       <a href="/tree.html"{cls('tree')}>Tree</a>
       <details>
         <summary class="{branch_active}">Branches</summary>
@@ -151,7 +181,18 @@ def header(active=""):
           <a href="/sources.html"{cls('sources')}>Sources &amp; Methodology</a>
           <a href="/">Home</a>
         </div>
-      </details>
+      </details>"""
+
+    return f"""<header class="site-header">
+  <div class="shell">
+    <details class="family-switcher">
+      <summary class="site-title">{site_title}</summary>
+      <div class="more-menu family-switcher-menu">
+        <a href="/">{SITE['title']}</a>
+        <a href="/melazzo/tree.html">{MELAZZO_SITE['title']}</a>
+      </div>
+    </details>
+    <nav class="site-nav" aria-label="Main">{nav_inner}
     </nav>
   </div>
 </header>
@@ -964,7 +1005,7 @@ def render_tree():
 </section>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script type="module" src="/js/tree.js?v=2"></script>"""
+<script type="module" src="/js/tree.js?v=3"></script>"""
 
     html = head("Family Tree") + header(active="tree") + body + footer()
     write(PUBLIC / "tree.html", html)
@@ -1762,6 +1803,184 @@ def render_events_json():
     write(PUBLIC / "events.json", json.dumps(out, indent=2))
 
 
+# ============================================================
+#  Melazzo family tree
+# ============================================================
+
+def render_melazzo_tree_json():
+    """Emit /public/melazzo/tree.json consumed by the Melazzo tree page."""
+    derived_children: dict = {p["id"]: list(p.get("children", [])) for p in MELAZZO_PEOPLE.values()}
+    for p in MELAZZO_PEOPLE.values():
+        for parent_field in ("father", "mother"):
+            parent_id = p.get(parent_field)
+            if parent_id and parent_id in MELAZZO_PEOPLE:
+                if p["id"] not in derived_children[parent_id]:
+                    derived_children[parent_id].append(p["id"])
+
+    out: dict = {"site": MELAZZO_SITE, "people": []}
+    for p in MELAZZO_PEOPLE.values():
+        by, dy = lifespan_years(p)
+        birth_geo = geocode(p.get("birthPlace", ""))
+        death_geo = geocode(p.get("deathPlace", ""))
+        burial_geo = geocode(p.get("burial", ""))
+        out["people"].append({
+            "id":          p["id"],
+            "name":        p["name"],
+            "lifespan":    p.get("lifespan", ""),
+            "birth":       p.get("birth", ""),
+            "birthPlace":  p.get("birthPlace", ""),
+            "death":       p.get("death", ""),
+            "deathPlace":  p.get("deathPlace", ""),
+            "burial":      p.get("burial", ""),
+            "branch":      p.get("branch", ""),
+            "generation":  p.get("generation"),
+            "father":      p.get("father"),
+            "mother":      p.get("mother"),
+            "spouse":      p.get("spouse"),
+            "children":    derived_children.get(p["id"], []),
+            "verified":    p.get("verified", ""),
+            "epitaph":     p.get("epitaph", ""),
+            "military":    p.get("military"),
+            "birthYear":   by,
+            "deathYear":   dy,
+            "initials":    initials_for(p["name"]),
+            "monogramColor": BRANCH_HEX.get(p.get("branch", ""), "#4a3520"),
+            "birthGeo":    {"lat": birth_geo[0],  "lng": birth_geo[1],  "label": birth_geo[2]}  if birth_geo  else None,
+            "deathGeo":    {"lat": death_geo[0],  "lng": death_geo[1],  "label": death_geo[2]}  if death_geo  else None,
+            "burialGeo":   {"lat": burial_geo[0], "lng": burial_geo[1], "label": burial_geo[2]} if burial_geo else None,
+        })
+    (PUBLIC / "melazzo").mkdir(parents=True, exist_ok=True)
+    write(PUBLIC / "melazzo" / "tree.json", json.dumps(out, indent=2))
+
+
+def render_melazzo_tree():
+    """Build the Melazzo interactive tree page at /melazzo/tree.html."""
+
+    # Build optgroups for the Find-Me dialog from whatever people exist.
+    by_branch: dict = {}
+    for p in MELAZZO_PEOPLE.values():
+        b = p.get("branch", "melazzo")
+        by_branch.setdefault(b, []).append(p)
+    for ppl in by_branch.values():
+        ppl.sort(key=lambda x: x.get("generation", 99) if isinstance(x.get("generation"), int) else 99)
+
+    optgroups = ""
+    for branch_key, ppl in sorted(by_branch.items()):
+        if not ppl:
+            continue
+        label = branch_key.replace("-", " ").title()
+        opts = "".join(
+            f'<option value="{p["id"]}">{p["name"]}{(" (" + p["lifespan"] + ")") if p.get("lifespan") else ""}</option>'
+            for p in ppl
+        )
+        optgroups += f'<optgroup label="{label}">{opts}</optgroup>'
+
+    # Determine root IDs — first generation (generation == 1) people.
+    root_ids = [p["id"] for p in MELAZZO_PEOPLE.values() if p.get("generation") == 1]
+    root_ids_json = json.dumps(root_ids)
+
+    # Legend: one entry per branch present in the data, or a placeholder.
+    if by_branch:
+        legend_items = "".join(
+            f'<span class="legend-item"><span class="legend-dot" style="background:{BRANCH_HEX.get(b, "#4a3520")}"></span>{b.replace("-"," ").title()}</span>'
+            for b in sorted(by_branch)
+        )
+    else:
+        legend_items = '<span class="legend-item legend-help">No ancestors added yet — see the guide below to contribute.</span>'
+
+    body = f"""<section class="branch-hero">
+  <div class="shell">
+    <p class="section-eyebrow">A Visual Index</p>
+    <h1>{MELAZZO_SITE.get("title", "The Melazzo Family")} Tree</h1>
+    <p class="lede">Three views of the Melazzo family — pedigree, timeline, and migration map. Switch among them; clicking a name in any view focuses that person across all three.</p>
+  </div>
+</section>
+
+<section style="padding-top: 1rem;">
+  <div class="shell">
+    <div class="tree-controls">
+      <div class="view-tabs" role="tablist" aria-label="Tree view">
+        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true" aria-controls="view-pedigree" id="tab-pedigree">Pedigree</button>
+        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false" aria-controls="view-timeline" id="tab-timeline">Timeline</button>
+        <button data-view="map"      class="view-tab" role="tab" aria-selected="false" aria-controls="view-map" id="tab-map">Migration Map</button>
+      </div>
+      <div class="search-and-find">
+        <div class="search-wrap">
+          <input id="search" type="text" placeholder="Search a name…" autocomplete="off"
+                 role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false" />
+          <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+        </div>
+        <button id="find-me" class="find-me-btn" type="button">Find me on the tree</button>
+      </div>
+    </div>
+
+    <div class="tree-layout">
+      <div class="tree-stage">
+        <button class="zoom-ctl zoom-in" type="button" aria-label="Zoom in">+</button>
+        <button class="zoom-ctl zoom-out" type="button" aria-label="Zoom out">−</button>
+        <button class="zoom-ctl zoom-fit" type="button" aria-label="Fit to viewport" title="Fit">⤢</button>
+        <div id="start-here-callout" class="start-here" hidden>
+          <span class="start-here-text">Start here — the root of the Melazzo line.</span>
+          <svg class="start-here-arrow" viewBox="0 0 80 60" aria-hidden="true">
+            <path d="M70 10 Q 40 30, 14 48" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M14 48 L22 42 M14 48 L20 54" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div id="view-pedigree" class="view active" role="tabpanel" aria-labelledby="tab-pedigree" tabindex="0"></div>
+        <div id="view-timeline" class="view" role="tabpanel" aria-labelledby="tab-timeline" tabindex="0" hidden></div>
+        <div id="view-map"      class="view" role="tabpanel" aria-labelledby="tab-map" tabindex="0" hidden></div>
+      </div>
+      <aside id="side-panel" class="side-panel" role="region" aria-labelledby="side-panel-name">
+        <p class="muted">Click any name to focus on a person.</p>
+      </aside>
+    </div>
+
+    <div class="tree-legend">
+      {legend_items}
+      <span class="legend-sep">·</span>
+      <span class="legend-item legend-help">Click a name to focus · Drag to pan · Scroll to zoom</span>
+    </div>
+  </div>
+</section>
+
+<dialog id="find-me-dialog" class="find-me-dialog" aria-labelledby="find-me-title">
+  <form method="dialog" class="find-me-form">
+    <h3 id="find-me-title">Find me on the tree</h3>
+    <p class="find-me-help">Pick the ancestor closest to you on the family line.</p>
+    <label for="find-me-select" class="find-me-label">Ancestor</label>
+    <select id="find-me-select">
+      <option value="">— select a person —</option>
+      {optgroups if optgroups else '<option disabled>No ancestors added yet</option>'}
+    </select>
+    <div class="find-me-actions">
+      <button type="button" class="find-me-cancel" value="cancel">Cancel</button>
+      <button type="submit" class="find-me-confirm" value="confirm">Show me</button>
+    </div>
+  </form>
+</dialog>
+
+<section>
+  <div class="shell narrow">
+    <h2>About this tree</h2>
+    <p>This tree is a work in progress. If you have records, photographs, or recollections from the Melazzo line, please <a href="/submit.html">contribute them here</a>.</p>
+  </div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script>
+window.TREE_CONFIG = {{
+  dataUrl: "/melazzo/tree.json",
+  rootIds: {root_ids_json},
+  family:  "melazzo"
+}};
+</script>
+<script type="module" src="/js/tree.js?v=3"></script>"""
+
+    html = head("Melazzo Family Tree") + header(active="melazzo-tree", family="melazzo") + body + footer()
+    (PUBLIC / "melazzo").mkdir(parents=True, exist_ok=True)
+    write(PUBLIC / "melazzo" / "tree.html", html)
+
+
 def main():
     print("Building Quesenberry & Harvey site...")
     PEOPLE_DIR.mkdir(parents=True, exist_ok=True)
@@ -1785,6 +2004,10 @@ def main():
     render_open_questions()
     render_submit()
     render_events_json()
+
+    # Melazzo family tree
+    render_melazzo_tree_json()
+    render_melazzo_tree()
 
     print("Done.")
 
