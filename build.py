@@ -842,6 +842,8 @@ PLACE_GEO = [
     ("bruce, guilford", (35.9943, -79.9412, "Bruce, Guilford County, North Carolina")),
     ("springfield friends", (35.9968, -79.9587, "Springfield Friends Meeting, Guilford County, North Carolina")),
     ("forsyth, north carolina", (36.1320, -80.2632, "Forsyth County, North Carolina")),
+    ("henrico", (37.5407, -77.4360, "Henrico County, Virginia (colonial)")),
+    ("new garden", (36.0918, -79.8336, "New Garden Friends Meeting, Guilford County, North Carolina")),
 ]
 
 

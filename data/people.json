@@ -1732,7 +1732,7 @@
     },
     "mary-agnes-hoggatt": {
       "id": "mary-agnes-hoggatt",
-      "name": "Mary Agnes Hoggatt",
+      "name": "Mary Agnes Stanley Hoggatt",
       "birth": "27 June 1733",
       "birthPlace": "Cedar Creek, Hanover County, Virginia",
       "death": "21 January 1808",
@@ -1740,18 +1740,26 @@
       "lifespan": "1733–1808",
       "branch": "harvey",
       "generation": 7,
+      "father": "james-stanley-sr",
+      "mother": "catherine-stanley",
       "spouse": "anthony-p-hoggatt",
       "verified": "documented",
-      "epitaph": "Of the Cedar Creek Quakers; migrated south to Yadkin, NC. Wife (and likely cousin) of Anthony P. Hoggatt.",
+      "epitaph": "Born MARY AGNES STANLEY in Hanover County VA — not a Hoggatt by birth, as her name in our tree might suggest. She married Anthony P. Hoggatt and took his surname.",
       "facts": {
         "Generation": "Ruth's 5th-great-grandmother; 6th-great-grandmother",
         "Lifespan": "27 June 1733–21 January 1808 (lived 74 years)",
-        "Husband": "Anthony P. Hoggatt (1730–1814) — likely her cousin (same surname)",
+        "Maiden name": "<strong>Stanley</strong> — corrected May 2026 via MyHeritage record-match deep dive",
+        "Father": "<strong>James Stanley, Sr.</strong> (gen 8)",
+        "Mother": "<strong>Catherine \"Rachel\" Hutchins Stanley</strong> (~1703–1766) — buried at New Garden Friends Meeting, Guilford NC",
+        "Husband": "Anthony P. Hoggatt (1730–1814)",
         "Migration": "Cedar Creek, VA → Yadkin, Stokes County, NC",
-        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations)"
+        "Siblings (Stanley)": "William Stanley Sr, James Stanley Jr, Martha (Thornburgh) Stanley, Agnes (Jessup) Stanley, Strangeman Stanley, Elijah Stanley, Micajah Stanley",
+        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations); Geni World Family Tree; FamilySearch Family Tree; Canada Quebec Couples"
       },
       "narrative": [
-        "Mary Agnes Hoggatt was born on the 27th of June, 1733, at Cedar Creek, Hanover County, Virginia. She married Anthony P. Hoggatt (likely her cousin), and together they raised the next generation of Hoggatts in the Virginia and Carolina Quaker communities. She died on the 21st of January, 1808, at Yadkin, in Stokes County, North Carolina — having migrated south from her birthplace some time in the late eighteenth century, part of the broader Quaker movement out of Virginia and into the Piedmont Carolina settlements."
+        "Mary Agnes Stanley Hoggatt was born on the 27th of June, 1733, at Cedar Creek, Hanover County, Virginia — to **James Stanley, Sr.** and **Catherine \"Rachel\" Hutchins Stanley** (~1703–1766). She was the fourth of at least eight Stanley children. The Stanleys were a Virginia-then-North-Carolina Quaker family, and Catherine herself was a Hutchins of Henrico, Virginia by birth.",
+        "Mary Agnes married **Anthony P. Hoggatt** (1730–1814) — and the Stanley line merged into the Hoggatt line. Together they raised the next generation of Hoggatts in the Virginia and Carolina Quaker communities. The earlier surname 'Hoggatt' in this entry was Mary Agnes's married name only; her birth surname was Stanley. (The renaming reflects what we learned in May 2026 via MyHeritage record-match deep dive.)",
+        "She died on the 21st of January, 1808, at Yadkin, in Stokes County, North Carolina — having migrated south from her birthplace some time in the late eighteenth century, part of the broader Quaker movement out of Virginia and into the Piedmont Carolina settlements. Through her, the Hutchins-Stanley lineage joined the Hoggatt-Glendenning-Newlin-Harvey lineage, all of them Quaker, all of them eventually arriving in Guilford County, NC."
       ]
     },
     "riley-james-mullins": {
@@ -2041,6 +2049,113 @@
       },
       "narrative": [
         "Elizabeth (maiden name unrecovered) was the wife of Samuel Deuce of Bilston, Staffordshire, and mother of Judith Deuce — Mike's gen-8 direct ancestor. Her maiden name is indexed as 'NN' (not noted) in the genealogical record, leaving her parents and origin unknown. Future research in Staffordshire parish records may yet identify her family."
+      ]
+    },
+    "catherine-stanley": {
+      "id": "catherine-stanley",
+      "name": "Catherine \"Rachel\" Hutchins Stanley",
+      "birth": "circa 1703",
+      "birthPlace": "Henrico, Virginia, British Colonial America",
+      "death": "20 December 1766",
+      "deathPlace": "Guilford, North Carolina, British Colonial America",
+      "burial": "New Garden Friends Monthly Meeting, Guilford County, NC",
+      "lifespan": "1703–1766",
+      "branch": "harvey",
+      "generation": 8,
+      "father": "nicholas-hutchins",
+      "mother": "mary-watkins",
+      "spouse": "james-stanley-sr",
+      "marriedDate": "5 March 1728",
+      "marriedPlace": "Henrico, Virginia",
+      "children": ["mary-agnes-hoggatt"],
+      "verified": "documented",
+      "epitaph": "Born Henrico, Virginia 1703. Married James Stanley 1728. Buried at New Garden Friends Meeting in Guilford NC, 1766. The deepest Hutchins-Stanley ancestor on the Harvey side.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandmother; 8 generations back from Mike",
+        "Lifespan": "circa 1703–20 December 1766 (lived ~63 years)",
+        "Born": "circa 1703, <strong>Henrico, Virginia, British Colonial America</strong>",
+        "Died": "20 December 1766, Guilford, North Carolina",
+        "Buried": "<strong>New Garden Friends Monthly Meeting, Guilford County, NC</strong>",
+        "Maiden name": "<strong>HUTCHINS</strong>",
+        "Father": "<strong>Nicholas Hutchins</strong> (gen 9 direct ancestor)",
+        "Mother": "<strong>Mary Watkins</strong> (gen 9 direct ancestor)",
+        "Married": "5 March 1728, Henrico, Virginia, to James Stanley, Sr.",
+        "Children (Stanley)": "William, James Jr, <strong>Mary Agnes</strong> (later Hoggatt), Martha (Thornburgh), Agnes (Jessup), Strangeman, Elijah, Micajah",
+        "Siblings (Hutchins)": "Strangeman, Martha, Mary (Harris), James, Carrie (McNeal), John, Sarah, Benjamin, Elizabeth, Alice — ten siblings",
+        "Quaker": "<strong>Yes</strong> — buried at New Garden Friends Meeting, one of the foundational Carolina Quaker meetings",
+        "Source": "Mike's MyHeritage tree (4 record matches); Geni World Family Tree; FamilySearch Family Tree; Canada Quebec Couples"
+      },
+      "narrative": [
+        "Catherine \"Rachel\" Hutchins was born around 1703 in **Henrico, Virginia, British Colonial America** — to **Nicholas Hutchins** and **Mary Watkins**. She grew up in a large family of at least eleven siblings: Strangeman, Martha, Mary (later Harris), James, Carrie (later McNeal), John, Sarah, Benjamin, Elizabeth, Alice, and herself.",
+        "On the 5th of March, 1728, in Henrico, Virginia, she married **James Stanley, Sr.** Over the next two-plus decades they raised at least eight Stanley children: William, James Jr., **Mary Agnes** (Mike's gen-7 ancestor — who would later marry Anthony P. Hoggatt), Martha (later Thornburgh), Agnes (later Jessup), Strangeman (named for Catherine's brother), Elijah, and Micajah.",
+        "Sometime in the mid-eighteenth century the Stanley family migrated south from Virginia to North Carolina, joining the broader Quaker movement down the Great Wagon Road into the Piedmont. Catherine died on the 20th of December, 1766, in Guilford County, NC, and was buried at **New Garden Friends Monthly Meeting** — one of the foundational Quaker meetings of the Carolina Quaker community. New Garden would, over the next century, become the heart of the Friends presence in Piedmont NC and a center of antislavery sentiment.",
+        "Catherine is the deepest Hutchins-Stanley ancestor we have documented. Through her daughter Mary Agnes (later Hoggatt) the Stanley line merges into the Hoggatt-Newlin-Harvey lineage that leads down to Ruth Garland Harvey six generations later."
+      ]
+    },
+    "james-stanley-sr": {
+      "id": "james-stanley-sr",
+      "name": "James Stanley, Sr.",
+      "lifespan": "fl. early-mid 1700s",
+      "branch": "harvey",
+      "generation": 8,
+      "spouse": "catherine-stanley",
+      "marriedDate": "5 March 1728",
+      "marriedPlace": "Henrico, Virginia",
+      "children": ["mary-agnes-hoggatt"],
+      "verified": "documented",
+      "epitaph": "Husband of Catherine Hutchins Stanley. Together they raised eight children in colonial Virginia and migrated south to North Carolina.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandfather; 8 generations back from Mike",
+        "Wife": "Catherine \"Rachel\" Hutchins Stanley (~1703–1766)",
+        "Married": "5 March 1728, Henrico, Virginia",
+        "Children": "William, James Jr., <strong>Mary Agnes</strong> (later Hoggatt), Martha (Thornburgh), Agnes (Jessup), Strangeman, Elijah, Micajah",
+        "Source": "Mike's MyHeritage tree (via Catherine's record matches; Geni; FamilySearch)"
+      },
+      "narrative": [
+        "James Stanley, Sr. married **Catherine \"Rachel\" Hutchins** in Henrico, Virginia, on the 5th of March, 1728. Together they raised at least eight Stanley children, including **Mary Agnes Stanley** (later Mary Agnes Hoggatt — Mike's gen-7 ancestor). The Stanley family migrated south from Virginia to Guilford County, NC sometime in the mid-eighteenth century with the broader Quaker emigration down the Great Wagon Road. James's own birth and death dates are not yet documented."
+      ]
+    },
+    "nicholas-hutchins": {
+      "id": "nicholas-hutchins",
+      "name": "Nicholas Hutchins",
+      "birthPlace": "Virginia, British Colonial America (presumed Henrico)",
+      "lifespan": "fl. late 1600s – early 1700s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "mary-watkins",
+      "children": ["catherine-stanley"],
+      "verified": "partial",
+      "epitaph": "Father of Catherine Hutchins Stanley, patriarch of the Hutchins line in colonial Henrico, Virginia.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandfather; 9 generations back from Mike",
+        "Wife": "Mary Watkins (Hutchins)",
+        "Daughter": "Catherine \"Rachel\" Hutchins Stanley (~1703–1766)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree match; Canada Quebec Couples record)"
+      },
+      "narrative": [
+        "Nicholas Hutchins lived in colonial **Henrico, Virginia** in the late seventeenth and early eighteenth centuries. He married **Mary Watkins** and together they raised a large family of at least eleven children — Strangeman, Martha, Mary, James, Carrie, John, Sarah, Benjamin, Elizabeth, Alice, and **Catherine \"Rachel\"** (Mike's gen-8 ancestor, born ~1703). The Hutchins family was one of the foundational families of Henrico County, Virginia — a county established in 1634 as one of the eight original *shires* of colonial Virginia. Nicholas's own birth and death dates have not yet been recovered."
+      ]
+    },
+    "mary-watkins": {
+      "id": "mary-watkins",
+      "name": "Mary Watkins Hutchins",
+      "birthPlace": "Virginia, British Colonial America (presumed Henrico)",
+      "lifespan": "fl. late 1600s – early 1700s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "nicholas-hutchins",
+      "children": ["catherine-stanley"],
+      "verified": "partial",
+      "epitaph": "Mother of Catherine Hutchins Stanley. Of the Watkins family of colonial Henrico, Virginia.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandmother; 9 generations back from Mike",
+        "Maiden name": "Watkins",
+        "Husband": "Nicholas Hutchins",
+        "Daughter": "Catherine \"Rachel\" Hutchins Stanley (~1703–1766)",
+        "Source": "Mike's MyHeritage tree (Geni; FamilySearch; Canada Quebec Couples — all name her as Mary Watkins)"
+      },
+      "narrative": [
+        "Mary Watkins married **Nicholas Hutchins** in colonial Henrico, Virginia, in the late seventeenth century. Together they raised at least eleven Hutchins children, including **Catherine \"Rachel\"** (Mike's gen-8 direct ancestor), who would later marry James Stanley Sr. and migrate with him south to Guilford County, North Carolina. The Watkins surname is English, common in colonial Virginia from the founding era forward."
       ]
     }
   }

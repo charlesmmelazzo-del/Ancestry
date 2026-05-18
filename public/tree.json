@@ -1877,7 +1877,7 @@
     },
     {
       "id": "mary-agnes-hoggatt",
-      "name": "Mary Agnes Hoggatt",
+      "name": "Mary Agnes Stanley Hoggatt",
       "lifespan": "1733\u20131808",
       "birth": "27 June 1733",
       "birthPlace": "Cedar Creek, Hanover County, Virginia",
@@ -1886,12 +1886,12 @@
       "burial": "",
       "branch": "harvey",
       "generation": 7,
-      "father": null,
-      "mother": null,
+      "father": "james-stanley-sr",
+      "mother": "catherine-stanley",
       "spouse": "anthony-p-hoggatt",
       "children": [],
       "verified": "documented",
-      "epitaph": "Of the Cedar Creek Quakers; migrated south to Yadkin, NC. Wife (and likely cousin) of Anthony P. Hoggatt.",
+      "epitaph": "Born MARY AGNES STANLEY in Hanover County VA \u2014 not a Hoggatt by birth, as her name in our tree might suggest. She married Anthony P. Hoggatt and took his surname.",
       "military": null,
       "birthYear": 1733,
       "deathYear": 1808,
@@ -2259,6 +2259,130 @@
         "lat": 52.3555,
         "lng": -1.1743,
         "label": "England"
+      },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "catherine-stanley",
+      "name": "Catherine \"Rachel\" Hutchins Stanley",
+      "lifespan": "1703\u20131766",
+      "birth": "circa 1703",
+      "birthPlace": "Henrico, Virginia, British Colonial America",
+      "death": "20 December 1766",
+      "deathPlace": "Guilford, North Carolina, British Colonial America",
+      "burial": "New Garden Friends Monthly Meeting, Guilford County, NC",
+      "branch": "harvey",
+      "generation": 8,
+      "father": "nicholas-hutchins",
+      "mother": "mary-watkins",
+      "spouse": "james-stanley-sr",
+      "children": [
+        "mary-agnes-hoggatt"
+      ],
+      "verified": "documented",
+      "epitaph": "Born Henrico, Virginia 1703. Married James Stanley 1728. Buried at New Garden Friends Meeting in Guilford NC, 1766. The deepest Hutchins-Stanley ancestor on the Harvey side.",
+      "military": null,
+      "birthYear": 1703,
+      "deathYear": 1766,
+      "birthGeo": {
+        "lat": 37.4316,
+        "lng": -78.6569,
+        "label": "Virginia"
+      },
+      "deathGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
+      "burialGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      }
+    },
+    {
+      "id": "james-stanley-sr",
+      "name": "James Stanley, Sr.",
+      "lifespan": "fl. early-mid 1700s",
+      "birth": "",
+      "birthPlace": "",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 8,
+      "father": null,
+      "mother": null,
+      "spouse": "catherine-stanley",
+      "children": [
+        "mary-agnes-hoggatt"
+      ],
+      "verified": "documented",
+      "epitaph": "Husband of Catherine Hutchins Stanley. Together they raised eight children in colonial Virginia and migrated south to North Carolina.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": null,
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "nicholas-hutchins",
+      "name": "Nicholas Hutchins",
+      "lifespan": "fl. late 1600s \u2013 early 1700s",
+      "birth": "",
+      "birthPlace": "Virginia, British Colonial America (presumed Henrico)",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 9,
+      "father": null,
+      "mother": null,
+      "spouse": "mary-watkins",
+      "children": [
+        "catherine-stanley"
+      ],
+      "verified": "partial",
+      "epitaph": "Father of Catherine Hutchins Stanley, patriarch of the Hutchins line in colonial Henrico, Virginia.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": {
+        "lat": 37.4316,
+        "lng": -78.6569,
+        "label": "Virginia"
+      },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "mary-watkins",
+      "name": "Mary Watkins Hutchins",
+      "lifespan": "fl. late 1600s \u2013 early 1700s",
+      "birth": "",
+      "birthPlace": "Virginia, British Colonial America (presumed Henrico)",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 9,
+      "father": null,
+      "mother": null,
+      "spouse": "nicholas-hutchins",
+      "children": [
+        "catherine-stanley"
+      ],
+      "verified": "partial",
+      "epitaph": "Mother of Catherine Hutchins Stanley. Of the Watkins family of colonial Henrico, Virginia.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": {
+        "lat": 37.4316,
+        "lng": -78.6569,
+        "label": "Virginia"
       },
       "deathGeo": null,
       "burialGeo": null

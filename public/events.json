@@ -33,7 +33,7 @@
     {
       "year": 1733,
       "type": "birth",
-      "summary": "Born: Mary Agnes Hoggatt",
+      "summary": "Born: Mary Agnes Stanley Hoggatt",
       "link": "/people/mary-agnes-hoggatt.html"
     }
   ],
@@ -47,7 +47,7 @@
     {
       "year": 1808,
       "type": "death",
-      "summary": "Died: Mary Agnes Hoggatt",
+      "summary": "Died: Mary Agnes Stanley Hoggatt",
       "link": "/people/mary-agnes-hoggatt.html"
     }
   ],
@@ -441,6 +441,28 @@
       "type": "death",
       "summary": "Died: Riley James Mullins",
       "link": "/people/riley-james-mullins.html"
+    }
+  ],
+  "12-20": [
+    {
+      "year": 1766,
+      "type": "death",
+      "summary": "Died: Catherine \"Rachel\" Hutchins Stanley",
+      "link": "/people/catherine-stanley.html"
+    }
+  ],
+  "03-05": [
+    {
+      "year": 1728,
+      "type": "marriage",
+      "summary": "Married: Catherine \"Rachel\" Hutchins Stanley",
+      "link": "/people/catherine-stanley.html"
+    },
+    {
+      "year": 1728,
+      "type": "marriage",
+      "summary": "Married: James Stanley, Sr.",
+      "link": "/people/james-stanley-sr.html"
     }
   ]
 }

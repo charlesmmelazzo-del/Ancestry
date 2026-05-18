@@ -559,13 +559,123 @@ The three deepest lines all converge in **colonial Pennsylvania** during the ear
 1700s — specifically in **Chester County's Quaker community** — before later migrating
 south together to Orange/Guilford County, NC.
 
+### SESSION 3 CONTINUED — alphabetical sort revealed Catherine Stanley + Pvt. Alexander Henry photo
+
+After switching the discoveries sort from "Value" to "First name," many additional
+direct ancestors became visible that weren't in the top-20-by-value list. Pulled
+detailed matches on two of them:
+
+### PVT. ALEXANDER HENRY QUESENBERRY, SR. (Jan 6 1842 – May 3 1863)
+**CONFIRMED across nine separate sources** (FamilySearch, Geni, Smith Web Site,
+Cox Web Site, Drake Web Site, Mitts Web Site, Bledsoe Web Site, Quesenberry Web
+Site, Smith Web Site) — Born **January 6, 1842, Washington County, Virginia**;
+Died **May 3, 1863, Chancellorsville, Spotsylvania County, Virginia**.
+
+⚡ **A PERSONAL PHOTOGRAPH EXISTS.** Three independent trees in MyHeritage have
+attached a personal photograph of Pvt. Alexander Henry Quesenberry, Sr. — likely
+a wartime carte-de-visite or daguerreotype taken before he marched off to the
+Confederate Army at age 20. This is the earliest visual evidence of the Quesenberry
+side. Should be downloaded as a Record Match document in a future session.
+
+**Mother identified across multiple trees:**
+- **Nancy Quesenberry** (per Cox, Drake, Geni, Smith, Mitts trees)
+- **Nancy Stewart (born Quesenberry)** per FamilySearch — meaning her maiden name was
+  Quesenberry; she may have later married a man named Stewart. This is consistent
+  with our existing record of **Nancy J. Quesenberry** (1820-1901, wife of Crockett
+  Quesenberry). Cousin marriage was common in Floyd County. Nancy was born a
+  Quesenberry, married her cousin Crockett Quesenberry, and may later (after
+  Crockett's death or separately) have acquired the Stewart surname.
+
+**Father:**
+- "Unknown Quesenberry" in most trees
+- Our existing record (from Ancestry) has the father as Crockett Quesenberry
+- The MyHeritage trees are SILENT on identifying the father — they record only that he
+  was a Quesenberry. **Our Crockett attribution from Ancestry is not contradicted; it
+  is just not yet confirmed by MyHeritage. Treat as open.**
+
+**Daughter Mary E. "Mollie" Graham confirmed by name** — the Mitts Web Site
+specifically gives Mary E. her nickname **Mollie**, which means she was known as
+Mollie Quesenberry Graham in her adult life. Born in the 1860s probably.
+
+**CSA designation** — multiple sources record him with "(CSA)" suffix confirming his
+Confederate Army service. Not yet known: his regiment, company, rank trajectory,
+the exact circumstances of his death at Chancellorsville (which day, which sector,
+which engagement — the battle ran May 1-3, 1863).
+
+### CATHERINE "RACHEL" HUTCHINS STANLEY (~1703 – Dec 20 1766) — NEW GEN 8
+**Catherine's maiden name = HUTCHINS.** Born **circa 1703 in Henrico, Virginia,
+British Colonial America**. Died **December 20, 1766 (or December 30 in one source),
+in Guilford, North Carolina, British Colonial America. Buried at NEW GARDEN
+MONTHLY MEETING (Friends), Guilford County, NC.**
+
+She is a NEW gen-8 direct ancestor (8 generations back from Mike), discovered by
+following the maternal line of Mary Agnes Hoggatt. The key insight:
+**Mary Agnes Hoggatt was BORN MARY AGNES STANLEY** — daughter of Catherine
+Hutchins Stanley and James Stanley, Sr. So her maiden name in our tree should
+be Stanley, not Hoggatt.
+
+**Marriage:** **March 5, 1728, Henrico, Virginia, to James Stanley, Sr.**
+
+**TWO NEW GEN-9 DIRECT ANCESTORS uncovered (Catherine's parents):**
+- **Nicholas Hutchins** — Catherine's father
+- **Mary Watkins** (later Mary Hutchins, born Watkins) — Catherine's mother
+
+**Catherine's siblings (10 known):** Strangeman Hutchins, Martha (later Stanley)
+Hutchins, Mary (later Harris) Hutchins, James Hutchins, Carrie (later McNeal/Mcneil)
+Hutchins, John Hutchins, Sarah Hutchins, Benjamin Hutchins, Elizabeth Hutchins,
+Alice Hutchins.
+
+**Catherine and James Stanley Sr's children (8 known):**
+William Stanley Sr, James Stanley Jr, **Mary Agnes (later Hoggatt) Stanley** —
+*Mike's gen-7 direct ancestor* — Martha (later Thornburgh) Stanley, Agnes (later
+Jessup) Stanley, Strangeman Stanley, Elijah Stanley, Micajah Stanley.
+
+⚡ **Quaker connection deepened.** Catherine was buried at **New Garden Monthly
+Meeting** in Guilford NC — one of the foundational Friends meetings of the
+Carolina Quaker migration. Her death in Guilford in 1766 places her in the same
+Deep River-Guilford Quaker community that would, over the next century, produce
+the Harveys, Hoggatts, and McMichaels who eventually merged into Ruth Harvey's
+line. The Hutchins-Stanley line was already Quaker, in Virginia, in the early
+1700s — and migrated south to Guilford by mid-century, contributing to the
+Quaker founding population of the county.
+
+### THREE MORE NEW DIRECT ANCESTORS to add (from Catherine Stanley match)
+- **catherine-stanley** (gen 8) — Mary Agnes's mother
+- **james-stanley-sr** (gen 8) — Mary Agnes's father
+- **nicholas-hutchins** (gen 9) — Catherine's father
+- **mary-watkins** (gen 9) — Catherine's mother
+
+### NEW FACTS visible in alphabetical-list browse (not yet drilled into):
+- **Charles Melazzo** (1924-2002) — Mike's paternal grandfather, wife Marisa Nico,
+  son Leon. Italian-American side — not for this Quesenberry-Harvey site but noted.
+- **Anna Stephens** — lifespan now known: 1818-1899 (81 years)
+- **Anthony Harvey** has 45 record matches available — biggest unexplored direct
+  ancestor. His wife is recorded as "Unknown" in MyHeritage which contradicts our
+  Sarah Sally Trueblood attribution — needs reconciliation.
+- **Annis Stapleton** has a personal photo available (record-match attachment)
+- **Alexander Henry Quesenberry Jr** has a personal photo (15 matches!)
+- **Caleb Harvey (1754-1823)** — collateral, but reveals he was an *uncle* of
+  Nathan Heaver Harvey and confirms Isaac L Harvey + Martha E Newlin's full set
+  of children: William, Hannah, Edith, Rachel, Isaac, Elizabeth, Ruth, **Nathan
+  Heaver** (our direct ancestor), Martha, **Caleb**.
+- **Agnes Harvey (1756-1834)** — siblings list confirmed: Samuel, Agnes, Phillip,
+  Mary, Anthony, Jonathan H, David W., Solomon, Moses, Benjamin, Joseph — 11
+  siblings! (She is daughter of Anthony P Hoggatt + Mary Agnes Hoggatt, but
+  curiously these siblings are HOCKETT/HOGGATT names. So this lists Agnes's
+  Hoggatt siblings, not her own children.)
+
 ### STILL PENDING for future sessions
-- Click into Anthony Harvey & Sarah Sally Trueblood (Isaac J's parents) to push gen 6+
-- Click into Anna Stephens (Jesse McMichael's wife — for her parents)
+- **Anthony Harvey — 45 record matches!** Biggest unexplored direct ancestor
+- Click into Sarah Sally Trueblood (Isaac J's mother) to push gen 6+
+- Click into Anna Stephens for her parents (gen 6)
+- Click into the "Personal photo" for Pvt. Alexander Henry — actual download
+- Click into the "Personal photo" for Alexander Henry Jr (15 matches, photo!)
+- Click into the "Personal photo" for Annis Stapleton
 - Click into Hugh Woody (34 matches!) — Mike's 1st cousin 4x removed
 - Click into Isaac Harvey 1793-1848 (61 matches!) — collateral but high match count
-- Pages 2-5 of the 99-person discovery view (currently captured top 20 by value)
+- Browse pages F-Z of the 99-person alphabetical list (currently captured ~20)
 - 575 SmartMatches with other users' trees not yet reviewed
 - 359 actual document Record Matches not yet pulled as images
-- Reconciliation: confirm Pvt. Alexander Henry Sr. died 1863 (not later) given
-  Rebecca's remarriage to Travis — likely consistent. ✅
+- Pvt. Alexander Henry's exact regiment (would be in Washington Co VA Civil War roster)
+- Open question: was Crockett actually Pvt. Alexander Henry's father? MyHeritage
+  has the father as "Unknown" but doesn't directly contradict Crockett.
