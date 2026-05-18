@@ -532,15 +532,18 @@ BRANCH_DEFS = {
             "from Pennsylvania in the 1740s."
         ),
     },
-    "carmichael": {
-        "title": "The Carmichael Line",
-        "subtitle": "Highland Scotland → Ulster → the Cape Fear of North Carolina",
+    "mcmichael": {
+        "title": "The McMichael Line",
+        "subtitle": "A Scots-Irish name in the Deep River farms of Guilford County, North Carolina",
         "intro": (
-            "Carmichael is one of the great Scottish names — from a Lanarkshire parish, a sept of Clan Douglas, of Clan "
-            "MacDougall, and of the Stewarts of Appin. The Carmichael migration to North Carolina came in two great waves "
-            "in the 1770s. Geneva Carmichael, Ruth Garland Harvey's mother, almost certainly descends from this Highland "
-            "migration — most likely from Archibald Carmichael, who left Larne Harbor on the ship Jupiter of Larne on his "
-            "twenty-first birthday in September 1775, bound for Wilmington."
+            "McMichael (occasionally spelled McMicheal) is a Scots-Irish surname carried to America from Ulster in the "
+            "eighteenth century. It is sometimes confused with the Highland Scottish surname Carmichael — and earlier "
+            "research on this site mistakenly traced Geneva's line back to Archibald Carmichael of Lanarkshire. That "
+            "line has now been retracted: Mike's Ancestry tree confirms the maiden name as McMichael. Geneva Esther "
+            "McMicheal Harvey (1891–1971) was a daughter of William Franklin McMichael (1849–1941) of Deep River, "
+            "Guilford County, North Carolina — and the McMichael line traces back through Piedmont North Carolina, with "
+            "roots almost certainly in the Scots-Irish migrations down the Great Wagon Road from Pennsylvania in the "
+            "eighteenth century."
         ),
     },
 }
@@ -774,6 +777,71 @@ PLACE_GEO = [
     ("pennsylvania", (41.2033, -77.1945, "Pennsylvania")),
     ("scotland", (56.4907, -4.2026, "Scotland")),
     ("england", (52.3555, -1.1743, "England")),
+
+    # Phase 6 — MyHeritage Cumberland Gap additions (May 2026)
+    ("chancellorsville", (38.3094, -77.6404, "Chancellorsville Battlefield, Spotsylvania County, Virginia")),
+    ("spotsylvania", (38.2007, -77.5994, "Spotsylvania County, Virginia")),
+    ("jonesville", (36.6873, -83.1102, "Jonesville, Lee County, Virginia")),
+    ("lee county, virginia", (36.7061, -83.1304, "Lee County, Virginia")),
+    ("lee, virginia", (36.7061, -83.1304, "Lee County, Virginia")),
+    ("washington county, virginia", (36.7184, -81.9667, "Washington County, Virginia")),
+    ("washington, virginia", (36.7184, -81.9667, "Washington County, Virginia")),
+    ("hawkins county, tennessee", (36.4434, -83.0017, "Hawkins County, Tennessee")),
+    ("hawkins, tennessee", (36.4434, -83.0017, "Hawkins County, Tennessee")),
+    ("hancock county, tennessee", (36.5395, -83.2218, "Hancock County, Tennessee")),
+    ("hancock, tennessee", (36.5395, -83.2218, "Hancock County, Tennessee")),
+    ("claiborne county, tennessee", (36.5101, -83.6557, "Claiborne County, Tennessee")),
+    ("claiborne, tennessee", (36.5101, -83.6557, "Claiborne County, Tennessee")),
+    ("yokum station", (36.7061, -83.1304, "Yokum Station District, Lee County, Virginia")),
+    ("dickenson", (37.1407, -82.3479, "Dickenson County, Virginia")),
+    ("russell county, virginia", (36.9347, -81.9617, "Russell County, Virginia")),
+    ("russell, virginia", (36.9347, -81.9617, "Russell County, Virginia")),
+    ("wise county, virginia", (36.9745, -82.6243, "Wise County, Virginia")),
+    ("norton, wise", (36.9337, -82.6293, "Norton, Wise County, Virginia")),
+    ("portsmouth, virginia", (36.8354, -76.2983, "Portsmouth, Virginia")),
+    ("charlottesville", (38.0293, -78.4767, "Charlottesville, Virginia")),
+    ("johns creek", (37.5043, -80.2189, "Johns Creek, Craig County, Virginia")),
+    ("craig county, virginia", (37.4773, -80.2025, "Craig County, Virginia")),
+    ("montgomery county, virginia", (37.1737, -80.4084, "Montgomery County, Virginia")),
+    ("blacksburg", (37.2296, -80.4139, "Blacksburg, Montgomery County, Virginia")),
+    ("rock island, illinois", (41.5095, -90.5787, "Rock Island Confederate POW Camp, Illinois")),
+    ("rock island", (41.5095, -90.5787, "Rock Island, Illinois")),
+    ("alamance", (36.0418, -79.4225, "Alamance County, North Carolina")),
+    ("rockingham county, north carolina", (36.3992, -79.7780, "Rockingham County, North Carolina")),
+    ("orange county, north carolina", (36.0610, -79.1198, "Orange County, North Carolina")),
+    ("rowan county, north carolina", (35.6402, -80.5249, "Rowan County, North Carolina")),
+    ("chester county, pennsylvania", (39.9634, -75.7484, "Chester County, Pennsylvania")),
+    ("chester, pennsylvania", (39.9634, -75.7484, "Chester County, Pennsylvania")),
+    ("chadds ford", (39.8718, -75.5919, "Chadds Ford, Chester County, Pennsylvania")),
+    ("concord, pennsylvania", (39.8809, -75.5497, "Concord, Pennsylvania")),
+    ("kennett township", (39.8237, -75.7090, "Kennett Township, Chester County, Pennsylvania")),
+    ("hanover county, virginia", (37.7589, -77.4915, "Hanover County, Virginia")),
+    ("cedar creek, hanover", (37.7589, -77.4915, "Cedar Creek, Hanover County, Virginia")),
+    ("yadkin", (36.2048, -80.6601, "Yadkin, Stokes County, North Carolina")),
+    ("graham, alamance", (36.0654, -79.3997, "Graham, Alamance County, North Carolina")),
+    ("izard county, arkansas", (36.0941, -91.9007, "Izard County, Arkansas")),
+    ("ben hur, lee", (36.7061, -83.1304, "Ben Hur, Lee County, Virginia")),
+
+    # Phase 5 — Ancestry-research additions (May 2026)
+    ("kingsport", (36.5484, -82.5618, "Kingsport, Sullivan County, Tennessee")),
+    ("sullivan county, tennessee", (36.5070, -82.4663, "Sullivan County, Tennessee")),
+    ("tennessee", (35.7478, -86.6923, "Tennessee")),
+    ("bowers hill", (36.7818, -76.4138, "Bowers Hill, Norfolk, Virginia")),
+    ("western branch", (36.8167, -76.4111, "Western Branch, Norfolk, Virginia")),
+    ("norfolk, virginia", (36.8508, -76.2859, "Norfolk, Virginia")),
+    ("norfolk", (36.8508, -76.2859, "Norfolk, Virginia")),
+    ("deep river", (36.0001, -79.9420, "Deep River, Guilford County, North Carolina")),
+    ("tobaccoville", (36.2587, -80.3548, "Tobaccoville, Forsyth County, North Carolina")),
+    ("winston-salem", (36.0999, -80.2442, "Winston-Salem, Forsyth County, North Carolina")),
+
+    # Phase 7 — MyHeritage record-match deep dive (May 18, 2026)
+    ("edinburgh", (55.9533, -3.1883, "Edinburgh, Midlothian, Scotland")),
+    ("midlothian, scotland", (55.8714, -3.0701, "Midlothian, Scotland")),
+    ("bilston", (52.5664, -2.0747, "Bilston, Staffordshire, England")),
+    ("staffordshire", (52.8793, -2.0573, "Staffordshire, England")),
+    ("bruce, guilford", (35.9943, -79.9412, "Bruce, Guilford County, North Carolina")),
+    ("springfield friends", (35.9968, -79.9587, "Springfield Friends Meeting, Guilford County, North Carolina")),
+    ("forsyth, north carolina", (36.1320, -80.2632, "Forsyth County, North Carolina")),
 ]
 
 

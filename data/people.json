@@ -10,7 +10,7 @@
       "id": "lonnie-quesenberry",
       "name": "Lonnie Olin Quesenberry",
       "birth": "18 March 1920",
-      "birthPlace": "North Carolina, USA",
+      "birthPlace": "Kingsport, Sullivan County, Tennessee, USA",
       "death": "22 December 2002",
       "deathPlace": "High Point, Guilford County, North Carolina",
       "burial": "Holly Hill Memorial Park, Thomasville, Davidson County, NC",
@@ -23,18 +23,23 @@
       "marriedDate": "17 July 1948",
       "marriedPlace": "Greensboro, Guilford County, North Carolina",
       "children": ["phil-quesenberry", "cathey-quesenberry", "carol-quesenberry"],
+      "siblings": ["billie-quesenberry"],
       "verified": "documented",
-      "epitaph": "Husband, father, and a quiet bridge between the Virginia mountains his family had farmed for two centuries and the new world of the Carolina Piedmont.",
+      "epitaph": "Born in the Tennessee hill country, came of age in the Norfolk shipyards on the eve of the Second World War, married Ruth Harvey in Greensboro, and lived out his life in High Point — three states in one American lifetime.",
       "facts": {
         "Generation": "Maternal grandfather",
         "Era": "WWII generation",
-        "Memorial": "<a href='https://www.findagrave.com/memorial/157298614/lonnie-olin-quesenberry'>Find a Grave 157298614</a>"
+        "WWII Draft": "Registered 1941 at Bowers Hill, Norfolk, Virginia",
+        "Migration": "Tennessee (1920) → Norfolk Virginia (by 1935) → North Carolina (by 1949)",
+        "Memorial": "<a href='https://www.findagrave.com/memorial/157298614/lonnie-olin-quesenberry'>Find a Grave 157298614</a>",
+        "Source": "13 Ancestry hints — see <a href='/sources.html'>Sources</a>"
       },
       "narrative": [
-        "Lonnie Olin Quesenberry was born on the 18th of March, 1920, into a country still shaking off the influenza pandemic and the weariness of a great war. He carried in his name an old American story: the Quesenberry surname, mountain-Virginian for nearly two centuries before his birth, and the middle name *Olin* — a soft, Scandinavian-sounding name that had drifted south with his people from the Blue Ridge into the rolling Piedmont of North Carolina.",
-        "His father, Floyd H. Quesenberry, almost certainly took his given name from the Virginia county where the Quesenberrys had been numerous since the eighteenth century. His mother Eva — a name that recurs through the Quesenberry family for at least four generations — raised Lonnie in the kind of close, intermarried Appalachian community where cousins and second cousins married each other and the same surnames repeated on every fence post and gravestone.",
-        "Lonnie came of age in the Great Depression. He turned twenty-one in March 1941, nine months before Pearl Harbor. Like most American men born in 1920, he would have registered for the WWII draft, though the specific record of his service is not yet located in the public files. What we know for certain is that on the 17th of July, 1948 — when the country was rebuilding itself from war and the postwar baby boom was beginning — Lonnie married Ruth Garland Harvey in Greensboro, North Carolina. He was 28; she was 23, and just back from her valedictory speech at Colfax High School a few years before.",
-        "Together they raised three children — Phillip Olyn, Cathey Arlene, and Carol Jeanette — in High Point, the furniture-making capital of the South. He died on the 22nd of December, 2002, at the age of 82, and was buried at Holly Hill Memorial Park in Thomasville. His wife of fifty-four years would lie beside him fourteen years later."
+        "Lonnie Olin Quesenberry was born on the 18th of March, 1920, in **Kingsport, Sullivan County, Tennessee** — in the far northeast corner of that state, where the Holston River runs out of southwestern Virginia and the Cumberland Gap is one ridge over. The Quesenberry family had been in the Floyd County, Virginia mountains for five generations; by Lonnie's birth they had drifted south and west, across the state line, into the new industrial town of Kingsport (which had been incorporated only three years before, in 1917, as a planned community around a Mead pulp-and-paper mill).",
+        "His father, **Floyd Harmon Quesenberry**, was thirty-five when Lonnie was born; his mother, **Eva Elizabeth Mullins**, was twenty-eight. Lonnie had at least one sibling — **Billie R. Quesenberry** — who appears alongside him in the 1940 federal census household, both still children at home. By 1935 the family had moved again, this time east to **Western Branch, Norfolk, Virginia** — five miles from the great Naval Operating Base, where the buildup to the Second World War would soon make work plentiful for any able-bodied young man with mechanical aptitude.",
+        "Lonnie turned twenty-one in March 1941, nine months before Pearl Harbor. On 16 July of that year he is recorded in a Norfolk newspaper. His **WWII Draft Registration Card**, since recovered, was filed at Bowers Hill, Norfolk, Virginia — the Naval shipyard country. Whether he served at sea or worked the yards through the war years is not yet known; the National Archives service record will tell the rest of that story.",
+        "By 1949 Lonnie was settled in Greensboro, North Carolina — newly married. On the 17th of July, 1948 — when the country was rebuilding itself from the war — Lonnie had married **Ruth Garland Harvey** in Greensboro. He was 28; she was 23, valedictorian of Colfax High School a few years before.",
+        "Together they raised three children — Phillip Olyn, Cathey Arlene, and Carol Jeanette — in High Point, the furniture-making capital of the South. He died on the 22nd of December, 2002, at the age of 82, in High Point Care Center, and was buried at Holly Hill Memorial Park in Thomasville. His wife of fifty-four years would lie beside him fourteen years later."
       ]
     },
     "ruth-harvey": {
@@ -61,7 +66,7 @@
         "Memorial": "<a href='https://www.findagrave.com/memorial/157298694/ruth-quesenberry'>Find a Grave 157298694</a>"
       },
       "narrative": [
-        "Ruth Garland Harvey was born on the 27th of June, 1925, in Guilford County, North Carolina — daughter of Carl Harvey and Geneva Carmichael Harvey. The Carmichael name on her mother's side carried the unmistakable echo of the Scottish Highlands: Lanarkshire, the Isle of Lismore, the migration ships of the 1770s that carried the Argyll Scots to Wilmington when North Carolina was still a royal colony.",
+        "Ruth Garland Harvey was born on the 27th of June, 1925, in Guilford County, North Carolina — daughter of **William Carl Harvey** (1887–1966) and **Geneva Esther McMicheal Harvey** (1891–1971). Both were of the Piedmont North Carolina farming families that had been working the rolling Guilford red clay for generations.",
         "She grew up in Colfax, a small farming community west of Greensboro that had been called \"Dover\" before the 1800s and was first settled by families coming south from Pennsylvania and Virginia. There, at Colfax High School, she earned the highest distinction her school could grant: she was named *valedictorian* of her graduating class — the top student in her year. In a small, rural Piedmont school in the 1940s, this was no small thing.",
         "She was, the obituary remembered, *\"an excellent self-taught cook\"* — the highest compliment in a Southern family. She married Lonnie Olin Quesenberry on the 17th of July, 1948, in Greensboro, and together they made a home in High Point. She joined the Greenwood Hills Wesleyan Church on North Main Street, a congregation in the Wesleyan-Methodist tradition that had broken from the larger Methodist body in 1843 over the question of slavery — a denomination that prided itself, even into the twentieth century, on plain living and quiet conviction.",
         "Ruth outlived her husband by fourteen years and her son Phil by one. When she died on the 21st of January, 2016, at Shannon Gray Health Care, she left behind two daughters, six grandchildren, eleven great-grandchildren, and one great-great-grandchild — a small republic of descendants stretching across the Carolinas and beyond."
@@ -123,101 +128,134 @@
     },
     "floyd-quesenberry": {
       "id": "floyd-quesenberry",
-      "name": "Floyd H. Quesenberry",
-      "birth": "Date undocumented",
-      "birthPlace": "Possibly Virginia; possibly North Carolina",
-      "death": "Date undocumented",
-      "lifespan": "fl. 1920s",
+      "name": "Floyd Harmon Quesenberry",
+      "birth": "17 December 1884",
+      "birthPlace": "Lee County, Virginia",
+      "death": "23 March 1970",
+      "deathPlace": "Portsmouth, Virginia",
+      "lifespan": "1884–1970",
       "branch": "quesenberry",
       "generation": 2,
+      "father": "alexander-quesenberry",
+      "mother": "matilda-price",
       "spouse": "eva-quesenberry",
-      "children": ["lonnie-quesenberry"],
-      "verified": "partial",
-      "epitaph": "Lonnie's father — named in the 2002 Find a Grave biography of his son. His own dates, parents, and place of birth wait, on the present record, in the courthouse archives of Virginia and North Carolina.",
+      "children": ["lonnie-quesenberry", "billie-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Born of the old Floyd County Virginia Quesenberry line, raised his sons in Tennessee and the Norfolk shipyards, and lived to see Lonnie's grandchildren — eighty-five years across three states.",
       "facts": {
-        "Relationship": "Lonnie's father; great-grandfather",
-        "Documentation": "Named only in Lonnie's Find a Grave biography",
-        "Verification status": "<strong>Unverified</strong> beyond name",
-        "Likely origin": "Floyd, Carroll, or Patrick County, VA — surname concentration"
+        "Generation": "Lonnie's father; great-grandfather",
+        "Lifespan": "1885–1970 (lived 85 years)",
+        "Father": "Alexander H Quesenberry (1863–1937)",
+        "Mother": "Matilda Jane Price (1867–1944)",
+        "Wife": "Eva Elizabeth Mullins (m. before 1920)",
+        "Children": "Lonnie (1920) and Billie R Quesenberry",
+        "Source": "Confirmed via Lonnie's Social Security Application (Floyd H Quesenberry); 1940 US Census; Ancestry tree (210529652)"
       },
       "narrative": [
-        "Of Floyd H. Quesenberry, the publicly accessible record presently says only this: he was the father of Lonnie Olin Quesenberry, born in 1920. We have his name and his middle initial, and nothing more. No Find a Grave entry, no death certificate, no census household has yet been located in the public sources searched. **The work of placing him precisely in the documented Quesenberry tree remains unfinished.**",
-        "Two clues nevertheless point in a direction. First, his given name. *Floyd* almost certainly traces to Floyd County, Virginia — formed from Montgomery County in 1831 and named for Governor John Floyd. To name a son \"Floyd\" in the Quesenberry country of the late nineteenth century was to plant a flag of identity in a particular patch of the Blue Ridge. Second, his surname: the 1840 federal census found more than seventy percent of all Quesenberrys in the United States living in Virginia, and the great majority of those were within twenty miles of Indian Valley.",
-        "It is *plausible* that Floyd descends from one of the nine Confederate sons of John Quesenberry Sr. and Nancy Hylton — most likely from William Henry Clay Quesenberry (1842–1898) or one of his brothers — but no documentary evidence yet establishes the link. A definitive answer almost certainly waits in the deed books, marriage records, and probate files at the Floyd County, Carroll County, or Davidson County (NC) courthouses, or in the Quesenberry Family Papers at the Virginia Museum of History & Culture in Richmond.",
-        "What can be said with confidence is that Floyd H. Quesenberry stood at the hinge of his family's migration — between the Virginia mountainside his Quesenberry kin had farmed for five or six generations, and the Carolina Piedmont where his son Lonnie was born, lived, and died."
+        "**Floyd Harmon Quesenberry** was born in 1885, of the old Quesenberry line that had come down from Floyd County, Virginia — the mountain country named for Governor John Floyd, where Quesenberry families had been numerous since the eighteenth century. His father was **Alexander H. Quesenberry** (1863–1937), and his mother was **Matilda Jane Price** (1867–1944) — both of the southwestern Virginia uplands.",
+        "Sometime before 1920 Floyd married **Eva Elizabeth Mullins** (1891–1983) and moved south across the state line into Tennessee. Their son Lonnie was born in Kingsport, Sullivan County, Tennessee on 18 March 1920. A second son, Billie R., would follow. By the mid-1930s the family had relocated again — this time east to the Norfolk, Virginia shipyards, where work was plentiful for skilled men in the years before the Second World War.",
+        "Floyd lived to be eighty-five, dying in 1970. He had seen his son Lonnie marry, settle in High Point, and raise three children — Phil, Cathey, and Carol — to adulthood. The Quesenberry surname, planted on a wooden ship in 1624 and carried through nine American generations, had reached its third state and its tenth generation in his lifetime."
       ]
     },
     "eva-quesenberry": {
       "id": "eva-quesenberry",
-      "name": "Eva Quesenberry",
-      "birth": "Date undocumented",
-      "lifespan": "fl. 1920s",
+      "name": "Eva Elizabeth Mullins Quesenberry",
+      "birth": "2 November 1890",
+      "birthPlace": "Hawkins County, Tennessee",
+      "death": "21 November 1983",
+      "deathPlace": "Portsmouth, Virginia",
+      "lifespan": "1890–1983",
       "branch": "quesenberry",
       "generation": 2,
+      "father": "james-cc-mullins",
+      "mother": "annis-stapleton",
       "spouse": "floyd-quesenberry",
-      "children": ["lonnie-quesenberry"],
-      "verified": "partial",
-      "epitaph": "A mother whose first name echoes through five generations of Quesenberry women — Eva, Eve, Eva Jane.",
+      "children": ["lonnie-quesenberry", "billie-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Maiden name Mullins — not Quesenberry. Lonnie's mother lived to the age of ninety-two, outliving her husband by thirteen years and her own century almost entire.",
       "facts": {
-        "Relationship": "Lonnie's mother; Mike's great-grandmother",
-        "Status": "Identified by first name and married surname only",
-        "Note": "Maiden name not yet documented in public records"
+        "Generation": "Lonnie's mother; great-grandmother",
+        "Maiden name": "<strong>Mullins</strong> — confirmed via Lonnie's Social Security Application",
+        "Lifespan": "1891–1983 (lived 92 years)",
+        "Father": "James C. C. Mullins (likely James Calaway 'Cad/Cade' Mullins, 1854–1929)",
+        "Mother": "Annis Stapleton",
+        "1940 Census": "Listed as 'Evvie Quesenberry', Western Branch, Norfolk, Virginia",
+        "Source": "1940 US Federal Census; Lonnie's SSA records; Ancestry tree"
       },
       "narrative": [
-        "Of Eva Quesenberry, even less is presently known than of her husband. She was Lonnie's mother. Her maiden name has not yet surfaced in the public record — Find a Grave lists her under her married surname, which raises the possibility (common in these heavily intermarried Appalachian families) that she was herself born a Quesenberry, a cousin or second cousin of Floyd's. It is equally possible the indexer simply did not record her birth name.",
-        "What is striking is the persistence of the name *Eva* in this family. Floyd's mother (or grandmother) was very probably **Eva Jane Slusher Quesenberry** (1838–1926), wife of William Henry Quesenberry. Before her, in colonial Virginia, was an *Eve Hancock* (1761–1838), wife of Christopher Schlosser/Slusher. The name carried down the generations — from a colonial Eve in the Tidewater, to an Eva Jane in the Floyd County hollows, to an Eva at the dawn of the twentieth century, who in turn named no daughter Eva but gave her son Lonnie an *O* name (Olin) that would echo through the Quesenberrys to come."
+        "Eva Elizabeth Mullins was born in 1891, the daughter of **James C. C. Mullins** (most likely James Calaway \"Cad/Cade\" Mullins, 1854–1929) and **Annis Stapleton**. The Mullins surname is a famous one in southwestern Virginia and eastern Tennessee — perhaps most famous for the Melungeon Mullins families of Wise and Lee Counties, Virginia, though Eva's specific line has yet to be traced in detail.",
+        "She married **Floyd Harmon Quesenberry** before 1920 and bore him at least two sons — Lonnie Olin (1920) in Kingsport, Tennessee, and Billie R. Quesenberry. In the 1940 federal census the family is recorded at Western Branch, Norfolk, Virginia, and Eva appears as **\"Evvie\"** — the household name everyone called her by.",
+        "She lived to be ninety-two, dying in 1983. By then her son Lonnie had been married thirty-five years and her grandchildren were grown."
       ]
     },
     "carl-harvey": {
       "id": "carl-harvey",
-      "name": "Carl (Carol) Harvey",
-      "birth": "Date undocumented",
-      "birthPlace": "Likely Guilford County, North Carolina",
-      "lifespan": "fl. 1925–1947",
+      "name": "William Carl Harvey",
+      "birth": "1887",
+      "birthPlace": "North Carolina",
+      "death": "25 November 1966",
+      "deathPlace": "Greensboro, Guilford County, North Carolina",
+      "lifespan": "1887–1966",
       "branch": "harvey",
       "generation": 2,
+      "father": "isaac-j-harvey",
+      "mother": "rachel-swift-harvey",
       "spouse": "geneva-carmichael",
+      "marriedDate": "20 June 1919",
+      "marriedPlace": "Guilford County, North Carolina",
       "children": ["ruth-harvey", "esther-harvey"],
-      "verified": "partial",
-      "epitaph": "Father of Ruth (1925) and Esther (1929) — a Colfax, North Carolina farmer whose first name is preserved in two slightly different spellings in his daughters' obituaries. His own grave has not yet been located.",
+      "verified": "documented",
+      "epitaph": "Ruth and Esther's father — first name was William, called Carl. Colfax farmer, Wesleyan churchman, husband of Geneva McMichael for forty-seven years.",
       "facts": {
-        "Relationship": "Ruth & Esther's father; great-grandfather",
-        "Documentation": "Named in two daughters' obituaries (Ruth 2016, Esther 2021)",
-        "Spelling variant": "<strong>'Carl'</strong> in Ruth's obituary; <strong>'Carol'</strong> in Esther's obituary",
-        "Most likely actual name": "<strong>Carol</strong> (male) — preserved through granddaughter Carol Jeanette Quesenberry",
-        "Residence": "Colfax, Guilford County, NC",
-        "Verification": "<strong>Vital dates still unverified</strong>"
+        "Generation": "Ruth's father; great-grandfather",
+        "Full name": "<strong>William Carl Harvey</strong> — corrects our earlier 'Carl (Carol)' speculation",
+        "Lifespan": "1887–1966 (lived 79 years)",
+        "Father": "Isaac J Harvey",
+        "Mother": "Rachel (Frances) Swift Harvey",
+        "Married": "20 June 1919, Guilford County, NC",
+        "Wife": "Geneva Esther McMicheal (m. 1919, died 1971)",
+        "Residence": "Colfax, Guilford County, NC; later Deep River, Guilford County",
+        "Source": "Confirmed via Geneva's 1971 death record listing him as 'late husband'; NC Marriage Records 1741–2011; 1930, 1950 census; Ancestry tree"
       },
       "narrative": [
-        "The first thing to settle about Lonnie's father-in-law is the simplest question: what was his name? The 2016 Find a Grave biography of his daughter Ruth records him as **Carl Harvey**. But the 2021 obituary of Ruth's younger sister Esther — preserved on the Pierce-Jefferson Funeral Home website in Kernersville — names him as **Carol Harvey**. Two daughters, two slightly different spellings. Either is plausible: \"Carol\" was, in the early twentieth century, an occasional male given name (as it remained in some communities into the 1920s), and the fact that Ruth herself named her own youngest daughter **Carol Jeanette** is suggestive — it was customary in the Piedmont South to honor a grandfather by giving his name to a granddaughter. On balance, the Esther-obituary spelling \"Carol\" is the more likely original.",
-        "Beyond his name, the publicly accessible record presently says: he was a man of Colfax, in the rolling farm country of western Guilford County, North Carolina. He married **Geneva Carmichael**. They had at least two daughters, Ruth (born 1925) and Esther (born 1929). Both daughters were raised in the Wesleyan Church — Ruth at Greenwood Hills Wesleyan in High Point, Esther at Shady Grove Wesleyan in Colfax — which suggests the family itself was Wesleyan, an unusual and distinctive denominational identity in the otherwise Methodist and Baptist Piedmont.",
-        "He died sometime before January 2016 (when Ruth's obituary refers to him as \"the late\"). No Find a Grave entry, no North Carolina death record, no 1910/1920/1930/1940 census household for the Carl/Carol Harvey of Colfax has yet been pulled in this research pass. **The next reasonable steps:** (1) the Shady Grove Wesleyan Church Cemetery in Colfax, where Esther is buried — Carol may be there too. (2) The North Carolina Death Index 1908–2004 at FamilySearch. (3) The Guilford County Register of Deeds. (4) The Heritage Research Center at the Greensboro Public Library, which holds the *High Point Enterprise* and *Greensboro News & Record* on microfilm.",
-        "What is certain is that he raised two daughters who both lived to old age, both married, both were buried back among the Wesleyan congregations of the Carolina Piedmont — and that one of them named her own daughter for him."
+        "The first thing to settle about Lonnie's father-in-law is the simplest question: what was his name? Ruth's 2016 obituary called him **Carl**; Esther's 2021 obituary called him **Carol**. The Ancestry records resolve it: his full given name was **William Carl Harvey** — born 1887, died 25 November 1966 in Greensboro. *Carl* was the name he was called by; *William* the formal first; *Carol* was a phonetic spelling variant on Esther's obituary.",
+        "He married **Geneva Esther McMicheal** on the 20th of June, 1919, in Guilford County, North Carolina. He was thirty-two; she was twenty-seven. They settled in the Deep River area of Guilford County, where the federal censuses of 1930 and 1950 record their household. Their daughter **Ruth Garland Harvey** was born in June 1925; their second daughter **Esther** arrived four years later in August 1929.",
+        "He was the son of **Isaac J. Harvey** and **Rachel (Frances) Swift Harvey** — both names confirmed in the genealogical record. The Harveys had been Piedmont North Carolina farmers for at least three generations.",
+        "Carl raised his daughters in the Wesleyan Church — Ruth at Greenwood Hills Wesleyan in High Point, Esther at Shady Grove Wesleyan in Colfax — an unusual denomination in the otherwise Methodist and Baptist Piedmont. He died on the 25th of November, 1966, in Greensboro, age 79. Geneva would survive him by five years."
       ]
     },
     "geneva-carmichael": {
       "id": "geneva-carmichael",
-      "name": "Geneva Carmichael Harvey",
-      "birth": "Date undocumented (likely 1895–1905)",
-      "birthPlace": "Likely Guilford County, North Carolina",
-      "lifespan": "fl. 1925–1947",
-      "branch": "harvey",
+      "name": "Geneva Esther McMicheal Harvey",
+      "birth": "5 September 1891",
+      "birthPlace": "North Carolina, USA",
+      "death": "27 February 1971",
+      "deathPlace": "Winston-Salem, Forsyth County, North Carolina",
+      "burial": "Colfax, Guilford County, North Carolina",
+      "lifespan": "1891–1971",
+      "branch": "mcmichael",
       "generation": 2,
+      "father": "william-franklin-mcmichael",
+      "mother": "sally-pegram",
       "spouse": "carl-harvey",
       "children": ["ruth-harvey", "esther-harvey"],
-      "verified": "partial",
-      "epitaph": "Mother of Ruth and Esther — named in her daughter's 2016 obituary as Geneva Carmichael Harvey. Her parentage and her exact line back to the Highland Carmichael migration remain to be traced.",
+      "verified": "documented",
+      "epitaph": "Geneva Esther — daughter of William Franklin McMichael of Deep River, Guilford County. Married William Carl Harvey on a June day in 1919 and outlived him by five years.",
       "facts": {
-        "Relationship": "Ruth's mother; great-grandmother",
-        "Maiden name": "Carmichael",
-        "Documentation": "Named only in Ruth's 2016 Find a Grave biography",
-        "Verification status": "<strong>Maiden name verified, parentage unverified</strong>"
+        "Generation": "Ruth's mother; great-grandmother",
+        "Maiden name": "<strong>McMichael</strong> — corrects our earlier 'Carmichael' research error",
+        "Lifespan": "1891–1971 (lived 79 years)",
+        "Father": "William Franklin McMichael (1849–1941)",
+        "Mother": "Sally Pegram (b. 1860) — Find a Grave alternately lists Esther Jane McMichael as mother",
+        "Married": "20 June 1919, Guilford County, NC, to William Carl Harvey",
+        "Residence": "Deep River, Guilford County, NC (1900, 1930, 1950 censuses); Kernersville, Forsyth Co. (death record)",
+        "Source": "11 Ancestry hints — NC Death Cert, NC Death Index, 1900/1930/1950 censuses, FAG, marriage record"
       },
       "narrative": [
-        "Geneva Carmichael Harvey is, on the present record, a woman known only by her name, her maiden surname, and her two daughters. No Find a Grave entry has surfaced; no death certificate has been pulled; no census household has been confirmed for her. **Closing those gaps is the next step in tracing the Carmichael side of the family.**",
-        "What we do know is that her surname is one of the great Scottish names. *Carmichael* — from a parish in Lanarkshire, *Caer* (a fort) plus *Michael* — is a sept of Clan Douglas, of Clan MacDougall, and of the Stewarts of Appin and of Galloway. The major Carmichael migration to North Carolina came in two great waves in the 1770s: a 1773 sailing from Fort William on the Firth of Lorne carrying 425 Highland emigrants to North Carolina, and the 1775 voyage of the *Jupiter of Larne* — on which the twenty-one-year-old **Archibald Carmichael** of Lanarkshire crossed with his wife Mary and infant daughter Katherine, bound for Wilmington.",
-        "The Carmichaels of the Carolinas — and there are many of them — are very largely descended from these eighteenth-century Highland Scots. Archibald's documented descendants spread through Cumberland, Richmond (now Scotland), Stokes, and Forsyth Counties. **Whether Geneva descends from Archibald specifically, or from one of the other Highland Carmichael families who came in the same migration, has not yet been verified.** The geography fits — Geneva's daughter Ruth was born in Guilford County, adjacent to Forsyth and Stokes — but a direct documentary line is the work of the next pass.",
-        "What can be said: Geneva passed to her daughter Ruth a Highland Scottish name that had crossed an ocean in a wooden ship before the United States existed. Ruth in turn carried that name into her own life, and forward through her descendants."
+        "Geneva Esther McMicheal was born on the 5th of September, 1891, in North Carolina. *Earlier research called her maiden name Carmichael; the documentary record corrects that — her maiden name was* **McMichael** *(occasionally spelled McMicheal). The error matters: McMichael and Carmichael are distinct Scottish-derived surnames, and the entire Highland Scotland / Jupiter of Larne migration story we once told about this branch does not apply to your family. The McMichaels of Guilford County are their own line, with their own American story.*",
+        "Her father was **William Franklin McMichael** (1849–1941), of the Deep River community in Guilford County, North Carolina. Her mother was named **Sally Pegram** (born about 1860), though Find a Grave alternately identifies her mother as **Esther Jane McMichael** — a discrepancy worth resolving (Geneva's middle name *Esther* may well honor her mother). The 1900 federal census records her, age 8, in the household at Deep River.",
+        "On the 20th of June, 1919, she married **William Carl Harvey** in Guilford County. She was twenty-seven; he was thirty-two. They settled in Deep River, where the 1930 and 1950 censuses found them with their two daughters Ruth and Esther. Her father died on 3 April 1941 at Forsyth, NC, age 91 or 92.",
+        "Geneva outlived her husband by five years. She died on the 27th of February, 1971, at Winston-Salem in Forsyth County, age 79, and was buried in Colfax, Guilford County — where her daughter Esther would be buried fifty years later, at Shady Grove Wesleyan Church Cemetery."
       ]
     },
     "william-henry-quesenberry": {
@@ -459,38 +497,1550 @@
         "He lived to be eighty-eight, dying on the 11th of December, 1845, in Floyd County. His granddaughter Eva Jane Slusher would marry William Henry Clay Quesenberry twenty-two years after his death, joining the Slusher and Quesenberry lines that this site traces forward to Lonnie Olin Quesenberry."
       ]
     },
-    "archibald-carmichael": {
-      "id": "archibald-carmichael",
-      "name": "Archibald Carmichael Sr.",
-      "birth": "4 September 1754",
-      "birthPlace": "Lanark, Lanarkshire, Scotland",
-      "death": "1827",
-      "deathPlace": "Stokes County (now Forsyth County), North Carolina",
-      "burial": "Carmichael Cemetery, Stanleyville, Forsyth County, NC (location of grave unmarked)",
-      "lifespan": "1754–1827",
-      "branch": "carmichael",
-      "generation": "?",
-      "father": "duncan-carmichael",
-      "spouse": "elizabeth-nix",
+    "billie-quesenberry": {
+      "id": "billie-quesenberry",
+      "name": "Billie R. Quesenberry",
+      "lifespan": "fl. 1940",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
       "verified": "partial",
-      "epitaph": "Lanarkshire-born, sailed from Larne on the *Jupiter* in 1775, planted the Carmichael name in the North Carolina red clay.",
+      "epitaph": "Lonnie's sibling — appears in the 1940 federal census household at Western Branch, Norfolk, Virginia. Birth, death, and full name await further research.",
       "facts": {
-        "Born": "4 September 1754, Lanark, Lanarkshire, Scotland",
-        "Father": "Duncan C. Carmichael (~1733–1783)",
-        "Mother": "Margaret Sarah Ensley (~1736–1783)",
-        "Emigrated": "4 September 1775 (his 21st birthday)",
-        "Ship": "Jupiter of Larne",
-        "Port of departure": "Larne, County Antrim, Ulster",
-        "Port of arrival": "Wilmington, North Carolina",
-        "Wife": "Elizabeth Nix (c.1755–1814)",
-        "Eight children, line continues": "Yes — descendants spread to Indiana, the Piedmont, and beyond"
+        "Generation": "Lonnie's sibling; great-aunt or great-uncle",
+        "Documentation": "1940 US Federal Census, Western Branch District, Norfolk, Virginia",
+        "Status": "Newly identified — full vital records await further research"
       },
       "narrative": [
-        "On the 4th of September, 1775 — his twenty-first birthday — **Archibald Carmichael** of Lanarkshire, Scotland, stepped aboard the ship *Jupiter of Larne* in the harbor of Larne, County Antrim, Ulster, with his young wife Mary and his infant daughter Katherine. The ship was bound for Wilmington, North Carolina. The American Revolution was already underway: Lexington and Concord had been fought four months before; the Continental Congress was meeting in Philadelphia.",
-        "Archibald was part of the great Highland Scots emigration to the Cape Fear region of North Carolina — a migration that had begun in the 1730s under the leadership of Argyll men like Neil MacNeill, swelled in the 1770s when economic conditions in the Highlands collapsed, and would shape the dialect, the religion, and the surnames of the inland Carolina Piedmont for generations.",
-        "Archibald settled first in Caswell County, then in what became Stokes County (today Forsyth County), where he is recorded in the 1800 federal census. He married, after his first wife's passing, **Elizabeth Nix** of North Carolina, and together they had at least eight children — Elizabeth, Sterling, Jane, Richard, Sarah, Alexander, Joseph, and Archibald Jr.",
-        "He died in 1827 and was buried at the Carmichael Cemetery near Stanleyville, in Forsyth County. The exact spot of his grave has been lost to time. His descendants spread through North Carolina and, beginning in 1829, on into Indiana — settling Monroe and Greene Counties.",
-        "It is from this Carmichael migration, almost certainly, that Geneva Carmichael — Ruth Garland Harvey's mother — descends. Her exact path back to Archibald (or to one of his cousins or nephews from the same Highland migration) is one of the most rewarding research projects awaiting a future generation of this family."
+        "Billie R. Quesenberry appears in the 1940 federal census household at Western Branch, Norfolk, Virginia, alongside Lonnie and their parents Floyd and 'Evvie' Quesenberry. The middle initial R. and the unisex name *Billie* leave open whether this was a brother or a sister. The next research step is to pull the 1930 census and locate Billie's birth and death records — once known, Billie's descendants may still be living, and represent an entire collateral branch of the family not yet on this site."
+      ]
+    },
+    "alexander-quesenberry": {
+      "id": "alexander-quesenberry",
+      "name": "Alexander Henry Quesenberry, Jr.",
+      "birth": "29 July 1863",
+      "birthPlace": "Jonesville, Lee County, Virginia",
+      "death": "27 May 1937",
+      "deathPlace": "University of Virginia Hospital, Charlottesville, Virginia",
+      "lifespan": "1863–1937",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "a-quisenberry-1842",
+      "mother": "rebecca-jane-smyth",
+      "spouse": "matilda-price",
+      "children": ["floyd-quesenberry"],
+      "siblings": ["mary-quesenberry-graham"],
+      "verified": "documented",
+      "epitaph": "Born the year his father died at Gettysburg's bloody summer — raised by his widowed mother Rebecca Smyth — lived seventy-four years across Reconstruction and the Industrial Age.",
+      "facts": {
+        "Generation": "Lonnie's grandfather; 2nd-great-grandfather",
+        "Lifespan": "1863–1937 (lived 74 years)",
+        "Full name": "<strong>Alexander Henry Quesenberry, Jr.</strong> — named for the father he never knew",
+        "Father": "Pvt. Alexander Henry Quesenberry, Sr. (1842–1863) — died in the Civil War year of Alexander Jr.'s birth",
+        "Mother": "Rebecca Jane Smyth (1844–1920) — widowed at 19, lived to 76",
+        "Wife": "Matilda Jane Price (1867–1944) — daughter of Alexander Stewart Price and Martha Jane Collins",
+        "Source": "Mike's MyHeritage tree confirms the Henry middle name; Ancestry tree (popular photo hint, saved by 7+ users)"
+      },
+      "narrative": [
+        "Alexander Henry Quesenberry, Jr. was born in 1863 — the great year of the American Civil War, the year of Gettysburg and Vicksburg. His father, **Pvt. Alexander Henry Quesenberry, Sr.**, was a Confederate Private who died that same year at age twenty-one — making Alexander a posthumous child of the war. He grew up in the household of his widowed teenage mother **Rebecca Jane Smyth** (1844–1920), in the southwestern Virginia hill country.",
+        "He married **Matilda Jane Price** (1867–1944), daughter of Alexander Stewart Price (1833–1909) and Martha Jane Collins. Together they raised a family that included Floyd Harmon Quesenberry — born in 1885, the bridge to the Tennessee chapter of the family story.",
+        "Alexander Jr. died in 1937, age seventy-four. He had lived from the year of Gettysburg to the eve of the Second World War — and had outlived his mother Rebecca by seventeen years."
+      ]
+    },
+    "matilda-price": {
+      "id": "matilda-price",
+      "name": "Matilda Jane Price Quesenberry",
+      "birth": "1867",
+      "death": "1944",
+      "lifespan": "1867–1944",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "alexander-stewart-price",
+      "mother": "martha-jane-collins",
+      "spouse": "alexander-quesenberry",
+      "children": ["floyd-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Wife of Alexander Henry Quesenberry, Jr.; mother of Floyd. Daughter of Alexander Stewart Price (1833–1909). Lived from Reconstruction through the Second World War.",
+      "facts": {
+        "Generation": "Lonnie's grandmother; 2nd-great-grandmother",
+        "Lifespan": "1867–1944 (lived 77 years)",
+        "Father": "Alexander Stewart Price (1833–1909)",
+        "Mother": "Martha Jane Collins",
+        "Husband": "Alexander Henry Quesenberry, Jr. (1863–1937)",
+        "Children": "Floyd Harmon Quesenberry (1885–1970) and others",
+        "Source": "Mike's Ancestry & MyHeritage trees"
+      },
+      "narrative": [
+        "Matilda Jane Price was born in 1867, two years after Appomattox, daughter of **Alexander Stewart Price** (1833–1909) and **Martha Jane Collins**. She married Alexander Henry Quesenberry, Jr. — son of the Civil War widow Rebecca Smyth — and together they raised at least one son, Floyd Harmon Quesenberry, who would carry the family south to Tennessee.",
+        "She lived to be seventy-seven, dying in 1944 — by which time her grandson Lonnie was twenty-four and would soon return from the Norfolk shipyards to begin his married life in Greensboro."
+      ]
+    },
+    "a-quisenberry-1842": {
+      "id": "a-quisenberry-1842",
+      "name": "Pvt. Alexander Henry Quesenberry, Sr.",
+      "birth": "6 January 1842",
+      "birthPlace": "Washington County, Virginia",
+      "death": "3 May 1863",
+      "deathPlace": "Battle of Chancellorsville, Spotsylvania County, Virginia",
+      "lifespan": "1842–1863",
+      "branch": "quesenberry",
+      "generation": 4,
+      "father": "crockett-quisenberry",
+      "mother": "nancy-j-quesenberry",
+      "spouse": "rebecca-jane-smyth",
+      "children": ["alexander-quesenberry"],
+      "verified": "documented",
+      "military": "Confederate Private — KILLED IN ACTION at the Battle of Chancellorsville, 3 May 1863. Aged 21.",
+      "epitaph": "Killed at Chancellorsville on the third of May, 1863 — the same battle that mortally wounded Stonewall Jackson. His widow Rebecca was carrying their son when he died; the boy was born three months later.",
+      "facts": {
+        "Generation": "Lonnie's great-grandfather; 3rd-great-grandfather",
+        "Born": "6 January 1842, Washington County, Virginia",
+        "Died": "<strong>3 May 1863, Battle of Chancellorsville, Spotsylvania County, Virginia</strong>",
+        "Cause of death": "<strong>Killed in action — Civil War, age 21</strong>",
+        "Military": "<strong>Confederate Private (Pvt.)</strong>",
+        "Father": "Crockett QUISENBERRY (1822–1902)",
+        "Mother": "Nancy J Quesenberry (1820–1901)",
+        "Wife": "Rebecca Jane Smyth (1844–1920) — pregnant when he died; outlived him by 57 years",
+        "Son": "Alexander Henry Quesenberry, Jr. (29 July 1863–1937) — posthumous, born ~3 months after father's death",
+        "Source": "Mike's MyHeritage tree (May 2026)"
+      },
+      "narrative": [
+        "**Pvt. Alexander Henry Quesenberry, Sr.** was born on the 6th of January, 1842, in Washington County, Virginia — the far southwest corner of the state, in the high mountain country bordering Tennessee. He was twenty when he married **Rebecca Jane Smyth** (1844–1920) in or around 1862. Whether they had even a year together as husband and wife is uncertain — what is certain is that by the spring of 1863 he was a Confederate Private somewhere in the Army of Northern Virginia, and Rebecca was carrying their first and only child.",
+        "On the **3rd of May, 1863**, he was killed at the **Battle of Chancellorsville**, in Spotsylvania County, Virginia — Robert E. Lee's greatest tactical victory, and the battle in which Stonewall Jackson was mortally wounded by his own men two nights before. Some 17,000 Union soldiers and 13,000 Confederates fell over those three days. Pvt. Alexander Henry Quesenberry was one of them, dead at age twenty-one.",
+        "His son, **Alexander Henry Quesenberry, Jr.**, was born on the 29th of July, 1863 — almost three months after his father's death — in Jonesville, Lee County, Virginia, where Rebecca had taken refuge with kin. The boy never met his father, and grew up in the household of his widowed teenage mother. Every Quesenberry descendant in Mike's line owes their existence to this young soldier who fell at Chancellorsville.",
+        "His regimental affiliation and burial site remain open research questions. Confederate dead at Chancellorsville were buried in mass graves on the battlefield; many were later moved to the Confederate Cemetery at Fredericksburg or to home cemeteries when families could afford to retrieve them. Whether Alexander Henry's body returned to Washington or Lee County, or rests still in the Wilderness woods, is unknown."
+      ]
+    },
+    "rebecca-jane-smyth": {
+      "id": "rebecca-jane-smyth",
+      "name": "Rebecca Jane Smyth Quesenberry Travis",
+      "birth": "16 November 1844",
+      "birthPlace": "Lee County, Virginia",
+      "death": "1920",
+      "deathPlace": "Jonesville, Lee County, Virginia",
+      "lifespan": "1844–1920",
+      "branch": "quesenberry",
+      "generation": 4,
+      "father": "edward-mcdonald-smyth",
+      "mother": "minerva-parsons",
+      "spouse": "a-quisenberry-1842",
+      "secondSpouse": "james-t-travis",
+      "children": ["alexander-quesenberry", "mary-quesenberry-graham"],
+      "verified": "documented",
+      "epitaph": "Widowed at nineteen by the Civil War. Buried two husbands and raised at least seven children. Lived to see her grandson Floyd come of age.",
+      "facts": {
+        "Generation": "Lonnie's great-grandmother; 3rd-great-grandmother",
+        "Lifespan": "1844–1920 (lived 76 years)",
+        "Born": "16 November 1844, Lee County, Virginia",
+        "Died": "1920, Jonesville, Lee County, Virginia",
+        "Father": "Edward McDonald Smyth (also spelled Smythe)",
+        "Mother": "Minerva Parsons",
+        "First husband": "Pvt. Alexander Henry Quesenberry, Sr. (1842–1863) — killed at Chancellorsville",
+        "Second husband": "James T. Travis (after 1863, no exact date)",
+        "Children with Quesenberry": "Alexander Henry Jr. (1863–1937), Mary E. (later Graham)",
+        "Children with Travis": "James Edward, Robert Lee, Nannie J., Nancy Jane (later Garrett), Frances M., and others",
+        "Siblings": "Henry, Emily A., Martha, William A., Minerva, Mary Frances, Robert, James Tennessee",
+        "Surname": "Smyth — variant spelling of Smith, Scots-Irish origin",
+        "Source": "Mike's MyHeritage tree — direct ancestor (5 generations); 3 record matches across Smith Web Site, FamilySearch, Elliott Web Site"
+      },
+      "narrative": [
+        "Rebecca Jane Smyth was born on the 16th of November, 1844, in **Lee County, Virginia** — far up in the Cumberland Gap country where Virginia, Kentucky, and Tennessee come together. Her father was **Edward McDonald Smyth** (sometimes spelled Smythe), her mother **Minerva Parsons**. She grew up with at least eight siblings — Henry, Emily, Martha, William, Minerva, Mary Frances, Robert, and James Tennessee.",
+        "Around 1862 she married **Pvt. Alexander Henry Quesenberry, Sr.** — perhaps just weeks before he marched off with his Confederate regiment. He was twenty; she was eighteen. The marriage produced at least two children: **Mary E. Quesenberry** (who would later marry into the Graham family) and **Alexander Henry Quesenberry, Jr.**, born on the 29th of July 1863 — three months after his father was killed at the Battle of Chancellorsville. Rebecca was nineteen years old, a widow with two small children, by the end of that summer.",
+        "She did not stay widowed. After the war she married **James T. Travis** (also seen as James F. Travis) and bore him at least five more children — James Edward, Robert Lee, Nannie J., Nancy Jane (later Garrett), Frances M. — and possibly Sarah, Mattie, and Pelitha as well. The blended Quesenberry-Travis household lived in Lee County, Virginia, for the rest of her long life.",
+        "She died in 1920, age 76, at Jonesville — the Lee County seat — the same year her great-grandson **Lonnie Olin Quesenberry** was born in Kingsport, Tennessee. The two never met, but both were born and raised in the same Cumberland Gap country, just on different sides of the state line."
+      ]
+    },
+    "crockett-quisenberry": {
+      "id": "crockett-quisenberry",
+      "name": "Crockett Quisenberry",
+      "birth": "1822",
+      "death": "1902",
+      "lifespan": "1822–1902",
+      "branch": "quesenberry",
+      "generation": 5,
+      "father": "james-s-quesenberry",
+      "mother": "elizabeth-moore",
+      "spouse": "nancy-j-quesenberry",
+      "children": ["a-quisenberry-1842"],
+      "verified": "partial",
+      "epitaph": "Lived from Andrew Jackson's first term to the dawn of Theodore Roosevelt's century. Saw the Civil War take his son.",
+      "facts": {
+        "Generation": "2nd-great-grandfather of Lonnie",
+        "Lifespan": "1822–1902 (lived 80 years)",
+        "Father": "James S. Quesenberry (1796–1845)",
+        "Mother": "Elizabeth Moore (1800–1850)",
+        "Wife": "Nancy J. Quesenberry (1820–1901) — possibly a cousin (same surname)",
+        "Source": "Mike's Ancestry tree"
+      },
+      "narrative": [
+        "Crockett Quisenberry was born in 1822, in the year of Andrew Jackson's first presidential campaign. His given name *Crockett* was almost certainly inspired by Davy Crockett, the famous Tennessee frontiersman and politician who was at the height of his national fame in those years.",
+        "Crockett lived eighty years, dying in 1902. He saw the Civil War take his son A. (born 1842, died 1863) — a wound a parent never recovers from. He lived to see his grandson Alexander grow to adulthood and his great-grandson Floyd Harmon Quesenberry be born in 1885."
+      ]
+    },
+    "nancy-j-quesenberry": {
+      "id": "nancy-j-quesenberry",
+      "name": "Nancy J. Quesenberry",
+      "birth": "1820",
+      "death": "1901",
+      "lifespan": "1820–1901",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "crockett-quisenberry",
+      "children": ["a-quisenberry-1842"],
+      "verified": "partial",
+      "epitaph": "Wife of Crockett Quisenberry. Her surname Quesenberry suggests she may have been a cousin — common in the heavily intermarried Floyd County hollows.",
+      "facts": {
+        "Generation": "2nd-great-grandmother of Lonnie",
+        "Lifespan": "1820–1901 (lived 81 years)",
+        "Husband": "Crockett Quisenberry (1822–1902)",
+        "Note": "Her maiden name *Quesenberry* suggests she was related to her husband — likely a cousin"
+      },
+      "narrative": [
+        "Nancy J. Quesenberry was born in 1820. Her surname *Quesenberry* — also her husband's — strongly suggests they were cousins, perhaps first or second. In the Quesenberry settlements of Floyd County, Virginia in the early nineteenth century, this was unremarkable: most Quesenberrys married Quesenberrys, Hyltons, or Slushers. She lived eighty-one years, dying in 1901."
+      ]
+    },
+    "james-s-quesenberry": {
+      "id": "james-s-quesenberry",
+      "name": "James S. Quesenberry",
+      "birth": "1796",
+      "death": "1845",
+      "lifespan": "1796–1845",
+      "branch": "quesenberry",
+      "generation": 6,
+      "spouse": "elizabeth-moore",
+      "children": ["crockett-quisenberry"],
+      "verified": "partial",
+      "epitaph": "Born the year George Washington gave his Farewell Address, dead the year America declared war on Mexico. A southwest Virginia farmer.",
+      "facts": {
+        "Generation": "3rd-great-grandfather of Lonnie",
+        "Lifespan": "1796–1845 (lived 49 years)",
+        "Wife": "Elizabeth Moore (1800–1850)",
+        "Father-in-law": "Peter Moore Sr., Pvt."
+      },
+      "narrative": [
+        "James S. Quesenberry was born in 1796, the same year George Washington delivered his Farewell Address. He died in 1845, age forty-nine, in the year that the United States annexed Texas and provoked the war with Mexico. He married **Elizabeth Moore** (1800–1850), daughter of Peter Moore Sr., Pvt. — a man whose military rank suggests Revolutionary War or War of 1812 service. Their son Crockett would carry the line forward."
+      ]
+    },
+    "elizabeth-moore": {
+      "id": "elizabeth-moore",
+      "name": "Elizabeth Moore Quesenberry",
+      "birth": "1800",
+      "death": "1850",
+      "lifespan": "1800–1850",
+      "branch": "quesenberry",
+      "generation": 6,
+      "father": "peter-moore-sr",
+      "mother": "jane-jeany-murtland",
+      "spouse": "james-s-quesenberry",
+      "children": ["crockett-quisenberry"],
+      "verified": "partial",
+      "epitaph": "Born with the new century, daughter of Peter Moore Sr., Pvt.",
+      "facts": {
+        "Generation": "3rd-great-grandmother of Lonnie",
+        "Lifespan": "1800–1850",
+        "Father": "Peter Moore Sr., Pvt. (military veteran — likely War of 1812 or Revolution)",
+        "Mother": "Jane Jeany Murtland",
+        "Husband": "James S Quesenberry (1796–1845)"
+      },
+      "narrative": [
+        "Elizabeth Moore was born in 1800, daughter of **Peter Moore Sr., Pvt.** and **Jane Jeany Murtland**. The 'Pvt.' in her father's recorded name marks him as a military veteran — almost certainly of the War of 1812, possibly of the American Revolution. Elizabeth's marriage to James S. Quesenberry brought the Moore line into the Quesenberry tree."
+      ]
+    },
+    "george-s-quesenberry": {
+      "id": "george-s-quesenberry",
+      "name": "George S. Quesenberry",
+      "birth": "1800",
+      "death": "1845",
+      "lifespan": "1800–1845",
+      "branch": "quesenberry",
+      "generation": 6,
+      "spouse": "mary-quesenberry",
+      "verified": "partial",
+      "epitaph": "Brother or close kin of James S. Quesenberry. The two men's nearly identical lifespans suggest twins or close brothers.",
+      "facts": {
+        "Generation": "3rd-great-grand-uncle (likely)",
+        "Lifespan": "1800–1845 (same death year as James S.)",
+        "Wife": "Mary (1800–1857)",
+        "Note": "Identical lifespan to James S. Quesenberry suggests close kinship — possibly twins"
+      },
+      "narrative": [
+        "George S. Quesenberry was born in 1800 and died in 1845 — exactly the same death year as James S. Quesenberry. The synchronicity of their dates suggests they were brothers, perhaps twins; both were of the Floyd County Quesenberry line of the early nineteenth century."
+      ]
+    },
+    "mary-quesenberry": {
+      "id": "mary-quesenberry",
+      "name": "Mary Quesenberry",
+      "birth": "1800",
+      "death": "1857",
+      "lifespan": "1800–1857",
+      "branch": "quesenberry",
+      "generation": 6,
+      "spouse": "george-s-quesenberry",
+      "verified": "partial",
+      "epitaph": "Wife of George S. Quesenberry. Maiden name not yet recovered.",
+      "facts": {
+        "Generation": "3rd-great-grand-aunt by marriage (likely)",
+        "Lifespan": "1800–1857",
+        "Husband": "George S Quesenberry (1800–1845)"
+      },
+      "narrative": [
+        "Mary, wife of George S. Quesenberry, was born in 1800 and died in 1857. Her maiden name has not yet surfaced in the available records."
+      ]
+    },
+    "peter-moore-sr": {
+      "id": "peter-moore-sr",
+      "name": "Peter Moore Sr.",
+      "lifespan": "fl. late 1700s",
+      "branch": "quesenberry",
+      "generation": 7,
+      "spouse": "jane-jeany-murtland",
+      "children": ["elizabeth-moore"],
+      "verified": "tradition",
+      "military": "Recorded as 'Pvt.' — likely Revolutionary War or War of 1812 service",
+      "epitaph": "Pvt. Peter Moore Sr. — the rank in his recorded name marks him as a soldier of the early Republic.",
+      "facts": {
+        "Generation": "4th-great-grandfather of Lonnie (via Elizabeth Moore)",
+        "Wife": "Jane 'Jeany' Murtland",
+        "Daughter": "Elizabeth Moore (1800–1850)",
+        "Military": "<strong>'Pvt.' rank in his name — Revolutionary War or War of 1812 service</strong>",
+        "Status": "<strong>OPEN QUESTION</strong> — exact dates and unit await research"
+      },
+      "narrative": [
+        "Peter Moore Sr. is preserved in the family record with the title **Pvt.** — a private in the United States military. The most likely possibilities are American Revolutionary War service (if he was born in the 1740s–1760s) or War of 1812 service (if born in the 1770s–1790s). Either would mark him as a Patriot ancestor eligible for DAR / SAR membership.",
+        "He married **Jane 'Jeany' Murtland** — a Scottish or Scots-Irish name pointing to the Highland or Ulster-Scot migrations of the eighteenth century. Their daughter Elizabeth Moore married James S. Quesenberry, joining the Moore line into the Quesenberry tree.",
+        "*Resolving Peter Moore Sr.'s service record is a high-priority open question.* Pension files at the National Archives, the DAR Patriot Index, and the SAR application files in Washington, D.C. are the places to look."
+      ]
+    },
+    "jane-jeany-murtland": {
+      "id": "jane-jeany-murtland",
+      "name": "Jane 'Jeany' Murtland Moore",
+      "lifespan": "fl. late 1700s",
+      "branch": "quesenberry",
+      "generation": 7,
+      "spouse": "peter-moore-sr",
+      "children": ["elizabeth-moore"],
+      "verified": "tradition",
+      "epitaph": "Wife of Pvt. Peter Moore Sr. Her surname Murtland is Scots-Irish — pointing to the Ulster-Scot migrations.",
+      "facts": {
+        "Generation": "4th-great-grandmother of Lonnie",
+        "Surname origin": "Murtland — Scots-Irish (Ulster-Scot)",
+        "Husband": "Peter Moore Sr., Pvt.",
+        "Daughter": "Elizabeth Moore (1800–1850)"
+      },
+      "narrative": [
+        "Jane Murtland — known by the diminutive *Jeany* — was the wife of Peter Moore Sr. Her surname *Murtland* is a Scots-Irish name from County Antrim and County Londonderry in Ulster, brought to America by the great Scots-Irish migrations of the 1700s. Her daughter Elizabeth Moore would marry into the Quesenberry line."
+      ]
+    },
+    "james-cc-mullins": {
+      "id": "james-cc-mullins",
+      "name": "James Calloway Mullins",
+      "birth": "March 1854",
+      "birthPlace": "Hancock County, Tennessee",
+      "death": "10 November 1929",
+      "deathPlace": "Yokum Station District, Lee County, Virginia",
+      "lifespan": "1854–1929",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "harrison-mullins",
+      "mother": "manerva-jane-mullins",
+      "spouse": "annis-stapleton",
+      "children": ["eva-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Born March 1854 in Hancock County, Tennessee; died 1929 in Lee County, Virginia. Father of Eva Mullins. Of the great Mullins clan of the Cumberland Gap.",
+      "facts": {
+        "Generation": "Lonnie's maternal grandfather; 2nd-great-grandfather",
+        "Lifespan": "March 1854–10 November 1929 (lived 75 years)",
+        "Full name": "<strong>James Calloway Mullins</strong> (NOT 'Calaway' — corrected per MyHeritage)",
+        "Born": "Hancock County, Tennessee",
+        "Died": "Yokum Station District, Lee County, Virginia",
+        "Father": "Harrison Mullins (1829–1920)",
+        "Mother": "Manerva Jane Mullins (1831–1910)",
+        "Wife": "Annis Stapleton (1856–1934)",
+        "Daughter": "Eva Elizabeth Mullins (1890–1983)",
+        "Source": "Mike's MyHeritage tree (58+ users have saved his photo hint)"
+      },
+      "narrative": [
+        "James Calloway Mullins was born in March 1854 in Hancock County, Tennessee — the heart of the Cumberland Gap country, where Tennessee, Kentucky, and Virginia meet. He was the son of **Harrison Mullins** (1829–1920) and **Manerva Jane Mullins** (1831–1910) — Mullinses on both sides, suggesting cousin marriage common in the clan.",
+        "The Mullins surname is one of the most studied in Appalachia, in part because of the Melungeon families of Wise, Lee, Hancock, and Hawkins Counties — a tri-racial isolate community whose origins remain debated. Whether James Calloway's specific line is part of the documented Melungeon Mullinses or a parallel branch is a research question worth pursuing.",
+        "He married **Annis Stapleton** (1856–1934, of Hawkins County, TN) and together they raised Eva Elizabeth Mullins (1890–1983) — Lonnie's mother. He died on the 10th of November, 1929, at the Yokum Station District of Lee County, Virginia, age 75 — having crossed the state line from Tennessee in his later years."
+      ]
+    },
+    "annis-stapleton": {
+      "id": "annis-stapleton",
+      "name": "Annis Stapleton Mullins",
+      "lifespan": "fl. late 1800s",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "robert-thomas-stapleton",
+      "mother": "nancy-jane-winstead",
+      "spouse": "james-cc-mullins",
+      "children": ["eva-quesenberry"],
+      "verified": "documented",
+      "epitaph": "Mother of Eva Elizabeth Mullins. Daughter of Robert Thomas Stapleton (1830–1911) and Nancy Jane Winstead (b. 1841).",
+      "facts": {
+        "Generation": "Lonnie's maternal grandmother; 2nd-great-grandmother",
+        "Father": "Robert Thomas Stapleton (1830–1911)",
+        "Mother": "Nancy Jane Winstead (b. 1841)",
+        "Husband": "James C. C. Mullins (1854–1929)",
+        "Daughter": "Eva Elizabeth Mullins (1891–1983)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Annis Stapleton was a daughter of **Robert Thomas Stapleton** (1830–1911) and **Nancy Jane Winstead** (b. 1841) — both of the Piedmont American Stapleton-Winstead families. She married **James C. C. Mullins** (1854–1929) and bore Eva Elizabeth Mullins (1891–1983), who would become Lonnie's mother."
+      ]
+    },
+    "isaac-j-harvey": {
+      "id": "isaac-j-harvey",
+      "name": "Isaac J. Harvey",
+      "birth": "29 March 1842",
+      "birthPlace": "North Carolina",
+      "death": "12 April 1912",
+      "deathPlace": "Deep River, Guilford County, North Carolina",
+      "burial": "13 April 1912, Deep River, Guilford County, NC",
+      "lifespan": "1842–1912",
+      "branch": "harvey",
+      "generation": 3,
+      "father": "anthony-harvey",
+      "mother": "sarah-sally-trueblood",
+      "spouse": "rachel-swift-harvey",
+      "priorSpouses": "Catherine Reich Harvey, Henrietta Annetta Reich Harvey",
+      "children": ["carl-harvey"],
+      "verified": "documented",
+      "epitaph": "Widowed twice before he married Ruth's grandmother. Father of seven across three marriages, including a Wesleyan minister.",
+      "facts": {
+        "Generation": "Ruth's paternal grandfather; 2nd-great-grandfather",
+        "Lifespan": "1842–1912 (lived 70 years)",
+        "Born": "29 March 1842, North Carolina",
+        "Died": "Friday 12 April 1912, Deep River, Guilford County, NC",
+        "Buried": "Saturday 13 April 1912 (per Greensboro Daily News obituary)",
+        "Father": "Anthony Harvey",
+        "Mother": "Sarah Sally Trueblood",
+        "First wife": "Catherine Reich Harvey (also spelled Rike) — predeceased him",
+        "Second wife": "Henrietta Annetta Reich Harvey (likely Catherine's sister — sororate marriage)",
+        "Third wife": "Rachel Frances Swift Harvey — mother of William Carl",
+        "Children": "Dora C., <strong>Rev. Addison Melvin Harvey</strong> (clergyman), Sarah E., <strong>William Carl</strong> (Ruth's father)",
+        "Siblings": "William Lambert, Mary (Mendenhall) Harvey, Thomas, Chalkey, Rachel J., Martha, Nathan H., Josiah A.",
+        "Obituary": "Greensboro Daily News, Saturday April 19, 1912, page 6: 'Isaac Harvey, an aged citizen living near here died Friday morning and was buried here Saturday.'",
+        "Source": "Mike's MyHeritage tree (4 record matches); Greensboro Daily News April 19, 1912; FamilySearch Family Tree"
+      },
+      "narrative": [
+        "Isaac J. Harvey was born on the 29th of March, 1842 in North Carolina — by curious coincidence the same year as Pvt. Alexander Henry Quesenberry, Sr. He was a son of **Anthony Harvey** and **Sarah Sally Trueblood** — the Trueblood surname being a famous Quaker name from colonial Virginia and North Carolina, marking the deep Quaker roots of this Harvey line.",
+        "Isaac was a man much married. He buried two wives before he married Ruth's grandmother. His first wife was **Catherine Reich Harvey** (also spelled Rike). After her death he married her sister **Henrietta Annetta Reich Harvey** — a *sororate* marriage that was common in 19th-century rural America, where a widower would often marry his deceased wife's unmarried sister to keep the household and the in-laws intact. Henrietta too predeceased him. He then married, finally, **Rachel Frances Swift Harvey** — daughter of Thomas S. Swift and Lucinda Cox — and with her had **William Carl Harvey**, born 1887, Ruth's father.",
+        "Across the three marriages Isaac fathered at least four known children: Dora C. Harvey, **Rev. Addison Melvin Harvey** (a Wesleyan minister — continuing the family's religious tradition that ran from Quaker roots through Methodist-Wesleyan into the twentieth century), Sarah E. Harvey, and William Carl Harvey.",
+        "Isaac lived to seventy. He died on Friday, the 12th of April, 1912 — the day the RMS *Titanic* would sink off Newfoundland just three days later. He was buried in his Deep River community the next day, Saturday. The **Greensboro Daily News** of Saturday April 19, 1912, ran a brief community-news note from a correspondent: *'Isaac Harvey, an aged citizen living near here died Friday morning and was buried here Saturday.'* A modest valediction for a man who had outlived two wives, raised four children, and watched the nineteenth century give way to the twentieth."
+      ]
+    },
+    "rachel-swift-harvey": {
+      "id": "rachel-swift-harvey",
+      "name": "Rachel Frances Swift Harvey",
+      "lifespan": "fl. mid-1800s",
+      "branch": "harvey",
+      "generation": 3,
+      "father": "thomas-s-swift",
+      "mother": "lucinda-cox",
+      "spouse": "isaac-j-harvey",
+      "children": ["carl-harvey"],
+      "verified": "documented",
+      "epitaph": "Mother of William Carl Harvey. Daughter of Thomas S. Swift and Lucinda Cox (1822–1889).",
+      "facts": {
+        "Generation": "Ruth's paternal grandmother; 2nd-great-grandmother",
+        "Maiden name": "Swift",
+        "Father": "Thomas S. Swift",
+        "Mother": "Lucinda Cox (1822–1889)",
+        "Husband": "Isaac J. Harvey (1842–1912)",
+        "Son": "William Carl Harvey (1887–1966)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Rachel Frances Swift Harvey was a daughter of **Thomas S. Swift** and **Lucinda Cox** (1822–1889) of the Piedmont North Carolina Swift-Cox families. She married **Isaac J. Harvey** (1842–1912) and together they raised William Carl Harvey, who would become Ruth's father. The Swift surname is well-attested in Guilford and surrounding North Carolina counties through the eighteenth and nineteenth centuries."
+      ]
+    },
+    "william-franklin-mcmichael": {
+      "id": "william-franklin-mcmichael",
+      "name": "William Franklin McMichael",
+      "birth": "1849",
+      "death": "3 April 1941",
+      "deathPlace": "Forsyth, North Carolina, USA",
+      "lifespan": "1849–1941",
+      "branch": "mcmichael",
+      "generation": 3,
+      "father": "jesse-c-mcmichael",
+      "mother": "anna-stephens",
+      "spouse": "sally-pegram",
+      "children": ["geneva-carmichael"],
+      "verified": "documented",
+      "epitaph": "Father of Geneva — born in 1849 (the year of the California Gold Rush), died in April 1941 at ninety-one or ninety-two, just months before Pearl Harbor. Son of Jesse C. McMichael (1820–1907).",
+      "facts": {
+        "Generation": "Ruth's maternal grandfather; 2nd-great-grandfather",
+        "Lifespan": "1849–1941 (lived ~91 years)",
+        "Death": "3 April 1941, Forsyth, North Carolina",
+        "Father": "Jesse C. McMichael (1820–1907)",
+        "Mother": "Anna Stephens",
+        "Wife": "Sally Pegram (b. 1860)",
+        "Daughter": "Geneva Esther McMicheal Harvey (1891–1971)",
+        "Source": "Geneva's NC Death Certificate; 1900 census; Find a Grave; Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "William Franklin McMichael was born in 1849 — the year of the California Gold Rush — to **Jesse C. McMichael** (1820–1907) and **Anna Stephens**. The McMichael surname is Scots-Irish (Ulster-Scot), well-attested in Piedmont North Carolina from the eighteenth century onward.",
+        "He lived in **Deep River, Guilford County, North Carolina** — the same farming community where his daughter Geneva would later raise her own family. He married **Sally Pegram** (born about 1860, daughter of James Fletcher Pegram and Annie Elizabeth Gates); together they had at least one daughter, Geneva Esther, in 1891.",
+        "He lived to ninety-one or ninety-two — a remarkable span for his generation. He died on the 3rd of April, 1941, in Forsyth County, NC, just eight months before the United States entered the Second World War. His daughter Geneva was forty-nine when she lost him."
+      ]
+    },
+    "sally-pegram": {
+      "id": "sally-pegram",
+      "name": "Sally Pegram McMichael",
+      "birth": "1860",
+      "lifespan": "1860–?",
+      "branch": "mcmichael",
+      "generation": 3,
+      "father": "james-fletcher-pegram",
+      "mother": "annie-elizabeth-gates",
+      "spouse": "william-franklin-mcmichael",
+      "children": ["geneva-carmichael"],
+      "verified": "documented",
+      "epitaph": "Mother of Geneva McMichael Harvey. Daughter of James Fletcher Pegram (1831–1915) of the Piedmont Pegram family.",
+      "facts": {
+        "Generation": "Ruth's maternal grandmother; 2nd-great-grandmother",
+        "Birth year": "ca. 1860",
+        "Father": "James Fletcher Pegram (1831–1915)",
+        "Mother": "Annie Elizabeth Gates (b. 1826)",
+        "Husband": "William Franklin McMichael (1849–1941)",
+        "Daughter": "Geneva Esther McMicheal Harvey (1891–1971)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Sally Pegram was a daughter of **James Fletcher Pegram** (1831–1915) and **Annie Elizabeth Gates** (b. 1826) — both of the Piedmont North Carolina Pegram-Gates families. The Pegram surname is English (sometimes spelled *Pilgrim* in old records), well-attested in Piedmont North Carolina from the colonial period.",
+        "She married **William Franklin McMichael** (1849–1941) and bore him a daughter, **Geneva Esther McMicheal**, in 1891. (Geneva's middle name *Esther* may be a family name; whether from Sally's line or William's is yet to be determined.)"
+      ]
+    },
+    "anthony-harvey": {
+      "id": "anthony-harvey",
+      "name": "Anthony Harvey",
+      "lifespan": "fl. early-mid 1800s",
+      "branch": "harvey",
+      "generation": 4,
+      "spouse": "sarah-sally-trueblood",
+      "children": ["isaac-j-harvey"],
+      "verified": "partial",
+      "epitaph": "Father of Isaac J. Harvey. Of the colonial-era Quaker Harveys of North Carolina (per the Trueblood spousal connection).",
+      "facts": {
+        "Generation": "Ruth's great-great-grandfather; 3rd-great-grandfather",
+        "Wife": "Sarah Sally Trueblood",
+        "Son": "Isaac J Harvey (1842–1912)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Anthony Harvey — father of Isaac J. Harvey. He married **Sarah Sally Trueblood**, of the colonial Quaker Trueblood family of Virginia and North Carolina. The Trueblood surname (English Quaker) connects this Harvey branch back to the Quaker migrations from Pennsylvania and Maryland into the Carolina Piedmont in the eighteenth century — a connection further confirmed by the deeper colonial Newlin and Hoggatt ancestors documented elsewhere in this site."
+      ]
+    },
+    "sarah-sally-trueblood": {
+      "id": "sarah-sally-trueblood",
+      "name": "Sarah Sally Trueblood Harvey",
+      "lifespan": "fl. early-mid 1800s",
+      "branch": "harvey",
+      "generation": 4,
+      "spouse": "anthony-harvey",
+      "children": ["isaac-j-harvey"],
+      "verified": "partial",
+      "epitaph": "Of the colonial Quaker Trueblood family of North Carolina. Mother of Isaac J. Harvey.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Maiden name": "<strong>Trueblood</strong> — colonial Quaker family of NC",
+        "Husband": "Anthony Harvey",
+        "Son": "Isaac J Harvey (1842–1912)"
+      },
+      "narrative": [
+        "Sarah Sally Trueblood — wife of Anthony Harvey, mother of Isaac J. Harvey. The Trueblood surname is a famous English Quaker name in colonial Virginia and North Carolina; the Trueblood Quakers were among the earliest settlers of Perquimans and Pasquotank Counties on the Albemarle Sound, dating to the 1670s."
+      ]
+    },
+    "thomas-s-swift": {
+      "id": "thomas-s-swift",
+      "name": "Thomas S. Swift",
+      "lifespan": "fl. early-mid 1800s",
+      "branch": "harvey",
+      "generation": 4,
+      "spouse": "lucinda-cox",
+      "children": ["rachel-swift-harvey"],
+      "verified": "partial",
+      "epitaph": "Father of Rachel Frances Swift Harvey. Of the Piedmont North Carolina Swift family.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandfather; 3rd-great-grandfather",
+        "Wife": "Lucinda Cox (1822–1889)",
+        "Daughter": "Rachel Frances Swift Harvey",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Thomas S. Swift — father of Rachel Frances Swift Harvey. He married **Lucinda Cox** (1822–1889) of the Cox family of Piedmont North Carolina. Together they raised Rachel, who would marry Isaac J. Harvey and bear William Carl Harvey — Ruth's father."
+      ]
+    },
+    "lucinda-cox": {
+      "id": "lucinda-cox",
+      "name": "Lucinda Cox Swift",
+      "birth": "1822",
+      "death": "1889",
+      "lifespan": "1822–1889",
+      "branch": "harvey",
+      "generation": 4,
+      "spouse": "thomas-s-swift",
+      "children": ["rachel-swift-harvey"],
+      "verified": "documented",
+      "epitaph": "Wife of Thomas S. Swift, mother of Rachel. Born under James Monroe, died at sixty-seven under Benjamin Harrison.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Lifespan": "1822–1889 (lived 67 years)",
+        "Husband": "Thomas S. Swift",
+        "Daughter": "Rachel Frances Swift Harvey",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 4 record matches)"
+      },
+      "narrative": [
+        "Lucinda Cox was born in 1822, in the year of Andrew Jackson's first presidential campaign. She married **Thomas S. Swift** of the Piedmont North Carolina Swift family and bore Rachel Frances Swift, who would marry Isaac J. Harvey. The Cox surname is English, very common in Piedmont North Carolina from the eighteenth century forward — and has connections (through Floyd County, Virginia branches) to the Quesenberry-Cox families of southwestern Virginia. She died in 1889, age 67."
+      ]
+    },
+    "james-fletcher-pegram": {
+      "id": "james-fletcher-pegram",
+      "name": "James Fletcher Pegram",
+      "birth": "4 May 1831",
+      "birthPlace": "Rockingham County, North Carolina",
+      "death": "13 June 1915",
+      "deathPlace": "Deep River Township, Guilford County, North Carolina",
+      "burial": "14 June 1915, Guilford County, NC",
+      "lifespan": "1831–1915",
+      "branch": "mcmichael",
+      "generation": 4,
+      "father": "jesse-pegram",
+      "mother": "lucretia-juanita-fuller",
+      "spouse": "annie-elizabeth-gates",
+      "marriedDate": "10 March 1853",
+      "marriedPlace": "Forsyth County, North Carolina",
+      "children": ["sally-pegram"],
+      "verified": "documented",
+      "epitaph": "Father of Sally Pegram, grandfather of Geneva. Married 1853 in Forsyth County, lived eighty-four years through the Civil War, Reconstruction, and the start of the Great War.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandfather; 3rd-great-grandfather",
+        "Lifespan": "1831–1915 (lived 84 years)",
+        "Born": "4 May 1831, Rockingham County, NC (per NC death certificate)",
+        "Died": "13 June 1915, Deep River Township, Guilford County, NC",
+        "Father": "Jesse Pegram (also spelled Jessie)",
+        "Mother": "Lucretia Juanita Fuller Pegram (also spelled Loucretia)",
+        "Wife": "Annie Elizabeth Gates Pegram (b. 19 January 1826)",
+        "Marriage": "10 March 1853, Forsyth County, NC",
+        "Children": "William Henry Pegram, Mary D., John C., <strong>Sally</strong> (later McMichael), Nancy E.",
+        "Siblings": "John Wyatt Pegram, Parthenia (Winfrey) Pegram, Mary H., Jesse L.",
+        "1900 Census": "Deep River Township, Guilford County, NC",
+        "1910 Census": "Deep River, Guilford County, NC",
+        "Source": "NC Death Certificate; 1900 & 1910 federal censuses; FamilySearch; The News & Observer obituary (June 25 1915)"
+      },
+      "narrative": [
+        "James Fletcher Pegram was born on the 4th of May, 1831, in **Rockingham County, North Carolina** — born to **Jesse Pegram** and **Lucretia Juanita Fuller Pegram** (sometimes spelled Loucretia in his death certificate). The Pegrams were an established Piedmont North Carolina family with English roots — the surname was sometimes recorded as *Pilgrim* in colonial-era documents.",
+        "On the 10th of March, 1853, in **Forsyth County, North Carolina**, James (then 21) married **Annie Elizabeth Gates**, who was actually five years his senior. Together they raised at least five children in **Deep River Township, Guilford County** — William Henry, Mary D., John C., **Sally** (Geneva's mother), and Nancy E. The 1900 and 1910 federal censuses both place him in Deep River with Annie and three of their grown children still in the household.",
+        "Deep River was a McMichael-and-Pegram community. James's daughter Sally would later marry William Franklin McMichael (whose own paternal grandmother was a Pegram — Rhoda Pegram, who had married William Aydlott McMichael Sr.). So the Pegram and McMichael families had been intermarrying in Deep River for two generations by the time Geneva was born in 1891.",
+        "James lived to be eighty-four. He died on the 13th of June, 1915, and was buried the following day in Deep River — the year the *Lusitania* was sunk, the same week the Battle of Gallipoli was at its bloodiest, and the year before the United States would enter the Great War. The **News & Observer** of Raleigh ran his death notice on the 25th of June."
+      ]
+    },
+    "annie-elizabeth-gates": {
+      "id": "annie-elizabeth-gates",
+      "name": "Annie Elizabeth Gates Pegram",
+      "birth": "1826",
+      "lifespan": "1826–?",
+      "branch": "mcmichael",
+      "generation": 4,
+      "spouse": "james-fletcher-pegram",
+      "children": ["sally-pegram"],
+      "verified": "documented",
+      "epitaph": "Wife of James Fletcher Pegram, mother of Sally. Five years older than her husband — unusual for the era.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Born": "1826",
+        "Husband": "James Fletcher Pegram (1831–1915)",
+        "Daughter": "Sally Pegram (b. 1860)",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 7 record matches)"
+      },
+      "narrative": [
+        "Annie Elizabeth Gates was born in 1826. She married James Fletcher Pegram (born 1831) — making her five years his senior, which was unusual in nineteenth-century rural America. Together they raised Sally Pegram, who would marry William Franklin McMichael."
+      ]
+    },
+    "jesse-c-mcmichael": {
+      "id": "jesse-c-mcmichael",
+      "name": "Jesse C. McMichael",
+      "birth": "27 October 1820",
+      "birthPlace": "Guilford County, North Carolina",
+      "death": "9 February 1907",
+      "deathPlace": "Bruce, Guilford County, North Carolina",
+      "lifespan": "1820–1907",
+      "branch": "mcmichael",
+      "generation": 4,
+      "father": "william-aydlott-mcmichael",
+      "mother": "rhoda-pegram",
+      "spouse": "anna-stephens",
+      "children": ["william-franklin-mcmichael"],
+      "verified": "documented",
+      "epitaph": "Father of William Franklin McMichael, grandfather of Geneva. His mother was a Pegram, his son's wife was a Pegram — the McMichael-Pegram intermarriage runs at least three generations deep in Deep River.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandfather; 3rd-great-grandfather",
+        "Lifespan": "1820–1907 (lived 87 years)",
+        "Born": "27 October 1820, Guilford County, North Carolina",
+        "Died": "9 February 1907, Bruce, Guilford County, NC",
+        "Father": "<strong>William Aydlott McMichael, Sr.</strong>",
+        "Mother": "<strong>Rhoda E. Pegram McMichael</strong> — the Pegram-McMichael bridge",
+        "Wife": "Anna Stephens McMichael",
+        "Children": "Sarah J. (Highfill), George A., Rhoda Melissa (Rayle), <strong>William Franklin</strong>, John W., Washington C., Mary, Martha (Parish), Jesse A.",
+        "Siblings": "Mary Ann (Pegram) McMichael, Joseph Frank, Sarah H. (Highfill), Thomas A., <strong>Archibald McMichael</strong>, Nancy (Pegram) McMichael, Obadiah, John Watson, Charity, William Aydelott Jr.",
+        "Pegram intermarriage": "Mother Rhoda Pegram, sister Mary Ann married a Pegram, sister Nancy married a Pegram, son William Franklin married Sally Pegram",
+        "1850 Census": "Guilford County, NC with wife Ann and children George A., Sarah J., Rhoda M., William T. (likely Franklin)",
+        "1880 Census": "Bruce, Guilford County, NC with wife Ann and daughters Martha (Parish), Sarah, Mary",
+        "Source": "Mike's MyHeritage tree (14 record matches); FamilySearch; 1850 & 1880 federal censuses; six Smart Match family trees"
+      },
+      "narrative": [
+        "Jesse C. McMichael was born on the 27th of October, 1820, in **Guilford County, North Carolina** — the year of the Missouri Compromise. His father was **William Aydlott McMichael, Sr.**; his mother was **Rhoda E. Pegram McMichael**. The mother's maiden name is the most important detail in this entire branch: it reveals that the **Pegram and McMichael families had been intermarrying in Guilford County since before Jesse was born**.",
+        "Jesse was one of at least eleven siblings — Mary Ann (who married a Pegram), Joseph Frank, Sarah H. (later Highfill), Thomas A., **Archibald McMichael**, Nancy (who also married a Pegram), Obadiah, John Watson, Charity, and William Aydelott Jr. (*Note: The brother* **Archibald McMichael** *almost certainly explains the muddled \"Archibald Carmichael / Highland Scotland\" memory that earlier family records mistakenly attached to this branch. The real Archibald was Jesse's brother — a McMichael born and raised in Guilford NC, not a Scottish patriarch.*)",
+        "Jesse married **Anna Stephens** sometime before 1845. Together they raised nine known children: Sarah J. (later Highfill), George A., Rhoda Melissa (later Rayle), **William Franklin McMichael** — Geneva's father — John W., Washington C., Mary, Martha (later Parish), and Jesse A. The 1850 federal census places the household in Guilford County with George, Sarah, Rhoda, and William still small. The 1880 census places them at **Bruce, Guilford County** — a Deep River community — with Ann and three grown daughters still at home.",
+        "Jesse lived eighty-seven years. He died on the 9th of February, 1907 — having seen James Monroe inaugurated, the Civil War destroy the South he was born into, Reconstruction redraw his county, the Wright Brothers fly at Kitty Hawk, and Theodore Roosevelt elected to a full term as president. He was photographed at least once in his later years — a MyHeritage record-match preserves the personal photograph.",
+        "The double Pegram-McMichael intermarriage that defines Geneva's lineage now becomes visible: Geneva's father William Franklin McMichael had a Pegram grandmother (Rhoda Pegram McMichael) AND a Pegram mother-in-law (Sally Pegram, daughter of James Fletcher Pegram). The two families had effectively merged into a single Deep River extended kin-network across three generations."
+      ]
+    },
+    "anna-stephens": {
+      "id": "anna-stephens",
+      "name": "Anna Stephens McMichael",
+      "lifespan": "fl. early-mid 1800s",
+      "branch": "mcmichael",
+      "generation": 4,
+      "spouse": "jesse-c-mcmichael",
+      "children": ["william-franklin-mcmichael"],
+      "verified": "partial",
+      "epitaph": "Wife of Jesse C. McMichael, mother of William Franklin McMichael, grandmother of Geneva.",
+      "facts": {
+        "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Husband": "Jesse C. McMichael (1820–1907)",
+        "Son": "William Franklin McMichael (1849–1941)"
+      },
+      "narrative": [
+        "Anna Stephens — wife of Jesse C. McMichael, mother of William Franklin McMichael. Vital dates not yet recovered. The Stephens surname is English, well-attested in Piedmont North Carolina from the colonial period."
+      ]
+    },
+    "alexander-stewart-price": {
+      "id": "alexander-stewart-price",
+      "name": "Alexander Stewart Price",
+      "birth": "1833",
+      "death": "1909",
+      "lifespan": "1833–1909",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "martha-jane-collins",
+      "children": ["matilda-price"],
+      "verified": "documented",
+      "epitaph": "Father of Matilda Jane Price, grandfather of Floyd Harmon Quesenberry. Lived seventy-six years through the Civil War, Reconstruction, and the Wright Brothers' first flight.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandfather; 3rd-great-grandfather",
+        "Lifespan": "1833–1909 (lived 76 years)",
+        "Wife": "Martha Jane Collins",
+        "Daughter": "Matilda Jane Price (1867–1944)",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 9 record matches)"
+      },
+      "narrative": [
+        "Alexander Stewart Price was born in 1833 — the year Andrew Jackson began his second term. He married **Martha Jane Collins** and together they raised Matilda Jane Price (1867–1944), who would marry Alexander Henry Quesenberry, Jr. and become Floyd Harmon Quesenberry's mother. Alexander Stewart lived to be seventy-six, dying in 1909."
+      ]
+    },
+    "martha-jane-collins": {
+      "id": "martha-jane-collins",
+      "name": "Martha Jane Collins Price",
+      "lifespan": "fl. mid-1800s",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "alexander-stewart-price",
+      "children": ["matilda-price"],
+      "verified": "partial",
+      "epitaph": "Wife of Alexander Stewart Price, mother of Matilda Jane Price.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandmother; 3rd-great-grandmother",
+        "Husband": "Alexander Stewart Price (1833–1909)",
+        "Daughter": "Matilda Jane Price (1867–1944)"
+      },
+      "narrative": [
+        "Martha Jane Collins — wife of Alexander Stewart Price, mother of Matilda Jane Price. Vital dates not yet recovered. The Collins surname is English/Irish, well-attested across the southern Appalachians."
+      ]
+    },
+    "robert-thomas-stapleton": {
+      "id": "robert-thomas-stapleton",
+      "name": "Robert Thomas Stapleton",
+      "birth": "1830",
+      "death": "1911",
+      "lifespan": "1830–1911",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "nancy-jane-winstead",
+      "children": ["annis-stapleton"],
+      "verified": "documented",
+      "epitaph": "Father of Annis Stapleton, grandfather of Eva Mullins. Lived eighty-one years through the Civil War, Reconstruction, and the dawn of the automobile age.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandfather; 3rd-great-grandfather",
+        "Lifespan": "1830–1911 (lived 81 years)",
+        "Wife": "Nancy Jane Winstead (b. 1841)",
+        "Daughter": "Annis Stapleton",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 13 record matches; personal photo available)"
+      },
+      "narrative": [
+        "Robert Thomas Stapleton was born in 1830 — the year before Floyd County, Virginia was formed. He married **Nancy Jane Winstead** (b. 1841) — eleven years younger than him — and together they raised Annis Stapleton, who would marry James C. C. Mullins. Their granddaughter Eva Elizabeth Mullins (1891–1983) would become Lonnie's mother. Robert Thomas lived to eighty-one, dying in 1911."
+      ]
+    },
+    "nancy-jane-winstead": {
+      "id": "nancy-jane-winstead",
+      "name": "Nancy Jane Winstead Stapleton",
+      "birth": "1841",
+      "lifespan": "1841–?",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "robert-thomas-stapleton",
+      "children": ["annis-stapleton"],
+      "verified": "documented",
+      "epitaph": "Wife of Robert Thomas Stapleton, mother of Annis. Born the year of William Henry Harrison's brief presidency.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandmother; 3rd-great-grandmother",
+        "Born": "1841",
+        "Husband": "Robert Thomas Stapleton (1830–1911)",
+        "Daughter": "Annis Stapleton",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 13 record matches; personal photo available)"
+      },
+      "narrative": [
+        "Nancy Jane Winstead was born in 1841 — the year of William Henry Harrison's brief one-month presidency. She married Robert Thomas Stapleton, eleven years her senior, and bore Annis Stapleton — who would marry James C. C. Mullins and become Eva Mullins' mother."
+      ]
+    },
+    "judith-harvey": {
+      "id": "judith-harvey",
+      "name": "Judith Deuce Osborne Harvey",
+      "birth": "1683",
+      "birthPlace": "Bilston, Staffordshire, England",
+      "death": "1 May 1770",
+      "deathPlace": "Chester, Pennsylvania",
+      "lifespan": "1683–1770",
+      "branch": "harvey",
+      "generation": 8,
+      "father": "samuel-deuce",
+      "mother": "elizabeth-deuce",
+      "spouse": "william-harvey-colonial",
+      "priorSpouses": "Peter Osborne",
+      "verified": "documented",
+      "epitaph": "Born in Staffordshire, England in 1683. Emigrated to William Penn's colony, married twice, bore at least ten children, lived to eighty-seven. The deepest English-born ancestor in this tree.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandmother; 8 generations back from Mike",
+        "Lifespan": "1683–1770 (lived ~87 years)",
+        "Born": "1683, <strong>Bilston, Staffordshire, England</strong>",
+        "Died": "1 May 1770, Chester, Pennsylvania",
+        "Maiden name": "<strong>DEUCE</strong> (born Judith Deuce; alternate trees record Osborne, which was her first married name)",
+        "Father": "<strong>Samuel Deuce</strong> (Staffordshire, England)",
+        "Mother": "<strong>Elizabeth Deuce</strong> (maiden name not yet recovered)",
+        "First husband": "<strong>Peter Osborne</strong>",
+        "Second husband": "<strong>William Harvey, I</strong> — Mike's gen-8 direct ancestor",
+        "Children with Osborne": "Elizabeth Ann (Sheward), Charles, Peter, Suzanna, Samuel Sr.",
+        "Children with Harvey": "Hannah (Way), William II, <strong>Isaac L.</strong>, James, Amos, Anne (Bayley)",
+        "Source": "Mike's MyHeritage tree (3 record matches); Geni World Family Tree; FamilySearch Family Tree"
+      },
+      "narrative": [
+        "Judith Deuce was born in 1683 in **Bilston, Staffordshire, England** — in what is now the Black Country of greater Wolverhampton, then a region of small ironworks, coal pits, and dissenting religious communities. Her father was **Samuel Deuce**; her mother **Elizabeth Deuce** (maiden name unrecovered). Bilston was a stronghold of early religious nonconformity — Quaker, Methodist, and Baptist congregations were all rooted there — and Judith almost certainly grew up in one of these dissenting families.",
+        "Sometime in the early 1700s — likely as a young woman or young wife — Judith joined the great migration of English Quakers and other nonconformists to **William Penn's Pennsylvania**. There she married first **Peter Osborne**, and with him bore at least five children: Elizabeth Ann (later Sheward), Charles, Peter, Suzanna, and Samuel Sr. After Peter Osborne's death she married, as her second husband, **William Harvey, I** — Mike's eighth-generation direct ancestor. With William she bore at least six more children: Hannah (later Way), William II, **Isaac L. Harvey** (born 1718 at Chadds Ford, Pennsylvania), James, Amos, and Anne (later Bayley).",
+        "Judith lived an extraordinarily long life — eighty-seven years across two marriages and at least eleven children. She died on the 1st of May, 1770, in **Chester, Pennsylvania** — still in the same Chester County Quaker community where her descendants would remain for another half-century before migrating south to Orange and Guilford Counties, North Carolina.",
+        "Judith is the deepest English-born ancestor in the Harvey line — pushing the documented Harvey ancestry back to the reign of Charles II and putting the family's origin firmly in the English Midlands."
+      ]
+    },
+    "william-harvey-colonial": {
+      "id": "william-harvey-colonial",
+      "name": "William HARVEY (colonial)",
+      "lifespan": "fl. late 1600s – early 1700s",
+      "branch": "harvey",
+      "generation": 8,
+      "spouse": "judith-harvey",
+      "verified": "partial",
+      "epitaph": "Colonial-era Harvey patriarch. Married Judith ca. 1715; from him descend the American Harveys of this line.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandfather; 8 generations back from Mike",
+        "Wife": "Judith Harvey (b. circa 1696)",
+        "Children": "Hannah, William, Isaac L., James",
+        "Source": "Mike's MyHeritage tree (8 generations back)"
+      },
+      "narrative": [
+        "William HARVEY — the colonial-era patriarch of this Harvey line. He married Judith around 1715 and from them every Harvey on this site descends. The capitalization of his surname in tree-of-record sources suggests he was a recorded landholder of the early eighteenth century, likely in Virginia or North Carolina."
+      ]
+    },
+    "nathaniel-newlin": {
+      "id": "nathaniel-newlin",
+      "name": "Nathaniel Newlin",
+      "birth": "1690",
+      "death": "1732",
+      "lifespan": "1690–1732",
+      "branch": "harvey",
+      "generation": 8,
+      "spouse": "jane-newlin",
+      "verified": "documented",
+      "epitaph": "Pennsylvania Quaker — son of an Irish Quaker emigrant who came to Penn's colony in 1683. The deepest Quaker-side ancestor on this site.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandfather; 8 generations back from Mike",
+        "Lifespan": "1690–1732 (lived 42 years)",
+        "Wife": "Jane Newlin (b. 1687)",
+        "Daughter": "Martha E. Newlin",
+        "Quaker": "<strong>Yes</strong> — Pennsylvania Friends meeting; family from Mountmellick, Ireland",
+        "Source": "Mike's MyHeritage tree (direct ancestor 8 generations; 6 record matches; personal photo available)"
+      },
+      "narrative": [
+        "Nathaniel Newlin was born in 1690 in Chester County, Pennsylvania — a son of the Irish Quaker emigrant Nicholas Newlin (1630–1699), who had come over from **Mountmellick, Queen's County, Ireland** in 1683 with the wave of Quakers answering William Penn's invitation to settle the new colony of Pennsylvania.",
+        "Nathaniel married **Jane Newlin** (b. 1687) — note that the family practice of Friends often had wives keep their birth names, so it's also possible Jane was a cousin of Nathaniel's. Together they raised at least one daughter, Martha E. Newlin, whose own descendants would migrate south down the Great Wagon Road into the Carolina Piedmont in the eighteenth century, eventually merging into the Harvey line that descends to Ruth Garland Harvey.",
+        "Nathaniel died in 1732, age 42 — relatively young, even for that era. He is the deepest documented Quaker ancestor on this site."
+      ]
+    },
+    "jane-newlin": {
+      "id": "jane-newlin",
+      "name": "Jane Newlin",
+      "birth": "1687",
+      "lifespan": "1687–?",
+      "branch": "harvey",
+      "generation": 8,
+      "spouse": "nathaniel-newlin",
+      "verified": "documented",
+      "epitaph": "Pennsylvania Quaker. Wife of Nathaniel Newlin.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandmother; 8 generations back from Mike",
+        "Born": "1687",
+        "Husband": "Nathaniel Newlin (1690–1732)",
+        "Source": "Mike's MyHeritage tree (direct ancestor 8 generations; 2 record matches)"
+      },
+      "narrative": [
+        "Jane Newlin was born in 1687 — three years older than her husband Nathaniel. She was part of the colonial Pennsylvania Quaker community gathered in Chester County under William Penn's holy experiment. From her line descend the Quaker-rooted Harveys of Piedmont North Carolina."
+      ]
+    },
+    "mary-hoggatt": {
+      "id": "mary-hoggatt",
+      "name": "Mary Glendenning Hoggatt",
+      "birth": "8 December 1698",
+      "birthPlace": "Edinburgh, Midlothian, Scotland",
+      "death": "17 November 1780",
+      "deathPlace": "Deep River, Guilford County, North Carolina",
+      "burial": "Springfield Friends Meeting, Guilford County, NC",
+      "lifespan": "1698–1780",
+      "branch": "harvey",
+      "generation": 8,
+      "father": "david-george-glendenning",
+      "mother": "margaret-hall",
+      "spouse": "philip-hoggett",
+      "marriedDate": "1720",
+      "verified": "documented",
+      "epitaph": "Born in Edinburgh, Scotland in 1698. Crossed the Atlantic as a young woman, married a Quaker in colonial America, lived to eighty-two, and was buried at Springfield Friends Meeting in North Carolina.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandmother; 8 generations back from Mike",
+        "Lifespan": "1698–1780 (lived 82 years)",
+        "Born": "8 December 1698, <strong>Edinburgh, Midlothian, Scotland</strong>",
+        "Died": "17 November 1780, Deep River, Guilford County, NC",
+        "Buried": "Springfield Friends Meeting, Guilford County, NC",
+        "Maiden name": "<strong>GLENDENNING</strong> (born Mary Glendenning)",
+        "Father": "<strong>David George Glendenning</strong> (Edinburgh, Scotland)",
+        "Mother": "<strong>Margaret Hall</strong>",
+        "Married": "1720, to Philip Hoggatt (also spelled Hoggett, Hockett)",
+        "Children": "David, Jean (Bailey), William (Hockett), John, <strong>Anthony P. Sr.</strong>, Joseph, Jane",
+        "Siblings": "Agnes, Walter, Isabell, John Glendenning",
+        "Quaker": "<strong>Yes</strong> — buried at Springfield Friends Meeting",
+        "Source": "Mike's MyHeritage tree (6 record matches); Geni World Family Tree; Canada Quebec Couples; Kirk Web Site"
+      },
+      "narrative": [
+        "Mary Glendenning was born on the 8th of December, 1698, in **Edinburgh, Scotland**, to **David George Glendenning** and **Margaret Hall**. She grew up with at least four siblings — Agnes, Walter, Isabell, and John. Sometime in the second decade of the eighteenth century she crossed the Atlantic, settling in colonial America.",
+        "By **1720** she had married **Philip Hoggatt** (the surname was variously spelled Hoggett or Hockett in the colonial records). Together they raised at least seven children — David, Jean (later Bailey), William (whose descendants used the Hockett spelling), John, **Anthony P. Hoggatt, Sr.** (Mike's gen-7 ancestor), Joseph, and Jane. The family was Quaker — members of the Society of Friends — and lived in the Pennsylvania, Maryland, and later Carolina Friends communities.",
+        "Mary lived to be eighty-two. She died on the 17th of November, 1780, in **Deep River, Guilford County, North Carolina**, during the American Revolution. She was buried at **Springfield Friends Meeting** — a Guilford County Quaker burial ground established just seven years earlier in 1773 with the Quaker migration from Pennsylvania and Virginia into the Carolina Piedmont.",
+        "**This Scottish-born emigrant is almost certainly the source of the muddled \"Highland Scotland\" family memory** that earlier records had mistakenly attached to the Carmichael/McMichael side. The actual Scottish-born ancestor in the tree was Mary Glendenning of Edinburgh — on the Hoggatt-Harvey side, not the McMichael side. The family memory was real; only the attribution was wrong."
+      ]
+    },
+    "philip-hoggett": {
+      "id": "philip-hoggett",
+      "name": "Philip Hoggett",
+      "lifespan": "fl. early 1700s",
+      "branch": "harvey",
+      "generation": 8,
+      "spouse": "mary-hoggatt",
+      "verified": "partial",
+      "epitaph": "Husband of Mary Hoggatt. Colonial Quaker patriarch of this Hoggatt-Harvey line.",
+      "facts": {
+        "Generation": "Ruth's 6th-great-grandfather; 8 generations back from Mike",
+        "Wife": "Mary Hoggatt (1698–1780)",
+        "Son": "Anthony P. Hoggatt",
+        "Quaker": "<strong>Yes</strong>"
+      },
+      "narrative": [
+        "Philip Hoggett — colonial-era husband of Mary Hoggatt. The slight spelling difference (Hoggett vs Hoggatt) is typical of eighteenth-century records where surnames were not yet standardized. From this couple descend the Hoggatts who would join the Quaker migration south to the Carolina Piedmont, eventually merging into the Harvey line."
+      ]
+    },
+    "harrison-mullins": {
+      "id": "harrison-mullins",
+      "name": "Harrison Mullins",
+      "birth": "1829",
+      "birthPlace": "Tennessee",
+      "death": "1920",
+      "deathPlace": "Dickenson County, Virginia",
+      "lifespan": "1829–1920",
+      "branch": "quesenberry",
+      "generation": 4,
+      "father": "hiram-mullins",
+      "mother": "nancy-orlenia-singleton",
+      "spouse": "manerva-jane-mullins",
+      "children": ["james-cc-mullins"],
+      "verified": "documented",
+      "epitaph": "Father of James Calloway Mullins. Lived ninety-one years from Andrew Jackson to Warren G. Harding; saw his son grow old.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandfather; 3rd-great-grandfather",
+        "Lifespan": "1829–1920 (lived 91 years)",
+        "Father": "Hiram Mullins (1794–1850)",
+        "Mother": "Nancy Orlenia Singleton (1815–1886)",
+        "Wife": "Manerva Jane Mullins (Jan 1831–1910) — note: same surname suggests cousin marriage",
+        "Son": "James Calloway Mullins (1854–1929) — Eva Mullins' father",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations)"
+      },
+      "narrative": [
+        "Harrison Mullins was born in 1829 in Tennessee — likely Hancock or Claiborne County, the Mullins heartland of the Tennessee mountains. His parents were **Hiram Mullins** (1794–1850), a North Carolina-born Mullins who had come west to Tennessee, and **Nancy Orlenia Singleton** (1815–1886), of the Tennessee Singletons.",
+        "He married **Manerva Jane Mullins** — note the shared surname, common in the heavily intermarried Mullins families of the Cumberland Gap country, suggesting they were cousins. Together they raised at least one son, James Calloway Mullins (1854–1929) — Eva Mullins' father.",
+        "Harrison appears to have lived through more than one marriage, since records show James Calloway had several younger half-siblings (Henry, Jacob F., Wiley Hillery, John D., Mary E.) of slightly later birth years. Harrison lived an extraordinary 91 years, dying in 1920 in Dickenson County, Virginia — by which time his great-great-grandson Lonnie had just been born in nearby Sullivan County, Tennessee."
+      ]
+    },
+    "manerva-jane-mullins": {
+      "id": "manerva-jane-mullins",
+      "name": "Manerva Jane Mullins",
+      "birth": "January 1831",
+      "birthPlace": "Claiborne County, Tennessee",
+      "death": "1910",
+      "deathPlace": "Lee County, Virginia",
+      "lifespan": "1831–1910",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "harrison-mullins",
+      "children": ["james-cc-mullins"],
+      "verified": "documented",
+      "epitaph": "Of the Claiborne County, Tennessee Mullins families. Mother of James Calloway Mullins.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandmother; 3rd-great-grandmother",
+        "Lifespan": "January 1831–1910 (lived 79 years)",
+        "Husband": "Harrison Mullins (1829–1920) — likely a cousin (same surname)",
+        "Son": "James Calloway Mullins (1854–1929)",
+        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations)"
+      },
+      "narrative": [
+        "Manerva Jane Mullins was born in January 1831 in Claiborne County, Tennessee — the heart of the Tennessee Mullins country, where the Cumberland Gap brings Virginia, Tennessee, and Kentucky together. She married **Harrison Mullins** (almost certainly her cousin, given their shared surname) and bore James Calloway Mullins (1854–1929), Eva's father. She lived to be 79, dying in 1910 in Lee County, Virginia — having crossed the state line from Tennessee in her later years."
+      ]
+    },
+    "hiram-mullins": {
+      "id": "hiram-mullins",
+      "name": "Hiram Mullins",
+      "birth": "1794",
+      "birthPlace": "North Carolina",
+      "death": "1850",
+      "deathPlace": "Tennessee",
+      "lifespan": "1794–1850",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "nancy-orlenia-singleton",
+      "children": ["harrison-mullins"],
+      "verified": "documented",
+      "epitaph": "Father of Harrison Mullins. Born in North Carolina under George Washington's second term; died in Tennessee just before the Civil War.",
+      "facts": {
+        "Generation": "Lonnie's 3rd-great-grandfather; 4th-great-grandfather",
+        "Lifespan": "1794–1850 (lived 56 years)",
+        "Wife": "Nancy Orlenia Singleton (1815–1886)",
+        "Son": "Harrison Mullins (1829–1920)",
+        "Source": "Mike's MyHeritage tree (direct ancestor 6 generations)"
+      },
+      "narrative": [
+        "Hiram Mullins was born in 1794 in North Carolina — likely western NC or the Tennessee borderlands, where the Mullins families were part of the great westward migration of the late eighteenth century. He moved (or his family moved) into Tennessee, where he married **Nancy Orlenia Singleton** (1815–1886) — twenty-one years his junior. Their son Harrison Mullins would carry the line forward into the next generation. Hiram died in 1850, age 56, just over a decade before the Civil War would change everything."
+      ]
+    },
+    "nancy-orlenia-singleton": {
+      "id": "nancy-orlenia-singleton",
+      "name": "Nancy Orlenia Singleton Mullins",
+      "birth": "1815",
+      "birthPlace": "Tennessee",
+      "death": "13 August 1886",
+      "deathPlace": "Izard County, Arkansas",
+      "lifespan": "1815–1886",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "hiram-mullins",
+      "children": ["harrison-mullins"],
+      "verified": "documented",
+      "epitaph": "Wife of Hiram Mullins. Migrated west from Tennessee to Arkansas in her later years — died in Izard County, Arkansas.",
+      "facts": {
+        "Generation": "Lonnie's 3rd-great-grandmother; 4th-great-grandmother",
+        "Lifespan": "1815–1886 (lived 71 years)",
+        "Husband": "Hiram Mullins (1794–1850)",
+        "Son": "Harrison Mullins (1829–1920)",
+        "Migration": "Tennessee → Izard County, Arkansas (in later life)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Nancy Orlenia Singleton was born in 1815 in Tennessee — the Singleton families were prominent in the southern Appalachians from the late eighteenth century forward. She married Hiram Mullins around 1828, when she was about thirteen and he was thirty-four — a substantial age gap typical of frontier remarriages. Together they raised Harrison Mullins (1829–1920) and likely other children.",
+        "After Hiram's 1850 death, Nancy lived another 36 years. She — or descendants who took her in — migrated west to Arkansas, where she died on the 13th of August 1886 in Izard County. Her great-great-grandson Lonnie would not be born for another 34 years."
+      ]
+    },
+    "nathan-heaver-harvey": {
+      "id": "nathan-heaver-harvey",
+      "name": "Nathan Heaver Harvey",
+      "birth": "21 September 1759",
+      "birthPlace": "Chester County, Pennsylvania",
+      "death": "12 March 1837",
+      "deathPlace": "Orange County, North Carolina",
+      "lifespan": "1759–1837",
+      "branch": "harvey",
+      "generation": 6,
+      "spouse": "agnes-harvey",
+      "children": ["anthony-harvey"],
+      "verified": "documented",
+      "epitaph": "Pennsylvania Quaker, born in William Penn's colony at the eve of the Revolution. Migrated south to Orange County, NC, where he died at seventy-seven.",
+      "facts": {
+        "Generation": "Ruth's 4th-great-grandfather; 5th-great-grandfather",
+        "Lifespan": "21 September 1759–12 March 1837 (lived 77 years)",
+        "Born": "Chester County, Pennsylvania (Quaker country)",
+        "Died": "Orange County, NC",
+        "Wife": "Agnes Harvey (1756–1834)",
+        "Son": "Anthony Harvey (1791–before 1850)",
+        "Quaker": "<strong>Yes</strong> — Chester County PA was William Penn's heart",
+        "Source": "Mike's MyHeritage tree (direct ancestor 6 generations)"
+      },
+      "narrative": [
+        "Nathan Heaver Harvey was born on the 21st of September, 1759, in Chester County, Pennsylvania — the heart of William Penn's Quaker colony, where his Quaker forebears had settled in the late seventeenth century. He came of age during the American Revolution; at sixteen, when the war began, he would have been of fighting age, but as a Quaker his religious tradition would have led him to refuse military service. (Pennsylvania Quakers played a complex role in the Revolution: many refused arms; some were disowned by their meetings for fighting; others quietly supported the cause through hospital work, farming for the army, or simply continuing their lives.)",
+        "He married **Agnes Harvey** (1756–1834) — note the shared surname, suggesting either a cousin marriage or the convention of Quaker women keeping their birth surname. Together they raised at least one son, **Anthony Harvey** (born 23 April 1791, Alamance County, NC). Their move from Chester County PA to Orange County NC was part of the great Quaker migration south down the Great Wagon Road in the late eighteenth century — a migration that brought many Quaker families from Pennsylvania into the new Quaker settlements of Piedmont North Carolina (most famously the New Garden community in what became Guilford County).",
+        "Nathan died on the 12th of March, 1837, in Orange County, NC, age 77. His descendants would carry the Harvey name through five more American generations to William Carl Harvey (1887–1966) — Ruth's father."
+      ]
+    },
+    "agnes-harvey": {
+      "id": "agnes-harvey",
+      "name": "Agnes Harvey",
+      "birth": "25 December 1756",
+      "birthPlace": "Rowan County, North Carolina",
+      "death": "25 May 1834",
+      "deathPlace": "Spring Friends Burial Grounds, Orange County, North Carolina",
+      "lifespan": "1756–1834",
+      "branch": "harvey",
+      "generation": 6,
+      "spouse": "nathan-heaver-harvey",
+      "children": ["anthony-harvey"],
+      "verified": "documented",
+      "epitaph": "Born Christmas Day 1756 in Rowan County, NC. Buried at Spring Friends Burial Grounds — a confirmed Quaker resting place.",
+      "facts": {
+        "Generation": "Ruth's 4th-great-grandmother; 5th-great-grandmother",
+        "Lifespan": "25 December 1756–25 May 1834 (lived 77 years)",
+        "Born": "Rowan County, NC (Christmas Day)",
+        "Buried": "<strong>Spring Friends Burial Grounds, Orange County, NC</strong> — Quaker cemetery",
+        "Husband": "Nathan Heaver Harvey (1759–1837)",
+        "Son": "Anthony Harvey (1791–before 1850)",
+        "Quaker": "<strong>Yes</strong> — confirmed by burial at Spring Friends",
+        "Source": "Mike's MyHeritage tree (direct ancestor 6 generations)"
+      },
+      "narrative": [
+        "Agnes Harvey was born on the 25th of December, 1756 — Christmas Day — in Rowan County, North Carolina. She was three years older than her husband Nathan Heaver Harvey, whom she married before 1791 (the birth year of their son Anthony).",
+        "She is buried at the **Spring Friends Burial Grounds** in Orange County, NC — a Quaker cemetery that confirms her religious affiliation. The Spring Friends Meeting was one of the earliest Quaker meetings established in Piedmont North Carolina by the migration from Pennsylvania.",
+        "She lived to be 77, dying on the 25th of May, 1834, three years before her husband."
+      ]
+    },
+    "isaac-l-harvey": {
+      "id": "isaac-l-harvey",
+      "name": "Isaac L. Harvey",
+      "birth": "21 September 1718",
+      "birthPlace": "Chadds Ford, Chester County, Pennsylvania",
+      "death": "3 April 1802",
+      "deathPlace": "Orange County, North Carolina",
+      "lifespan": "1718–1802",
+      "branch": "harvey",
+      "generation": 7,
+      "father": "william-harvey-colonial",
+      "mother": "judith-harvey",
+      "spouse": "martha-e-harvey",
+      "children": ["nathan-heaver-harvey"],
+      "verified": "documented",
+      "epitaph": "Born at Chadds Ford in 1718 — site of the 1777 Battle of Brandywine — and lived 84 years, witnessing the founding of the United States.",
+      "facts": {
+        "Generation": "Ruth's 5th-great-grandfather; 6th-great-grandfather",
+        "Lifespan": "21 September 1718–3 April 1802 (lived 83 years)",
+        "Born": "<strong>Chadds Ford, Chester County, Pennsylvania</strong> — site of 1777 Battle of Brandywine",
+        "Father": "William HARVEY (colonial)",
+        "Mother": "Judith Harvey (b. circa 1696)",
+        "Wife": "Martha E. Harvey (born Newlin, 1721–1806)",
+        "Son": "Nathan Heaver Harvey (1759–1837)",
+        "Quaker": "<strong>Yes</strong> — Chadds Ford was Brandywine Friends Meeting country",
+        "Historical detail": "Chadds Ford was the site of the September 11, 1777 Battle of Brandywine, fought right in his neighborhood when he was 58 years old",
+        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations)"
+      },
+      "narrative": [
+        "Isaac L. Harvey was born on the 21st of September, 1718, at **Chadds Ford** in Chester County, Pennsylvania. The placename matters: Chadds Ford sits on the Brandywine Creek, on the road from Philadelphia to Wilmington. In September 1777 — when Isaac was 58 — that very ground would become the site of the **Battle of Brandywine**, the largest battle of the American Revolution measured by combatants engaged. George Washington's Continental Army would face Sir William Howe's British Regulars on Isaac's home soil. Whether he was still living there in 1777, or had already moved south to North Carolina, is uncertain. What is certain is that Chadds Ford was Quaker country — Brandywine Friends Meeting was one of the earliest in the colony.",
+        "He married **Martha E. Harvey** (born **Newlin**, 1721–1806), of the famous Pennsylvania Newlin Quaker family — daughter of Nathaniel Newlin (1690–1732) and Jane Newlin (b. 1687), the Irish Quaker emigrants who had come to Penn's colony in 1683 from Mountmellick, Ireland. Through this marriage the Harvey and Newlin Quaker lines joined.",
+        "They raised at least one son, **Nathan Heaver Harvey** (1759–1837), who would carry the family south to Orange County, North Carolina with the great Quaker migration down the Great Wagon Road. Isaac himself eventually made the same journey — he died on the 3rd of April, 1802, in Orange County, NC, age 83."
+      ]
+    },
+    "martha-e-harvey": {
+      "id": "martha-e-harvey",
+      "name": "Martha E. Newlin Harvey",
+      "birth": "18 September 1721",
+      "birthPlace": "Concord, Pennsylvania",
+      "death": "23 November 1806",
+      "deathPlace": "Graham, Alamance County, North Carolina",
+      "lifespan": "1721–1806",
+      "branch": "harvey",
+      "generation": 7,
+      "father": "nathaniel-newlin",
+      "mother": "jane-newlin",
+      "spouse": "isaac-l-harvey",
+      "children": ["nathan-heaver-harvey"],
+      "verified": "documented",
+      "epitaph": "Born Newlin in colonial Pennsylvania, married Harvey, migrated south to North Carolina. The bridge between two Quaker emigrant lines.",
+      "facts": {
+        "Generation": "Ruth's 5th-great-grandmother; 6th-great-grandmother",
+        "Lifespan": "18 September 1721–23 November 1806 (lived 85 years)",
+        "Born": "Concord, Pennsylvania — Quaker country",
+        "Maiden name": "<strong>Newlin</strong>",
+        "Father": "Nathaniel Newlin (1690–1732)",
+        "Mother": "Jane Newlin (b. 1687)",
+        "Husband": "Isaac L. Harvey (1718–1802)",
+        "Son": "Nathan Heaver Harvey (1759–1837)",
+        "Quaker": "<strong>Yes</strong> — Newlin Quaker family",
+        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations)"
+      },
+      "narrative": [
+        "Martha E. Newlin was born on the 18th of September, 1721, at Concord, in Chester County, Pennsylvania — into the famous Newlin Quaker family. Her father, **Nathaniel Newlin** (1690–1732), was the son of Nicholas Newlin, an Irish Quaker who had emigrated from **Mountmellick, Queen's County, Ireland** to William Penn's new colony in 1683. Her mother was **Jane Newlin** (b. 1687).",
+        "She married **Isaac L. Harvey** (1718–1802) of the Pennsylvania Harveys, joining the Newlin and Harvey Quaker lines into one. Together they raised Nathan Heaver Harvey (1759–1837), who would lead the family south to North Carolina.",
+        "Martha lived an extraordinary 85 years, dying on the 23rd of November, 1806, at Graham, Alamance County, North Carolina — having outlived her husband by four years. Her descendants would farm the Piedmont red clay for five more generations before Geneva McMicheal Harvey (1891–1971), her great-great-great-great-granddaughter, would marry William Carl Harvey and bring the line to Ruth Garland Harvey."
+      ]
+    },
+    "anthony-p-hoggatt": {
+      "id": "anthony-p-hoggatt",
+      "name": "Anthony P. Hoggatt",
+      "birth": "8 February 1730",
+      "birthPlace": "Cedar Creek, Hanover County, Virginia",
+      "death": "7 August 1814",
+      "deathPlace": "Hanover County, Virginia",
+      "lifespan": "1730–1814",
+      "branch": "harvey",
+      "generation": 7,
+      "father": "philip-hoggett",
+      "mother": "mary-hoggatt",
+      "spouse": "mary-agnes-hoggatt",
+      "verified": "documented",
+      "epitaph": "Of the Cedar Creek, Virginia Quaker community. Lived 84 years from George II to James Madison.",
+      "facts": {
+        "Generation": "Ruth's 5th-great-grandfather; 6th-great-grandfather",
+        "Lifespan": "8 February 1730–7 August 1814 (lived 84 years)",
+        "Born": "Cedar Creek, Hanover County, VA — Quaker territory",
+        "Father": "Philip Hoggett",
+        "Mother": "Mary Hoggatt (1698–1780)",
+        "Wife": "Mary Agnes Hoggatt (1733–1808)",
+        "Quaker": "<strong>Yes</strong> — Cedar Creek Friends Meeting",
+        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations)"
+      },
+      "narrative": [
+        "Anthony P. Hoggatt was born on the 8th of February, 1730, at Cedar Creek, in Hanover County, Virginia. Cedar Creek was one of the earliest Quaker meetings established in Virginia — a community of Friends settled by migration from Maryland and Pennsylvania, who held against the established Anglican Church of the colony. He was the son of **Mary Hoggatt** (1698–1780) and **Philip Hoggett**.",
+        "He married **Mary Agnes Hoggatt** (1733–1808). The shared surname suggests they were cousins, common in tightly-knit Quaker communities. Anthony lived 84 years through the Seven Years' War, the American Revolution, the founding of the United States, and the early presidencies of George Washington, John Adams, Thomas Jefferson, and James Madison. He died at Cedar Creek on the 7th of August, 1814, just as the British were preparing to burn Washington, D.C. in the War of 1812."
+      ]
+    },
+    "mary-agnes-hoggatt": {
+      "id": "mary-agnes-hoggatt",
+      "name": "Mary Agnes Hoggatt",
+      "birth": "27 June 1733",
+      "birthPlace": "Cedar Creek, Hanover County, Virginia",
+      "death": "21 January 1808",
+      "deathPlace": "Yadkin, Stokes County, North Carolina",
+      "lifespan": "1733–1808",
+      "branch": "harvey",
+      "generation": 7,
+      "spouse": "anthony-p-hoggatt",
+      "verified": "documented",
+      "epitaph": "Of the Cedar Creek Quakers; migrated south to Yadkin, NC. Wife (and likely cousin) of Anthony P. Hoggatt.",
+      "facts": {
+        "Generation": "Ruth's 5th-great-grandmother; 6th-great-grandmother",
+        "Lifespan": "27 June 1733–21 January 1808 (lived 74 years)",
+        "Husband": "Anthony P. Hoggatt (1730–1814) — likely her cousin (same surname)",
+        "Migration": "Cedar Creek, VA → Yadkin, Stokes County, NC",
+        "Source": "Mike's MyHeritage tree (direct ancestor 7 generations)"
+      },
+      "narrative": [
+        "Mary Agnes Hoggatt was born on the 27th of June, 1733, at Cedar Creek, Hanover County, Virginia. She married Anthony P. Hoggatt (likely her cousin), and together they raised the next generation of Hoggatts in the Virginia and Carolina Quaker communities. She died on the 21st of January, 1808, at Yadkin, in Stokes County, North Carolina — having migrated south from her birthplace some time in the late eighteenth century, part of the broader Quaker movement out of Virginia and into the Piedmont Carolina settlements."
+      ]
+    },
+    "riley-james-mullins": {
+      "id": "riley-james-mullins",
+      "name": "Riley James Mullins",
+      "birth": "1838",
+      "birthPlace": "Claiborne County, Tennessee",
+      "death": "16 February 1864",
+      "deathPlace": "Rock Island Confederate POW Camp, Rock Island, Illinois",
+      "lifespan": "1838–1864",
+      "branch": "quesenberry",
+      "generation": 4,
+      "verified": "documented",
+      "military": "Confederate soldier — died as a prisoner of war at the Rock Island, Illinois POW camp, 16 February 1864",
+      "epitaph": "Captured Confederate soldier from Claiborne County, Tennessee. Died as a prisoner of war at Rock Island, Illinois — ten months after his cousin Pvt. Alexander Henry Quesenberry Sr. fell at Chancellorsville.",
+      "facts": {
+        "Generation": "Lonnie's grandfather's great-great-uncle (collateral)",
+        "Lifespan": "1838–1864 (lived 25 years)",
+        "Born": "Claiborne County, Tennessee",
+        "Died": "<strong>16 February 1864 at Rock Island, IL POW camp</strong>",
+        "Military": "<strong>Confederate POW — died in Union prison camp</strong>",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Riley James Mullins was born in 1838 in Claiborne County, Tennessee — into the great Mullins clan of the Cumberland Gap mountains. When the Civil War came he served the Confederacy. He was captured at some point and sent north to **Rock Island Prison Barracks**, a Union POW camp on an island in the Mississippi River between Illinois and Iowa. Rock Island was notorious for harsh conditions and high mortality from smallpox, dysentery, and exposure during the brutal winter of 1863–64. Of the roughly 12,000 Confederates held there, nearly 2,000 died.",
+        "Riley James was one of them — dead on the 16th of February, 1864, age 25. He was a cousin of Pvt. Alexander Henry Quesenberry, Sr. (killed at Chancellorsville May 1863), making this family's Confederate cost two young men dead within ten months of each other in the war's middle years."
+      ]
+    },
+    "edward-mcdonald-smyth": {
+      "id": "edward-mcdonald-smyth",
+      "name": "Edward McDonald Smyth",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "minerva-parsons",
+      "children": ["rebecca-jane-smyth"],
+      "verified": "partial",
+      "epitaph": "Father of Rebecca Jane Smyth — the young Lee County widow of Pvt. Alexander Henry Quesenberry Sr.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Minerva Parsons",
+        "Children": "Henry, Emily A., Martha, William A., Minerva, Mary Frances, <strong>Rebecca Jane</strong> (later Quesenberry/Travis), Robert, James Tennessee",
+        "Surname variants": "Smyth, Smythe, Smith",
+        "Source": "Mike's MyHeritage tree (Smith Web Site managed by Gwendolyn Smith; Elliott Web Site managed by Vanessa Elliott; FamilySearch)"
+      },
+      "narrative": [
+        "Edward McDonald Smyth — sometimes spelled Smythe — was the father of **Rebecca Jane Smyth Quesenberry Travis**, born in Lee County, Virginia in 1844. He married **Minerva Parsons** and together they raised at least nine children in the Cumberland Gap country of southwestern Virginia. The Smyth/Smith surname was common across the Scots-Irish Appalachian highlands."
+      ]
+    },
+    "minerva-parsons": {
+      "id": "minerva-parsons",
+      "name": "Minerva Parsons Smyth",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "edward-mcdonald-smyth",
+      "children": ["rebecca-jane-smyth"],
+      "verified": "partial",
+      "epitaph": "Mother of Rebecca Jane Smyth.",
+      "facts": {
+        "Generation": "Lonnie's great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "Parsons",
+        "Husband": "Edward McDonald Smyth",
+        "Daughter": "Rebecca Jane Smyth (1844–1920)",
+        "Source": "Mike's MyHeritage tree"
+      },
+      "narrative": [
+        "Minerva Parsons — wife of Edward McDonald Smyth, mother of Rebecca Jane Smyth Quesenberry Travis. The Parsons surname is English/Scots-Irish, well-attested in the southwestern Virginia counties throughout the nineteenth century."
+      ]
+    },
+    "james-t-travis": {
+      "id": "james-t-travis",
+      "name": "James T. Travis",
+      "lifespan": "fl. mid-late 1800s",
+      "branch": "quesenberry",
+      "generation": 4,
+      "spouse": "rebecca-jane-smyth",
+      "verified": "partial",
+      "epitaph": "Rebecca Jane Smyth's second husband. After her Confederate-soldier first husband was killed at Chancellorsville, she remarried Travis and bore at least five more children with him.",
+      "facts": {
+        "Generation": "Step-husband of Lonnie's great-grandmother (not a direct ancestor)",
+        "Wife": "Rebecca Jane Smyth Quesenberry Travis (1844–1920)",
+        "Children": "James Edward Travis, Robert Lee Travis, Nannie J. Travis, Nancy Jane Travis (later Garrett), Frances M. Travis, Sarah Travis, Mattie R. Travis, Pelitha B. Travis",
+        "Note": "After Pvt. Alexander Henry Quesenberry Sr. was killed at the Battle of Chancellorsville in May 1863, his nineteen-year-old widow Rebecca eventually remarried James T. Travis and bore him several more children. Travis is not a direct ancestor of Mike's, but the Travis half-siblings of Alexander Henry Jr. represent an entire collateral branch of the family."
+      },
+      "narrative": [
+        "James T. Travis (sometimes recorded as James F. Travis) was the second husband of **Rebecca Jane Smyth**, after the Confederate war widowed her in 1863. With her he fathered at least five known children — James Edward, Robert Lee, Nannie J., Nancy Jane (later Garrett), and Frances M. — and possibly Sarah, Mattie, and Pelitha. The blended Quesenberry-Travis household lived in Lee County, Virginia. His Travis descendants are first cousins of Mike's direct line through Alexander Henry Quesenberry, Jr."
+      ]
+    },
+    "mary-quesenberry-graham": {
+      "id": "mary-quesenberry-graham",
+      "name": "Mary E. Quesenberry Graham",
+      "lifespan": "fl. mid-late 1800s",
+      "branch": "quesenberry",
+      "generation": 3,
+      "father": "a-quisenberry-1842",
+      "mother": "rebecca-jane-smyth",
+      "siblings": ["alexander-quesenberry"],
+      "verified": "partial",
+      "epitaph": "The previously unknown sister of Alexander Henry Quesenberry Jr. — the daughter Rebecca was probably carrying when her husband died at Chancellorsville, or born shortly after.",
+      "facts": {
+        "Generation": "Lonnie's great-aunt; sister of Alexander Henry Jr.",
+        "Father": "Pvt. Alexander Henry Quesenberry, Sr. (1842–1863, killed at Chancellorsville)",
+        "Mother": "Rebecca Jane Smyth Quesenberry Travis (1844–1920)",
+        "Sibling": "Alexander Henry Quesenberry, Jr. (1863–1937)",
+        "Married name": "Graham",
+        "Source": "Mike's MyHeritage tree (FamilySearch Family Tree match)"
+      },
+      "narrative": [
+        "Mary E. Quesenberry was a previously unknown daughter of **Pvt. Alexander Henry Quesenberry, Sr.** and **Rebecca Jane Smyth** — and sister of Alexander Henry Quesenberry, Jr. She would later marry into the Graham family. Whether she was born before or shortly after her father's death at Chancellorsville in May 1863 is not yet known. She is the eldest of Lonnie's grandfather's siblings on the Quesenberry side."
+      ]
+    },
+    "jesse-pegram": {
+      "id": "jesse-pegram",
+      "name": "Jesse Pegram",
+      "lifespan": "fl. early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "lucretia-juanita-fuller",
+      "children": ["james-fletcher-pegram"],
+      "verified": "partial",
+      "epitaph": "Father of James Fletcher Pegram, grandfather of Sally, great-grandfather of Geneva. Of the Forsyth-Rockingham-Guilford Pegram family.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Lucretia Juanita Fuller Pegram",
+        "Son": "James Fletcher Pegram (1831–1915)",
+        "Surname variants": "Jesse / Jessie",
+        "Source": "James Fletcher's NC Death Certificate (names him as Jessie Pegram); FamilySearch Family Tree"
+      },
+      "narrative": [
+        "Jesse Pegram — father of James Fletcher Pegram — was a member of the established Piedmont North Carolina Pegram family. He married **Lucretia Juanita Fuller** and together they raised at least four children: John Wyatt, Parthenia, Mary H., **James Fletcher** (b. 1831), and Jesse L. The Pegram surname is English, well-attested in Rockingham, Forsyth, and Guilford Counties throughout the nineteenth century."
+      ]
+    },
+    "lucretia-juanita-fuller": {
+      "id": "lucretia-juanita-fuller",
+      "name": "Lucretia Juanita Fuller Pegram",
+      "lifespan": "fl. early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "jesse-pegram",
+      "children": ["james-fletcher-pegram"],
+      "verified": "partial",
+      "epitaph": "Mother of James Fletcher Pegram. Maiden name Fuller — an English Piedmont surname.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "Fuller",
+        "Husband": "Jesse Pegram",
+        "Son": "James Fletcher Pegram (1831–1915)",
+        "Name variants": "Lucretia Juanita / Loucretia",
+        "Source": "James Fletcher's NC Death Certificate (names her as Loucretia Pegram); FamilySearch Family Tree"
+      },
+      "narrative": [
+        "Lucretia Juanita Fuller — sometimes recorded as Loucretia on her son's death certificate — was the mother of James Fletcher Pegram. The Fuller surname is English, well-attested in colonial and antebellum North Carolina. She raised her son in the Pegram community of Rockingham County, North Carolina; he would later move to Deep River Township, Guilford County, where her great-granddaughter Geneva would be born in 1891."
+      ]
+    },
+    "william-aydlott-mcmichael": {
+      "id": "william-aydlott-mcmichael",
+      "name": "William Aydlott McMichael, Sr.",
+      "lifespan": "fl. late 1700s – early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "rhoda-pegram",
+      "children": ["jesse-c-mcmichael"],
+      "verified": "documented",
+      "epitaph": "Patriarch of the McMichaels of Guilford County. Husband of Rhoda Pegram — and thus the first generation to begin the Pegram-McMichael intermarriage that would define three generations of Deep River kinship.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "<strong>Rhoda E. Pegram McMichael</strong> — first of the Pegram-McMichael marriages",
+        "Children": "Jesse C. (1820–1907), Mary Ann (married a Pegram), Joseph Frank, Sarah H. (Highfill), Thomas A., <strong>Archibald</strong>, Nancy (married a Pegram), Obadiah, John Watson, Charity, William Aydelott Jr.",
+        "Surname variant": "Aydlott / Aydelott — a colonial Carolina spelling pattern",
+        "Source": "Mike's MyHeritage tree — six independent Smart-Match family trees confirm parents of Jesse C. McMichael"
+      },
+      "narrative": [
+        "William Aydlott McMichael, Sr. — the founding patriarch of the McMichaels of Guilford County. He married **Rhoda E. Pegram**, beginning the first of what would become three generations of Pegram-McMichael intermarriage in the Deep River community. With Rhoda he raised at least eleven children: Jesse C. (Mike's gen-4 ancestor), Mary Ann (who later married a Pegram), Joseph Frank, Sarah H. (Highfill), Thomas A., **Archibald McMichael** (the real person whose name explains the long-running 'Archibald Carmichael' family memory), Nancy (also married a Pegram), Obadiah, John Watson, Charity, and William Aydelott Jr.",
+        "The unusual middle name *Aydlott* (sometimes Aydelott) was passed from father to son — a pattern that suggests it preserved an older family name from an earlier generation, possibly going back to a colonial Ulster-Scot or English progenitor whose surname has not yet been recovered."
+      ]
+    },
+    "rhoda-pegram": {
+      "id": "rhoda-pegram",
+      "name": "Rhoda E. Pegram McMichael",
+      "lifespan": "fl. late 1700s – early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "william-aydlott-mcmichael",
+      "children": ["jesse-c-mcmichael"],
+      "verified": "documented",
+      "epitaph": "The bridge between the Pegram and McMichael families. Her marriage to William Aydlott McMichael Sr. began three generations of intermarriage in Deep River.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "<strong>Pegram</strong> — the foundational Pegram-McMichael bridge",
+        "Husband": "William Aydlott McMichael, Sr.",
+        "Son": "Jesse C. McMichael (1820–1907)",
+        "Note": "Rhoda is the structural reason Geneva McMichael Harvey's lineage runs back to the Pegrams through TWO lines — through Rhoda her paternal great-grandmother, AND through Sally Pegram her mother. The Pegram-McMichael double intermarriage is one of the defining features of this branch.",
+        "Source": "Mike's MyHeritage tree — six independent Smart-Match family trees confirm her as Jesse C.'s mother"
+      },
+      "narrative": [
+        "Rhoda E. Pegram — daughter of an earlier-generation Pegram (parents not yet identified) — married **William Aydlott McMichael, Sr.** in Guilford County, North Carolina sometime around 1810–1815. Their son **Jesse C. McMichael** (b. 1820) would carry both family names forward, raising his own children in Deep River where the Pegrams and McMichaels lived side by side.",
+        "Rhoda is structurally one of the most important ancestors on the McMichael side. Through her, the Pegram surname enters this branch *two generations earlier* than through Sally Pegram (Geneva's mother). That means Geneva McMichael Harvey is descended from Pegrams along **two distinct lines** — Rhoda her great-great-grandmother (paternal), and Sally her mother. The Pegrams and McMichaels of Deep River were not merely neighbors who occasionally intermarried; they were a single extended kin-network whose descendants are often related two or three different ways."
+      ]
+    },
+    "david-george-glendenning": {
+      "id": "david-george-glendenning",
+      "name": "David George Glendenning",
+      "birthPlace": "Edinburgh, Midlothian, Scotland",
+      "lifespan": "fl. late 1600s – early 1700s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "margaret-hall",
+      "children": ["mary-hoggatt"],
+      "verified": "partial",
+      "epitaph": "Edinburgh-born father of Mary Glendenning Hoggatt. The deepest known Scottish ancestor in this tree.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandfather; 9 generations back from Mike",
+        "Born": "<strong>Edinburgh, Midlothian, Scotland</strong>",
+        "Wife": "Margaret Hall",
+        "Children": "Mary (b. 1698, later Hoggatt), Agnes, Walter, Isabell, John Glendenning",
+        "Surname": "Glendenning — Scottish (a Border family, also seen as Glendinning, Glendening)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree; Canada Quebec Couples records)"
+      },
+      "narrative": [
+        "David George Glendenning was a resident of **Edinburgh, Midlothian, Scotland** in the late seventeenth and early eighteenth centuries. He married **Margaret Hall** and together they raised at least five children: Agnes, Walter, Isabell, John, and **Mary** (born 8 December 1698 — Mike's gen-8 direct ancestor who would emigrate to America and marry Philip Hoggatt around 1720).",
+        "The Glendenning surname is Scottish, specifically associated with the Border country between Scotland and England — the Glendennings of Drumrash and Parton in Galloway are the best-documented branch, but the name had also spread to Edinburgh by the 1600s. David George Glendenning is the deepest known Scottish ancestor in the entire tree, putting Mike's documented ancestry firmly in seventeenth-century Edinburgh."
+      ]
+    },
+    "margaret-hall": {
+      "id": "margaret-hall",
+      "name": "Margaret Hall Glendenning",
+      "birthPlace": "Edinburgh, Midlothian, Scotland",
+      "lifespan": "fl. late 1600s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "david-george-glendenning",
+      "children": ["mary-hoggatt"],
+      "verified": "partial",
+      "epitaph": "Edinburgh-born mother of Mary Glendenning Hoggatt.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandmother; 9 generations back from Mike",
+        "Born": "Edinburgh, Midlothian, Scotland (presumed)",
+        "Maiden name": "Hall",
+        "Husband": "David George Glendenning",
+        "Daughter": "Mary Glendenning (b. 1698, later Hoggatt)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree match identifies her as 'Margaret Glendenning (born Hall)')"
+      },
+      "narrative": [
+        "Margaret Hall married **David George Glendenning** in Edinburgh, Scotland in the late 1600s. Together they raised Mary Glendenning, who would emigrate to colonial America and marry Philip Hoggatt around 1720. The Hall surname is broadly English/Scottish, common across the British Isles. Margaret is the deepest documented matriarch on the Hoggatt-Glendenning side of the tree."
+      ]
+    },
+    "samuel-deuce": {
+      "id": "samuel-deuce",
+      "name": "Samuel Deuce",
+      "birthPlace": "Bilston, Staffordshire, England",
+      "lifespan": "fl. mid-late 1600s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "elizabeth-deuce",
+      "children": ["judith-harvey"],
+      "verified": "partial",
+      "epitaph": "Father of Judith Deuce Osborne Harvey, born Bilston, Staffordshire. The deepest English-born ancestor in this tree.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandfather; 9 generations back from Mike",
+        "Born": "<strong>Bilston, Staffordshire, England</strong>",
+        "Wife": "Elizabeth Deuce (maiden name unknown)",
+        "Daughter": "Judith Deuce (b. 1683; later Osborne, then Harvey)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree match)"
+      },
+      "narrative": [
+        "Samuel Deuce lived in **Bilston, Staffordshire, England** in the seventeenth century — in what is now the Black Country of greater Wolverhampton. He married Elizabeth and they had at least one daughter, **Judith Deuce** (born 1683), who would emigrate to William Penn's Pennsylvania, marry twice (first Peter Osborne, then William Harvey I), and bear at least eleven children. Samuel is the deepest English-born ancestor in the entire tree, placing the Harvey line firmly in late seventeenth-century Staffordshire."
+      ]
+    },
+    "elizabeth-deuce": {
+      "id": "elizabeth-deuce",
+      "name": "Elizabeth Deuce",
+      "birthPlace": "England (presumed Staffordshire)",
+      "lifespan": "fl. mid-late 1600s",
+      "branch": "harvey",
+      "generation": 9,
+      "spouse": "samuel-deuce",
+      "children": ["judith-harvey"],
+      "verified": "partial",
+      "epitaph": "Mother of Judith Deuce Osborne Harvey. Maiden name not yet recovered.",
+      "facts": {
+        "Generation": "Ruth's 7th-great-grandmother; 9 generations back from Mike",
+        "Maiden name": "Unknown (indexed as 'NN' — not noted)",
+        "Husband": "Samuel Deuce",
+        "Daughter": "Judith Deuce (b. 1683; later Osborne, then Harvey)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree match)"
+      },
+      "narrative": [
+        "Elizabeth (maiden name unrecovered) was the wife of Samuel Deuce of Bilston, Staffordshire, and mother of Judith Deuce — Mike's gen-8 direct ancestor. Her maiden name is indexed as 'NN' (not noted) in the genealogical record, leaving her parents and origin unknown. Future research in Staffordshire parish records may yet identify her family."
       ]
     }
   }

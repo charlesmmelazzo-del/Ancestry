@@ -26,7 +26,7 @@
       "relatedPeople": ["floyd-quesenberry", "lonnie-quesenberry", "william-henry-quesenberry"],
       "branch": "quesenberry",
       "priority": "high",
-      "status": "open"
+      "status": "closed"
     },
     {
       "id": "eva-quesenberry-maiden-name",
@@ -40,7 +40,7 @@
       "relatedPeople": ["eva-quesenberry", "floyd-quesenberry", "lonnie-quesenberry"],
       "branch": "quesenberry",
       "priority": "high",
-      "status": "open"
+      "status": "closed"
     },
     {
       "id": "carl-harvey-vital-dates",
@@ -56,22 +56,19 @@
       "relatedPeople": ["carl-harvey", "ruth-harvey", "esther-harvey"],
       "branch": "harvey",
       "priority": "high",
-      "status": "open"
+      "status": "closed"
     },
     {
       "id": "geneva-carmichael-parents",
-      "question": "Who were Geneva Carmichael Harvey's parents — and does she descend from Archibald Carmichael of the Jupiter of Larne?",
-      "context": "Geneva is named only in Ruth's 2016 obituary. Her surname *Carmichael* is one of the great Scottish names, with multiple major migrations to North Carolina in the 1770s — including the documented voyage of Archibald Carmichael on the *Jupiter of Larne* in 1775. Geneva's daughter Ruth was born in Guilford County, adjacent to Forsyth and Stokes — exactly the counties where Archibald's documented descendants spread. **Whether Geneva descends from Archibald specifically, or from one of the other Highland Carmichael families of the same migration, has not yet been verified.**",
+      "question": "RESOLVED: Geneva's maiden name is McMichael, not Carmichael",
+      "context": "**Resolved May 2026 via Mike's Ancestry tree.** Geneva's full name is *Geneva Esther McMicheal Harvey* (1891–1971). Her maiden name is **McMichael**, not Carmichael. She is the daughter of William Franklin McMichael (1849–1941) and (probably) Sally Pegram (b. 1860). The entire Highland Scottish / Archibald Carmichael / Jupiter of Larne narrative previously written for this branch has been retracted — see the McMichael branch page for the corrected story.",
       "leads": [
-        "Find Geneva's vital records (NC Death Index 1908–2004)",
-        "Trace her parents back through 1900–1940 censuses for Guilford County",
-        "Once parents identified, walk back through the Carmichael genealogies (WikiTree has ~1,500 Carmichael profiles)",
-        "Cross-reference with Archibald Carmichael's documented children and grandchildren in Forsyth Co"
+        "Closed — see new question 'geneva-mother-discrepancy' for the remaining open issue (Sally Pegram vs. Esther Jane McMichael as Geneva's mother)"
       ],
-      "relatedPeople": ["geneva-carmichael", "ruth-harvey", "archibald-carmichael"],
-      "branch": "carmichael",
+      "relatedPeople": ["geneva-carmichael", "william-franklin-mcmichael", "sally-pegram"],
+      "branch": "mcmichael",
       "priority": "high",
-      "status": "open"
+      "status": "closed"
     },
     {
       "id": "lonnie-wwii-record",
@@ -86,7 +83,7 @@
       "relatedPeople": ["lonnie-quesenberry"],
       "branch": "quesenberry",
       "priority": "medium",
-      "status": "open"
+      "status": "closed"
     },
     {
       "id": "anderson-scott",
@@ -129,6 +126,99 @@
       "relatedPeople": ["lonnie-quesenberry", "ruth-harvey"],
       "branch": "quesenberry",
       "priority": "low",
+      "status": "open"
+    },
+    {
+      "id": "a-quisenberry-1842-civil-war",
+      "question": "Who was 'A. Quisenberry' (1842–1863) and what was the cause of his death at age 21?",
+      "context": "Mike's Ancestry tree records an ancestor named only by initial — **A. Quisenberry**, born 1842, died 1863. He was Floyd Quesenberry's grandfather, the father of Alexander H Quesenberry (1863–1937). The math is conspicuous: dead at 21, in the year of Gettysburg, Vicksburg, and Chickamauga. Almost certainly a Confederate soldier. Resolving his full name and military service — and confirming the cause of death — would close one of the most evocative gaps in the family record.",
+      "leads": [
+        "Floyd County and Carroll County, Virginia Civil War rosters",
+        "Compiled Service Records (Confederate), National Archives — searchable on Fold3",
+        "1860 federal census for the Quesenberry household of Crockett & Nancy J — A. should be listed as a son age ~18",
+        "1850 federal census — A. would be ~8 years old",
+        "Quesenberry Family Papers, Virginia Museum of History & Culture, Richmond",
+        "Find a Grave search 'A Quisenberry 1863' in Floyd, Carroll, or Pulaski Counties VA"
+      ],
+      "relatedPeople": ["a-quisenberry-1842", "alexander-quesenberry", "crockett-quisenberry"],
+      "branch": "quesenberry",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "peter-moore-sr-pvt-service",
+      "question": "What war did Peter Moore Sr., Pvt. serve in?",
+      "context": "Mike's Ancestry tree preserves an ancestor recorded as **Peter Moore Sr., Pvt.** — the *Pvt.* in his name marks him as a military veteran. He was the father of Elizabeth Moore (1800–1850), wife of James S. Quesenberry. Given Elizabeth's birth in 1800, Peter likely served in the American Revolution (1775–1783) or the War of 1812. Either would make him a verified Patriot Ancestor — and thus a third DAR/SAR-eligible ancestor for the family (alongside Aaron Quisenberry #A093307 and Christopher Slusher #A105465).",
+      "leads": [
+        "DAR Patriot Index — search 'Peter Moore'",
+        "SAR application files, Library of the Sons of the American Revolution, Louisville KY",
+        "Revolutionary War Pension Files, National Archives (M804 series)",
+        "War of 1812 Pension Files, National Archives (M313 series)",
+        "Compiled Service Records — National Archives"
+      ],
+      "relatedPeople": ["peter-moore-sr", "elizabeth-moore", "james-s-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "high",
+      "status": "open"
+    },
+    {
+      "id": "geneva-mother-discrepancy",
+      "question": "RESOLVED: Geneva's mother is Sally Pegram (daughter of James Fletcher Pegram)",
+      "context": "**Resolved 18 May 2026 via MyHeritage record-match deep dive.** James Fletcher Pegram's 10 record matches (FamilySearch Family Tree, NC marriages, 1900 & 1910 federal censuses) all consistently name his children, including daughter Sally Pegram who later took the surname McMichael. Sally Pegram is Geneva's mother. The 'Esther Jane McMichael' surname on the Find a Grave index for Geneva's burial appears to have been an indexer conflation with Geneva's own middle name *Esther*. The Pegram-McMichael family lived in Deep River Township, Guilford County, NC across multiple generations. Note that the McMichael-Pegram intermarriage runs three generations deep: Jesse C. McMichael's MOTHER was also a Pegram (Rhoda E. Pegram McMichael), making Geneva descended from Pegrams via two distinct lines.",
+      "leads": [
+        "Closed — see new entries for James Fletcher Pegram, Sally Pegram, Jesse C. McMichael, and Rhoda E. Pegram in the people directory"
+      ],
+      "relatedPeople": ["geneva-carmichael", "william-franklin-mcmichael", "sally-pegram", "james-fletcher-pegram", "rhoda-pegram"],
+      "branch": "mcmichael",
+      "priority": "medium",
+      "status": "closed"
+    },
+    {
+      "id": "deuce-elizabeth-maiden-name",
+      "question": "What was Elizabeth Deuce's maiden name?",
+      "context": "Elizabeth Deuce (wife of Samuel Deuce, mother of Judith Deuce Osborne Harvey) is indexed across multiple trees as 'born NN' — meaning the maiden name was Not Noted in the original genealogical record. She lived in Bilston, Staffordshire, England in the second half of the seventeenth century. Identifying her family would push the documented Harvey ancestry past 9 generations on the maternal-maternal line. Staffordshire parish records (Quaker, Anglican, and dissenting) for Bilston/Wolverhampton ca. 1660–1700 are the most likely source.",
+      "leads": [
+        "Staffordshire Record Office, Stafford — Bilston parish registers",
+        "Society of Genealogists library, London — Bilston nonconformist records",
+        "FamilySearch — England, Staffordshire Parish Registers collections",
+        "Quaker Meeting records — Staffordshire Friends Meeting, ca. 1670–1700",
+        "Geni World Family Tree continued research on the Deuce family"
+      ],
+      "relatedPeople": ["elizabeth-deuce", "samuel-deuce", "judith-harvey"],
+      "branch": "harvey",
+      "priority": "low",
+      "status": "open"
+    },
+    {
+      "id": "glendenning-edinburgh-records",
+      "question": "What is the full Glendenning family origin in Edinburgh, Scotland?",
+      "context": "David George Glendenning and his wife Margaret Hall were the parents of Mary Glendenning Hoggatt (b. 8 Dec 1698, Edinburgh). The Glendenning surname is a Scottish Border family (also seen as Glendinning, Glendening) with documented lineages in Galloway, particularly Drumrash and Parton parishes, dating back to the late medieval period. Identifying which Glendenning line in Edinburgh produced David George — and what carried his family into the early eighteenth-century emigration to colonial America — would push the documented Scottish ancestry back further. The Hoggatt-Glendenning emigration to Pennsylvania ca. 1715–1720 was likely tied to the Quaker migration to William Penn's colony.",
+      "leads": [
+        "National Records of Scotland, Edinburgh — parish registers for Edinburgh parishes ca. 1695–1720",
+        "Scottish Genealogy Society library, Edinburgh",
+        "Quaker Yearly Meeting records, Scotland — early Friends",
+        "Geni World Family Tree continued research on the Glendenning family of Edinburgh",
+        "Records of departures from Scottish ports to Pennsylvania, 1715–1725"
+      ],
+      "relatedPeople": ["david-george-glendenning", "margaret-hall", "mary-hoggatt"],
+      "branch": "harvey",
+      "priority": "low",
+      "status": "open"
+    },
+    {
+      "id": "billie-quesenberry-identity",
+      "question": "Who was Billie R. Quesenberry, Lonnie's sibling?",
+      "context": "The 1940 federal census places **Billie R. Quesenberry** in the household at Western Branch, Norfolk, Virginia, alongside Lonnie and their parents Floyd and 'Evvie' Quesenberry. The unisex name Billie leaves open whether this was a brother or sister. Birth date, death date, marriage, and any descendants are not yet known. If still living, Billie would now be in their late 90s — but more likely deceased, with descendants who may still be living and represent an entire collateral branch of the family.",
+      "leads": [
+        "1930 federal census — should show Billie as a young child or birth",
+        "Tennessee birth records (if born ca. 1922 in Sullivan Co. like Lonnie)",
+        "Virginia death index",
+        "Norfolk City Directories 1940s–1960s",
+        "WWII / Korean War draft records if male"
+      ],
+      "relatedPeople": ["billie-quesenberry", "lonnie-quesenberry", "floyd-quesenberry", "eva-quesenberry"],
+      "branch": "quesenberry",
+      "priority": "medium",
       "status": "open"
     }
   ]

@@ -16,11 +16,24 @@
       "people": ["thomas-questenbury"]
     },
     {
-      "id": "larne",
-      "name": "Larne, County Antrim, Ulster",
-      "shortDescription": "On 4 September 1775, the ship *Jupiter of Larne* sailed from this harbor for Wilmington, North Carolina.",
-      "longDescription": "Larne — a port on the eastern coast of Ulster, looking across the North Channel to Scotland — was one of the great emigrant ports of the eighteenth century. The Highland Scots who had crossed to Ulster in the 1600s were now crossing again, this time to North Carolina. Among the passengers on the *Jupiter of Larne* on the day she sailed was twenty-one-year-old Archibald Carmichael, with his wife Mary and infant daughter Katherine. It was his birthday.",
-      "people": ["archibald-carmichael"]
+      "id": "kingsport",
+      "name": "Kingsport, Sullivan County, Tennessee",
+      "shortDescription": "Birthplace of Lonnie Olin Quesenberry, 18 March 1920. A planned industrial town in the far northeast corner of Tennessee.",
+      "longDescription": "Kingsport sits in the far northeast corner of Tennessee, where the Holston River runs out of southwestern Virginia and the Cumberland Gap is one ridge over. The town was incorporated only three years before Lonnie's birth — in 1917 — as a planned industrial community built around a Mead pulp-and-paper mill. By 1920 it was a fast-growing center of work for southern Appalachian families like the Quesenberrys, who had drifted south and west from the old Floyd County, Virginia mountains. From Kingsport the Quesenberrys would migrate east to the Norfolk shipyards by the mid-1930s."
+    },
+    {
+      "id": "norfolk",
+      "name": "Norfolk, Virginia (Western Branch / Bowers Hill)",
+      "shortDescription": "Where the Quesenberry family lived through the Great Depression and the buildup to WWII — five miles from the great Naval Operating Base.",
+      "longDescription": "By 1935 Floyd Harmon Quesenberry, Eva, and their sons Lonnie and Billie had left Tennessee for Western Branch and Bowers Hill — neighborhoods on the western edge of Norfolk, Virginia, abutting the great Naval Operating Base. The federal census of 1940 records the household here. Lonnie filed his WWII Draft Registration Card from Bowers Hill in 1941. The Norfolk shipyards were the engine of America's Atlantic war effort; the family's presence here on the eve of Pearl Harbor placed them at the center of the largest industrial mobilization in American history.",
+      "people": ["lonnie-quesenberry", "floyd-quesenberry", "eva-quesenberry", "billie-quesenberry"]
+    },
+    {
+      "id": "deep-river",
+      "name": "Deep River, Guilford County, North Carolina",
+      "shortDescription": "The McMichael-Harvey farming community where Geneva McMichael grew up and where she and William Carl Harvey raised Ruth and Esther.",
+      "longDescription": "Deep River was, for generations, a rural farming district in southwestern Guilford County, North Carolina — adjacent to (and in some periods overlapping with) Colfax. The 1900 federal census found Geneva McMichael, age 8, living in the Deep River household of her father William Franklin McMichael. After her 1919 marriage to William Carl Harvey, the 1930 and 1950 censuses again record the Harvey household at Deep River. Three generations of the family worked the same red Piedmont clay here.",
+      "people": ["geneva-carmichael", "carl-harvey", "ruth-harvey", "esther-harvey", "william-franklin-mcmichael"]
     },
     {
       "id": "floyd-county",
@@ -32,8 +45,8 @@
     {
       "id": "colfax",
       "name": "Colfax, Guilford County, North Carolina",
-      "shortDescription": "The Harvey-Carmichael farming community west of Greensboro. Birthplace of Ruth and Esther Harvey.",
-      "longDescription": "A rural hamlet in western Guilford County, named for Schuyler Colfax (Vice President under Grant) when the railroad came through after the Civil War. Before that it was called Dover. The Harvey and Carmichael families farmed here for generations, worshiped at Shady Grove Wesleyan Church, and sent their daughters to Colfax High School — where Ruth Garland Harvey was named valedictorian in the 1940s.",
+      "shortDescription": "The Harvey-McMichael farming community west of Greensboro. Birthplace of Ruth and Esther Harvey.",
+      "longDescription": "A rural hamlet in western Guilford County, named for Schuyler Colfax (Vice President under Grant) when the railroad came through after the Civil War. Before that it was called Dover. The Harvey and McMichael families farmed here for generations, worshiped at Shady Grove Wesleyan Church, and sent their daughters to Colfax High School — where Ruth Garland Harvey was named valedictorian in the 1940s. Geneva Esther McMicheal Harvey was buried at Colfax in 1971.",
       "people": ["ruth-harvey", "esther-harvey", "carl-harvey", "geneva-carmichael"]
     },
     {
