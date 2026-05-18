@@ -964,7 +964,7 @@ def render_tree():
 </section>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script type="module" src="/js/tree.js"></script>"""
+<script type="module" src="/js/tree.js?v=2"></script>"""
 
     html = head("Family Tree") + header(active="tree") + body + footer()
     write(PUBLIC / "tree.html", html)

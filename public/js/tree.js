@@ -4,10 +4,7 @@
 //   ESM module: imports d3 sub-bundles only.
 // ============================================================
 
-import { select } from "https://esm.run/d3-selection@3";
-import { hierarchy, tree as d3tree } from "https://esm.run/d3-hierarchy@3";
-import { zoom, zoomIdentity } from "https://esm.run/d3-zoom@3";
-import "https://esm.run/d3-transition@3";
+import { select, hierarchy, tree as d3tree, zoom, zoomIdentity } from "https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm";
 
 // ---------- shared state ----------
 const state = {
