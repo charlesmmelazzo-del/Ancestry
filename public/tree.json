@@ -1078,52 +1078,64 @@
     {
       "id": "anthony-harvey",
       "name": "Anthony Harvey",
-      "lifespan": "fl. early-mid 1800s",
-      "birth": "",
-      "birthPlace": "",
-      "death": "",
-      "deathPlace": "",
+      "lifespan": "1791\u20131846",
+      "birth": "23 April 1791",
+      "birthPlace": "Alamance County (then Orange County), North Carolina",
+      "death": "1846",
+      "deathPlace": "North Carolina",
       "burial": "",
       "branch": "harvey",
       "generation": 4,
-      "father": null,
-      "mother": null,
+      "father": "nathan-heaver-harvey",
+      "mother": "agnes-harvey",
       "spouse": "sarah-sally-trueblood",
       "children": [
         "isaac-j-harvey"
       ],
-      "verified": "partial",
-      "epitaph": "Father of Isaac J. Harvey. Of the colonial-era Quaker Harveys of North Carolina (per the Trueblood spousal connection).",
+      "verified": "documented",
+      "epitaph": "Born April 23, 1791, Alamance County NC. Lived 55 years. Father of Isaac J. Harvey, son of Nathan Heaver Harvey and Agnes Harvey.",
       "military": null,
-      "birthYear": null,
-      "deathYear": null,
-      "birthGeo": null,
-      "deathGeo": null,
+      "birthYear": 1791,
+      "deathYear": 1846,
+      "birthGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
+      "deathGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
       "burialGeo": null
     },
     {
       "id": "sarah-sally-trueblood",
       "name": "Sarah Sally Trueblood Harvey",
-      "lifespan": "fl. early-mid 1800s",
-      "birth": "",
-      "birthPlace": "",
-      "death": "",
-      "deathPlace": "",
+      "lifespan": "1812\u2013before 1870",
+      "birth": "21 September 1812",
+      "birthPlace": "Guilford County, North Carolina",
+      "death": "before 1870",
+      "deathPlace": "Missouri",
       "burial": "",
       "branch": "harvey",
       "generation": 4,
-      "father": null,
-      "mother": null,
+      "father": "isaac-trueblood",
+      "mother": "mary-outland",
       "spouse": "anthony-harvey",
       "children": [
         "isaac-j-harvey"
       ],
-      "verified": "partial",
-      "epitaph": "Of the colonial Quaker Trueblood family of North Carolina. Mother of Isaac J. Harvey.",
+      "verified": "documented",
+      "epitaph": "Born Guilford NC 21 September 1812. Widowed in 1846. Migrated west to Missouri where she died before 1870 \u2014 leaving four-year-old Isaac J. behind in North Carolina.",
       "military": null,
-      "birthYear": null,
-      "deathYear": null,
-      "birthGeo": null,
+      "birthYear": 1812,
+      "deathYear": 1870,
+      "birthGeo": {
+        "lat": 36.0807,
+        "lng": -79.7889,
+        "label": "Guilford County, North Carolina"
+      },
       "deathGeo": null,
       "burialGeo": null
     },
@@ -1280,11 +1292,11 @@
     {
       "id": "anna-stephens",
       "name": "Anna Stephens McMichael",
-      "lifespan": "fl. early-mid 1800s",
-      "birth": "",
-      "birthPlace": "",
-      "death": "",
-      "deathPlace": "",
+      "lifespan": "1818\u20131899",
+      "birth": "14 November 1818",
+      "birthPlace": "Guilford, North Carolina",
+      "death": "4 August 1899",
+      "deathPlace": "Guilford, North Carolina",
       "burial": "",
       "branch": "mcmichael",
       "generation": 4,
@@ -1294,13 +1306,21 @@
       "children": [
         "william-franklin-mcmichael"
       ],
-      "verified": "partial",
-      "epitaph": "Wife of Jesse C. McMichael, mother of William Franklin McMichael, grandmother of Geneva.",
+      "verified": "documented",
+      "epitaph": "Born Guilford NC 14 November 1818. Married Jesse C. McMichael 4 September 1842. Bore nine children, lived 80 years in the same Deep River community.",
       "military": null,
-      "birthYear": null,
-      "deathYear": null,
-      "birthGeo": null,
-      "deathGeo": null,
+      "birthYear": 1818,
+      "deathYear": 1899,
+      "birthGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
+      "deathGeo": {
+        "lat": 35.7596,
+        "lng": -79.0193,
+        "label": "North Carolina"
+      },
       "burialGeo": null
     },
     {
@@ -2384,6 +2404,58 @@
         "lng": -78.6569,
         "label": "Virginia"
       },
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "isaac-trueblood",
+      "name": "Isaac Trueblood",
+      "lifespan": "fl. late 1700s \u2013 early 1800s",
+      "birth": "",
+      "birthPlace": "",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 5,
+      "father": null,
+      "mother": null,
+      "spouse": "mary-outland",
+      "children": [
+        "sarah-sally-trueblood"
+      ],
+      "verified": "partial",
+      "epitaph": "Father of Sarah Sally Trueblood Harvey. Of the colonial Quaker Trueblood family.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": null,
+      "deathGeo": null,
+      "burialGeo": null
+    },
+    {
+      "id": "mary-outland",
+      "name": "Mary Outland Trueblood",
+      "lifespan": "fl. late 1700s \u2013 early 1800s",
+      "birth": "",
+      "birthPlace": "",
+      "death": "",
+      "deathPlace": "",
+      "burial": "",
+      "branch": "harvey",
+      "generation": 5,
+      "father": null,
+      "mother": null,
+      "spouse": "isaac-trueblood",
+      "children": [
+        "sarah-sally-trueblood"
+      ],
+      "verified": "partial",
+      "epitaph": "Mother of Sarah Sally Trueblood Harvey. Of the colonial Quaker Outland family of North Carolina.",
+      "military": null,
+      "birthYear": null,
+      "deathYear": null,
+      "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
     }

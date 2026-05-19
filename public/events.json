@@ -293,6 +293,34 @@
       "link": "/people/isaac-l-harvey.html"
     }
   ],
+  "04-23": [
+    {
+      "year": 1791,
+      "type": "birth",
+      "summary": "Born: Anthony Harvey",
+      "link": "/people/anthony-harvey.html"
+    }
+  ],
+  "09-21": [
+    {
+      "year": 1812,
+      "type": "birth",
+      "summary": "Born: Sarah Sally Trueblood Harvey",
+      "link": "/people/sarah-sally-trueblood.html"
+    },
+    {
+      "year": 1759,
+      "type": "birth",
+      "summary": "Born: Nathan Heaver Harvey",
+      "link": "/people/nathan-heaver-harvey.html"
+    },
+    {
+      "year": 1718,
+      "type": "birth",
+      "summary": "Born: Isaac L. Harvey",
+      "link": "/people/isaac-l-harvey.html"
+    }
+  ],
   "05-04": [
     {
       "year": 1831,
@@ -333,6 +361,36 @@
       "link": "/people/jesse-c-mcmichael.html"
     }
   ],
+  "09-04": [
+    {
+      "year": 1842,
+      "type": "marriage",
+      "summary": "Married: Jesse C. McMichael",
+      "link": "/people/jesse-c-mcmichael.html"
+    },
+    {
+      "year": 1842,
+      "type": "marriage",
+      "summary": "Married: Anna Stephens McMichael",
+      "link": "/people/anna-stephens.html"
+    }
+  ],
+  "11-14": [
+    {
+      "year": 1818,
+      "type": "birth",
+      "summary": "Born: Anna Stephens McMichael",
+      "link": "/people/anna-stephens.html"
+    }
+  ],
+  "08-04": [
+    {
+      "year": 1899,
+      "type": "death",
+      "summary": "Died: Anna Stephens McMichael",
+      "link": "/people/anna-stephens.html"
+    }
+  ],
   "05-01": [
     {
       "year": 1770,
@@ -363,20 +421,6 @@
       "type": "death",
       "summary": "Died: Nancy Orlenia Singleton Mullins",
       "link": "/people/nancy-orlenia-singleton.html"
-    }
-  ],
-  "09-21": [
-    {
-      "year": 1759,
-      "type": "birth",
-      "summary": "Born: Nathan Heaver Harvey",
-      "link": "/people/nathan-heaver-harvey.html"
-    },
-    {
-      "year": 1718,
-      "type": "birth",
-      "summary": "Born: Isaac L. Harvey",
-      "link": "/people/isaac-l-harvey.html"
     }
   ],
   "03-12": [

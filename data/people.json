@@ -1017,41 +1017,71 @@
     "anthony-harvey": {
       "id": "anthony-harvey",
       "name": "Anthony Harvey",
-      "lifespan": "fl. early-mid 1800s",
+      "birth": "23 April 1791",
+      "birthPlace": "Alamance County (then Orange County), North Carolina",
+      "death": "1846",
+      "deathPlace": "North Carolina",
+      "lifespan": "1791–1846",
       "branch": "harvey",
       "generation": 4,
+      "father": "nathan-heaver-harvey",
+      "mother": "agnes-harvey",
       "spouse": "sarah-sally-trueblood",
       "children": ["isaac-j-harvey"],
-      "verified": "partial",
-      "epitaph": "Father of Isaac J. Harvey. Of the colonial-era Quaker Harveys of North Carolina (per the Trueblood spousal connection).",
+      "siblings": ["isaac-harvey-1793"],
+      "verified": "documented",
+      "epitaph": "Born April 23, 1791, Alamance County NC. Lived 55 years. Father of Isaac J. Harvey, son of Nathan Heaver Harvey and Agnes Harvey.",
       "facts": {
         "Generation": "Ruth's great-great-grandfather; 3rd-great-grandfather",
-        "Wife": "Sarah Sally Trueblood",
+        "Lifespan": "23 April 1791 – 1846 (lived 55 years)",
+        "Born": "23 April 1791, Alamance County (then part of Orange County), NC",
+        "Died": "1846, North Carolina",
+        "Father": "Nathan Heaver Harvey (1759–1837)",
+        "Mother": "Agnes Harvey (1756–1834)",
+        "Wife": "Sarah Sally Trueblood Harvey (1812–before 1870)",
         "Son": "Isaac J Harvey (1842–1912)",
-        "Source": "Mike's MyHeritage tree"
+        "Siblings": "Mary, Isaac, Moses, Elizabeth, Phebe Harvey",
+        "Source": "Mike's MyHeritage tree (45 record matches!); Derrickson, Adams, Smith, Harvey Web Sites all confirm 23 April 1791"
       },
       "narrative": [
-        "Anthony Harvey — father of Isaac J. Harvey. He married **Sarah Sally Trueblood**, of the colonial Quaker Trueblood family of Virginia and North Carolina. The Trueblood surname (English Quaker) connects this Harvey branch back to the Quaker migrations from Pennsylvania and Maryland into the Carolina Piedmont in the eighteenth century — a connection further confirmed by the deeper colonial Newlin and Hoggatt ancestors documented elsewhere in this site."
+        "Anthony Harvey was born on the 23rd of April, 1791, in **Alamance County, North Carolina** (which was then still part of Orange County — Alamance would not be carved out until 1849). He was a son of **Nathan Heaver Harvey** (1759–1837) and **Agnes Harvey** (1756–1834), both of the Pennsylvania-then-North-Carolina Quaker Harveys. Anthony had five known siblings: Mary, **Isaac Harvey** (1793–1848), Moses, Elizabeth, and Phebe.",
+        "He married **Sarah Sally Trueblood** (1812–before 1870) — born on the 21st of September, 1812, in Guilford County, NC, daughter of Isaac Trueblood and Mary Outland Trueblood, of the colonial Quaker Trueblood family. Together they raised **Isaac J. Harvey** (1842–1912), born when Anthony was already 51 years old — likely a late-life child.",
+        "Anthony died in 1846, age 55. His widow Sarah later migrated west to Missouri, where she died before 1870, leaving Isaac J. (then in his late twenties) to remain in North Carolina and start the family line that descends to Ruth."
       ]
     },
     "sarah-sally-trueblood": {
       "id": "sarah-sally-trueblood",
       "name": "Sarah Sally Trueblood Harvey",
-      "lifespan": "fl. early-mid 1800s",
+      "birth": "21 September 1812",
+      "birthPlace": "Guilford County, North Carolina",
+      "death": "before 1870",
+      "deathPlace": "Missouri",
+      "lifespan": "1812–before 1870",
       "branch": "harvey",
       "generation": 4,
+      "father": "isaac-trueblood",
+      "mother": "mary-outland",
       "spouse": "anthony-harvey",
       "children": ["isaac-j-harvey"],
-      "verified": "partial",
-      "epitaph": "Of the colonial Quaker Trueblood family of North Carolina. Mother of Isaac J. Harvey.",
+      "verified": "documented",
+      "epitaph": "Born Guilford NC 21 September 1812. Widowed in 1846. Migrated west to Missouri where she died before 1870 — leaving four-year-old Isaac J. behind in North Carolina.",
       "facts": {
         "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Lifespan": "21 September 1812 – before 1870",
+        "Born": "21 September 1812, Guilford County, North Carolina",
+        "Died": "Before 1870, <strong>Missouri</strong> — she migrated west after Anthony's death",
         "Maiden name": "<strong>Trueblood</strong> — colonial Quaker family of NC",
-        "Husband": "Anthony Harvey",
-        "Son": "Isaac J Harvey (1842–1912)"
+        "Father": "<strong>Isaac Trueblood</strong> (gen 6 direct ancestor)",
+        "Mother": "<strong>Mary Outland Trueblood</strong> (gen 6 direct ancestor)",
+        "Husband": "Anthony Harvey (1791–1846)",
+        "Son": "Isaac J Harvey (1842–1912)",
+        "Siblings": "Martha, Jonathan J., Isabella (Bradshaw), Mary Outland, Rachel, Milicent, Jesse B., Thomas Trueblood",
+        "Source": "Mike's MyHeritage tree (15 record matches!); Geni World Family Tree; multiple Smart Match trees"
       },
       "narrative": [
-        "Sarah Sally Trueblood — wife of Anthony Harvey, mother of Isaac J. Harvey. The Trueblood surname is a famous English Quaker name in colonial Virginia and North Carolina; the Trueblood Quakers were among the earliest settlers of Perquimans and Pasquotank Counties on the Albemarle Sound, dating to the 1670s."
+        "Sarah Sally Trueblood was born on the 21st of September, 1812, in **Guilford County, North Carolina**, to **Isaac Trueblood** and **Mary Outland Trueblood**. She grew up with at least eight siblings: Martha, Jonathan J., Isabella (later Bradshaw), Mary Outland (named for her mother), Rachel, Milicent, Jesse B., and Thomas. The Trueblood surname is a famous English Quaker name — the Trueblood Quakers were among the earliest settlers of Perquimans and Pasquotank Counties on North Carolina's Albemarle Sound, dating to the 1670s, before later branches migrated inland to the Piedmont counties.",
+        "She married **Anthony Harvey** (1791–1846), and at age 30 (in 1842) bore their son **Isaac J. Harvey** — likely the only surviving child. Anthony died in 1846 when Isaac was just four years old, leaving Sarah a young widow in her early thirties.",
+        "Sometime in the 1850s or 1860s Sarah made the dramatic decision to migrate west to **Missouri** — perhaps following an extended-family migration, perhaps remarrying. She died there before 1870, leaving her son Isaac behind in North Carolina, where he would grow up, marry three times, and father William Carl Harvey — Ruth's father."
       ]
     },
     "thomas-s-swift": {
@@ -1173,6 +1203,8 @@
       "father": "william-aydlott-mcmichael",
       "mother": "rhoda-pegram",
       "spouse": "anna-stephens",
+      "marriedDate": "4 September 1842",
+      "marriedPlace": "Guilford County, North Carolina",
       "children": ["william-franklin-mcmichael"],
       "verified": "documented",
       "epitaph": "Father of William Franklin McMichael, grandfather of Geneva. His mother was a Pegram, his son's wife was a Pegram — the McMichael-Pegram intermarriage runs at least three generations deep in Deep River.",
@@ -1202,20 +1234,37 @@
     "anna-stephens": {
       "id": "anna-stephens",
       "name": "Anna Stephens McMichael",
-      "lifespan": "fl. early-mid 1800s",
+      "birth": "14 November 1818",
+      "birthPlace": "Guilford, North Carolina",
+      "death": "4 August 1899",
+      "deathPlace": "Guilford, North Carolina",
+      "lifespan": "1818–1899",
       "branch": "mcmichael",
       "generation": 4,
       "spouse": "jesse-c-mcmichael",
+      "marriedDate": "4 September 1842",
+      "marriedPlace": "Guilford, North Carolina",
       "children": ["william-franklin-mcmichael"],
-      "verified": "partial",
-      "epitaph": "Wife of Jesse C. McMichael, mother of William Franklin McMichael, grandmother of Geneva.",
+      "verified": "documented",
+      "epitaph": "Born Guilford NC 14 November 1818. Married Jesse C. McMichael 4 September 1842. Bore nine children, lived 80 years in the same Deep River community.",
       "facts": {
         "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
+        "Lifespan": "14 November 1818 – 4 August 1899 (lived 80 years)",
+        "Born": "14 November 1818, Guilford County, NC",
+        "Died": "4 August 1899, Guilford County, NC",
+        "Maiden name": "Stephens",
         "Husband": "Jesse C. McMichael (1820–1907)",
-        "Son": "William Franklin McMichael (1849–1941)"
+        "Marriage": "4 September 1842, Guilford County, NC",
+        "Children": "Sarah J. (Highfill), George A., Rhoda Melissa (Rayle), <strong>William Franklin</strong>, John W., Washington C., Mary, Martha (Parish), Jesse A. — nine children total",
+        "1850 Census": "Guilford County, NC with husband Jesse and children George, Sarah, Rhoda, William",
+        "1870 Census": "North Carolina with husband Jesse",
+        "1880 Census": "Bruce, Guilford County, NC with husband Jesse and daughters Martha (Parish), Sarah, Mary",
+        "Source": "Mike's MyHeritage tree (6 record matches); FamilySearch Family Tree; Williams Family Web Site; NC Marriages 1842; 1850/1870/1880 federal censuses"
       },
       "narrative": [
-        "Anna Stephens — wife of Jesse C. McMichael, mother of William Franklin McMichael. Vital dates not yet recovered. The Stephens surname is English, well-attested in Piedmont North Carolina from the colonial period."
+        "Anna Stephens was born on the 14th of November, 1818, in **Guilford County, North Carolina**. The Stephens surname is English, well-attested in Piedmont North Carolina from the colonial period — her own parents have not yet been recovered.",
+        "On the 4th of September, 1842, in Guilford County, she married **Jesse C. McMichael** (1820–1907). She was 23; he was 22. Over the next two decades they raised nine children — Sarah J. (later Highfill), George A., Rhoda Melissa (later Rayle), **William Franklin** (Mike's gen-3 ancestor, who would father Geneva), John W., Washington C., Mary, Martha (later Parish), and Jesse A. The 1850 federal census places the household in Guilford County; the 1880 census places them at Bruce, Guilford County — both within the broader Deep River community.",
+        "Anna died on the 4th of August, 1899, age 80 — outliving five of America's presidents she was born under. Her husband Jesse would follow her eight years later in 1907."
       ]
     },
     "alexander-stewart-price": {
@@ -2156,6 +2205,48 @@
       },
       "narrative": [
         "Mary Watkins married **Nicholas Hutchins** in colonial Henrico, Virginia, in the late seventeenth century. Together they raised at least eleven Hutchins children, including **Catherine \"Rachel\"** (Mike's gen-8 direct ancestor), who would later marry James Stanley Sr. and migrate with him south to Guilford County, North Carolina. The Watkins surname is English, common in colonial Virginia from the founding era forward."
+      ]
+    },
+    "isaac-trueblood": {
+      "id": "isaac-trueblood",
+      "name": "Isaac Trueblood",
+      "lifespan": "fl. late 1700s – early 1800s",
+      "branch": "harvey",
+      "generation": 5,
+      "spouse": "mary-outland",
+      "children": ["sarah-sally-trueblood"],
+      "verified": "partial",
+      "epitaph": "Father of Sarah Sally Trueblood Harvey. Of the colonial Quaker Trueblood family.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Mary Outland Trueblood",
+        "Children": "Martha, Jonathan J., Isabella (Bradshaw), Mary Outland, Rachel, Milicent, Jesse B., Thomas, <strong>Sarah Sally</strong> (later Harvey) — at least 9",
+        "Surname": "<strong>Trueblood</strong> — colonial English Quaker family, prominent in NC Albemarle Sound counties from the 1670s",
+        "Source": "Mike's MyHeritage tree (via Sarah Sally Trueblood's record matches; Geni World Family Tree)"
+      },
+      "narrative": [
+        "Isaac Trueblood — father of Sarah Sally Trueblood Harvey (Mike's gen-4 ancestor) and patriarch of this Trueblood line in Guilford County, NC. He married **Mary Outland** (whose own surname is itself a colonial Quaker name) and together they raised at least nine children: Martha, Jonathan J., Isabella (later Bradshaw), Mary Outland (named for her mother), Rachel, Milicent, Jesse B., Thomas, and **Sarah Sally**, born 21 September 1812, who would marry Anthony Harvey. The Trueblood surname is famously associated with the early Quakers of Perquimans and Pasquotank Counties on North Carolina's Albemarle Sound — established there in the 1670s. By Isaac's generation the Trueblood family had spread inland to the Piedmont counties including Guilford."
+      ]
+    },
+    "mary-outland": {
+      "id": "mary-outland",
+      "name": "Mary Outland Trueblood",
+      "lifespan": "fl. late 1700s – early 1800s",
+      "branch": "harvey",
+      "generation": 5,
+      "spouse": "isaac-trueblood",
+      "children": ["sarah-sally-trueblood"],
+      "verified": "partial",
+      "epitaph": "Mother of Sarah Sally Trueblood Harvey. Of the colonial Quaker Outland family of North Carolina.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "<strong>Outland</strong> — another colonial Quaker surname of NC Albemarle Sound country",
+        "Husband": "Isaac Trueblood",
+        "Daughter": "Sarah Sally Trueblood Harvey (1812 – before 1870)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree match — 'Mary Trueblood (born Outland)')"
+      },
+      "narrative": [
+        "Mary Outland married **Isaac Trueblood** in late eighteenth or early nineteenth-century North Carolina. She is named in her daughter Sarah Sally's record on Geni World Family Tree as 'Mary Trueblood (born Outland)' — confirming her maiden name. Together with Isaac she raised at least nine Trueblood children. The Outland surname is, like Trueblood, a colonial English Quaker name well-attested in the Perquimans-Pasquotank area of NC's Albemarle Sound region from the 1670s forward — the two families were neighbors in that earliest Carolina Quaker community for generations before both lines migrated inland to Guilford."
       ]
     }
   }
