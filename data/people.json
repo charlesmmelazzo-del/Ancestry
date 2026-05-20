@@ -23,7 +23,7 @@
       "marriedDate": "17 July 1948",
       "marriedPlace": "Greensboro, Guilford County, North Carolina",
       "children": ["phil-quesenberry", "cathey-quesenberry", "carol-quesenberry"],
-      "siblings": ["billie-quesenberry"],
+      "siblings": ["billie-quesenberry", "ada-ruth-quesenberry", "madeline-matilda-quesenberry", "hazel-margie-quesenberry", "orville-quesenberry", "kinith-quesenberry"],
       "verified": "documented",
       "epitaph": "Born in the Tennessee hill country, came of age in the Norfolk shipyards on the eve of the Second World War, married Ruth Harvey in Greensboro, and lived out his life in High Point — three states in one American lifetime.",
       "facts": {
@@ -139,17 +139,20 @@
       "father": "alexander-quesenberry",
       "mother": "matilda-price",
       "spouse": "eva-quesenberry",
-      "children": ["lonnie-quesenberry", "billie-quesenberry"],
+      "children": ["lonnie-quesenberry", "billie-quesenberry", "ada-ruth-quesenberry", "madeline-matilda-quesenberry", "hazel-margie-quesenberry", "orville-quesenberry", "kinith-quesenberry"],
       "verified": "documented",
-      "epitaph": "Born of the old Floyd County Virginia Quesenberry line, raised his sons in Tennessee and the Norfolk shipyards, and lived to see Lonnie's grandchildren — eighty-five years across three states.",
+      "epitaph": "Born of the old Quesenberry line, raised seven children with Eva Mullins across three states (Tennessee → Norfolk → North Carolina), and lived to eighty-five.",
       "facts": {
         "Generation": "Lonnie's father; great-grandfather",
-        "Lifespan": "1885–1970 (lived 85 years)",
-        "Father": "Alexander H Quesenberry (1863–1937)",
+        "Lifespan": "17 December 1884 – 23 March 1970 (lived 85 years)",
+        "Born": "17 December 1884, Lee County, Virginia",
+        "Died": "23 March 1970, Portsmouth, Virginia",
+        "Father": "Alexander Henry Quesenberry, Jr. (1863–1937)",
         "Mother": "Matilda Jane Price (1867–1944)",
-        "Wife": "Eva Elizabeth Mullins (m. before 1920)",
-        "Children": "Lonnie (1920) and Billie R Quesenberry",
-        "Source": "Confirmed via Lonnie's Social Security Application (Floyd H Quesenberry); 1940 US Census; Ancestry tree (210529652)"
+        "Wife": "Eva Elizabeth Mullins (1890–1983)",
+        "Children": "<strong>Lonnie Olin</strong>, Ada Ruth (Caudill), Madeline Matilda (Rimmer), <strong>Billie Ray</strong> (formerly recorded as Billie R), Hazel Margie (Gray), Orville, Kinith — seven children",
+        "Siblings": "Rebecca J. (Williams), Milford Spencer, James Edgar, Ollie Dixon, Hughey Robert, Estelle Mae (Egan), John Hyatt, Samuel, Nancy L., Peter — ten siblings",
+        "Source": "Mike's MyHeritage tree (9 record matches: Geni, FamilySearch, Cox, Bledsoe, Mitts, Smith, Hyden, Brown, Buchmeier Web Sites — personal photo available); 1940 US Census; Ancestry tree (210529652)"
       },
       "narrative": [
         "**Floyd Harmon Quesenberry** was born in 1885, of the old Quesenberry line that had come down from Floyd County, Virginia — the mountain country named for Governor John Floyd, where Quesenberry families had been numerous since the eighteenth century. His father was **Alexander H. Quesenberry** (1863–1937), and his mother was **Matilda Jane Price** (1867–1944) — both of the southwestern Virginia uplands.",
@@ -239,8 +242,9 @@
       "mother": "sally-pegram",
       "spouse": "carl-harvey",
       "children": ["ruth-harvey", "esther-harvey"],
+      "siblings": ["ella-josiphene-mcmichael", "johnnie-mcmichael"],
       "verified": "documented",
-      "epitaph": "Geneva Esther — daughter of William Franklin McMichael of Deep River, Guilford County. Married William Carl Harvey on a June day in 1919 and outlived him by five years.",
+      "epitaph": "Geneva Elizabeth — daughter of William Franklin McMichael of Deep River, Guilford County. Lost her mother Sally Pegram McMichael in early childhood (sometime between 1891–1897). Married William Carl Harvey on a June day in 1919.",
       "facts": {
         "Generation": "Ruth's mother; great-grandmother",
         "Maiden name": "<strong>McMichael</strong> — corrects our earlier 'Carmichael' research error",
@@ -499,21 +503,23 @@
     },
     "billie-quesenberry": {
       "id": "billie-quesenberry",
-      "name": "Billie R. Quesenberry",
-      "lifespan": "fl. 1940",
+      "name": "Billie Ray Quesenberry",
+      "lifespan": "fl. 1920s–?",
       "branch": "quesenberry",
       "generation": 1,
       "father": "floyd-quesenberry",
       "mother": "eva-quesenberry",
-      "verified": "partial",
-      "epitaph": "Lonnie's sibling — appears in the 1940 federal census household at Western Branch, Norfolk, Virginia. Birth, death, and full name await further research.",
+      "verified": "documented",
+      "epitaph": "Lonnie's brother — full name Billie RAY Quesenberry, resolved May 2026 via MyHeritage. The R. middle initial in the 1940 census stood for Ray. Male.",
       "facts": {
-        "Generation": "Lonnie's sibling; great-aunt or great-uncle",
-        "Documentation": "1940 US Federal Census, Western Branch District, Norfolk, Virginia",
-        "Status": "Newly identified — full vital records await further research"
+        "Generation": "Lonnie's brother; great-uncle (Mike's)",
+        "Full name": "<strong>Billie Ray Quesenberry</strong> — confirmed via MyHeritage record-match May 2026",
+        "Documentation": "1940 US Federal Census (Western Branch, Norfolk, VA); MyHeritage tree (via Floyd's Geni, FamilySearch, Mitts record matches)",
+        "Note": "The earlier 'Billie R.' census reading is now resolved — middle name was Ray, and Billie was male.",
+        "Status": "Identified by full name; birth/death dates and any descendants still await further research"
       },
       "narrative": [
-        "Billie R. Quesenberry appears in the 1940 federal census household at Western Branch, Norfolk, Virginia, alongside Lonnie and their parents Floyd and 'Evvie' Quesenberry. The middle initial R. and the unisex name *Billie* leave open whether this was a brother or a sister. The next research step is to pull the 1930 census and locate Billie's birth and death records — once known, Billie's descendants may still be living, and represent an entire collateral branch of the family not yet on this site."
+        "Billie Ray Quesenberry was a son of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**, and one of Lonnie's brothers. He appears in the 1940 federal census household at Western Branch, Norfolk, Virginia, alongside Lonnie and their parents Floyd and 'Evvie' Quesenberry — listed as 'Billie R. Quesenberry'. The MyHeritage record-match deep dive of May 2026 resolved the middle initial: his full name was **Billie Ray Quesenberry**, and he was male. Birth and death dates and any descendants still await further research."
       ]
     },
     "alexander-quesenberry": {
@@ -990,8 +996,11 @@
     "sally-pegram": {
       "id": "sally-pegram",
       "name": "Sally Pegram McMichael",
-      "birth": "1860",
-      "lifespan": "1860–?",
+      "birth": "1861",
+      "birthPlace": "North Carolina",
+      "death": "between 1891 and 1897",
+      "deathPlace": "Guilford County, North Carolina (presumed)",
+      "lifespan": "1861–c.1895",
       "branch": "mcmichael",
       "generation": 3,
       "father": "james-fletcher-pegram",
@@ -999,15 +1008,18 @@
       "spouse": "william-franklin-mcmichael",
       "children": ["geneva-carmichael"],
       "verified": "documented",
-      "epitaph": "Mother of Geneva McMichael Harvey. Daughter of James Fletcher Pegram (1831–1915) of the Piedmont Pegram family.",
+      "epitaph": "Died young — between 1891 and 1897 — leaving Geneva (born 1891) motherless before she could remember her. The same Pegram-McMichael cycle of early-1890s loss that defined Geneva's childhood.",
       "facts": {
         "Generation": "Ruth's maternal grandmother; 2nd-great-grandmother",
-        "Birth year": "ca. 1860",
+        "Lifespan": "1861 – between 1891 and 1897 (lived ~30–36 years)",
+        "Born": "1861, North Carolina",
+        "Died": "<strong>Between 1891 and 1897</strong> — Geneva was an infant or toddler when her mother died",
         "Father": "James Fletcher Pegram (1831–1915)",
         "Mother": "Annie Elizabeth Gates (b. 1826)",
         "Husband": "William Franklin McMichael (1849–1941)",
-        "Daughter": "Geneva Esther McMicheal Harvey (1891–1971)",
-        "Source": "Mike's MyHeritage tree"
+        "Children": "<strong>Ella Josiphene</strong> (later Albert) McMichael, <strong>Johnnie</strong> McMichael, <strong>Geneva Elizabeth</strong> Harvey (1891–1971)",
+        "Note": "Sally is Geneva's middle-name-source: Geneva's middle name was Elizabeth (per MyHeritage), and Sally's middle name was Elizabeth too (per her mother Annie ELIZABETH Gates). The earlier Find-a-Grave reading 'Geneva Esther' appears to be a misindexing.",
+        "Source": "Mike's MyHeritage tree (FamilySearch Family Tree match — Sally McMichael (born Pegram))"
       },
       "narrative": [
         "Sally Pegram was a daughter of **James Fletcher Pegram** (1831–1915) and **Annie Elizabeth Gates** (b. 1826) — both of the Piedmont North Carolina Pegram-Gates families. The Pegram surname is English (sometimes spelled *Pilgrim* in old records), well-attested in Piedmont North Carolina from the colonial period.",
@@ -1028,7 +1040,6 @@
       "mother": "agnes-harvey",
       "spouse": "sarah-sally-trueblood",
       "children": ["isaac-j-harvey"],
-      "siblings": ["isaac-harvey-1793"],
       "verified": "documented",
       "epitaph": "Born April 23, 1791, Alamance County NC. Lived 55 years. Father of Isaac J. Harvey, son of Nathan Heaver Harvey and Agnes Harvey.",
       "facts": {
@@ -1171,23 +1182,39 @@
     "annie-elizabeth-gates": {
       "id": "annie-elizabeth-gates",
       "name": "Annie Elizabeth Gates Pegram",
-      "birth": "1826",
-      "lifespan": "1826–?",
+      "birth": "19 January 1826",
+      "birthPlace": "Rockingham County, North Carolina",
+      "death": "13 March 1917",
+      "deathPlace": "Deep River, Guilford County, North Carolina",
+      "burial": "15 March 1917",
+      "lifespan": "1826–1917",
       "branch": "mcmichael",
       "generation": 4,
+      "father": "charles-o-gates",
+      "mother": "nancy-d-mustin",
       "spouse": "james-fletcher-pegram",
+      "marriedDate": "10 March 1853",
+      "marriedPlace": "Forsyth County, North Carolina",
       "children": ["sally-pegram"],
       "verified": "documented",
-      "epitaph": "Wife of James Fletcher Pegram, mother of Sally. Five years older than her husband — unusual for the era.",
+      "epitaph": "Born Rockingham County NC 19 January 1826. Married James Fletcher Pegram 1853. Outlived her husband by two years, dying at 91 in Deep River.",
       "facts": {
         "Generation": "Ruth's great-great-grandmother; 3rd-great-grandmother",
-        "Born": "1826",
+        "Lifespan": "19 January 1826 – 13 March 1917 (lived 91 years)",
+        "Born": "19 January 1826, Rockingham County, NC",
+        "Died": "13 March 1917, Deep River, Guilford County, NC; buried 15 March 1917",
+        "Father": "<strong>Charles O. Gates</strong> (gen 6 direct ancestor)",
+        "Mother": "<strong>Nancy D. Mustin Gates</strong> (gen 6 direct ancestor)",
         "Husband": "James Fletcher Pegram (1831–1915)",
-        "Daughter": "Sally Pegram (b. 1860)",
-        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 7 record matches)"
+        "Marriage": "10 March 1853, Forsyth County, NC",
+        "Children": "William Henry Pegram, Mary D., John C., <strong>Sally</strong> (later McMichael), Nancy E. Pegram",
+        "Siblings": "Sarah L. Gates, Mary A. Gates, James Gates, Wesley Gates",
+        "Source": "Mike's MyHeritage tree (7 record matches); NC Deaths 1906-1930 (confirms parents); FamilySearch Family Tree; 1870, 1900, 1910 federal censuses; NC Marriages"
       },
       "narrative": [
-        "Annie Elizabeth Gates was born in 1826. She married James Fletcher Pegram (born 1831) — making her five years his senior, which was unusual in nineteenth-century rural America. Together they raised Sally Pegram, who would marry William Franklin McMichael."
+        "Annie Elizabeth Gates was born on the 19th of January, 1826, in **Rockingham County, North Carolina** — daughter of **Charles O. Gates** and **Nancy D. Mustin Gates** (sometimes spelled Mustin/Musten on records). She grew up with at least four siblings: Sarah L., Mary A., James, and Wesley. The Gates surname is English, well-attested in Rockingham County from the early nineteenth century.",
+        "On the 10th of March, 1853, in Forsyth County, NC, Annie married **James Fletcher Pegram** — making her five years his senior, unusual but not unheard of in 19th-century rural America. Together they raised five children: William Henry, Mary D., John C., **Sally** (Geneva's mother), and Nancy E. Pegram. The household moved with James from Rockingham to **Deep River Township, Guilford County**, where they would remain for the rest of their lives.",
+        "Annie outlived her husband James (who died June 1915) by nearly two years. She died on the 13th of March, 1917, in Deep River, age 91 — and was buried two days later. By that point her daughter Sally had been dead for at least twenty years, and Sally's daughter Geneva (Annie's granddaughter) was 25 years old, raising Ruth's mother in the next generation."
       ]
     },
     "jesse-c-mcmichael": {
@@ -1312,46 +1339,69 @@
     "robert-thomas-stapleton": {
       "id": "robert-thomas-stapleton",
       "name": "Robert Thomas Stapleton",
-      "birth": "1830",
-      "death": "1911",
+      "birth": "28 March 1830",
+      "birthPlace": "Lee Valley, Hawkins County, Tennessee",
+      "death": "25 February 1911",
+      "deathPlace": "Eidson, Hawkins County, Tennessee",
       "lifespan": "1830–1911",
       "branch": "quesenberry",
       "generation": 4,
+      "father": "james-franklin-stapleton",
+      "mother": "susan-singleton",
       "spouse": "nancy-jane-winstead",
       "children": ["annis-stapleton"],
       "verified": "documented",
-      "epitaph": "Father of Annis Stapleton, grandfather of Eva Mullins. Lived eighty-one years through the Civil War, Reconstruction, and the dawn of the automobile age.",
+      "epitaph": "Father of Annis Stapleton, grandfather of Eva Mullins. A Lee Valley, Tennessee man who lived eighty-one years; a photograph of him survives.",
       "facts": {
         "Generation": "Lonnie's great-great-grandfather; 3rd-great-grandfather",
-        "Lifespan": "1830–1911 (lived 81 years)",
-        "Wife": "Nancy Jane Winstead (b. 1841)",
-        "Daughter": "Annis Stapleton",
-        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 13 record matches; personal photo available)"
+        "Lifespan": "28 March 1830 – 25 February 1911 (lived 80 years)",
+        "Born": "28 March 1830, Lee Valley, Hawkins County, Tennessee",
+        "Died": "25 February 1911, Eidson, Hawkins County, Tennessee",
+        "Father": "<strong>James Franklin Stapleton</strong> (gen 6 direct ancestor)",
+        "Mother": "<strong>Susan Singleton Stapleton</strong> (gen 6 direct ancestor)",
+        "Wife": "Nancy Jane Winstead (1841–1926)",
+        "Daughter": "Annis Stapleton (1856–1934)",
+        "Siblings": "CPL William 'Buck' S. Stapleton, Nelson, John, Larkin, Sarah (Vaughan), Isaac, Nancy Stapleton",
+        "Source": "Mike's MyHeritage tree (13 record matches; personal photo available); FamilySearch; multiple Smart Match trees confirm parents"
       },
       "narrative": [
-        "Robert Thomas Stapleton was born in 1830 — the year before Floyd County, Virginia was formed. He married **Nancy Jane Winstead** (b. 1841) — eleven years younger than him — and together they raised Annis Stapleton, who would marry James C. C. Mullins. Their granddaughter Eva Elizabeth Mullins (1891–1983) would become Lonnie's mother. Robert Thomas lived to eighty-one, dying in 1911."
+        "Robert Thomas Stapleton was born on the 28th of March, 1830, at **Lee Valley, Hawkins County, Tennessee** — to **James Franklin Stapleton** and **Susan Singleton Stapleton**. He had at least seven siblings, including a brother, Corporal William 'Buck' S. Stapleton, who served in the Civil War. (The Singleton maiden name of his mother echoes through this family — Nancy Orlenia Singleton married Hiram Mullins on the other side of Eva's tree; the Singletons, Stapletons, and Mullinses were all Cumberland Gap families who intermarried repeatedly.)",
+        "He married **Nancy Jane Winstead** (1841–1926) — eleven years younger than him — and together they raised at least eight children, including **Annis** (1856–1934), who would marry James Calloway Mullins. Their granddaughter Eva Elizabeth Mullins (1890–1983) would become Lonnie's mother.",
+        "Robert Thomas lived to eighty, dying on the 25th of February, 1911, at **Eidson, Hawkins County, Tennessee** — in the same Lee Valley country where he was born. A photograph of him survives among the MyHeritage record matches."
       ]
     },
     "nancy-jane-winstead": {
       "id": "nancy-jane-winstead",
       "name": "Nancy Jane Winstead Stapleton",
-      "birth": "1841",
-      "lifespan": "1841–?",
+      "birth": "January 1841",
+      "birthPlace": "Lee Valley, Hawkins County, Tennessee",
+      "death": "27 June 1926",
+      "deathPlace": "Hawkins County, Tennessee",
+      "lifespan": "1841–1926",
       "branch": "quesenberry",
       "generation": 4,
+      "father": "john-wilson-winstead",
+      "mother": "mary-fanny-lawson",
       "spouse": "robert-thomas-stapleton",
       "children": ["annis-stapleton"],
       "verified": "documented",
-      "epitaph": "Wife of Robert Thomas Stapleton, mother of Annis. Born the year of William Henry Harrison's brief presidency.",
+      "epitaph": "Wife of Robert Thomas Stapleton, mother of Annis. A Lee Valley, Tennessee woman who lived eighty-five years; her photograph survives.",
       "facts": {
         "Generation": "Lonnie's great-great-grandmother; 3rd-great-grandmother",
-        "Born": "1841",
+        "Lifespan": "January 1841 – 27 June 1926 (lived 85 years)",
+        "Born": "January 1841, Lee Valley, Hawkins County, Tennessee",
+        "Died": "27 June 1926, Hawkins County, Tennessee",
+        "Father": "<strong>John Wilson Winstead</strong> (gen 6 direct ancestor)",
+        "Mother": "<strong>Mary Fanny Lawson Winstead</strong> (gen 6 direct ancestor)",
         "Husband": "Robert Thomas Stapleton (1830–1911)",
-        "Daughter": "Annis Stapleton",
-        "Source": "Mike's MyHeritage tree (direct ancestor 5 generations; 13 record matches; personal photo available)"
+        "Daughter": "Annis Stapleton (1856–1934)",
+        "Siblings": "William, Malin Mahlon, James Gaines, Orlena C. (Brown), Mary Ann, James Madison, Sarah F. (Burton) Winstead, and others",
+        "Source": "Mike's MyHeritage tree (13 record matches; personal photo available); FamilySearch; Geni; multiple Smart Match trees confirm parents"
       },
       "narrative": [
-        "Nancy Jane Winstead was born in 1841 — the year of William Henry Harrison's brief one-month presidency. She married Robert Thomas Stapleton, eleven years her senior, and bore Annis Stapleton — who would marry James C. C. Mullins and become Eva Mullins' mother."
+        "Nancy Jane Winstead was born in January 1841 at **Lee Valley, Hawkins County, Tennessee** — to **John Wilson Winstead** and **Mary Fanny Lawson Winstead**. She grew up in a large family of at least eleven siblings, including William, Malin Mahlon, James Gaines, Orlena C. (later Brown), Mary Ann, James Madison, and Sarah F. (later Burton) Winstead.",
+        "She married **Robert Thomas Stapleton**, eleven years her senior, and bore at least eight children — including **Annis Stapleton** (1856–1934), who would marry James Calloway Mullins and become Eva Mullins' mother. The 1880 census places the household in District 2, Hawkins County.",
+        "Nancy Jane lived to eighty-five, dying on the 27th of June, 1926, in Hawkins County — the same Lee Valley country where she had been born. Like her husband, her photograph survives among the MyHeritage record matches."
       ]
     },
     "judith-harvey": {
@@ -1632,6 +1682,7 @@
       "branch": "harvey",
       "generation": 6,
       "spouse": "agnes-harvey",
+      "marriedDate": "17 May 1788",
       "children": ["anthony-harvey"],
       "verified": "documented",
       "epitaph": "Pennsylvania Quaker, born in William Penn's colony at the eve of the Revolution. Migrated south to Orange County, NC, where he died at seventy-seven.",
@@ -1640,7 +1691,7 @@
         "Lifespan": "21 September 1759–12 March 1837 (lived 77 years)",
         "Born": "Chester County, Pennsylvania (Quaker country)",
         "Died": "Orange County, NC",
-        "Wife": "Agnes Harvey (1756–1834)",
+        "Wife": "Agnes Hoggatt Harvey (1756–1834) — married 17 May 1788",
         "Son": "Anthony Harvey (1791–before 1850)",
         "Quaker": "<strong>Yes</strong> — Chester County PA was William Penn's heart",
         "Source": "Mike's MyHeritage tree (direct ancestor 6 generations)"
@@ -2247,6 +2298,281 @@
       },
       "narrative": [
         "Mary Outland married **Isaac Trueblood** in late eighteenth or early nineteenth-century North Carolina. She is named in her daughter Sarah Sally's record on Geni World Family Tree as 'Mary Trueblood (born Outland)' — confirming her maiden name. Together with Isaac she raised at least nine Trueblood children. The Outland surname is, like Trueblood, a colonial English Quaker name well-attested in the Perquimans-Pasquotank area of NC's Albemarle Sound region from the 1670s forward — the two families were neighbors in that earliest Carolina Quaker community for generations before both lines migrated inland to Guilford."
+      ]
+    },
+    "charles-o-gates": {
+      "id": "charles-o-gates",
+      "name": "Charles O. Gates",
+      "lifespan": "fl. early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "nancy-d-mustin",
+      "children": ["annie-elizabeth-gates"],
+      "verified": "documented",
+      "epitaph": "Father of Annie Elizabeth Gates Pegram. Of the Gates family of Rockingham County, NC.",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Nancy D. Mustin Gates",
+        "Children": "Sarah L. Gates, Mary A. Gates, James Gates, Wesley Gates, <strong>Annie Elizabeth</strong> (later Pegram, born 19 January 1826) — at least 5",
+        "Source": "Annie Elizabeth Pegram's NC Death Certificate (1917) names him as father; FamilySearch Family Tree"
+      },
+      "narrative": [
+        "Charles O. Gates lived in **Rockingham County, North Carolina** in the early nineteenth century. He married **Nancy D. Mustin** and together they raised at least five children: Sarah L., Mary A., James, Wesley, and **Annie Elizabeth** (born 19 January 1826), who would marry James Fletcher Pegram in 1853 and become Geneva's grandmother through her daughter Sally. The Gates surname is English, common in colonial and antebellum North Carolina."
+      ]
+    },
+    "nancy-d-mustin": {
+      "id": "nancy-d-mustin",
+      "name": "Nancy D. Mustin Gates",
+      "lifespan": "fl. early 1800s",
+      "branch": "mcmichael",
+      "generation": 5,
+      "spouse": "charles-o-gates",
+      "children": ["annie-elizabeth-gates"],
+      "verified": "documented",
+      "epitaph": "Mother of Annie Elizabeth Gates Pegram. Maiden name Mustin (also spelled Musten).",
+      "facts": {
+        "Generation": "Ruth's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "<strong>Mustin</strong> (also spelled Musten/Musten on records)",
+        "Husband": "Charles O. Gates",
+        "Daughter": "Annie Elizabeth Gates Pegram (1826–1917)",
+        "Source": "Annie Elizabeth's NC Death Certificate 1917 names her as 'Mannie D. Musten'; FamilySearch Family Tree spells it 'Nancy D Gates (born Mustin)'"
+      },
+      "narrative": [
+        "Nancy D. Mustin married **Charles O. Gates** in early nineteenth-century **Rockingham County, North Carolina**. Together they raised at least five children, including **Annie Elizabeth** (born 1826) who would marry James Fletcher Pegram. The Mustin surname (sometimes spelled Musten) is English, well-attested in Piedmont North Carolina from the colonial period. Nancy's own parents are not yet documented."
+      ]
+    },
+    "ada-ruth-quesenberry": {
+      "id": "ada-ruth-quesenberry",
+      "name": "Ada Ruth Quesenberry Caudill",
+      "lifespan": "fl. 1900s",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "verified": "partial",
+      "epitaph": "Lonnie's sister. Married a Caudill.",
+      "facts": {
+        "Generation": "Lonnie's sister; Mike's great-aunt",
+        "Father": "Floyd Harmon Quesenberry (1884–1970)",
+        "Mother": "Eva Elizabeth Mullins Quesenberry (1890–1983)",
+        "Married name": "Caudill",
+        "Source": "Mike's MyHeritage tree (via Floyd's Geni, FamilySearch, Cox, Mitts record matches)"
+      },
+      "narrative": [
+        "Ada Ruth Quesenberry was one of at least seven children of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**. She later married a man named Caudill, taking that surname. She is one of Lonnie's sisters — Mike's great-aunt — and a previously unknown sibling in our records prior to the MyHeritage record-match deep dive of May 2026."
+      ]
+    },
+    "madeline-matilda-quesenberry": {
+      "id": "madeline-matilda-quesenberry",
+      "name": "Madeline Matilda Quesenberry Rimmer",
+      "lifespan": "fl. 1900s",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "verified": "partial",
+      "epitaph": "Lonnie's sister. Named for her grandmother Matilda Jane Price Quesenberry. Married a Rimmer.",
+      "facts": {
+        "Generation": "Lonnie's sister; Mike's great-aunt",
+        "Father": "Floyd Harmon Quesenberry (1884–1970)",
+        "Mother": "Eva Elizabeth Mullins Quesenberry (1890–1983)",
+        "Married name": "Rimmer",
+        "Namesake": "Likely named for her paternal grandmother <strong>Matilda Jane Price Quesenberry</strong> (1867–1944)",
+        "Source": "Mike's MyHeritage tree (via Floyd's record matches)"
+      },
+      "narrative": [
+        "Madeline Matilda Quesenberry was a daughter of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**, one of Lonnie's sisters. Her middle name **Matilda** was almost certainly given in honor of her paternal grandmother **Matilda Jane Price Quesenberry** (1867–1944) — a common Appalachian naming pattern. She later married a man named Rimmer."
+      ]
+    },
+    "hazel-margie-quesenberry": {
+      "id": "hazel-margie-quesenberry",
+      "name": "Hazel Margie Quesenberry Gray",
+      "lifespan": "fl. 1900s",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "verified": "partial",
+      "epitaph": "Lonnie's sister. Married a Gray.",
+      "facts": {
+        "Generation": "Lonnie's sister; Mike's great-aunt",
+        "Father": "Floyd Harmon Quesenberry (1884–1970)",
+        "Mother": "Eva Elizabeth Mullins Quesenberry (1890–1983)",
+        "Married name": "Gray",
+        "Source": "Mike's MyHeritage tree (via Floyd's FamilySearch record match)"
+      },
+      "narrative": [
+        "Hazel Margie Quesenberry was a daughter of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**. She later married a man named Gray. One of Lonnie's previously unknown siblings until the MyHeritage record-match deep dive of May 2026."
+      ]
+    },
+    "orville-quesenberry": {
+      "id": "orville-quesenberry",
+      "name": "Orville Quesenberry",
+      "lifespan": "fl. 1900s",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "verified": "partial",
+      "epitaph": "Lonnie's brother.",
+      "facts": {
+        "Generation": "Lonnie's brother; Mike's great-uncle",
+        "Father": "Floyd Harmon Quesenberry (1884–1970)",
+        "Mother": "Eva Elizabeth Mullins Quesenberry (1890–1983)",
+        "Source": "Mike's MyHeritage tree (via Floyd's FamilySearch record match)"
+      },
+      "narrative": [
+        "Orville Quesenberry was a son of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**, and brother of Lonnie. A previously unknown sibling until the MyHeritage record-match deep dive of May 2026."
+      ]
+    },
+    "kinith-quesenberry": {
+      "id": "kinith-quesenberry",
+      "name": "Kinith Quesenberry",
+      "lifespan": "fl. 1900s",
+      "branch": "quesenberry",
+      "generation": 1,
+      "father": "floyd-quesenberry",
+      "mother": "eva-quesenberry",
+      "verified": "partial",
+      "epitaph": "Lonnie's brother.",
+      "facts": {
+        "Generation": "Lonnie's brother; Mike's great-uncle",
+        "Father": "Floyd Harmon Quesenberry (1884–1970)",
+        "Mother": "Eva Elizabeth Mullins Quesenberry (1890–1983)",
+        "Source": "Mike's MyHeritage tree (via Floyd's FamilySearch record match)"
+      },
+      "narrative": [
+        "Kinith Quesenberry was a son of **Floyd Harmon Quesenberry** and **Eva Elizabeth Mullins**, and brother of Lonnie. A previously unknown sibling until the MyHeritage record-match deep dive of May 2026."
+      ]
+    },
+    "ella-josiphene-mcmichael": {
+      "id": "ella-josiphene-mcmichael",
+      "name": "Ella Josiphene McMichael Albert",
+      "lifespan": "fl. late 1800s",
+      "branch": "mcmichael",
+      "generation": 2,
+      "father": "william-franklin-mcmichael",
+      "mother": "sally-pegram",
+      "verified": "documented",
+      "epitaph": "Geneva's older sister. Married into the Albert family.",
+      "facts": {
+        "Generation": "Geneva's sister; Ruth's aunt; Mike's great-great-aunt",
+        "Father": "William Franklin McMichael (1849–1941)",
+        "Mother": "Sally Pegram McMichael (1861–c.1895)",
+        "Sister": "Geneva Elizabeth McMicheal Harvey (1891–1971)",
+        "Brother": "Johnnie McMichael",
+        "Married name": "Albert",
+        "Source": "Mike's MyHeritage tree (FamilySearch Family Tree match on Sally Pegram McMichael)"
+      },
+      "narrative": [
+        "Ella Josiphene McMichael was a daughter of **William Franklin McMichael** and **Sally Pegram McMichael** — and an older sister of Geneva (Ruth's mother). She later married a man named Albert and took that surname. The discovery of Ella and her brother Johnnie in May 2026 changed our understanding of Geneva's childhood: she was not an only child, but one of at least three siblings in a household where her mother died young (between 1891 and 1897)."
+      ]
+    },
+    "johnnie-mcmichael": {
+      "id": "johnnie-mcmichael",
+      "name": "Johnnie McMichael",
+      "lifespan": "fl. late 1800s",
+      "branch": "mcmichael",
+      "generation": 2,
+      "father": "william-franklin-mcmichael",
+      "mother": "sally-pegram",
+      "verified": "documented",
+      "epitaph": "Geneva's brother.",
+      "facts": {
+        "Generation": "Geneva's brother; Ruth's uncle; Mike's great-great-uncle",
+        "Father": "William Franklin McMichael (1849–1941)",
+        "Mother": "Sally Pegram McMichael (1861–c.1895)",
+        "Sisters": "Ella Josiphene (Albert), Geneva Elizabeth (Harvey)",
+        "Source": "Mike's MyHeritage tree (FamilySearch Family Tree match on Sally Pegram McMichael)"
+      },
+      "narrative": [
+        "Johnnie McMichael was a son of **William Franklin McMichael** and **Sally Pegram McMichael** — and Geneva's brother (Ruth's uncle). A previously unknown sibling until the MyHeritage record-match deep dive of May 2026."
+      ]
+    },
+    "john-wilson-winstead": {
+      "id": "john-wilson-winstead",
+      "name": "John Wilson Winstead",
+      "birthPlace": "Tennessee (presumed Hawkins County)",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "mary-fanny-lawson",
+      "children": ["nancy-jane-winstead"],
+      "verified": "documented",
+      "epitaph": "Father of Nancy Jane Winstead Stapleton. Of the Winstead family of Lee Valley, Hawkins County, Tennessee.",
+      "facts": {
+        "Generation": "Lonnie's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Mary Fanny Lawson Winstead",
+        "Children": "William, Malin Mahlon, James Gaines, Orlena C. (Brown), Mary Ann, James Madison, Sarah F. (Burton), <strong>Nancy Jane</strong> (later Stapleton, b. 1841), and others",
+        "Source": "Mike's MyHeritage tree (via Nancy Jane Winstead's record matches; FamilySearch; Geni World Family Tree)"
+      },
+      "narrative": [
+        "John Wilson Winstead was the father of **Nancy Jane Winstead Stapleton** (Mike's gen-4 ancestor). He lived at **Lee Valley, Hawkins County, Tennessee** in the early-to-mid nineteenth century. He married **Mary Fanny Lawson** and together they raised a large family of at least eleven children. The Winstead surname is English, well-attested in the Tennessee-Virginia Cumberland Gap country."
+      ]
+    },
+    "mary-fanny-lawson": {
+      "id": "mary-fanny-lawson",
+      "name": "Mary Fanny Lawson Winstead",
+      "birthPlace": "Tennessee (presumed Hawkins County)",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "john-wilson-winstead",
+      "children": ["nancy-jane-winstead"],
+      "verified": "documented",
+      "epitaph": "Mother of Nancy Jane Winstead Stapleton. Maiden name Lawson.",
+      "facts": {
+        "Generation": "Lonnie's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "Lawson",
+        "Husband": "John Wilson Winstead",
+        "Daughter": "Nancy Jane Winstead Stapleton (1841–1926)",
+        "Source": "Mike's MyHeritage tree (Geni World Family Tree names her as 'Mary Fanny Winstead (born Lawson)')"
+      },
+      "narrative": [
+        "Mary Fanny Lawson married **John Wilson Winstead** in early nineteenth-century Hawkins County, Tennessee. Together they raised at least eleven children, including **Nancy Jane** (born 1841), who would marry Robert Thomas Stapleton. The Lawson surname is English/Scots-Irish, common in the southern Appalachians."
+      ]
+    },
+    "james-franklin-stapleton": {
+      "id": "james-franklin-stapleton",
+      "name": "James Franklin Stapleton",
+      "birthPlace": "Tennessee (presumed Hawkins County)",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "susan-singleton",
+      "children": ["robert-thomas-stapleton"],
+      "verified": "documented",
+      "epitaph": "Father of Robert Thomas Stapleton. Of the Stapleton family of Hawkins County, Tennessee.",
+      "facts": {
+        "Generation": "Lonnie's great-great-great-grandfather; 4th-great-grandfather",
+        "Wife": "Susan Singleton Stapleton",
+        "Children": "<strong>Robert Thomas</strong> (b. 1830), CPL William 'Buck' S., Nelson, John, Larkin, Sarah (Vaughan), Isaac, Nancy Stapleton",
+        "Source": "Mike's MyHeritage tree (via Robert Thomas Stapleton's record matches; FamilySearch; multiple Smart Match trees)"
+      },
+      "narrative": [
+        "James Franklin Stapleton was the father of **Robert Thomas Stapleton** (Mike's gen-4 ancestor). He lived in **Hawkins County, Tennessee** in the early nineteenth century. He married **Susan Singleton** and together they raised at least eight children, including a son, Corporal William 'Buck' S. Stapleton, who would serve in the Civil War. The Stapletons were a prominent Lee Valley / Eidson family of the Hawkins County Cumberland Gap country."
+      ]
+    },
+    "susan-singleton": {
+      "id": "susan-singleton",
+      "name": "Susan Singleton Stapleton",
+      "birthPlace": "Tennessee (presumed Hawkins County)",
+      "lifespan": "fl. early 1800s",
+      "branch": "quesenberry",
+      "generation": 5,
+      "spouse": "james-franklin-stapleton",
+      "children": ["robert-thomas-stapleton"],
+      "verified": "documented",
+      "epitaph": "Mother of Robert Thomas Stapleton. Maiden name Singleton — the same surname found two generations later in Nancy Orlenia Singleton (Hiram Mullins's wife).",
+      "facts": {
+        "Generation": "Lonnie's great-great-great-grandmother; 4th-great-grandmother",
+        "Maiden name": "<strong>Singleton</strong> — a recurring surname in this Cumberland Gap family network",
+        "Husband": "James Franklin Stapleton",
+        "Son": "Robert Thomas Stapleton (1830–1911)",
+        "Source": "Mike's MyHeritage tree (multiple Smart Match trees name her as 'Susan Stapleton (born Singleton)')"
+      },
+      "narrative": [
+        "Susan Singleton married **James Franklin Stapleton** in early nineteenth-century Hawkins County, Tennessee. Together they raised at least eight Stapleton children, including **Robert Thomas Stapleton** (born 1830). Her maiden name **Singleton** is notable: it recurs elsewhere in Lonnie's maternal tree — Nancy Orlenia Singleton married Hiram Mullins in the same Cumberland Gap region. The Singletons, Stapletons, Mullinses, and Winsteads of Hawkins and Claiborne Counties formed a dense, intermarried Appalachian kin-network across several generations."
       ]
     }
   }

@@ -664,18 +664,81 @@ Quaker founding population of the county.
   curiously these siblings are HOCKETT/HOGGATT names. So this lists Agnes's
   Hoggatt siblings, not her own children.)
 
+### SESSION 3 — PERSON-ID PROBE (May 18, 2026, continued)
+
+Discovered the MyHeritage person-match URL pattern: `/discovery-hub/{GUID}/
+matches-for-person/{personID}?matchType=1` where personID runs 1500001-1500111.
+Probed IDs directly to bypass the unreliable list-view pagination.
+
+**Person ID map (discovered so far):**
+- 1500001 = Mike (Charles Michael Melazzo, b. 30 Aug 1985, Mecklenburg Co NC)
+- 1500009 Isaac J Harvey · 1500010 Anthony Harvey · 1500011 Sarah Sally Trueblood
+- 1500017 Jesse C. McMichael · 1500018 Anna Stephens · 1500019 Sally Pegram
+- 1500020 James Fletcher Pegram · 1500021 Annie Elizabeth Gates
+- 1500022 Floyd Harmon Quesenberry · 1500023 Alexander Henry Jr · 1500024 Pvt. Alexander Sr
+- 1500025 Rebecca Jane Smyth · 1500030 James Calloway Mullins · 1500032 Manerva Jane Mullins
+- 1500033 Annis Stapleton · 1500034 Robert Thomas Stapleton · 1500035 Nancy Jane Winstead
+- 1500037 Nathan Heaver Harvey · 1500049 Judith Harvey · 1500050 Hannah Harvey (collateral)
+- 1500066 Mary Hoggatt · 1500079 Catherine Stanley · 1500080 William Harvey (colonial)
+- 1500095 Hendersen Mullins (collateral)
+
+**SIBLING DISCOVERIES (huge for the family's living memory):**
+
+*Lonnie's siblings* (children of Floyd Harmon + Eva Mullins) — at least 7:
+**Lonnie Olin**, Ada Ruth (Caudill), Madeline Matilda (Rimmer), **Billie Ray**
+(formerly "Billie R" — now resolved: middle name Ray, male), Hazel Margie (Gray),
+Orville, Kinith.
+
+*Floyd's siblings* (children of Alexander Jr + Matilda Price) — at least 10:
+Rebecca J. (Williams), Milford Spencer, James Edgar, Ollie Dixon, Hughey Robert,
+Estelle Mae (Egan), John Hyatt, Samuel, Nancy L., Peter.
+
+*Geneva's siblings* (children of William Franklin McMichael + Sally Pegram) — 3 total:
+**Geneva Elizabeth**, **Ella Josiphene** (Albert), **Johnnie** McMichael.
+
+*Eva Mullins's siblings* (children of James Calloway Mullins + Annis Stapleton):
+Hugh Kyle, Julia Mossey (Bishop), Clay G., William Matson, James — plus half-siblings
+Susan Frances "Fannie" Neeley and Mary E. Bishop. ⚡ **James Calloway Mullins had TWO
+wives** — Laura Burton (first) and Annis Stapleton (second, Eva's mother).
+
+**SALLY PEGRAM died young** — between 1891 and 1897, when Geneva (b. 1891) was an
+infant or toddler. Geneva grew up motherless. This reframes her whole childhood.
+
+**NEW GEN-6 ANCESTORS found by probe:**
+- **Isaac Trueblood + Mary Outland** — Sarah Sally Trueblood's parents (Guilford NC Quakers)
+- **Charles O. Gates + Nancy D. Mustin** — Annie Elizabeth Gates's parents (Rockingham NC)
+- **John Wilson Winstead + Mary Fanny Lawson** — Nancy Jane Winstead's parents (Lee Valley, Hawkins TN)
+- **James Franklin Stapleton + Susan Singleton** — Robert Thomas Stapleton's parents (Hawkins TN)
+
+⚡ **The Singleton thread:** Susan Singleton (Robert Thomas Stapleton's mother) and
+Nancy Orlenia Singleton (Hiram Mullins's wife) share the surname. The Singletons,
+Stapletons, Mullinses, and Winsteads of Hawkins/Claiborne Counties TN formed a dense,
+intermarried Cumberland Gap kin-network across generations.
+
+**ENRICHED EXISTING ANCESTORS:**
+- **Anthony Harvey** — full dates: born 23 April 1791, Alamance/Orange Co NC; died 1846
+- **Sarah Sally Trueblood** — born 21 Sep 1812 Guilford NC; died before 1870 in **Missouri**
+- **Anna Stephens** — full dates 14 Nov 1818 – 4 Aug 1899; **married Jesse 4 Sep 1842**
+- **Annie Elizabeth Gates** — full dates 19 Jan 1826 – 13 Mar 1917; parents identified
+- **Robert Thomas Stapleton** — born 28 Mar 1830 Lee Valley TN; died 25 Feb 1911 Eidson TN
+- **Nancy Jane Winstead** — born Jan 1841 Lee Valley TN; died 27 Jun 1926 Hawkins TN
+- **Nathan Heaver Harvey** — married Agnes **Hoggatt** 17 May 1788 (Agnes's maiden name confirmed)
+
+**PHOTOS that exist in MyHeritage record matches (download in future session):**
+Pvt. Alexander Henry Sr (3 trees), Alexander Henry Jr (15 matches), Floyd Harmon
+Quesenberry, Jesse C. McMichael, Annis Stapleton, Robert Thomas Stapleton, Nancy
+Jane Winstead, Manerva Jane Mullins.
+
 ### STILL PENDING for future sessions
-- **Anthony Harvey — 45 record matches!** Biggest unexplored direct ancestor
-- Click into Sarah Sally Trueblood (Isaac J's mother) to push gen 6+
-- Click into Anna Stephens for her parents (gen 6)
-- Click into the "Personal photo" for Pvt. Alexander Henry — actual download
-- Click into the "Personal photo" for Alexander Henry Jr (15 matches, photo!)
-- Click into the "Personal photo" for Annis Stapleton
-- Click into Hugh Woody (34 matches!) — Mike's 1st cousin 4x removed
-- Click into Isaac Harvey 1793-1848 (61 matches!) — collateral but high match count
-- Browse pages F-Z of the 99-person alphabetical list (currently captured ~20)
+- Download the personal photos listed above (8+ ancestors have faces!)
+- Probe remaining person IDs: gaps in 1500002-1500008, 1500012-1500016, 1500026-1500029,
+  1500031, 1500036, 1500038-1500048, 1500051-1500065, 1500067-1500078, 1500081-1500094,
+  1500096-1500111 (the Price/Collins/Swift/Cox direct-ancestor parents may be here)
+- Click into Hugh Woody (34 matches) and Isaac Harvey 1793-1848 (61 matches) — collateral
 - 575 SmartMatches with other users' trees not yet reviewed
 - 359 actual document Record Matches not yet pulled as images
-- Pvt. Alexander Henry's exact regiment (would be in Washington Co VA Civil War roster)
+- Pvt. Alexander Henry's exact regiment (Washington Co VA Civil War roster)
 - Open question: was Crockett actually Pvt. Alexander Henry's father? MyHeritage
-  has the father as "Unknown" but doesn't directly contradict Crockett.
+  has the father as "Unknown"; mother consistently Nancy (born Quesenberry).
+- Anna Stephens's parents (not in her 6 matches)
+- Martha Jane Collins, Lucinda Cox, Thomas S. Swift, Alexander Stewart Price parents

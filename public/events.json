@@ -31,6 +31,12 @@
       "link": "/people/ruth-harvey.html"
     },
     {
+      "year": 1926,
+      "type": "death",
+      "summary": "Died: Nancy Jane Winstead Stapleton",
+      "link": "/people/nancy-jane-winstead.html"
+    },
+    {
       "year": 1733,
       "type": "birth",
       "summary": "Born: Mary Agnes Stanley Hoggatt",
@@ -343,6 +349,28 @@
       "type": "marriage",
       "summary": "Married: James Fletcher Pegram",
       "link": "/people/james-fletcher-pegram.html"
+    },
+    {
+      "year": 1853,
+      "type": "marriage",
+      "summary": "Married: Annie Elizabeth Gates Pegram",
+      "link": "/people/annie-elizabeth-gates.html"
+    }
+  ],
+  "01-19": [
+    {
+      "year": 1826,
+      "type": "birth",
+      "summary": "Born: Annie Elizabeth Gates Pegram",
+      "link": "/people/annie-elizabeth-gates.html"
+    }
+  ],
+  "03-13": [
+    {
+      "year": 1917,
+      "type": "death",
+      "summary": "Died: Annie Elizabeth Gates Pegram",
+      "link": "/people/annie-elizabeth-gates.html"
     }
   ],
   "10-27": [
@@ -391,6 +419,22 @@
       "link": "/people/anna-stephens.html"
     }
   ],
+  "03-28": [
+    {
+      "year": 1830,
+      "type": "birth",
+      "summary": "Born: Robert Thomas Stapleton",
+      "link": "/people/robert-thomas-stapleton.html"
+    }
+  ],
+  "02-25": [
+    {
+      "year": 1911,
+      "type": "death",
+      "summary": "Died: Robert Thomas Stapleton",
+      "link": "/people/robert-thomas-stapleton.html"
+    }
+  ],
   "05-01": [
     {
       "year": 1770,
@@ -428,6 +472,14 @@
       "year": 1837,
       "type": "death",
       "summary": "Died: Nathan Heaver Harvey",
+      "link": "/people/nathan-heaver-harvey.html"
+    }
+  ],
+  "05-17": [
+    {
+      "year": 1788,
+      "type": "marriage",
+      "summary": "Married: Nathan Heaver Harvey",
       "link": "/people/nathan-heaver-harvey.html"
     }
   ],
