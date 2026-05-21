@@ -30,6 +30,8 @@
       "military": null,
       "birthYear": 1920,
       "deathYear": 2002,
+      "initials": "LQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.5484,
         "lng": -82.5618,
@@ -70,6 +72,8 @@
       "military": null,
       "birthYear": 1925,
       "deathYear": 2016,
+      "initials": "RQ",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -106,6 +110,8 @@
       "military": null,
       "birthYear": 1929,
       "deathYear": 2021,
+      "initials": "ES",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.1051,
         "lng": -79.9859,
@@ -142,6 +148,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "AS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -174,6 +182,8 @@
       "military": null,
       "birthYear": 1884,
       "deathYear": 1970,
+      "initials": "FQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -202,13 +212,20 @@
       "spouse": "floyd-quesenberry",
       "children": [
         "lonnie-quesenberry",
-        "billie-quesenberry"
+        "billie-quesenberry",
+        "ada-ruth-quesenberry",
+        "madeline-matilda-quesenberry",
+        "hazel-margie-quesenberry",
+        "orville-quesenberry",
+        "kinith-quesenberry"
       ],
       "verified": "documented",
       "epitaph": "Maiden name Mullins \u2014 not Quesenberry. Lonnie's mother lived to the age of ninety-two, outliving her husband by thirteen years and her own century almost entire.",
       "military": null,
       "birthYear": 1890,
       "deathYear": 1983,
+      "initials": "EQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.4434,
         "lng": -83.0017,
@@ -244,6 +261,8 @@
       "military": null,
       "birthYear": 1887,
       "deathYear": 1966,
+      "initials": "WH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -279,6 +298,8 @@
       "military": null,
       "birthYear": 1891,
       "deathYear": 1971,
+      "initials": "GH",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -315,6 +336,8 @@
       "military": "American Civil War \u2014 Confederate Army (one of the famous nine sons)",
       "birthYear": 1842,
       "deathYear": 1898,
+      "initials": "WQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.9314,
         "lng": -80.3781,
@@ -347,6 +370,8 @@
       "military": null,
       "birthYear": 1838,
       "deathYear": 1926,
+      "initials": "EQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -365,12 +390,16 @@
       "father": "george-quesenberry",
       "mother": "martha-slinker",
       "spouse": "nancy-hylton",
-      "children": [],
+      "children": [
+        "william-henry-quesenberry"
+      ],
       "verified": "documented",
       "epitaph": "Patriarch of Greasy Creek \u2014 and, by Civil War's end, the only American father documented to have sent nine sons into Confederate service.",
       "military": null,
       "birthYear": 1790,
       "deathYear": 1853,
+      "initials": "JS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.9314,
         "lng": -80.3781,
@@ -397,12 +426,16 @@
       "father": "aaron-quisenberry",
       "mother": null,
       "spouse": "martha-slinker",
-      "children": [],
+      "children": [
+        "john-quesenberry-sr"
+      ],
       "verified": "documented",
       "epitaph": "American Revolutionary soldier, frontier settler \u2014 he carried the Quesenberry name from the colonial Tidewater into the Blue Ridge.",
       "military": "American Revolutionary War \u2014 Montgomery County, Virginia Militia",
       "birthYear": 1748,
       "deathYear": 1812,
+      "initials": "GQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 38.247,
         "lng": -78.1116,
@@ -429,12 +462,16 @@
       "father": null,
       "mother": null,
       "spouse": "joyce-dudley",
-      "children": [],
+      "children": [
+        "george-quesenberry"
+      ],
       "verified": "documented",
       "epitaph": "DAR Patriot Ancestor #A093307 \u2014 furnished beef to Washington's Continental Army from his Orange County, Virginia farm.",
       "military": "American Revolution \u2014 DAR Patriot Ancestor #A093307; furnished beef to the Continental Army",
       "birthYear": 1725,
       "deathYear": 1795,
+      "initials": "AS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 38.0265,
         "lng": -77.3464,
@@ -461,12 +498,16 @@
       "father": null,
       "mother": null,
       "spouse": null,
-      "children": [],
+      "children": [
+        "john-quisenberry-1627"
+      ],
       "verified": "documented",
       "epitaph": "The Atlantic crossing of 1624 \u2014 Thomas Questenbury, sixteen years old, a passenger to colonial Virginia. From him every American Quesenberry, Quisenberry, and Christenberry descends.",
       "military": null,
       "birthYear": 1608,
       "deathYear": 1672,
+      "initials": "TQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 51.4045,
         "lng": 0.0142,
@@ -499,6 +540,8 @@
       "military": null,
       "birthYear": 1627,
       "deathYear": 1717,
+      "initials": "JS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -531,6 +574,8 @@
       "military": "American Revolution \u2014 DAR Patriot Ancestor #A105465 (Pennsylvania service)",
       "birthYear": 1757,
       "deathYear": 1845,
+      "initials": "CS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 40.0379,
         "lng": -76.3055,
@@ -563,6 +608,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "BQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -589,6 +636,8 @@
       "military": null,
       "birthYear": 1863,
       "deathYear": 1937,
+      "initials": "AJ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -623,6 +672,8 @@
       "military": null,
       "birthYear": 1867,
       "deathYear": 1944,
+      "initials": "MQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -642,13 +693,16 @@
       "mother": "nancy-j-quesenberry",
       "spouse": "rebecca-jane-smyth",
       "children": [
-        "alexander-quesenberry"
+        "alexander-quesenberry",
+        "mary-quesenberry-graham"
       ],
       "verified": "documented",
       "epitaph": "Killed at Chancellorsville on the third of May, 1863 \u2014 the same battle that mortally wounded Stonewall Jackson. His widow Rebecca was carrying their son when he died; the boy was born three months later.",
       "military": "Confederate Private \u2014 KILLED IN ACTION at the Battle of Chancellorsville, 3 May 1863. Aged 21.",
       "birthYear": 1842,
       "deathYear": 1863,
+      "initials": "PS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -684,6 +738,8 @@
       "military": null,
       "birthYear": 1844,
       "deathYear": 1920,
+      "initials": "RT",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -718,6 +774,8 @@
       "military": null,
       "birthYear": 1822,
       "deathYear": 1902,
+      "initials": "CQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -744,6 +802,8 @@
       "military": null,
       "birthYear": 1820,
       "deathYear": 1901,
+      "initials": "NQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -770,6 +830,8 @@
       "military": null,
       "birthYear": 1796,
       "deathYear": 1845,
+      "initials": "JQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -796,6 +858,8 @@
       "military": null,
       "birthYear": 1800,
       "deathYear": 1850,
+      "initials": "EQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -820,6 +884,8 @@
       "military": null,
       "birthYear": 1800,
       "deathYear": 1845,
+      "initials": "GQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -844,6 +910,8 @@
       "military": null,
       "birthYear": 1800,
       "deathYear": 1857,
+      "initials": "MQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -870,6 +938,8 @@
       "military": "Recorded as 'Pvt.' \u2014 likely Revolutionary War or War of 1812 service",
       "birthYear": null,
       "deathYear": null,
+      "initials": "PS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -896,6 +966,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -922,6 +994,8 @@
       "military": null,
       "birthYear": 1854,
       "deathYear": 1929,
+      "initials": "JM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.5395,
         "lng": -83.2218,
@@ -956,6 +1030,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "AM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -982,6 +1058,8 @@
       "military": null,
       "birthYear": 1842,
       "deathYear": 1912,
+      "initials": "IH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1020,6 +1098,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "RH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1039,13 +1119,17 @@
       "mother": "anna-stephens",
       "spouse": "sally-pegram",
       "children": [
-        "geneva-carmichael"
+        "geneva-carmichael",
+        "ella-josiphene-mcmichael",
+        "johnnie-mcmichael"
       ],
       "verified": "documented",
       "epitaph": "Father of Geneva \u2014 born in 1849 (the year of the California Gold Rush), died in April 1941 at ninety-one or ninety-two, just months before Pearl Harbor. Son of Jesse C. McMichael (1820\u20131907).",
       "military": null,
       "birthYear": 1849,
       "deathYear": 1941,
+      "initials": "WM",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": {
         "lat": 35.7596,
@@ -1069,13 +1153,17 @@
       "mother": "annie-elizabeth-gates",
       "spouse": "william-franklin-mcmichael",
       "children": [
-        "geneva-carmichael"
+        "geneva-carmichael",
+        "ella-josiphene-mcmichael",
+        "johnnie-mcmichael"
       ],
       "verified": "documented",
       "epitaph": "Died young \u2014 between 1891 and 1897 \u2014 leaving Geneva (born 1891) motherless before she could remember her. The same Pegram-McMichael cycle of early-1890s loss that defined Geneva's childhood.",
       "military": null,
       "birthYear": 1861,
       "deathYear": 1891,
+      "initials": "SM",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1110,6 +1198,8 @@
       "military": null,
       "birthYear": 1791,
       "deathYear": 1846,
+      "initials": "AH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1144,6 +1234,8 @@
       "military": null,
       "birthYear": 1812,
       "deathYear": 1870,
+      "initials": "SH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -1174,6 +1266,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "TS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1200,6 +1294,8 @@
       "military": null,
       "birthYear": 1822,
       "deathYear": 1889,
+      "initials": "LS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1226,6 +1322,8 @@
       "military": null,
       "birthYear": 1831,
       "deathYear": 1915,
+      "initials": "JP",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1264,6 +1362,8 @@
       "military": null,
       "birthYear": 1826,
       "deathYear": 1917,
+      "initials": "AP",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1298,6 +1398,8 @@
       "military": null,
       "birthYear": 1820,
       "deathYear": 1907,
+      "initials": "JM",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 36.0807,
         "lng": -79.7889,
@@ -1332,6 +1434,8 @@
       "military": null,
       "birthYear": 1818,
       "deathYear": 1899,
+      "initials": "AM",
+      "monogramColor": "#4a3520",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1366,6 +1470,8 @@
       "military": null,
       "birthYear": 1833,
       "deathYear": 1909,
+      "initials": "AP",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1392,6 +1498,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MP",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1418,6 +1526,8 @@
       "military": null,
       "birthYear": 1830,
       "deathYear": 1911,
+      "initials": "RS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.4434,
         "lng": -83.0017,
@@ -1452,6 +1562,8 @@
       "military": null,
       "birthYear": 1841,
       "deathYear": 1926,
+      "initials": "NS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.4434,
         "lng": -83.0017,
@@ -1478,12 +1590,16 @@
       "father": "samuel-deuce",
       "mother": "elizabeth-deuce",
       "spouse": "william-harvey-colonial",
-      "children": [],
+      "children": [
+        "isaac-l-harvey"
+      ],
       "verified": "documented",
       "epitaph": "Born in Staffordshire, England in 1683. Emigrated to William Penn's colony, married twice, bore at least ten children, lived to eighty-seven. The deepest English-born ancestor in this tree.",
       "military": null,
       "birthYear": 1683,
       "deathYear": 1770,
+      "initials": "JH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 52.3555,
         "lng": -1.1743,
@@ -1510,12 +1626,16 @@
       "father": null,
       "mother": null,
       "spouse": "judith-harvey",
-      "children": [],
+      "children": [
+        "isaac-l-harvey"
+      ],
       "verified": "partial",
       "epitaph": "Colonial-era Harvey patriarch. Married Judith ca. 1715; from him descend the American Harveys of this line.",
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "WH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1534,12 +1654,16 @@
       "father": null,
       "mother": null,
       "spouse": "jane-newlin",
-      "children": [],
+      "children": [
+        "martha-e-harvey"
+      ],
       "verified": "documented",
       "epitaph": "Pennsylvania Quaker \u2014 son of an Irish Quaker emigrant who came to Penn's colony in 1683. The deepest Quaker-side ancestor on this site.",
       "military": null,
       "birthYear": 1690,
       "deathYear": 1732,
+      "initials": "NN",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1558,12 +1682,16 @@
       "father": null,
       "mother": null,
       "spouse": "nathaniel-newlin",
-      "children": [],
+      "children": [
+        "martha-e-harvey"
+      ],
       "verified": "documented",
       "epitaph": "Pennsylvania Quaker. Wife of Nathaniel Newlin.",
       "military": null,
       "birthYear": 1687,
       "deathYear": null,
+      "initials": "JN",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1582,12 +1710,16 @@
       "father": "david-george-glendenning",
       "mother": "margaret-hall",
       "spouse": "philip-hoggett",
-      "children": [],
+      "children": [
+        "anthony-p-hoggatt"
+      ],
       "verified": "documented",
       "epitaph": "Born in Edinburgh, Scotland in 1698. Crossed the Atlantic as a young woman, married a Quaker in colonial America, lived to eighty-two, and was buried at Springfield Friends Meeting in North Carolina.",
       "military": null,
       "birthYear": 1698,
       "deathYear": 1780,
+      "initials": "MH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 56.4907,
         "lng": -4.2026,
@@ -1618,12 +1750,16 @@
       "father": null,
       "mother": null,
       "spouse": "mary-hoggatt",
-      "children": [],
+      "children": [
+        "anthony-p-hoggatt"
+      ],
       "verified": "partial",
       "epitaph": "Husband of Mary Hoggatt. Colonial Quaker patriarch of this Hoggatt-Harvey line.",
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "PH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -1650,6 +1786,8 @@
       "military": null,
       "birthYear": 1829,
       "deathYear": 1920,
+      "initials": "HM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,
@@ -1684,6 +1822,8 @@
       "military": null,
       "birthYear": 1831,
       "deathYear": 1910,
+      "initials": "MM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.5101,
         "lng": -83.6557,
@@ -1718,6 +1858,8 @@
       "military": null,
       "birthYear": 1794,
       "deathYear": 1850,
+      "initials": "HM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1752,6 +1894,8 @@
       "military": null,
       "birthYear": 1815,
       "deathYear": 1886,
+      "initials": "NM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,
@@ -1786,6 +1930,8 @@
       "military": null,
       "birthYear": 1759,
       "deathYear": 1837,
+      "initials": "NH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 41.2033,
         "lng": -77.1945,
@@ -1820,6 +1966,8 @@
       "military": null,
       "birthYear": 1756,
       "deathYear": 1834,
+      "initials": "AH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 35.7596,
         "lng": -79.0193,
@@ -1854,6 +2002,8 @@
       "military": null,
       "birthYear": 1718,
       "deathYear": 1802,
+      "initials": "IH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 41.2033,
         "lng": -77.1945,
@@ -1888,6 +2038,8 @@
       "military": null,
       "birthYear": 1721,
       "deathYear": 1806,
+      "initials": "MH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 41.2033,
         "lng": -77.1945,
@@ -1920,6 +2072,8 @@
       "military": null,
       "birthYear": 1730,
       "deathYear": 1814,
+      "initials": "AH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -1952,6 +2106,8 @@
       "military": null,
       "birthYear": 1733,
       "deathYear": 1808,
+      "initials": "MH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -1984,6 +2140,8 @@
       "military": "Confederate soldier \u2014 died as a prisoner of war at the Rock Island, Illinois POW camp, 16 February 1864",
       "birthYear": 1838,
       "deathYear": 1864,
+      "initials": "RM",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 36.5101,
         "lng": -83.6557,
@@ -2018,6 +2176,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "ES",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2044,6 +2204,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2068,6 +2230,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JT",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2092,6 +2256,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MG",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2118,6 +2284,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JP",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2144,6 +2312,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "LP",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2170,6 +2340,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "WS",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2196,6 +2368,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "RM",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2222,6 +2396,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "DG",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 56.4907,
         "lng": -4.2026,
@@ -2252,6 +2428,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MG",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 56.4907,
         "lng": -4.2026,
@@ -2282,6 +2460,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "SD",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 52.3555,
         "lng": -1.1743,
@@ -2312,6 +2492,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "ED",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 52.3555,
         "lng": -1.1743,
@@ -2342,6 +2524,8 @@
       "military": null,
       "birthYear": 1703,
       "deathYear": 1766,
+      "initials": "CS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -2380,6 +2564,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JS",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2406,6 +2592,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "NH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -2436,6 +2624,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MH",
+      "monogramColor": "#3a5a3e",
       "birthGeo": {
         "lat": 37.4316,
         "lng": -78.6569,
@@ -2466,6 +2656,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "IT",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2492,6 +2684,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MT",
+      "monogramColor": "#3a5a3e",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2518,6 +2712,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "CG",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2544,6 +2740,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "NG",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2568,6 +2766,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "AC",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2592,6 +2792,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MR",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2616,6 +2818,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "HG",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2640,6 +2844,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "OQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2664,6 +2870,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "KQ",
+      "monogramColor": "#7a4a1f",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2688,6 +2896,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "EA",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2712,6 +2922,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JM",
+      "monogramColor": "#4a3520",
       "birthGeo": null,
       "deathGeo": null,
       "burialGeo": null
@@ -2738,6 +2950,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JW",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,
@@ -2768,6 +2982,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "MW",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,
@@ -2798,6 +3014,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "JS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,
@@ -2828,6 +3046,8 @@
       "military": null,
       "birthYear": null,
       "deathYear": null,
+      "initials": "SS",
+      "monogramColor": "#7a4a1f",
       "birthGeo": {
         "lat": 35.7478,
         "lng": -86.6923,

@@ -13,7 +13,13 @@
 <body>
 <header class="site-header">
   <div class="shell">
-    <p class="site-title"><a href="/">The Quesenberry & Harvey Family</a></p>
+    <details class="family-switcher">
+      <summary class="site-title">The Quesenberry & Harvey Family</summary>
+      <div class="more-menu family-switcher-menu">
+        <a href="/">The Quesenberry & Harvey Family</a>
+        <a href="/melazzo/tree.html">The Melazzo Family</a>
+      </div>
+    </details>
     <nav class="site-nav" aria-label="Main">
       <a href="/tree.html" class="active">Tree</a>
       <details>
@@ -58,45 +64,79 @@
 <section style="padding-top: 1rem;">
   <div class="shell">
     <div class="tree-controls">
-      <div class="view-tabs" role="tablist">
-        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true">Pedigree</button>
-        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false">Timeline</button>
-        <button data-view="map"      class="view-tab" role="tab" aria-selected="false">Migration Map</button>
+      <div class="view-tabs" role="tablist" aria-label="Tree view">
+        <button data-view="pedigree" class="view-tab active" role="tab" aria-selected="true" aria-controls="view-pedigree" id="tab-pedigree">Pedigree</button>
+        <button data-view="timeline" class="view-tab" role="tab" aria-selected="false" aria-controls="view-timeline" id="tab-timeline">Timeline</button>
+        <button data-view="map"      class="view-tab" role="tab" aria-selected="false" aria-controls="view-map" id="tab-map">Migration Map</button>
       </div>
-      <div class="search-wrap">
-        <input id="search" type="text" placeholder="Search a name…" autocomplete="off" />
-        <ul id="search-results" class="search-results" hidden></ul>
+      <div class="search-and-find">
+        <div class="search-wrap">
+          <input id="search" type="text" placeholder="Search a name…" autocomplete="off"
+                 role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false" />
+          <ul id="search-results" class="search-results" role="listbox" hidden></ul>
+        </div>
+        <button id="find-me" class="find-me-btn" type="button">Find me on the tree</button>
       </div>
     </div>
 
     <div class="tree-layout">
       <div class="tree-stage">
-        <div id="view-pedigree" class="view active"></div>
-        <div id="view-timeline" class="view"></div>
-        <div id="view-map"      class="view"></div>
+        <button class="zoom-ctl zoom-in" type="button" aria-label="Zoom in">+</button>
+        <button class="zoom-ctl zoom-out" type="button" aria-label="Zoom out">−</button>
+        <button class="zoom-ctl zoom-fit" type="button" aria-label="Fit to viewport" title="Fit">⤢</button>
+        <div id="start-here-callout" class="start-here" hidden>
+          <span class="start-here-text">Start here — your great-grandparents.</span>
+          <svg class="start-here-arrow" viewBox="0 0 80 60" aria-hidden="true">
+            <path d="M70 10 Q 40 30, 14 48" fill="none" stroke="currentColor" stroke-width="1.4" />
+            <path d="M14 48 L22 42 M14 48 L20 54" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+          </svg>
+        </div>
+        <div id="view-pedigree" class="view active" role="tabpanel" aria-labelledby="tab-pedigree" tabindex="0"></div>
+        <div id="view-timeline" class="view" role="tabpanel" aria-labelledby="tab-timeline" tabindex="0" hidden></div>
+        <div id="view-map"      class="view" role="tabpanel" aria-labelledby="tab-map" tabindex="0" hidden></div>
       </div>
-      <aside id="side-panel" class="side-panel">
+      <aside id="side-panel" class="side-panel" role="region" aria-labelledby="side-panel-name">
         <p class="muted">Click any name to focus on a person.</p>
       </aside>
     </div>
 
-    <p class="muted center" style="margin-top: 1.5rem;">All three views share one focused person. Use the search box to jump to anyone in the family by name.</p>
+    <div class="tree-legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#7a4a1f"></span>Quesenberry</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#3a5a3e"></span>Harvey</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#8a6d28"></span>Carmichael</span>
+      <span class="legend-sep">·</span>
+      <span class="legend-item legend-help">Click a name to focus · Drag to pan · Scroll to zoom</span>
+    </div>
   </div>
 </section>
+
+<dialog id="find-me-dialog" class="find-me-dialog" aria-labelledby="find-me-title">
+  <form method="dialog" class="find-me-form">
+    <h3 id="find-me-title">Find me on the tree</h3>
+    <p class="find-me-help">Pick the ancestor closest to you on the family line.</p>
+    <label for="find-me-select" class="find-me-label">Ancestor</label>
+    <select id="find-me-select">
+      <option value="">— select a person —</option>
+      <optgroup label="Quesenberry"><option value="lonnie-quesenberry">Lonnie Olin Quesenberry (1920–2002)</option><option value="billie-quesenberry">Billie Ray Quesenberry (fl. 1920s–?)</option><option value="ada-ruth-quesenberry">Ada Ruth Quesenberry Caudill (fl. 1900s)</option><option value="madeline-matilda-quesenberry">Madeline Matilda Quesenberry Rimmer (fl. 1900s)</option><option value="hazel-margie-quesenberry">Hazel Margie Quesenberry Gray (fl. 1900s)</option><option value="orville-quesenberry">Orville Quesenberry (fl. 1900s)</option><option value="kinith-quesenberry">Kinith Quesenberry (fl. 1900s)</option><option value="floyd-quesenberry">Floyd Harmon Quesenberry (1884–1970)</option><option value="eva-quesenberry">Eva Elizabeth Mullins Quesenberry (1890–1983)</option><option value="william-henry-quesenberry">William Henry Clay Quesenberry (1842–1898)</option><option value="eva-jane-slusher">Eva Jane Slusher Quesenberry (1838–1926)</option><option value="alexander-quesenberry">Alexander Henry Quesenberry, Jr. (1863–1937)</option><option value="matilda-price">Matilda Jane Price Quesenberry (1867–1944)</option><option value="james-cc-mullins">James Calloway Mullins (1854–1929)</option><option value="annis-stapleton">Annis Stapleton Mullins (fl. late 1800s)</option><option value="mary-quesenberry-graham">Mary E. Quesenberry Graham (fl. mid-late 1800s)</option><option value="john-quesenberry-sr">John Quesenberry Sr. (1790–1853)</option><option value="a-quisenberry-1842">Pvt. Alexander Henry Quesenberry, Sr. (1842–1863)</option><option value="rebecca-jane-smyth">Rebecca Jane Smyth Quesenberry Travis (1844–1920)</option><option value="alexander-stewart-price">Alexander Stewart Price (1833–1909)</option><option value="martha-jane-collins">Martha Jane Collins Price (fl. mid-1800s)</option><option value="robert-thomas-stapleton">Robert Thomas Stapleton (1830–1911)</option><option value="nancy-jane-winstead">Nancy Jane Winstead Stapleton (1841–1926)</option><option value="harrison-mullins">Harrison Mullins (1829–1920)</option><option value="manerva-jane-mullins">Manerva Jane Mullins (1831–1910)</option><option value="riley-james-mullins">Riley James Mullins (1838–1864)</option><option value="james-t-travis">James T. Travis (fl. mid-late 1800s)</option><option value="george-quesenberry">George Quesenberry (1748–1812)</option><option value="christopher-slusher">Christopher Slusher (Schlosser) (1757–1845)</option><option value="crockett-quisenberry">Crockett Quisenberry (1822–1902)</option><option value="nancy-j-quesenberry">Nancy J. Quesenberry (1820–1901)</option><option value="hiram-mullins">Hiram Mullins (1794–1850)</option><option value="nancy-orlenia-singleton">Nancy Orlenia Singleton Mullins (1815–1886)</option><option value="edward-mcdonald-smyth">Edward McDonald Smyth (fl. early 1800s)</option><option value="minerva-parsons">Minerva Parsons Smyth (fl. early 1800s)</option><option value="john-wilson-winstead">John Wilson Winstead (fl. early 1800s)</option><option value="mary-fanny-lawson">Mary Fanny Lawson Winstead (fl. early 1800s)</option><option value="james-franklin-stapleton">James Franklin Stapleton (fl. early 1800s)</option><option value="susan-singleton">Susan Singleton Stapleton (fl. early 1800s)</option><option value="aaron-quisenberry">Aaron Quisenberry Sr. (1725–1795)</option><option value="james-s-quesenberry">James S. Quesenberry (1796–1845)</option><option value="elizabeth-moore">Elizabeth Moore Quesenberry (1800–1850)</option><option value="george-s-quesenberry">George S. Quesenberry (1800–1845)</option><option value="mary-quesenberry">Mary Quesenberry (1800–1857)</option><option value="peter-moore-sr">Peter Moore Sr. (fl. late 1700s)</option><option value="jane-jeany-murtland">Jane 'Jeany' Murtland Moore (fl. late 1700s)</option><option value="john-quisenberry-1627">John Quisenberry Sr. (1627–1717)</option><option value="thomas-questenbury">Thomas Questenbury (1608–1672)</option></optgroup><optgroup label="Harvey"><option value="ruth-harvey">Ruth Garland Harvey Quesenberry (1925–2016)</option><option value="esther-harvey">Esther Harvey Scott (1929–2021)</option><option value="anderson-scott">Anderson L. Scott (fl. 1947)</option><option value="carl-harvey">William Carl Harvey (1887–1966)</option><option value="isaac-j-harvey">Isaac J. Harvey (1842–1912)</option><option value="rachel-swift-harvey">Rachel Frances Swift Harvey (fl. mid-1800s)</option><option value="anthony-harvey">Anthony Harvey (1791–1846)</option><option value="sarah-sally-trueblood">Sarah Sally Trueblood Harvey (1812–before 1870)</option><option value="thomas-s-swift">Thomas S. Swift (fl. early-mid 1800s)</option><option value="lucinda-cox">Lucinda Cox Swift (1822–1889)</option><option value="isaac-trueblood">Isaac Trueblood (fl. late 1700s – early 1800s)</option><option value="mary-outland">Mary Outland Trueblood (fl. late 1700s – early 1800s)</option><option value="nathan-heaver-harvey">Nathan Heaver Harvey (1759–1837)</option><option value="agnes-harvey">Agnes Harvey (1756–1834)</option><option value="isaac-l-harvey">Isaac L. Harvey (1718–1802)</option><option value="martha-e-harvey">Martha E. Newlin Harvey (1721–1806)</option><option value="anthony-p-hoggatt">Anthony P. Hoggatt (1730–1814)</option><option value="mary-agnes-hoggatt">Mary Agnes Stanley Hoggatt (1733–1808)</option><option value="judith-harvey">Judith Deuce Osborne Harvey (1683–1770)</option><option value="william-harvey-colonial">William HARVEY (colonial) (fl. late 1600s – early 1700s)</option><option value="nathaniel-newlin">Nathaniel Newlin (1690–1732)</option><option value="jane-newlin">Jane Newlin (1687–?)</option><option value="mary-hoggatt">Mary Glendenning Hoggatt (1698–1780)</option><option value="philip-hoggett">Philip Hoggett (fl. early 1700s)</option><option value="catherine-stanley">Catherine "Rachel" Hutchins Stanley (1703–1766)</option><option value="james-stanley-sr">James Stanley, Sr. (fl. early-mid 1700s)</option><option value="david-george-glendenning">David George Glendenning (fl. late 1600s – early 1700s)</option><option value="margaret-hall">Margaret Hall Glendenning (fl. late 1600s)</option><option value="samuel-deuce">Samuel Deuce (fl. mid-late 1600s)</option><option value="elizabeth-deuce">Elizabeth Deuce (fl. mid-late 1600s)</option><option value="nicholas-hutchins">Nicholas Hutchins (fl. late 1600s – early 1700s)</option><option value="mary-watkins">Mary Watkins Hutchins (fl. late 1600s – early 1700s)</option></optgroup>
+    </select>
+    <div class="find-me-actions">
+      <button type="button" class="find-me-cancel" value="cancel">Cancel</button>
+      <button type="submit" class="find-me-confirm" value="confirm">Show me</button>
+    </div>
+  </form>
+</dialog>
 
 <section>
   <div class="shell narrow">
     <h2>How to read these views</h2>
     <p><strong>Pedigree.</strong> The classic upside-down tree: Lonnie and Ruth at the top, their parents below, and so on backward in time. Branches are color-coded — Quesenberry russet, Harvey forest, Carmichael gold. Lines connect children to parents.</p>
-    <p><strong>Timeline.</strong> Each ancestor's life as a horizontal bar across four centuries — from Thomas Questenbury's birth in 1608 to Ruth's death in 2016. The shape of the family line becomes obvious at a glance: long lives, the gap of the Civil War, the consolidation in the Carolinas in the twentieth century.</p>
+    <p><strong>Timeline.</strong> Each ancestor's life as a horizontal bar across four centuries — from the early 1600s to the present. Shaded bands mark the wars and depressions that shaped the generations.</p>
     <p><strong>Migration Map.</strong> The places that mattered, mapped and connected: Kent to Virginia in 1624, Larne to Wilmington in 1775, Lancaster County PA south down the Wagon Road, the Blue Ridge into the Carolina Piedmont. The story of this family is, fundamentally, a story of crossings.</p>
   </div>
 </section>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="/js/tree.js" defer></script><footer class="site-footer">
+<script type="module" src="/js/tree.js?v=3"></script><footer class="site-footer">
   <div class="shell">
     <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
     <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>

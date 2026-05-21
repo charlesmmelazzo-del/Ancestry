@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["/tmp/serve_public_qh.py"],
+      "port": 8765,
+      "autoPort": true
+    }
+  ]
+}
