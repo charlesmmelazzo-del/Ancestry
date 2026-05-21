@@ -1614,6 +1614,32 @@ hr.flourish::before {
 .zoom-ctl.zoom-in  { top: 14px; }
 .zoom-ctl.zoom-out { top: 50px; }
 .zoom-ctl.zoom-fit { top: 86px; font-size: 0.95rem; }
+.gen-ctl {
+  position: absolute;
+  right: 14px;
+  top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  z-index: 5;
+}
+.gen-ctl .zoom-ctl {
+  position: static;
+  font-size: 0.7rem;
+  font-family: var(--voice-caps);
+  letter-spacing: 0.06em;
+  width: 32px;
+  height: 26px;
+}
+.gen-label {
+  font-family: var(--voice-caps);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  line-height: 1;
+  user-select: none;
+}
 
 /* legend strip below tree */
 .tree-legend {

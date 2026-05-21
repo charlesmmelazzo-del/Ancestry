@@ -25,6 +25,7 @@ const state = {
   pedZoom: null,
   pedZoomRoot: null,
   pedFitTransform: null,
+  pedMaxDepth: 4,
   leafletReady: false,
   leafletMap: null,
   leafletLayers: null,
@@ -110,6 +111,8 @@ function initToolbar() {
   $(".zoom-in")?.addEventListener("click", () => zoomBy(1.4));
   $(".zoom-out")?.addEventListener("click", () => zoomBy(1 / 1.4));
   $(".zoom-fit")?.addEventListener("click", () => fitPedigreeToViewport());
+  $(".gen-inc")?.addEventListener("click", () => changeGenDepth(1));
+  $(".gen-dec")?.addEventListener("click", () => changeGenDepth(-1));
 }
 
 function switchView(v, animate, initial) {
@@ -538,7 +541,7 @@ function drawPedigreeDesktop(container) {
   function build(personId, depth, seen = new Set()) {
     if (seen.has(personId)) return null;
     const p = state.byId.get(personId);
-    if (!p || depth > 8) return null;
+    if (!p || depth > state.pedMaxDepth - 1) return null;
     const next = new Set(seen).add(personId);
     const node = { id: p.id, person: p, children: [] };
     if (p.father && state.byId.has(p.father)) {
@@ -565,7 +568,6 @@ function drawPedigreeDesktop(container) {
 
   const w = container.clientWidth || 900;
   const h = 720;
-  const margin = { top: 80, right: 60, bottom: 40, left: 60 };
 
   const svg = select(container).append("svg")
     .attr("class", "ped-svg")
@@ -580,13 +582,10 @@ function drawPedigreeDesktop(container) {
   state.pedSvg = svg;
   state.pedZoomRoot = zoomRoot;
 
-  // Layout
+  // Fixed per-node spacing so nodes never overlap regardless of tree depth or breadth.
+  // nodeSize([dx, dy]): each node is guaranteed dx px horizontally, dy px vertically.
   const root = hierarchy(data);
-  const layout = d3tree().size([w - margin.left - margin.right, h - margin.top - margin.bottom]);
-  layout(root);
-
-  // shift so margin is applied inside zoom-root
-  zoomRoot.attr("transform", `translate(${margin.left}, ${margin.top})`);
+  d3tree().nodeSize([110, 130])(root);
 
   // links
   const realLinks = root.links().filter((l) => l.source.data.id !== "__couple__");
@@ -642,11 +641,11 @@ function drawPedigreeDesktop(container) {
     .on("mousemove", function (e) { moveHoverCard(e); })
     .on("mouseleave", function () { hideHoverCard(); });
 
-  // hit target (transparent rect for consistent click area + tap targets)
+  // hit target — 104px fits within the 110px nodeSize gap so adjacent targets never overlap
   node.append("rect")
     .attr("class", "ped-hit")
-    .attr("x", -54).attr("y", -54)
-    .attr("width", 108).attr("height", 108)
+    .attr("x", -52).attr("y", -52)
+    .attr("width", 104).attr("height", 104)
     .attr("fill", "transparent");
 
   // outer ring (focus highlight)
@@ -685,13 +684,12 @@ function drawPedigreeDesktop(container) {
     .attr("y", 60)
     .text((d) => d.data.person.lifespan || "");
 
-  // d3-zoom behavior
+  // d3-zoom behavior — owns all transforms on zoomRoot (no fixed margin offset)
   state.pedZoom = zoom()
-    .scaleExtent([0.4, 3])
+    .scaleExtent([0.08, 4])
     .on("zoom", (e) => {
-      // Compose with the margin translate already on zoomRoot.
       zoomRoot.attr("transform",
-        `translate(${margin.left + e.transform.x}, ${margin.top + e.transform.y}) scale(${e.transform.k})`
+        `translate(${e.transform.x},${e.transform.y}) scale(${e.transform.k})`
       );
     });
 
@@ -700,12 +698,27 @@ function drawPedigreeDesktop(container) {
   // Disable double-click zoom (we'll use it for focus instead).
   svg.on("dblclick.zoom", null);
 
-  // Compute fit transform once, store, apply.
-  state.pedFitTransform = computeFitTransform(nodes, w, h, margin);
-  applyZoomTransform(state.pedFitTransform, /*animate*/ false);
+  // "Fit" button always shows all nodes.
+  state.pedFitTransform = computeFitTransform(nodes, w, h, { top: 40, right: 40, bottom: 40, left: 40 });
 
-  // If a focus is already set, animate to it.
-  if (state.focusedId) {
+  // Initial view: scale so the depth-1 roots (Lonnie & Ruth) are visible near the
+  // top at a comfortable size, rather than zooming all the way out to fit every leaf.
+  const d1 = (root.children || []).filter(c => c.data.id !== "__couple__");
+  if (d1.length >= 2) {
+    const d1xMin = Math.min(...d1.map(n => n.x));
+    const d1xMax = Math.max(...d1.map(n => n.x));
+    const d1y = d1[0].y;
+    const initK = Math.min(w * 0.90 / (d1xMax - d1xMin + 110), 1.0);
+    const initTx = w / 2 - ((d1xMin + d1xMax) / 2) * initK;
+    const initTy = h * 0.22 - d1y * initK;
+    applyZoomTransform(zoomIdentity.translate(initTx, initTy).scale(initK), false);
+  } else {
+    applyZoomTransform(state.pedFitTransform, /*animate*/ false);
+  }
+
+  // Pan to focused person if it's not one of the root IDs — those are already
+  // prominently visible in the initial view above.
+  if (state.focusedId && !ROOT_IDS.includes(state.focusedId)) {
     requestAnimationFrame(() => panToNode(state.focusedId));
   }
 }
@@ -743,6 +756,14 @@ function fitPedigreeToViewport(soft) {
   if (!state.pedFitTransform) return;
   applyZoomTransform(state.pedFitTransform, !soft);
 }
+function changeGenDepth(delta) {
+  const next = Math.max(2, Math.min(9, state.pedMaxDepth + delta));
+  if (next === state.pedMaxDepth) return;
+  state.pedMaxDepth = next;
+  const label = $(".gen-label");
+  if (label) label.textContent = next;
+  if (state.view === "pedigree") drawPedigree();
+}
 function zoomBy(factor) {
   if (!state.pedSvg || !state.pedZoom) return;
   state.pedSvg.transition().duration(REDUCED ? 0 : 220).call(state.pedZoom.scaleBy, factor);
@@ -760,14 +781,10 @@ function panToNode(id) {
   const vb = svgEl.viewBox.baseVal;
   const w = vb.width || svgEl.clientWidth || 900;
   const h = vb.height || svgEl.clientHeight || 720;
-  // Use current zoom scale, but recenter.
-  const margin = { top: 80, right: 60, bottom: 40, left: 60 };
-  const availW = w - margin.left - margin.right;
-  const availH = h - margin.top - margin.bottom;
   const cur = currentZoomTransform();
   const k = cur.k;
-  const tx = (availW / 2) - nx * k;
-  const ty = (availH / 2) - ny * k;
+  const tx = w / 2 - nx * k;
+  const ty = h / 2 - ny * k;
   applyZoomTransform(zoomIdentity.translate(tx, ty).scale(k), true);
 }
 function currentZoomTransform() {
@@ -795,7 +812,7 @@ function drawPedigreeMobile(container) {
   ol.setAttribute("aria-label", "Family pedigree as nested list");
 
   function appendNode(id, depth, into) {
-    if (seen.has(id) || depth > 8) return;
+    if (seen.has(id) || depth > state.pedMaxDepth - 1) return;
     seen.add(id);
     const p = state.byId.get(id);
     if (!p) return;

@@ -84,6 +84,11 @@
         <button class="zoom-ctl zoom-in" type="button" aria-label="Zoom in">+</button>
         <button class="zoom-ctl zoom-out" type="button" aria-label="Zoom out">−</button>
         <button class="zoom-ctl zoom-fit" type="button" aria-label="Fit to viewport" title="Fit">⤢</button>
+        <span class="gen-ctl" title="Generations shown in pedigree">
+          <button class="zoom-ctl gen-dec" type="button" aria-label="Fewer generations">−G</button>
+          <span class="gen-label">4</span>
+          <button class="zoom-ctl gen-inc" type="button" aria-label="More generations">+G</button>
+        </span>
         <div id="start-here-callout" class="start-here" hidden>
           <span class="start-here-text">Start here — your great-grandparents.</span>
           <svg class="start-here-arrow" viewBox="0 0 80 60" aria-hidden="true">
@@ -136,7 +141,7 @@
 </section>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script type="module" src="/js/tree.js?v=3"></script><footer class="site-footer">
+<script type="module" src="/js/tree.js?v=8"></script><footer class="site-footer">
   <div class="shell">
     <p>The Quesenberry &amp; Harvey Family History — a private record assembled from public sources for the descendants of Lonnie Olin Quesenberry &amp; Ruth Garland Harvey.</p>
     <p class="muted">Some generations remain incomplete. <a href="/sources.html">See sources and methodology.</a> Last built from <code>data/people.json</code>.</p>
