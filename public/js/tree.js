@@ -58,9 +58,16 @@
         document.querySelectorAll(".view").forEach((el) => {
           el.classList.toggle("active", el.id === "view-" + v);
         });
-        // map needs to recompute size when revealed
+        // map needs to recompute size when revealed; also fly to focused person now that container is visible
         if (v === "map" && state._leafletMap) {
-          setTimeout(() => state._leafletMap.invalidateSize(), 50);
+          setTimeout(() => {
+            state._leafletMap.invalidateSize();
+            const focused = state.byId.get(state.focusedId);
+            if (focused) {
+              const target = focused.birthGeo || focused.deathGeo;
+              if (target) state._leafletMap.flyTo([target.lat, target.lng], 5, { duration: 0.8 });
+            }
+          }, 50);
         }
       });
     });
@@ -394,15 +401,16 @@
       .style("font-size", "9px").style("fill", "#7a4a1f")
       .text((d) => d.deathYear ? d.deathYear : "?");
 
-    // Era labels at top
+    // Era labels at top — staggered vertically so adjacent labels don't collide
+    // when the timeline extends far back (many ancestors push minYear to ~1600)
     svg.append("g").selectAll("text.era-lbl")
       .data(eras).enter()
       .append("text")
       .attr("x", (d) => x((d[0] + d[1]) / 2))
-      .attr("y", margin.top - 14)
+      .attr("y", (_, i) => margin.top - (i % 2 === 0 ? 20 : 8))
       .attr("text-anchor", "middle")
       .style("font-family", "'Cormorant SC', Georgia, serif")
-      .style("font-size", "9px").style("letter-spacing", "0.18em")
+      .style("font-size", "9px").style("letter-spacing", "0.12em")
       .style("fill", "#7a4a1f").style("text-transform", "uppercase")
       .text((d) => d[2]);
   }
@@ -478,13 +486,8 @@
       }
     });
 
-    // Pan/zoom to focused person if they have geo
-    if (focused) {
-      const target = focused.birthGeo || focused.deathGeo;
-      if (target) {
-        map.flyTo([target.lat, target.lng], 5, { duration: 0.8 });
-      }
-    }
+    // flyTo deferred to tab-click handler (map container is hidden on initial load,
+    // which causes Leaflet's unproject to return NaN if called here)
   }
 
   // ----- helpers -----
